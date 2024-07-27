@@ -1,25 +1,47 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Uverit Converter",
+  "name": "Uverit Converter",
+  "homepage": "https://newhorizonweb.github.io/Uverit-Converter/",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "src": "assets/manifest-icons/uverit-favicon.svg",
+      "sizes": "any",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "assets/manifest-icons/uverit-favicon-48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "assets/manifest-icons/uverit-favicon-120.png",
+      "type": "image/png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "assets/manifest-icons/uverit-favicon-144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "assets/manifest-icons/uverit-favicon-180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "assets/manifest-icons/uverit-favicon-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "assets/manifest-icons/uverit-favicon-512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "maskable"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#F8FAFE",
+  "background_color": "#F8FAFE"
 }

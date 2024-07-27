@@ -1,0 +1,9 @@
+{
+    "created_by": "© Créé par uverit 2024",
+    "404":{
+        "not_found": "Page introuvable",
+        "wrong_page1": "Cette page semble avoir fait un détour infructueux.",
+        "wrong_page2": "Passons à un sujet plus piquant!",
+        "go_back": "Retour accueil"
+    }
+}

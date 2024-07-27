@@ -1,0 +1,70 @@
+{
+
+    "amr_info":{
+        "amr_info1": "Zalecane dzienne spożycie jest oparte na Twojej aktywnej przemianie materii (AMR) lub szacunkowej wartości dla przeciętnej osoby, jeśli wartość AMR nie została obliczona.",
+        "amr_info2": "Chociaż nie jest to idealne rozwiązanie, daje solidną podstawę do zrozumienia, jak składnik odżywczy wpisuje się w Twoje codzienne potrzeby."
+    },
+
+    "table":{
+        "macro_name": "Makroskładniki",
+        "micro_name": "Mikroskładniki",
+
+        "nutri_facts": "Wartości odżywcze",
+        "serving_size": "Porcja",
+        "per_val": "W",
+        "percent_daily": "% RWS*"
+    },
+
+    "macro":{
+        "calories": "Kalorie",
+
+        "total_fat": "Tłuszcze ogółem",
+        "satur_fat": "Nasycone",
+        "trans_fat": "Trans",
+        "mono_fat": "Jednonienasycone",
+        "poly_fat": "Wielonienasycone",
+
+        "total_carbs": "Węgle ogółem",
+        "net_carbs": "Węgle netto",
+        "sugars": "Cukry",
+        "fiber": "Błonnik",
+
+        "protein": "Białko",
+ 
+        "cholesterol": "Cholesterol",
+        "sodium": "Sód",
+        "caffeine": "Kofeina"
+    },
+
+    "weight": "waga",
+    "water": "woda",
+
+    "micro":{
+        "vit_A": "Witamina A",
+        "vit_C": "Witamina C",
+        "vit_D": "Witamina D",
+        "vit_E": "Witamina E",
+        "vit_K": "Witamina K",
+        "vit_B1": "Witamina B1",
+        "vit_B2": "Witamina B2",
+        "vit_B3": "Witamina B3",
+        "vit_B5": "Witamina B5",
+        "vit_B6": "Witamina B6",
+        "vit_B9": "Witamina B9",
+        "vit_B12": "Witamina B12",
+        "choline": "Cholina",
+
+        "calcium": "Wapń",
+        "copper": "Miedź",
+        "fluoride": "Fluor",
+        "folate": "Folan",
+        "iron": "Żelazo",
+        "magnesium": "Magnez",
+        "manganese": "Mangan",
+        "phosphorus": "Fosfor",
+        "potassium": "Potas",
+        "selenium": "Selen",
+        "zinc": "Cynk"
+    }
+
+}

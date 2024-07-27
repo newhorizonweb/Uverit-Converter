@@ -1,0 +1,54 @@
+{
+    "sections":{
+        "section_name": "Sekcje",
+        "search": "Wyszukiwarka",
+        "nutri_facts": "Wart. Odżywcze",
+        "charts": "Wykresy",
+        "micronutrients": "Mikroskładniki",
+        "diet_labels": "Tagi"
+    },
+
+    "user":{
+        "section_name": "Pomiary Ciała",
+        "info1": "Mifflin St Jeor - to równanie pozwala na indywidualną ocenę twojego podstawowego tempa przemiany materii (BMR) - dziennej ilości kalorii, które twoje ciało spala samo z siebie.",
+        "info2": "Chociaż wynik nie jest idealny, to może pomóc Ci ustalić cele w zakresie zarządzania wagą i dostosować dzienne spożycie składników odżywczych, zarówno makroelementów (węglowodany, białko itp.), jak i mikroskładników (witaminy, minerały).",
+
+        "units": "jednostki",
+        "metric": "metryczne",
+        "imperial": "imperialne",
+
+        "sex": "płeć",
+        "select": "wybierz",
+        "male": "mężczyzna",
+        "female": "kobieta",
+
+        "age": "wiek",
+        "yrs": "lat/a",
+
+        "height": "wzrost",
+        "weight": "waga",
+
+        "activity": "aktywność",
+        "activ_bmr": "Podstawowa Przemiana Materii (BMR)",
+        "activ_sedentary": "Siedzący (mało/brak ćwiczeń)",
+        "activ_light": "Lekko Aktywny",
+        "activ_moderate": "Umiarkowanie Aktywny",
+        "activ_very": "Bardzo Aktywny",
+        "activ_extra": "Ekstra Aktywny",
+
+        "calculate": "Oblicz",
+        "daily_intake": "Spożycie Kalorii",
+
+        "your_bmi": "Twoje BMI",
+        "bmi_lvl1": "Wychudzenie",
+        "bmi_lvl2": "Umiarkowana Niedowaga",
+        "bmi_lvl3": "Lekka Niedowaga",
+        "bmi_lvl4": "Zakres Normy",
+        "bmi_lvl5": "Nadwaga",
+        "bmi_lvl6": "Otyłość (Stopień I)",
+        "bmi_lvl7": "Otyłość (Stopień II)",
+        "bmi_lvl8": "Otyłość (Stopień III)"
+    },
+
+    "fav_items": "Ulubione Produkty"
+}

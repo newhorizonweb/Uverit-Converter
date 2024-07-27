@@ -1,0 +1,129 @@
+
+
+
+/* 
+    Uverit Converter
+    Do not copy or distribute
+*/
+
+/* Media breakpoints - 1440, 1200, 1024, 900, 768, 540, 440, 320 */
+
+
+
+.lang-switch{
+    height:100%;
+    position:relative;
+    display:flex;
+    align-items:center;
+
+    & .lang-btn{
+        height:100%;
+        aspect-ratio:1/1;
+        display:flex;
+        cursor:pointer;
+
+        & *{
+            fill:none;
+            stroke:var(--txt3);
+            stroke-width:12px;
+            stroke-miterlimit:10;
+            stroke-linecap:round;
+            transition:var(--trans1);
+        }
+
+        .lang-expanded & *{
+            stroke:var(--color1);
+        }
+
+        &:hover *{
+            stroke:var(--color1a);
+        }
+        
+    }
+
+    & .lang-popup{
+        width:256px;
+        padding:var(--size6);
+
+        position:absolute;
+        top:calc(100% + var(--size6) + var(--size3));
+        right:calc(var(--size6) * -1);
+
+        opacity:0;
+        pointer-events:none;
+        transition:var(--trans1);
+    }
+
+    &.lang-expanded .lang-popup{
+        opacity:1;
+        pointer-events:all;
+    }
+
+    & .lang-popup-inner{
+        width:100%;
+        padding:var(--size6);
+
+        display:flex;
+        flex-wrap:wrap;
+        gap:var(--size6);
+        background-color:var(--color3b);
+    }
+
+    & .lang-item{
+        width:calc(50% - (var(--size6) / 2));
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:var(--size1);
+        cursor:pointer;
+
+        & .lang-flag{
+            width:100%;
+            aspect-ratio:4/3;
+
+            display:flex;
+            box-shadow:var(--boxShadow2);
+            border-radius:var(--size2);
+
+            transition:box-shadow var(--trans2);
+            overflow:clip;
+
+            & img{
+                width:100%;
+                height:100%;
+                object-fit:contain;
+            }
+
+        }
+
+        & p{
+            text-align:center;
+        }
+        
+        &.curr-lang{
+
+            & .lang-flag{
+                --boxShadow2:0 0 2px 1px var(--color2);
+            }
+
+            & p{
+                color:var(--color2);
+            }
+            
+        }
+
+        &:hover{
+
+            & .lang-flag{
+                --boxShadow2:0 0 2px 1px var(--color1);
+            }
+
+            & p{
+                color:var(--color1);
+            }
+
+        }
+
+    }
+
+}

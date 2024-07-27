@@ -1,0 +1,374 @@
+
+
+
+/* 
+    Uverit Converter
+    Do not copy or distribute
+*/
+
+/* Media breakpoints - 1440, 1200, 1024, 900, 768, 540, 440, 320 */
+
+
+
+:root{
+
+        /* Colors */
+
+    /* Main */
+    --color1:#07ABDB;
+    --color1a:#62D2FD;
+    --color1b:#2086B6;
+
+    /* Accent */
+    --color2:#CC1EEC;
+    --color2a:#BF4FFF;
+    --color2b:#A727DA;
+
+    /* Main BG */
+    --color3:#F8FAFE;
+    --color3st1:rgb(248,250,254,0.92);
+    --color3b:#FFFFFF;
+
+    /* Other */
+    --warnColor:#FF0000;
+    --attColor:#FFA000;;
+
+
+
+        /* Text Colors */
+
+    --txt1:#333333;
+    --txt2:#4A4A4A;
+    --txt3:#777777;
+
+    --txt-rev1:#FFFFFF;
+    --txt-rev2:#EEEEEE;
+
+
+
+        /* Box Shadows */
+
+    --shadowColor1:#CFCFCF;
+    --shadowColor2:#D4DFE5;
+
+    --boxShadow1:0 0 10px 1px var(--shadowColor2);
+    --boxShadow2:0 0 2px 1px var(--shadowColor2);
+    --boxShadowIns1:inset 0 0 2px 0 var(--shadowColor1);
+
+
+
+        /* Sizes */
+
+    --size05:2px;
+    --size1:4px;
+    --size2:8px;
+    --size3:12px;
+    --size4:16px;
+    --size5:20px;
+    --size6:24px;
+    --size7:32px;
+    --size8:48px;
+    --size9:64px;
+    --size10:96px;
+
+    --scrollbar:var(--size2);
+
+
+
+        /* Transitions */
+
+    --trans1:0.1s  ease-in-out;
+    --trans2:0.15s ease-in-out;
+    --trans3:0.25s ease-in-out;
+    --trans4:0.35s ease-in-out;
+
+}
+
+
+.theme-dark{
+
+        /* Colors */
+
+    /* Main */
+    --color1b:#62D2FD;
+    --color1a:#2086B6;
+
+    /* Accent */
+    --color2b:#BF4FFF;
+    --color2a:#A727DA;
+
+    /* Main BG */
+    --color3:#111316;;
+    --color3st1:rgb(17,19,22,0.92);
+    --color3b:#212527;
+
+
+
+        /* Text Colors */
+
+    --txt1:#FAFAFA;
+    --txt2:#F6F6F6;
+    --txt3:#CCCCCC;
+
+    --txt-rev1:#3F3F3F;
+    --txt-rev2:#4C4C4C;
+
+
+
+        /* Box Shadows */
+
+    --shadowColor1:#6A6A6A;
+    --shadowColor2:#2C3536;
+
+    /* don't remove them or they won't be updated in the dark theme */
+    --boxShadow1:0 0 10px 1px var(--shadowColor2);
+    --boxShadow2:0 0 2px 0.5px var(--shadowColor2);
+    --boxShadowIns1:inset 0 0 2px 0 var(--shadowColor1);
+    
+}
+
+
+
+    /* Fonts */
+
+@font-face{
+    src:url(../fonts/Quicksand-VariableFont_wghtbold.woff2);
+    font-family:mainFont;
+    font-display:fallback;
+}
+
+@font-face{
+    src:url(../fonts/Roboto-Regular.woff2);
+    font-family:accentFont;
+    font-display:fallback;
+}
+
+.main-font{
+    font-family:mainFont, Verdana, sans-serif;
+}
+
+p, a, select, label, button, input, textarea, th, td{
+    color:var(--txt2);
+    font-size:18px;
+    font-weight:400;
+    line-height:1.2;
+
+    text-wrap:pretty;
+    text-decoration:none;
+    transition:var(--trans2);
+}
+
+@media screen and (width <= 440px){
+    
+    p, a, label, button, input, textarea, th, td{
+        font-size:16px;
+        line-height:1.2em;
+    }
+
+}
+
+@media screen and (width <= 320px){
+    
+    p, a, label, button, input, textarea, th, td{
+        font-size:15px;
+        line-height:1.2em;
+    }
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    color:var(--txt1);
+    font-family:mainFont, Verdana, sans-serif;
+    font-weight:800;
+
+    text-wrap:balance;
+    transition:var(--trans2);
+}
+
+h1{
+    font-size:36px;
+}
+h2{
+    font-size:30px;
+}
+h3{
+    font-size:24px;
+}
+h4{
+    font-size:22px;
+}
+h5{
+    font-size:20px;
+}
+h6{
+    font-size:18px;
+}
+
+@media screen and (width <= 440px){
+    
+    h1{
+        font-size:32px;
+    }
+    h2{
+        font-size:28px;
+    }
+    h3{
+        font-size:22px;
+    }
+    h4{
+        font-size:20px;
+    }
+    h5{
+        font-size:18px;
+    }
+    h6{
+        font-size:16px;
+    }
+
+}
+
+@media screen and (width <= 320px){
+    
+    h1{
+        font-size:28px;
+    }
+    h2{
+        font-size:24px;
+    }
+    h3{
+        font-size:20px;
+    }
+    h4{
+        font-size:18px;
+    }
+    h5{
+        font-size:16px;
+    }
+    h6{
+        font-size:14px;
+    }
+
+}
+
+
+
+    /* Scrollbar */
+
+::-webkit-scrollbar{
+    width:var(--scrollbar);
+    height:var(--scrollbar);
+}
+
+::-webkit-scrollbar-track{
+    background:var(--color3b);
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--color1);
+    border-radius:100px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:var(--color1a);
+}
+
+::-webkit-resizer{
+    background:var(--color1a);
+}
+
+::-webkit-scrollbar-corner{
+    background:transparent;
+}
+
+.small-scroll::-webkit-scrollbar{
+    width:calc((var(--size1) * 2) + var(--size1));
+    height:calc((var(--size1) * 2) + var(--size1));
+}
+.small-scroll::-webkit-scrollbar-thumb{
+    background:transparent !important;
+    border:solid var(--size1) transparent;
+    box-shadow:inset 0 0 100px 100px var(--color1);
+}
+.small-scroll::-webkit-scrollbar-thumb:hover{
+    box-shadow:inset 0 0 100px 100px var(--color1a);
+}
+
+.small-scroll-acc::-webkit-scrollbar{
+    width:calc((var(--size1) * 2) + var(--size1));
+    height:calc((var(--size1) * 2) + var(--size1));
+}
+.small-scroll-acc::-webkit-scrollbar-thumb{
+    background:transparent !important;
+    border:solid var(--size1) transparent;
+    box-shadow:inset 0 0 100px 100px var(--color2);
+}
+.small-scroll-acc::-webkit-scrollbar-thumb:hover{
+    box-shadow:inset 0 0 100px 100px var(--color2a);
+}
+
+
+
+    /* Firefox Adjustments */
+
+@-moz-document url-prefix(){ 
+    
+    *{
+        scrollbar-color:var(--color1a) transparent !important;
+        scrollbar-width:thin !important;
+    }
+
+}
+
+
+
+    /* Style Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:accentFont, Arial, sans-serif;
+    -webkit-tap-highlight-color:transparent;
+}
+
+*:focus{
+    outline:0 !important;
+}
+
+::selection{
+    background:var(--color1a);
+}
+
+.acc-select::selection,
+.acc-select *::selection{
+    background:var(--color2a);
+}
+
+html{
+    overflow-x:clip;
+}
+
+body{
+    width:100%;
+    position:relative;
+    overflow-x:clip;
+}
+
+button{
+    background-color:transparent;
+    border:none;
+    outline:none;
+}
+
+
+
+    /* Firefox */
+
+@-moz-document url-prefix(){ 
+
+    *{
+        scrollbar-color:var(--color1) transparent !important;
+        scrollbar-width:thin !important;
+    }
+
+}

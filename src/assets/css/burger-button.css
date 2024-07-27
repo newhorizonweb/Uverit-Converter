@@ -1,0 +1,165 @@
+
+
+
+/* 
+    Uverit Converter
+    Do not copy or distribute
+*/
+
+/* Media breakpoints - 1440, 1200, 1024, 900, 768, 540, 440, 320 */
+
+
+
+.burger-btn{
+    /* 3x size, 2x gap = 32px */
+    --spanSize:8px;
+    --spanGap:4px;
+
+    height:100%;
+    aspect-ratio:1/1;
+    margin-left:auto;
+
+    position:relative;
+    cursor:pointer;
+
+    & span{
+        height:var(--spanSize);
+        width:100%;
+        box-sizing:border-box;
+    
+        position:absolute;
+        left:50%;
+        transform:translate(-50%, 0) rotate(0deg);
+    
+        display:block;
+        background-color:var(--color3st1);
+        border:solid var(--size05) var(--txt1);
+        border-radius:20px;
+    
+        pointer-events:none;
+        transition:0.15s ease-in;
+
+        &:is(:nth-child(1), :nth-child(4)){
+            transition-property:all, border-color;
+            transition-timing-function:ease-in, ease-in;
+            transition-duration:0.2s, 0.15s;
+            transition-delay:0.05s, 0s;
+        }
+
+        &:nth-child(1){
+            top:0;
+        }
+
+        &:is(:nth-child(2), :nth-child(3)){
+            top:calc(var(--spanSize) + var(--spanGap));
+        }
+
+        &:nth-child(4){
+            top:calc((var(--spanSize) + var(--spanGap)) * 2);
+        }
+
+        &:nth-child(3):after{
+            content:"";
+            width:0;
+            height:0;
+            
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%, -50%) rotate(-135deg);
+        
+            background-color:var(--color3st1);
+            transition-delay:0.1s;
+        }
+        
+
+    }
+
+    &:hover span{
+        border-color:var(--color1);
+
+        &:is(:nth-child(1), :nth-child(4)){
+            width:110%;
+        }
+
+        &:is(:nth-child(2), :nth-child(3)){
+            width:90%;
+        }
+
+    }
+
+    &.burger-open{
+
+        & span{
+            width:110%;
+            background-color:var(--color3st1);
+
+            &:is(:nth-child(1), :nth-child(4)){
+                width:0;
+                border-left:0;
+                border-right:0;
+                transition:0.15s ease-in;
+            }
+
+            &:is(:nth-child(1), :nth-child(3), :nth-child(4)){
+                transition-property:all, transform;
+                transition-timing-function:ease-in, ease-in;
+                transition-duration:0.1s, 0.2s;
+            }
+
+            &:nth-child(2){
+                transform:translate(-50%, 0) rotate(45deg);
+                transition-property:all, transform, width;
+                transition-timing-function:ease-in, ease-in, ease-in;
+                transition-duration:0.1s, 0.2s, 0.4s;
+            }
+
+            &:nth-child(3){
+                transform:translate(-50%, 0) rotate(-45deg);
+            }
+
+            &:nth-child(3):after{
+                width:var(--spanSize);
+                height:calc(var(--spanSize) - (var(--size05) * 2));
+                transform:translate(-50%, -50%) rotate(-90deg);
+            }
+
+            &:is(:nth-child(1), :nth-child(4)){
+                width:0;
+            }
+            
+        }
+
+        &:hover span{
+
+            &:is(:nth-child(1), :nth-child(4)){
+                width:0;
+            }
+            
+            &:is(:nth-child(2), :nth-child(3)){
+                width:90%;
+            }
+
+        }
+
+    }
+
+}
+
+@media screen and (width <= 440px){
+
+    .burger-btn{
+        /* 3x size, 2x gap = 24px */
+        --spanSize:6px;
+        --spanGap:3px;
+    }
+
+}
+
+@media screen and (width <= 320px){
+
+    .burger-btn{
+        margin-left:0;
+    }
+
+}

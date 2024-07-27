@@ -1,0 +1,169 @@
+
+
+
+/* 
+    Uverit Converter
+    Do not copy or distribute
+*/
+
+/* Media breakpoints - 1440, 1200, 1024, 900, 768, 540, 440, 320 */
+
+
+
+footer.glass{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    & .footer-logo{
+        height:var(--size8);
+        cursor:pointer;
+    }
+
+    & .footer-credits{
+        display:flex;
+        flex-direction:column;
+        align-items:flex-end;
+        gap:var(--size2);
+
+        & .socials{
+            display:flex;
+            align-items:center;
+            gap:var(--size2);
+
+            & .social-btn{
+                height:var(--size7);
+                aspect-ratio:1/1;
+
+                display:flex;
+                align-items:center;
+                justify-content:center;
+
+                box-shadow:0 0 0 2px var(--txt3);
+                border-radius:var(--size2);
+
+                &:hover{
+                    box-shadow:0 0 0 0;
+                }
+
+                & svg{
+                    height:80%;
+                    transition:var(--trans2);
+
+                    & *{
+                        fill:var(--txt3);
+                        transition:var(--trans2);
+                    }
+
+                }
+
+                &:hover svg{
+                    height:100%;
+
+                    & *{
+                        fill:var(--color1);
+                    }
+
+                }
+
+            }
+
+        }
+
+        & .app-version{
+            font-size:14px;
+            opacity:0.7;
+            text-align:center;
+            text-wrap:balance;
+
+            &:hover{
+                opacity:1;
+            }
+
+        }
+
+    }
+
+}
+
+@media screen and (width <= 540px){
+
+    footer.glass{
+    
+        & .footer-logo{
+            height:var(--size7);
+        }
+        
+    }
+
+}
+
+@media screen and (width <= 440px){
+
+    footer.glass{
+        justify-content:center;
+        flex-direction:column;
+        gap:var(--size3);
+
+        & .footer-credits{
+            align-items:center;
+    
+            & .socials{
+                display:flex;
+                align-items:center;
+                gap:var(--size2);
+    
+                & .social-btn{
+                    height:var(--size7);
+                    aspect-ratio:1/1;
+    
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+    
+                    box-shadow:0 0 0 2px var(--txt3);
+                    border-radius:var(--size2);
+    
+                    &:hover{
+                        box-shadow:0 0 0 0;
+                    }
+    
+                    & svg{
+                        height:80%;
+                        transition:var(--trans2);
+    
+                        & *{
+                            fill:var(--txt3);
+                            transition:var(--trans2);
+                        }
+    
+                    }
+    
+                    &:hover svg{
+                        height:100%;
+    
+                        & *{
+                            fill:var(--color1);
+                        }
+    
+                    }
+    
+                }
+    
+            }
+    
+            & .app-version{
+                font-size:14px;
+                opacity:0.7;
+    
+                &:hover{
+                    opacity:1;
+                }
+    
+            }
+    
+        }
+    
+    }
+
+}

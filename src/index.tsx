@@ -1,15 +1,26 @@
+
+
+
+// React
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Locales (i18next)
+import { I18nextProvider } from 'react-i18next';
+import i18next from "./app/core/i18n";
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        <I18nextProvider i18n={i18next}>
+            <App />
+        </I18nextProvider>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

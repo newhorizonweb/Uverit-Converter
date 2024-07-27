@@ -1,0 +1,10 @@
+{
+    "waiting": "Ładowanie, chyba farba schnie szybciej",
+    "unknown": "Nieznany błąd, spróbuj ponownie później",
+    "400": "Niepoprawne dane, sprawdź wyszukiwane hasło",
+    "401": "Nieautoryzowany dostęp",
+    "403": "Dostęp zabroniony",
+    "404": "Wyszukiwanie nie znalezione",
+    "409": "Konflikt wyszukiwania",
+    "500": "Błąd serwera, spróbuj ponownie później"
+}
