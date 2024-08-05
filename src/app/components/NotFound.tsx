@@ -35,7 +35,7 @@ const NotFound = () => {
                     404 { img404 }
                 </div>
 
-                <div className="nf-txt">
+                <div className="nf-txt" data-testid="not-found">
 
                     <h1>{ t("404.not_found") }</h1>
                     <h4>{ t("404.wrong_page1") }</h4>

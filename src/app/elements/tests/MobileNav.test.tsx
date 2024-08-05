@@ -11,16 +11,20 @@ import { act } from 'react';
 import { I18nextProvider } from 'react-i18next';
 import i18next from "../../core/i18n";
 
-// Components
+// Components & Assets
 import MobileNav from '../MobileNav';
-import * as icons from "../../core/SvgIcons";
+import * as navIcons from "../../core/NavIcons";
+import units from '../../../assets/json/units.json';
 
 // Mocks
 const mockMobileNav = () => {
     return(
         <BrowserRouter>
             <I18nextProvider i18n={i18next}>
-                <MobileNav icons={ icons } />
+                <MobileNav
+                    units={ units }
+                    navIcons={ navIcons }
+                />
             </I18nextProvider>
         </BrowserRouter>
     )
@@ -107,13 +111,13 @@ describe("Mobile Navigation", () => {
         fireEvent.click(navBtn);
 
         // Click the nav link to change the page
-        const navLinkLength1 = screen.getByTestId(/link-length1/i);
+        const navLinkLength1 = screen.getByTestId(/link-marine/i);
         fireEvent.click(navLinkLength1);
 
         const firstPage = window.location.pathname;
 
         // Click ANOTHER nav link to change the page to compare the URLs
-        const navLinkLength2 = screen.getByTestId(/link-length2/i);
+        const navLinkLength2 = screen.getByTestId(/link-archaic/i);
         fireEvent.click(navLinkLength2);
 
         // Compare URLs

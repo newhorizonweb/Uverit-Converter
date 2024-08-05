@@ -23,7 +23,8 @@ const BurgerButton = React.forwardRef<HTMLButtonElement, PropTypes>((
         <button className={`burger-btn 
         ${isBurgerOpen ? " burger-open" : ""}`}
         ref={ burgerBtn } onClick={ togglePopup }
-        aria-label="Navigation burger button">
+        aria-label="Navigation burger button"
+        data-testid="burger-btn">
             <span></span>
             <span></span>
             <span></span>

@@ -13,16 +13,22 @@ import '../../assets/css/mobile-nav.css';
 import BurgerButton from "./BurgerButton";
 
 // TS
+type UnitsData = { [key: string]: string[] };
+
 interface PropTypes{
-    icons: any;
+    units: UnitsData;
+    navIcons: any;
 }
 
 
 
 function MobileNav(props: PropTypes){
 
+    // JSON Data (units)
+    const units = props.units;
+
     // Icons
-    const icons = props.icons;
+    const navIcons = props.navIcons;
 
     // Page Context Variables
     const { urlPath } = useContext(PageContext);
@@ -32,6 +38,7 @@ function MobileNav(props: PropTypes){
 
     // Get current URL
     const location = useLocation();
+
 
 
         /* Popup / Burger */
@@ -178,7 +185,6 @@ function MobileNav(props: PropTypes){
             // Close nav popup on page resize on desktop
             resizeTimeout = setTimeout(() => {
                 if (window.innerWidth > 1024){
-                    console.log("closing")
                     setIsBurgerOpen(false);
                 }
             }, throttleTime);
@@ -188,6 +194,65 @@ function MobileNav(props: PropTypes){
         window.addEventListener("resize", handleResize);
 
     }, []);
+
+
+
+        /* Nav Groups & Links */
+
+    // Capitalize strings and replace hyphens with spaces
+    const capitalize = (string: string) => {
+        return string
+        .split('-') // Split words
+        .map(string => 
+            string.charAt(0).toUpperCase() +
+            string.slice(1).toLowerCase()
+        )
+        .join(' '); // Join the words with a space
+    }
+
+    // Generate dynamic routes based on units.json
+    const groupButtons = () => {
+        return Object.keys(units as UnitsData).map((category, index) => (
+
+            <h5 key={`nav-group-btn--${index}`}
+            className="nav-group-name" id={`${category}-nav-btn`}
+            onClick={(e) => showList(e, undefined, category)}
+            data-testid={`mobile-nav-btn-${category}`}> 
+                { capitalize(category) }<span>▸</span>
+            </h5>
+
+        ));
+    };
+
+    // Generate dynamic routes based on units.json
+    const navLinkGroups = () => {
+        return Object.keys(units as UnitsData).map((category, index) => (
+
+            <div key={`mobile-nav-group-${index}`}
+            className="nav-group" id={category}
+            data-testid={`mobile-nav-section-${category}`}>
+                { navLinks(category, (units as UnitsData)[category]) }
+            </div>        
+
+        ));
+    };
+
+    // Generate dynamic routes based on units.json
+    const navLinks = (category: string, items: string[]) => {
+        return items.map((item, index) => (
+            <NavLink
+            key={`nav-link-${index}`}
+            to={`${urlPath}/${category}/${item}`}
+            className={ activeNavToggle }
+            onClick={ closePopup } data-testid={`mobile-link-${item}`}>
+                {
+                    navIcons[item as keyof typeof navIcons] ||
+                    navIcons.navplaceholderIcon
+                }
+                <p>{ capitalize(item) }</p>
+            </NavLink>
+        ));
+    };
 
 
     
@@ -207,33 +272,15 @@ function MobileNav(props: PropTypes){
                 <div className="nav-group-list glass">
                     <div className="nav-group-list-inner small-scroll">
 
-                    <NavLink to={`${urlPath}`}
-                        className={ activeNavToggle } end>
-                        <h5 className="nav-group-name" id="home-nav-btn">
-                            Home
-                        </h5>
-                    </NavLink>
+                        <NavLink to={`${urlPath}`}
+                            className={ activeNavToggle } end
+                            onClick={ closePopup }>
+                            <h5 className="nav-group-name" id="home-nav-btn">
+                                Home
+                            </h5>
+                        </NavLink>
 
-                    <h5 className="nav-group-name" id="length-nav-btn"
-                    onClick={(e) => showList(e, undefined, "length")}
-                    data-testid="mobile-nav-btn-length">
-                        Length<span>▸</span>
-                    </h5>
-                    <h5 className="nav-group-name"  id="spatial-nav-btn"
-                    onClick={(e) => showList(e, undefined, "spatial")}
-                    data-testid="mobile-nav-btn-spatial">
-                        Spatial<span>▸</span>
-                    </h5>
-                    <h5 className="nav-group-name"  id="physical-nav-btn"
-                    onClick={(e) => showList(e, undefined, "physical")}
-                    data-testid="mobile-nav-btn-physical">
-                        Physical<span>▸</span>
-                    </h5>
-                    <h5 className="nav-group-name"  id="data-nav-btn"
-                    onClick={(e) => showList(e, undefined, "data")}
-                    data-testid="mobile-nav-btn-data">
-                        Data<span>▸</span>
-                    </h5>
+                        { groupButtons() }
 
                     </div>
                 </div>
@@ -241,144 +288,7 @@ function MobileNav(props: PropTypes){
                 <div className="nav-group-display glass">
                     <div className="nav-group-display-inner small-scroll">
 
-                        <div className="nav-group" id="length"
-                        data-testid="mobile-nav-section-length">
-
-                            <NavLink to={`${urlPath}/length1`}
-                            className={ activeNavToggle }
-                            onClick={ closePopup } data-testid="link-length1">
-                                { icons.weight }
-                                <p>Placeholder Name 1</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/length2`}
-                            className={ activeNavToggle }
-                            onClick={ closePopup }  data-testid="link-length2">
-                                { icons.weight2 }
-                                <p>Name 2</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/length3`}
-                            className={ activeNavToggle }
-                            onClick={ closePopup }>
-                                { icons.weight }
-                                <p>Name 3</p>
-                            </NavLink>
-                            
-                            <NavLink to={`${urlPath}/length4`}
-                            className={ activeNavToggle }
-                            onClick={ closePopup }>
-                                { icons.weight }
-                                <p>Name 4</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/length5`}
-                            className={ activeNavToggle }
-                            onClick={ closePopup }>
-                                { icons.weight2 }
-                                <p>Placeholder Name 5</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/length6`}
-                            className={ activeNavToggle }
-                            onClick={ closePopup }>
-                                { icons.weight2 }
-                                <p>Placeholder Name 6</p>
-                            </NavLink>
-                            
-                        </div>
-
-                        <div className="nav-group" id="spatial"
-                        data-testid="mobile-nav-section-spatial">
-
-                            <NavLink to={`${urlPath}/calc1`}
-                            className={ activeNavToggle }
-                            onClick={ closePopup }>
-                                { icons.weight2 }
-                                <p>Different Name 1</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/calc2`}
-                            className={ activeNavToggle }
-                            onClick={ closePopup }>
-                                { icons.weight }
-                                <p>Different Name 2</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/calc3`}
-                            className={ activeNavToggle }
-                            onClick={ closePopup }>
-                                { icons.weight }
-                                <p>Different Name 3</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/calc4`}
-                            className={ activeNavToggle }
-                            onClick={ closePopup }>
-                                { icons.weight2 }
-                                <p>Different Name 4</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/calc5`}
-                            className={ activeNavToggle }
-                            onClick={ closePopup }>
-                                { icons.weight }
-                                <p>Different Name 5</p>
-                            </NavLink>
-
-                        </div>
-
-                        <div className="nav-group" id="physical"
-                        data-testid="mobile-nav-section-physical">
-
-                            <NavLink to={`${urlPath}/calc11`}
-                            className={ activeNavToggle }
-                            onClick={ closePopup }>
-                                { icons.weight2 }
-                                <p>Different Name 1</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/calc22`}
-                            className={ activeNavToggle }
-                            onClick={ closePopup }>
-                                { icons.weight }
-                                <p>Different Name 2</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/calc33`}
-                            className={ activeNavToggle }
-                            onClick={ closePopup }>
-                                { icons.weight }
-                                <p>Different Name 3</p>
-                            </NavLink>
-
-                        </div>
-
-                        <div className="nav-group" id="data"
-                        data-testid="mobile-nav-section-data">
-
-                            <NavLink to={`${urlPath}/calc1a`}
-                            className={ activeNavToggle }
-                            onClick={ closePopup }>
-                                { icons.weight2 }
-                                <p>Different Name 1</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/calc2b`}
-                            className={ activeNavToggle }
-                            onClick={ closePopup }>
-                                { icons.weight }
-                                <p>Different Name 2</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/calc3c`}
-                            className={ activeNavToggle }
-                            onClick={ closePopup }>
-                                { icons.weight }
-                                <p>Different Name 3</p>
-                            </NavLink>
-
-                        </div>
+                        { navLinkGroups() }
 
                     </div>
                 </div>

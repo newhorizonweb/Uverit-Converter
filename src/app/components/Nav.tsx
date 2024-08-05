@@ -8,12 +8,17 @@ import { NavLink } from "react-router-dom";
 
 // Assets
 import '../../assets/css/nav.css';
-import * as icons from "../core/SvgIcons";
+import { uveritLogo } from "../core/SvgIcons";
+import * as navIcons from "../core/NavIcons";
+import units from '../../assets/json/units.json';
 
 // Components
 import MobileNav from "../elements/MobileNav";
 import ThemeToggle from "../elements/ThemeToggle";
 import LangSwitch from '../elements/LangSwitch';
+
+// TS
+type UnitsData = { [key: string]: string[] };
 
 
 
@@ -26,6 +31,58 @@ function Nav(){
     const activeNavToggle = ({ isActive }: { isActive: boolean }) =>
         "nav-link" + (isActive ? " active-nav-link" : "");
 
+    // Capitalize strings and replace hyphens with spaces
+    const capitalize = (string: string) => {
+        return string
+        .split('-') // Split words
+        .map(string => 
+            string.charAt(0).toUpperCase() +
+            string.slice(1).toLowerCase()
+        )
+        .join(' '); // Join the words with a space
+    }
+
+    // Generate dynamic routes based on units.json
+    const navGroups = () => {
+        return Object.keys(units as UnitsData).map((category, index) => (
+
+            <div className="nav-group" key={`nav-group-${index}`}
+            data-testid={`group-btn-${category}`}
+            id={`group-btn-${category}`}>
+                <h5 className="nav-group-name">
+                    { capitalize(category) }<span>▾</span>
+                </h5>
+
+                <div className="nav-links glass"
+                data-testid={`nav-links-${category}`}>
+                    <div className="nav-links-inner glass">
+                        { navLinks(category, (units as UnitsData)[category]) }
+                    </div>
+                </div>
+            </div>
+
+        ));
+    };
+
+    // Generate dynamic routes based on units.json
+    const navLinks = (category: string, items: string[]) => {
+        return items.map((item, index) => (
+
+            <NavLink id={item}
+                key={`nav-link-${index}`}
+                to={`${urlPath}/${category}/${item}`}
+                className={ activeNavToggle } data-testid={`link-${item}`}
+            >
+                {
+                    navIcons[item as keyof typeof navIcons] ||
+                    navIcons.navplaceholderIcon
+                }
+                <p>{ capitalize(item) }</p>
+            </NavLink>
+
+        ));
+    };
+
     
 
     return (
@@ -37,7 +94,7 @@ function Nav(){
             
             <NavLink to={`${urlPath}`} end
             className="nav-logo app-logo-action">
-                { icons.uveritLogo }
+                { uveritLogo }
             </NavLink>
 
             <div className="nav-groups">
@@ -51,168 +108,14 @@ function Nav(){
 
                 </div>
 
-                <div className="nav-group">
-
-                    <h5 className="nav-group-name">
-                        Length<span>▾</span>
-                    </h5>
-
-                    <div className="nav-links glass">
-                        <div className="nav-links-inner glass">
-
-                            <NavLink to={`${urlPath}/length1`}
-                            className={ activeNavToggle }>
-                                { icons.weight }
-                                <p>Placeholder Name 1</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/length2`}
-                            className={ activeNavToggle }>
-                                { icons.weight2 }
-                                <p>Name 2</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/length3`}
-                            className={ activeNavToggle }>
-                                { icons.weight }
-                                <p>Name 3</p>
-                            </NavLink>
-                            
-                            <NavLink to={`${urlPath}/length4`}
-                            className={ activeNavToggle }>
-                                { icons.weight }
-                                <p>Name 4</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/length5`}
-                            className={ activeNavToggle }>
-                                { icons.weight2 }
-                                <p>Placeholder Name 5</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/length6`}
-                            className={ activeNavToggle }>
-                                { icons.weight2 }
-                                <p>Placeholder Name 6</p>
-                            </NavLink>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div className="nav-group">
-
-                    <h5 className="nav-group-name"
-                    data-testid="nav-name-spatial">
-                        Spatial<span>▾</span>
-                    </h5>
-
-                    <div className="nav-links glass">
-                        <div className="nav-links-inner glass">
-
-                            <NavLink to={`${urlPath}/calc1`}
-                            className={ activeNavToggle }>
-                                { icons.weight2 }
-                                <p>Different Name 1</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/calc2`}
-                            className={ activeNavToggle }>
-                                { icons.weight }
-                                <p>Different Name 2</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/calc3`}
-                            className={ activeNavToggle }>
-                                { icons.weight }
-                                <p>Different Name 3</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/calc4`}
-                            className={ activeNavToggle }>
-                                { icons.weight2 }
-                                <p>Different Name 4</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/calc5`}
-                            className={ activeNavToggle }>
-                                { icons.weight }
-                                <p>Different Name 5</p>
-                            </NavLink>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div className="nav-group">
-
-                    <h5 className="nav-group-name">
-                        Physical<span>▾</span>
-                    </h5>
-
-                    <div className="nav-links glass">
-                        <div className="nav-links-inner glass">
-
-                            <NavLink to={`${urlPath}/calc1`}
-                            className={ activeNavToggle }>
-                                { icons.weight2 }
-                                <p>Different Name 1</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/calc2`}
-                            className={ activeNavToggle }>
-                                { icons.weight }
-                                <p>Different Name 2</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/calc3`}
-                            className={ activeNavToggle }>
-                                { icons.weight }
-                                <p>Different Name 3</p>
-                            </NavLink>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div className="nav-group">
-
-                    <h5 className="nav-group-name">
-                        Data<span>▾</span>
-                    </h5>
-
-                    <div className="nav-links glass">
-                        <div className="nav-links-inner glass">
-
-                            <NavLink to={`${urlPath}/calc1`}
-                            className={ activeNavToggle }>
-                                { icons.weight2 }
-                                <p>Different Name 1</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/calc2`}
-                            className={ activeNavToggle }>
-                                { icons.weight }
-                                <p>Different Name 2</p>
-                            </NavLink>
-
-                            <NavLink to={`${urlPath}/calc3`}
-                            className={ activeNavToggle }>
-                                { icons.weight }
-                                <p>Different Name 3</p>
-                            </NavLink>
-
-                        </div>
-                    </div>
-
-                </div>
+                { navGroups() }
 
             </div>
 
-            <MobileNav icons={icons} />
+            <MobileNav
+                units={ units }
+                navIcons={ navIcons }
+            />
 
             <ThemeToggle />
 

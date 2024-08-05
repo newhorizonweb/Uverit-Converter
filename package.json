@@ -1,7 +1,7 @@
 {
   "homepage": "https://newhorizonweb.github.io/Uverit-Converter",
   "name": "uverit-converter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -51,6 +51,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/react": "^16.0.0",
+    "cypress": "^13.13.2",
     "gh-pages": "^6.1.1"
   }
 }

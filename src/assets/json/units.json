@@ -1,0 +1,38 @@
+
+
+{
+
+    "length": [
+        "popular",
+        "microscopic",
+        "astronomical",
+        "marine",
+        "archaic"
+    ],
+
+    "spatial": [
+        "area",
+        "volume",
+        "time",
+        "speed",
+        "angle"
+    ],
+
+    "physical": [
+        "mass",
+        "force",
+        "pressure",
+        "density",
+        "energy",
+        "power",
+        "temperature",
+        "frequency"
+    ],
+
+    "data": [
+        "numeral-systems",
+        "data-storage",
+        "quantity"
+    ]
+    
+}
