@@ -8,6 +8,7 @@ import { NavLink, useLocation } from "react-router-dom";
 
 // Assets
 import '../../assets/css/mobile-nav.css';
+import { capitalize } from '../functions/CapitalizeText';
 
 // Components
 import BurgerButton from "./BurgerButton";
@@ -199,17 +200,6 @@ function MobileNav(props: PropTypes){
 
         /* Nav Groups & Links */
 
-    // Capitalize strings and replace hyphens with spaces
-    const capitalize = (string: string) => {
-        return string
-        .split('-') // Split words
-        .map(string => 
-            string.charAt(0).toUpperCase() +
-            string.slice(1).toLowerCase()
-        )
-        .join(' '); // Join the words with a space
-    }
-
     // Generate dynamic routes based on units.json
     const groupButtons = () => {
         return Object.keys(units as UnitsData).map((category, index) => (
@@ -247,7 +237,7 @@ function MobileNav(props: PropTypes){
             onClick={ closePopup } data-testid={`mobile-link-${item}`}>
                 {
                     navIcons[item as keyof typeof navIcons] ||
-                    navIcons.navplaceholderIcon
+                    navIcons.navPlaceholderIcon
                 }
                 <p>{ capitalize(item) }</p>
             </NavLink>

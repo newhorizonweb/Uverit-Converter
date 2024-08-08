@@ -1,0 +1,29 @@
+
+
+
+/* 
+    Uverit Converter
+    Do not copy or distribute
+*/
+
+/* Media breakpoints - 1440, 1200, 1024, 900, 768, 540, 440, 320 */
+
+
+
+.page-heading{
+    margin-bottom:var(--size8);
+
+    & .page-heading-text{
+        text-align:center;
+        background-color:var(--color3b);
+    }
+
+}
+
+@media screen and (width <= 540px){
+    
+    .page-heading{
+        margin-bottom:var(--size7);
+    }
+
+}

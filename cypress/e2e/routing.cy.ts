@@ -1,19 +1,19 @@
 
 
+const baseUrl = Cypress.config().baseUrl;
+
+const device = {
+    mobile: { width: 380, height: 850 },
+    tablet: { width: 768, height: 1024 },
+    desktop: { width: 1920, height: 1080 },
+};
+
+const setViewport = (viewport: { width: number; height: number }) => {
+    const { width, height } = viewport;
+    cy.viewport(width, height);
+};
+
 describe('Routing', () => {
-
-    const baseUrl = Cypress.config().baseUrl;
-
-    const device = {
-        mobile: { width: 380, height: 850 },
-        tablet: { width: 768, height: 1024 },
-        desktop: { width: 1920, height: 1080 },
-    };
-
-    const setViewport = (viewport: { width: number; height: number }) => {
-        const { width, height } = viewport;
-        cy.viewport(width, height);
-    };
 
     it('should navigate to the home page', () => {
         cy.visit('/');
@@ -53,6 +53,12 @@ describe('Routing', () => {
         cy.get('[data-testid="mobile-link-microscopic"]').click();
 
         cy.url().should('eq', `${baseUrl}/length/microscopic`);
+    });
+
+    it('should switch to the popular length page when clicking on the landing page tile', () => {
+        cy.visit('/');
+        cy.get('[data-testid="tile-link-popular"]').click()
+        cy.url().should('eq', `${baseUrl}/length/popular`);
     });
 
 });

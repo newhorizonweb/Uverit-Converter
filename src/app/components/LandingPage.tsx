@@ -3,16 +3,22 @@
 
 // React
 
+// Components
+import PageHeading from "../elements/PageHeading";
+import LinkTiles from "./LinkTiles";
+
 // Transition
 import PageTransition from '../core/PageTransition';
 
 function LandingPage(){
 
-    
-
     return (
-        <h1>Uverit Converter</h1>
+        <section className="wrapper">
+            <PageHeading heading="Uverit-Converter" />
+            <LinkTiles />
+        </section>
     );
+    
 }
 
 export default PageTransition(LandingPage);

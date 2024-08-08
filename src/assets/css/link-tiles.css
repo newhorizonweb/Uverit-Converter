@@ -1,0 +1,168 @@
+
+
+
+/* 
+    Uverit Converter
+    Do not copy or distribute
+*/
+
+/* Media breakpoints - 1440, 1200, 1024, 900, 768, 540, 440, 320 */
+
+
+
+.link-tiles{
+    
+    & .tile-group{
+        width:100%;
+        margin-bottom:var(--size8);
+
+        display:flex;
+        flex-direction:column;
+        gap:var(--size6);
+
+        &:nth-last-child(1){
+            margin-bottom:0;
+        }
+
+        & .tile-name-heading{
+            padding-top:var(--size4);
+            padding-bottom:var(--size4);
+            text-align:center;
+            background-color:var(--color3b);
+        }
+
+        & .tile-links{
+            width:100%;
+            display:grid;
+            grid-template-columns:repeat(3, 1fr);
+            gap:var(--size6);
+        }
+
+        & .tile-link{
+            display:flex;
+
+            & .tile-link-inner{
+                width:100%;
+                display:flex;
+                flex-direction:column;
+                gap:var(--size3);
+                background-color:var(--color3b);
+
+                &:hover{
+                    box-shadow:var(--boxShadow1c1), var(--boxShadow2), var(--boxShadowIns1);
+
+                    & svg *{
+                        stroke:var(--color1);
+                    }
+
+                    & *{
+                        color:var(--color1);
+                    }
+
+                }
+
+            }
+
+            & svg{
+                height:calc(var(--size9) + var(--size4));
+
+                & *{
+                    fill:none;
+                    stroke:var(--txt3);
+                    stroke-width:8px;
+                    stroke-miterlimit:10;
+                    stroke-linecap:round;
+                    transition:var(--trans1);
+                }
+
+            }
+
+            & *{
+                text-align:center;
+            }
+
+        }
+
+    }
+
+}
+
+@media screen and (width <= 1024px){
+    
+    .link-tiles{
+    
+        & .tile-group{
+    
+            & .tile-link{
+                
+                & *{
+                    font-size:20px;
+                }
+    
+            }
+    
+        }
+    
+    }
+
+}
+
+@media screen and (width <= 768px){
+    
+    .link-tiles{
+    
+        & .tile-group{
+    
+            & .tile-links{
+                grid-template-columns:repeat(2, 1fr);
+            }
+    
+        }
+    
+    }
+
+}
+
+@media screen and (440px < width <= 540px){
+    
+    .link-tiles{
+    
+        & .tile-group{
+    
+            & .tile-link{
+                
+                & *{
+                    font-size:16px;
+                }
+    
+            }
+    
+        }
+    
+    }
+
+}
+
+@media screen and (width <= 440px){
+    
+    .link-tiles{
+    
+        & .tile-group{
+    
+            & .tile-links{
+                grid-template-columns:repeat(1, 1fr);
+            }
+
+            & .tile-link{
+                
+                & svg{
+                    height:var(--size9);
+                }
+
+            }
+    
+        }
+    
+    }
+
+}

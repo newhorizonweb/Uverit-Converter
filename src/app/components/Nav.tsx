@@ -11,6 +11,7 @@ import '../../assets/css/nav.css';
 import { uveritLogo } from "../core/SvgIcons";
 import * as navIcons from "../core/NavIcons";
 import units from '../../assets/json/units.json';
+import { capitalize } from '../functions/CapitalizeText';
 
 // Components
 import MobileNav from "../elements/MobileNav";
@@ -30,18 +31,7 @@ function Nav(){
     // Toggle the active page navigation link
     const activeNavToggle = ({ isActive }: { isActive: boolean }) =>
         "nav-link" + (isActive ? " active-nav-link" : "");
-
-    // Capitalize strings and replace hyphens with spaces
-    const capitalize = (string: string) => {
-        return string
-        .split('-') // Split words
-        .map(string => 
-            string.charAt(0).toUpperCase() +
-            string.slice(1).toLowerCase()
-        )
-        .join(' '); // Join the words with a space
-    }
-
+    
     // Generate dynamic routes based on units.json
     const navGroups = () => {
         return Object.keys(units as UnitsData).map((category, index) => (
@@ -75,7 +65,7 @@ function Nav(){
             >
                 {
                     navIcons[item as keyof typeof navIcons] ||
-                    navIcons.navplaceholderIcon
+                    navIcons.navPlaceholderIcon
                 }
                 <p>{ capitalize(item) }</p>
             </NavLink>

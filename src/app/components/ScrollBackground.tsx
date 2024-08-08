@@ -41,8 +41,8 @@ const ScrollBackground = () => {
     return (
         <>
             <div className="app-bg-grad"
-                style={{ transform: `translate3d(${gradPos}px, 0, 0)` }}
-            ></div>
+            style={{ transform: `translate3d(${gradPos}px, 0, 0)` }}>
+            </div>
             <div className="app-bg-cover">
                 { bgCoverImg }
             </div>

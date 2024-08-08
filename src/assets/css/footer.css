@@ -11,12 +11,15 @@
 
 
 footer.glass{
+    margin-top:var(--size6);
+    margin-bottom:var(--size6);
+
     display:flex;
     justify-content:space-between;
     align-items:center;
 
     & .footer-logo{
-        height:var(--size8);
+        height:var(--size7);
         cursor:pointer;
     }
 
@@ -82,18 +85,6 @@ footer.glass{
 
         }
 
-    }
-
-}
-
-@media screen and (width <= 540px){
-
-    footer.glass{
-    
-        & .footer-logo{
-            height:var(--size7);
-        }
-        
     }
 
 }

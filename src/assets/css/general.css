@@ -52,7 +52,10 @@
     --shadowColor2:#D4DFE5;
 
     --boxShadow1:0 0 10px 1px var(--shadowColor2);
+    --boxShadow1c1:0 0 10px 1px var(--color1);
+
     --boxShadow2:0 0 2px 1px var(--shadowColor2);
+    
     --boxShadowIns1:inset 0 0 2px 0 var(--shadowColor1);
 
 
@@ -155,7 +158,7 @@ p, a, select, label, button, input, textarea, th, td{
 
     text-wrap:pretty;
     text-decoration:none;
-    transition:var(--trans2);
+    transition:color var(--trans2);
 }
 
 @media screen and (width <= 440px){
@@ -182,7 +185,7 @@ h1, h2, h3, h4, h5, h6{
     font-weight:800;
 
     text-wrap:balance;
-    transition:var(--trans2);
+    transition:color var(--trans2);
 }
 
 h1{
@@ -207,10 +210,10 @@ h6{
 @media screen and (width <= 440px){
     
     h1{
-        font-size:32px;
+        font-size:30px;
     }
     h2{
-        font-size:28px;
+        font-size:26px;
     }
     h3{
         font-size:22px;

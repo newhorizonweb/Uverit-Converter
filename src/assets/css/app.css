@@ -12,7 +12,6 @@
 
 html{
     scroll-behavior:smooth;
-    min-height:350vh; /* remove later */
 }
 
 .App{
@@ -38,10 +37,13 @@ html{
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-    background-attachment:fixed;
 
     filter:drop-shadow(-6px 6px 3px rgb(0,0,0,0.05));
     transition:background-color var(--trans2), box-shadow var(--trans2);
+}
+
+.theme-dark .glass{
+    background-image:url("../img/noise-texture-big-dm.svg");
 }
 
 /* SVG Class */

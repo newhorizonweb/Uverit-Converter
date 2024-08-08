@@ -8,6 +8,9 @@ import { useNavigate } from "react-router-dom";
 // Transition
 import PageTransition from '../core/PageTransition';
 
+// Components
+import PageHeading from "../elements/PageHeading";
+
 // TS
 interface props {
     converterName: string;
@@ -61,14 +64,17 @@ function Converter({converterName}: props){
 
     // Actual content
     return (
-        <div>
-            <h2>{converterName}</h2>
+        <section className="wrapper">
+
+            <PageHeading heading={converterName} />
+
             <ul>
                 {data.works.map((item: any, index: any) => (
                     <li key={index}>{item}</li>
                 ))}
             </ul>
-        </div>
+
+        </section>
     );
 
 }
