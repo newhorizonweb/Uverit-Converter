@@ -39,6 +39,7 @@ const PageRoutes = () => {
                 path={`${urlPath}/${groupName}/${converterName}`}
                 element={
                     <Converter
+                        groupName={ groupName }
                         converterName={ converterName }
                     />
                 }

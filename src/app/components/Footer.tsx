@@ -4,6 +4,9 @@
 // React
 import version from '../../../package.json';
 
+// Locales
+import { useTranslation } from 'react-i18next';
+
 // Assets
 import '../../assets/css/footer.css';
 import { uveritLogo, githubIcon } from "../core/SvgIcons";
@@ -11,6 +14,9 @@ import { uveritLogo, githubIcon } from "../core/SvgIcons";
 
 
 function Footer(){
+
+    // Translation
+    const { t } = useTranslation(['app']);
 
     // App version
     const appVersion:string = version.version;
@@ -34,7 +40,7 @@ function Footer(){
             <div className="footer-credits">
 
                 <div className="socials">
-                    <h6>Uverit on GitHub</h6>
+                    <h6>{ t("uverit_github") }</h6>
                     <a href="https://github.com/newhorizonweb" className="social-btn" target="_blank"
                     rel="noreferrer" aria-label="GitHub Icon (link)">
                         { githubIcon }

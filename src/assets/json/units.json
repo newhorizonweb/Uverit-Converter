@@ -3,14 +3,14 @@
 {
 
     "length": [
-        "popular",
+        "common",
         "microscopic",
         "astronomical",
         "marine",
         "archaic"
     ],
 
-    "spatial": [
+    "space": [
         "area",
         "volume",
         "time",
@@ -18,7 +18,7 @@
         "angle"
     ],
 
-    "physical": [
+    "physics": [
         "mass",
         "force",
         "pressure",

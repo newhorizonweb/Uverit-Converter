@@ -11,7 +11,7 @@
 
 
 footer.glass{
-    margin-top:var(--size6);
+    margin-top:var(--size8);
     margin-bottom:var(--size6);
 
     display:flex;
@@ -19,7 +19,7 @@ footer.glass{
     align-items:center;
 
     & .footer-logo{
-        height:var(--size7);
+        height:var(--size8);
         cursor:pointer;
     }
 
@@ -85,6 +85,18 @@ footer.glass{
 
         }
 
+    }
+
+}
+
+@media screen and (width <= 540px){
+
+    footer.glass{
+    
+        & .footer-logo{
+            height:var(--size7);
+        }
+        
     }
 
 }

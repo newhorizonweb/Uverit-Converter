@@ -39,7 +39,7 @@ describe("Link Tiles", () => {
     });
 
     it('checks if the tiles are rendered', async () => {
-        const tile = screen.getByTestId("tile-link-popular");
+        const tile = await screen.findByTestId("tile-link-common");
         expect(tile).toBeInTheDocument();
     });
 

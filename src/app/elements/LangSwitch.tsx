@@ -12,8 +12,8 @@ import Flag_US from '../../assets/img/flags/us.svg';
 import Flag_DE from '../../assets/img/flags/de.svg';
 import Flag_ES from '../../assets/img/flags/es.svg';
 import Flag_FR from '../../assets/img/flags/fr.svg';
+import Flag_IT from '../../assets/img/flags/it.svg';
 import Flag_PL from '../../assets/img/flags/pl.svg';
-import Flag_RU from '../../assets/img/flags/ru.svg';
 
 
 
@@ -42,15 +42,15 @@ function LangSwitch(){
             country: Flag_FR,
         },
         {
+            langName: "Italiano",
+            code: "it",
+            country: Flag_IT,
+        },
+        {
             langName: "Polski",
             code: "pl",
             country: Flag_PL,
-        },
-        {
-            langName: "Русский",
-            code: "ru",
-            country: Flag_RU,
-        },
+        }
     ];
 
     // Language list popup
@@ -65,6 +65,7 @@ function LangSwitch(){
     const chngLang = (langCode: string) => {
         i18next.changeLanguage(langCode);
         setCurrLang(langCode);
+        setIsLangExpand(false);
     };
 
     // Update the language on page load

@@ -12,7 +12,7 @@ i18next
 .use(LanguageDetector)
 .use(initReactI18next)
 .init({
-    supportedLngs: ["en", "de", "es", "fr", "pl", "ru"],
+    supportedLngs: ["en", "de", "es", "fr", "it", "pl"],
     fallbackLng: "en",
     detection: {
         order: ['localStorage', 'navigator', 'htmlTag'],

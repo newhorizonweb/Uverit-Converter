@@ -40,10 +40,10 @@ describe("Mobile Navigation", () => {
         container = render(mockMobileNav());
     });
 
-    it('should open the mobile nav popup on burger button click', () => {
+    it('should open the mobile nav popup on burger button click', async () => {
 
         // Click the burger button to open the navigation
-        const burgerBtn = screen.getByLabelText(/Navigation burger button/i);
+        const burgerBtn = await screen.findByLabelText(/Navigation burger button/i);
         fireEvent.click(burgerBtn);
 
         const navPopup = screen.getByTestId(/nav-popup/i);
@@ -58,10 +58,10 @@ describe("Mobile Navigation", () => {
         fireEvent.click(burgerBtn);
 
         // Click the nav group button to display the links
-        const navBtn = screen.getByTestId(/mobile-nav-btn-spatial/i);
+        const navBtn = screen.getByTestId(/mobile-nav-btn-space/i);
         fireEvent.click(navBtn);
 
-        const navSection = screen.getByTestId(/mobile-nav-section-spatial/i);
+        const navSection = screen.getByTestId(/mobile-nav-section-space/i);
         expect(navSection).toHaveClass("group-visible");
 
     });
@@ -76,7 +76,7 @@ describe("Mobile Navigation", () => {
         const navBtn = screen.getByTestId(/mobile-nav-btn-length/i);
         fireEvent.click(navBtn);
 
-        const navSection = screen.getByTestId(/mobile-nav-section-spatial/i);
+        const navSection = screen.getByTestId(/mobile-nav-section-space/i);
         expect(navSection).not.toHaveClass("group-visible");
 
     });

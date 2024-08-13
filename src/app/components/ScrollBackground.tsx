@@ -14,15 +14,7 @@ const ScrollBackground = () => {
 
     // Gradient speed
     const gradSpeed = 0.5;
-
-    // Elements
-    const bgGrad = document.querySelector("app-bg-grad");
-    const bgCover = document.querySelector("app-bg-cover");
-
-    // Page width
-    const [ pageWidth, setPageWidth ] =
-        useState(window.innerWidth);
-
+    
     // Initial background gradient position
     const [ gradPos, setGradPos ] = useState(0);
 

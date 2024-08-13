@@ -6,12 +6,14 @@ import { useContext } from 'react';
 import { PageContext } from '../../App';
 import { NavLink } from "react-router-dom";
 
+// Locales
+import { useTranslation } from 'react-i18next';
+
 // Assets
 import '../../assets/css/nav.css';
 import { uveritLogo } from "../core/SvgIcons";
 import * as navIcons from "../core/NavIcons";
 import units from '../../assets/json/units.json';
-import { capitalize } from '../functions/CapitalizeText';
 
 // Components
 import MobileNav from "../elements/MobileNav";
@@ -24,6 +26,9 @@ type UnitsData = { [key: string]: string[] };
 
 
 function Nav(){
+
+    // Translation
+    const { t } = useTranslation(['app']);
 
     // Page Context Variables
     const { urlPath } = useContext(PageContext);
@@ -40,7 +45,7 @@ function Nav(){
             data-testid={`group-btn-${category}`}
             id={`group-btn-${category}`}>
                 <h5 className="nav-group-name">
-                    { capitalize(category) }<span>▾</span>
+                    { t(`groups.${category}.${category}`) }<span>▾</span>
                 </h5>
 
                 <div className="nav-links glass"
@@ -67,7 +72,7 @@ function Nav(){
                     navIcons[item as keyof typeof navIcons] ||
                     navIcons.navPlaceholderIcon
                 }
-                <p>{ capitalize(item) }</p>
+                <p>{ t(`groups.${category}.${item}`) }</p>
             </NavLink>
 
         ));
@@ -93,7 +98,7 @@ function Nav(){
 
                     <NavLink to={`${urlPath}`}
                         className={ activeNavToggle } end>
-                        <h5>Home</h5>
+                        <h5>{ t("home") }</h5>
                     </NavLink>
 
                 </div>

@@ -1,0 +1,244 @@
+
+
+
+/* 
+    Uverit Converter
+    Do not copy or distribute
+*/
+
+/* Media breakpoints - 1440, 1200, 1024, 900, 768, 540, 440, 320 */
+
+
+.App:has(.not-found){
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+
+    & footer{
+        margin-top:auto;
+    }
+
+    & > div:has(.not-found){
+        flex:1;
+        margin-bottom:var(--size8);
+        display:flex;
+        align-items:center;
+    }
+
+}
+
+.not-found{
+
+    & .not-found-inner{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:var(--size6);
+
+        & .nf-img{
+            width:min(100%, 512px);
+
+            & svg{
+
+                & > *:not(.no-scale){
+                    animation:not-found-scale 9s ease-in-out infinite;
+                    transform-origin:50% 50%;
+                }
+
+                & .hand{
+                    animation:hand-rotate 5s ease-in-out infinite;
+                }
+
+                & .cls-1{
+                    fill:var(--color1);
+                }
+
+                & .cls-2{
+                    fill:var(--shadowColor1);
+                }
+
+                & *{
+                    stroke-width:0;
+                    transition:fill var(--trans2);
+                }
+
+            }
+
+        }
+
+        & .nf-txt{
+            padding:var(--size8) var(--size10);
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+
+            & *{
+                text-align:center;
+            }
+
+            & h1{
+                margin-bottom:var(--size4);
+                text-transform:capitalize;
+                font-size:44px;
+            }
+
+            & h2{
+                font-size:24px;
+            }
+
+            & .go-back{
+                width:100%;
+                min-width:320px;
+                margin-top:var(--size6);
+                
+                text-transform:capitalize;
+                background-color:var(--color3b);
+
+                &:hover{
+                    box-shadow:var(--boxShadow1c1);
+
+                    & *{
+                        color:var(--color1);
+                    }
+
+                }
+
+            }
+
+        }
+          
+    }
+
+}
+
+@media screen and (width <= 768px){
+
+    .not-found{
+
+        & .not-found-inner{
+
+            & .nf-txt{
+                padding:var(--size7) var(--size8);
+                
+                & h1{
+                    font-size:38px;
+                }
+    
+                & h2{
+                    font-size:20px;
+                }
+    
+                & .go-back{
+                    padding:var(--size5);
+                    min-width:0;
+                }
+    
+            }
+              
+        }
+    
+    }
+
+}
+
+@media screen and (width <= 540px){
+
+    .not-found{
+
+        & .not-found-inner{
+
+            & .nf-txt{
+                width:100%;
+                padding:var(--size7) var(--size7);
+                
+                & h1{
+                    font-size:30px;
+                }
+    
+                & h2{
+                    font-size:18px;
+                }
+    
+            }
+              
+        }
+    
+    }
+
+}
+
+@media screen and (width <= 440px){
+
+    .not-found{
+
+        & .not-found-inner{
+
+            & .nf-txt{
+                padding:var(--size7) var(--size6);
+                
+                & .go-back *{
+                    font-size:20px;
+                }
+    
+            }
+              
+        }
+    
+    }
+
+}
+
+@media screen and (width <= 320px){
+
+    .not-found{
+
+        & .not-found-inner{
+
+            & .nf-txt{
+                
+                & h1{
+                    font-size:26px;
+                }
+    
+                & h2{
+                    font-size:16px;
+                }
+
+                & .go-back *{
+                    font-size:18px;
+                }
+    
+            }
+              
+        }
+    
+    }
+
+}
+
+@keyframes not-found-scale{
+    34%{
+        scale:1;
+    }
+    39%{
+        scale:0.8;
+    }
+    41.5%{
+        scale:1.1;
+    }
+    44%{
+        scale:0.95;
+    }
+    49%{
+        scale:1;
+    }
+}
+
+@keyframes hand-rotate{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}

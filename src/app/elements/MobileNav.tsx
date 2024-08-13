@@ -6,9 +6,11 @@ import { useContext, useEffect, useRef, useState } from 'react';
 import { PageContext } from '../../App';
 import { NavLink, useLocation } from "react-router-dom";
 
+// Locales
+import { useTranslation } from 'react-i18next';
+
 // Assets
 import '../../assets/css/mobile-nav.css';
-import { capitalize } from '../functions/CapitalizeText';
 
 // Components
 import BurgerButton from "./BurgerButton";
@@ -24,6 +26,9 @@ interface PropTypes{
 
 
 function MobileNav(props: PropTypes){
+
+    // Translation
+    const { t } = useTranslation(['app']);
 
     // JSON Data (units)
     const units = props.units;
@@ -208,7 +213,7 @@ function MobileNav(props: PropTypes){
             className="nav-group-name" id={`${category}-nav-btn`}
             onClick={(e) => showList(e, undefined, category)}
             data-testid={`mobile-nav-btn-${category}`}> 
-                { capitalize(category) }<span>▸</span>
+                { t(`groups.${category}.${category}`) }<span>▸</span>
             </h5>
 
         ));
@@ -239,7 +244,7 @@ function MobileNav(props: PropTypes){
                     navIcons[item as keyof typeof navIcons] ||
                     navIcons.navPlaceholderIcon
                 }
-                <p>{ capitalize(item) }</p>
+                <p>{ t(`groups.${category}.${item}`) }</p>
             </NavLink>
         ));
     };
@@ -266,7 +271,7 @@ function MobileNav(props: PropTypes){
                             className={ activeNavToggle } end
                             onClick={ closePopup }>
                             <h5 className="nav-group-name" id="home-nav-btn">
-                                Home
+                                { t("home") }
                             </h5>
                         </NavLink>
 

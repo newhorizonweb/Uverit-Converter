@@ -13,12 +13,13 @@ import PageHeading from "../elements/PageHeading";
 
 // TS
 interface props {
+    groupName: string;
     converterName: string;
 }
 
 
 
-function Converter({converterName}: props){
+function Converter({ groupName, converterName }: props){
 
     const navigate = useNavigate();
 
@@ -66,7 +67,10 @@ function Converter({converterName}: props){
     return (
         <section className="wrapper">
 
-            <PageHeading heading={converterName} />
+            <PageHeading
+                group={groupName}
+                heading={converterName}
+            />
 
             <ul>
                 {data.works.map((item: any, index: any) => (

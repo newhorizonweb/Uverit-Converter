@@ -44,7 +44,7 @@ describe("Language Switch", () => {
 
     });
 
-    it('checks if the language list is visible on button click', async () => {
+    it('opens the language popup a on button click', async () => {
 
         const langDiv = screen.getByTestId("lang-switch");
         const langBtn = screen.getByTestId("lang-btn");
@@ -54,12 +54,26 @@ describe("Language Switch", () => {
 
     });
 
-    it('checks if the language list is collapsed after 2 button clicks', async () => {
+    it('closes the language popup after 2 button clicks', async () => {
 
         const langDiv = screen.getByTestId("lang-switch");
         const langBtn = screen.getByTestId("lang-btn");
         fireEvent.click(langBtn);
         fireEvent.click(langBtn);
+
+        expect(langDiv).not.toHaveClass("lang-expanded");
+
+    });
+
+    it('closes the language popup after choosing a language', async () => {
+
+        const langDiv = screen.getByTestId("lang-switch");
+        const langBtn = screen.getByTestId("lang-btn");
+        fireEvent.click(langBtn);
+
+        // Change language to German
+        const langGerman = screen.getByTestId(/lang-switch-Deutsch/i);
+        fireEvent.click(langGerman);
 
         expect(langDiv).not.toHaveClass("lang-expanded");
 

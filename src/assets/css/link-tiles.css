@@ -27,7 +27,9 @@
         & .tile-name-heading{
             padding-top:var(--size4);
             padding-bottom:var(--size4);
+
             text-align:center;
+            text-transform:capitalize;
             background-color:var(--color3b);
         }
 
@@ -47,6 +49,10 @@
                 flex-direction:column;
                 gap:var(--size3);
                 background-color:var(--color3b);
+
+                & *{
+                    text-transform:capitalize;
+                }
 
                 &:hover{
                     box-shadow:var(--boxShadow1c1), var(--boxShadow2), var(--boxShadowIns1);

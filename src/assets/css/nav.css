@@ -50,6 +50,7 @@ nav.glass{
             align-items:center;
 
             & .nav-group-name{
+                text-transform:capitalize;
                 cursor:default;
             }
             
@@ -63,7 +64,7 @@ nav.glass{
             }
 
             & .nav-links{
-                width:320px;
+                min-width:320px;
                 position:absolute;
                 top:calc(100% + var(--size6) + var(--size3));
                 left:50%;
@@ -99,24 +100,23 @@ nav.glass{
             }
 
             & .nav-links-inner{
-                width:100%;
-                height:100%;
-
                 display:grid;
-                grid-template-columns:repeat(2, 1fr);
+                grid-template-columns:repeat(2, minmax(min-content, auto));
                 gap:var(--size6);
                 background-color:var(--color3b);
             }
 
             & .nav-link{
+                min-width:80px;
                 display:flex;
                 flex-direction:column;
                 align-items:center;
                 gap:var(--size2);
+                text-transform:capitalize;
 
                 & svg{
-                    max-width:80%;
-                    max-height:80%;
+                    width:var(--size9);
+                    height:var(--size9);
                     aspect-ratio:1/1;
 
                     & *{

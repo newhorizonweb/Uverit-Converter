@@ -6,6 +6,9 @@ import { useContext } from 'react';
 import { PageContext } from '../../App';
 import { NavLink } from "react-router-dom";
 
+// Locales
+import { useTranslation } from 'react-i18next';
+
 // Assets
 import '../../assets/css/link-tiles.css';
 import * as navIcons from "../core/NavIcons";
@@ -18,19 +21,11 @@ type UnitsData = { [key: string]: string[] };
 
 function LinkTiles(){
 
+    // Translation
+    const { t } = useTranslation(['app']);
+
     // Page Context Variables
     const { urlPath } = useContext(PageContext);
-    
-    // Capitalize strings and replace hyphens with spaces
-    const capitalize = (string: string) => {
-        return string
-        .split('-') // Split words
-        .map(string => 
-            string.charAt(0).toUpperCase() +
-            string.slice(1).toLowerCase()
-        )
-        .join(' '); // Join the words with a space
-    }
 
     const navGroups = () => {
         return Object.keys(units as UnitsData).map((category, index) => (
@@ -40,7 +35,7 @@ function LinkTiles(){
                 
                 <div className="tile-name glass">
                     <h2 className="tile-name-heading glass">
-                        { capitalize(category) }
+                        { t(`groups.${category}.${category}`) }
                     </h2>
                 </div>
 
@@ -66,7 +61,7 @@ function LinkTiles(){
                         navIcons[item as keyof typeof navIcons] ||
                         navIcons.navPlaceholderIcon
                     }
-                    <h3>{ capitalize(item) }</h3>
+                    <h3>{ t(`groups.${category}.${item}`) }</h3>
                 </NavLink>
             </div>
 

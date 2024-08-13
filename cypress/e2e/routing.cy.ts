@@ -1,17 +1,7 @@
 
 
-const baseUrl = Cypress.config().baseUrl;
 
-const device = {
-    mobile: { width: 380, height: 850 },
-    tablet: { width: 768, height: 1024 },
-    desktop: { width: 1920, height: 1080 },
-};
-
-const setViewport = (viewport: { width: number; height: number }) => {
-    const { width, height } = viewport;
-    cy.viewport(width, height);
-};
+import { baseUrl, device, setViewport } from "../support/setup";
 
 describe('Routing', () => {
 
@@ -55,10 +45,10 @@ describe('Routing', () => {
         cy.url().should('eq', `${baseUrl}/length/microscopic`);
     });
 
-    it('should switch to the popular length page when clicking on the landing page tile', () => {
+    it('should switch to the common length page when clicking on the landing page tile', () => {
         cy.visit('/');
-        cy.get('[data-testid="tile-link-popular"]').click()
-        cy.url().should('eq', `${baseUrl}/length/popular`);
+        cy.get('[data-testid="tile-link-common"]').click()
+        cy.url().should('eq', `${baseUrl}/length/common`);
     });
 
 });

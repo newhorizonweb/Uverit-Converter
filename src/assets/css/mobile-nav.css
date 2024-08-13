@@ -32,14 +32,14 @@ nav.glass{
         transition:var(--trans1);
 
         & .nav-group-list{
-            width:192px;
-            padding-right:var(--size3);
+            width:160px;
+            padding-right:var(--size2);
             background-color:var(--color3b);
 
             & .nav-group-list-inner{
                 width:100%;
                 height:100%;
-                padding-right:var(--size3);
+                padding-right:var(--size2);
 
                 display:flex;
                 flex-direction:column;
@@ -50,6 +50,7 @@ nav.glass{
             }
 
             & .nav-group-name{
+                text-transform:capitalize;
                 cursor:pointer;
 
                 &.location-group-btn{
@@ -75,13 +76,13 @@ nav.glass{
 
         & .nav-group-display{
             flex:1;
-            padding-right:var(--size3);
+            padding-right:var(--size2);
             background-color:var(--color3b);
 
             & .nav-group-display-inner{
                 width:100%;
                 height:100%;
-                padding-right:var(--size3);
+                padding-right:var(--size2);
 
                 overflow-x:hidden;
                 scrollbar-gutter:stable;
@@ -100,11 +101,12 @@ nav.glass{
                     display:flex;
                     flex-direction:column;
                     align-items:center;
-                    gap:var(--size1);
+                    gap:var(--size2);
+                    text-transform:capitalize;
                     
                     & svg{
-                        max-width:70%;
-                        max-height:70%;
+                        width:var(--size9);
+                        height:var(--size9);
                         aspect-ratio:1/1;
     
                         & *{
@@ -172,10 +174,6 @@ nav.glass{
     nav.glass{
         
         & .nav-popup{
-
-            & .nav-group-list{
-                width:160px;
-            }
             
             & .nav-group-display{
 
@@ -191,7 +189,7 @@ nav.glass{
 
 }
 
-@media screen and (width <= 540px){
+@media screen and (width <= 600px){
 
     nav.glass{
         
@@ -231,22 +229,7 @@ nav.glass{
 
 }
 
-@media screen and (width <= 1024px) and (height <= 540px) and (orientation:landscape){
-
-    nav.glass{
-        
-        & .nav-popup{
-            height:calc(100dvh - (
-                (var(--size6) * 4) + var(--size3) + var(--size7)
-            ));
-            
-        }
-    
-    }
-
-}
-
-@media screen and (width <= 440px){
+@media screen and (width <= 540px){
 
     nav.glass{
         
@@ -266,7 +249,22 @@ nav.glass{
 
 }
 
-@media screen and (width <= 320px){
+@media screen and (width <= 1024px) and (height <= 540px) and (orientation:landscape){
+
+    nav.glass{
+        
+        & .nav-popup{
+            height:calc(100dvh - (
+                (var(--size6) * 4) + var(--size3) + var(--size7)
+            ));
+            
+        }
+    
+    }
+
+}
+
+@media screen and (width <= 400px){
 
     nav.glass{
         
