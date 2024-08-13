@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/Uverit-Converter/static/css/main.12257099.css",
-    "main.js": "/Uverit-Converter/static/js/main.e9e9eb22.js",
+    "main.css": "/Uverit-Converter/static/css/main.206a3d7d.css",
+    "main.js": "/Uverit-Converter/static/js/main.91920d8e.js",
+    "static/js/949.0b907007.chunk.js": "/Uverit-Converter/static/js/949.0b907007.chunk.js",
     "static/js/625.7e952095.chunk.js": "/Uverit-Converter/static/js/625.7e952095.chunk.js",
-    "static/js/641.c5691601.chunk.js": "/Uverit-Converter/static/js/641.c5691601.chunk.js",
     "static/js/453.448c2b19.chunk.js": "/Uverit-Converter/static/js/453.448c2b19.chunk.js",
     "static/media/es.svg": "/Uverit-Converter/static/media/es.e3471d73993a1d499c2ab07fe350185e.svg",
     "static/media/Roboto-Regular.woff2": "/Uverit-Converter/static/media/Roboto-Regular.6da80660b317a900aa44.woff2",
@@ -15,16 +15,16 @@
     "index.html": "/Uverit-Converter/index.html",
     "static/media/us.svg": "/Uverit-Converter/static/media/us.912cb4a8f30b24032f0dbf258d674ae9.svg",
     "static/media/getFetch.cjs": "/Uverit-Converter/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
+    "static/media/it.svg": "/Uverit-Converter/static/media/it.08db2cd122d5f99494dd35c2cfb10784.svg",
     "static/media/fr.svg": "/Uverit-Converter/static/media/fr.0313c7eacb9633130ffbfac55230c2d2.svg",
-    "static/media/ru.svg": "/Uverit-Converter/static/media/ru.097b629d57d4188b9b831cca54f5875e.svg",
     "static/media/de.svg": "/Uverit-Converter/static/media/de.adc6c9b3594fb2f4a4df9a9cea56a1ab.svg",
     "static/media/pl.svg": "/Uverit-Converter/static/media/pl.2b5541c54505328dbc1b264a72369d23.svg",
-    "main.12257099.css.map": "/Uverit-Converter/static/css/main.12257099.css.map",
-    "main.e9e9eb22.js.map": "/Uverit-Converter/static/js/main.e9e9eb22.js.map",
+    "main.206a3d7d.css.map": "/Uverit-Converter/static/css/main.206a3d7d.css.map",
+    "main.91920d8e.js.map": "/Uverit-Converter/static/js/main.91920d8e.js.map",
     "453.448c2b19.chunk.js.map": "/Uverit-Converter/static/js/453.448c2b19.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.12257099.css",
-    "static/js/main.e9e9eb22.js"
+    "static/css/main.206a3d7d.css",
+    "static/js/main.91920d8e.js"
   ]
 }

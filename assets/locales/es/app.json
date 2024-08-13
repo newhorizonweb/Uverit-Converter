@@ -1,9 +1,48 @@
 {
-    "created_by": "© Creado por uverit 2024",
+    "home": "inicio",
+    "uverit_github": "Uverit en GitHub",
+
     "404":{
         "not_found": "No encontrado",
-        "wrong_page1": "Parece que este fue un desvío infructuoso.",
-        "wrong_page2": "¡Busquemos algo más jugoso!",
+        "wrong_page1": "Esta página no suma.",
+        "wrong_page2": "¡Busquemos una que esté en el punto!",
         "go_back": "Volver a Inicio"
+    },
+
+    "groups": {
+        "length": {
+            "length": "longitud",
+            "common": "común",
+            "microscopic": "microscópica",
+            "astronomical": "astronómica",
+            "marine": "marina",
+            "archaic": "arcaica"
+        },
+        "space": {
+            "space": "espacio",
+            "area": "área",
+            "volume": "volumen",
+            "time": "tiempo",
+            "speed": "velocidad",
+            "angle": "ángulo"
+        },
+        "physics": {
+            "physics": "física",
+            "mass": "masa",
+            "force": "fuerza",
+            "pressure": "presión",
+            "density": "densidad",
+            "energy": "energía",
+            "power": "potencia",
+            "temperature": "temperatura",
+            "frequency": "frecuencia"
+        },
+        "data": {
+            "data": "datos",
+            "numeral-systems": "sistemas numéricos",
+            "data-storage": "almacenamiento de datos",
+            "quantity": "cantidad"
+        }
     }
+    
 }
