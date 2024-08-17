@@ -30,7 +30,7 @@ nav.glass{
         opacity:0;
         pointer-events:none;
         transition:var(--trans1);
-
+        
         & .nav-group-list{
             width:160px;
             padding-right:var(--size2);

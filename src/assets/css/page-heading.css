@@ -16,6 +16,7 @@
     & .page-heading-text{
         text-align:center;
         background-color:var(--color3b);
+        transition:var(--trans2);
     }
 
 }

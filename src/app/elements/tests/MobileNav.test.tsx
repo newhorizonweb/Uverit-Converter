@@ -51,6 +51,17 @@ describe("Mobile Navigation", () => {
 
     });
 
+    it('should display the length nav group on "home" page load', () => {
+
+        // Click the burger button to open the navigation
+        const burgerBtn = screen.getByLabelText(/Navigation burger button/i);
+        fireEvent.click(burgerBtn);
+        
+        const navSection = screen.getByTestId(/mobile-nav-section-length/i);
+        expect(navSection).toHaveClass("group-visible");
+
+    });
+
     it('should display the correct nav group after clicking the group nav button', () => {
 
         // Click the burger button to open the navigation

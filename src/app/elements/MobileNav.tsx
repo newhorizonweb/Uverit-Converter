@@ -175,7 +175,8 @@ function MobileNav(props: PropTypes){
     useEffect(() => {
 
         // Show the page list with icons on page load
-        const targetSection = markGroupName();
+        // Length = default when on the home page
+        const targetSection = markGroupName() ?? "length";
         showList(undefined, targetSection, targetSection);
 
         // Throttle resize event
