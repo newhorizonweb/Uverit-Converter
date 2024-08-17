@@ -102,8 +102,11 @@ function MobileNav(props: PropTypes){
         // Check if the home button was clicked
         const homeButton =
             document.querySelector("#home-nav-btn");
+        
+        const homePage =
+            new RegExp(`^${urlPath}(\\/)?$`).test(location.pathname);
 
-        if (homeButton && location.pathname === urlPath){
+        if (homeButton && homePage){
             homeButton.classList.add("location-group-btn");
             return;
         }

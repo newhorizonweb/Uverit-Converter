@@ -4,7 +4,7 @@
 // React
 import { useContext } from 'react';
 import { PageContext } from '../../App';
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 // Locales
 import { useTranslation } from 'react-i18next';
@@ -33,9 +33,21 @@ function Nav(){
     // Page Context Variables
     const { urlPath } = useContext(PageContext);
 
+    // Location
+    const location = useLocation();
+
     // Toggle the active page navigation link
-    const activeNavToggle = ({ isActive }: { isActive: boolean }) =>
-        "nav-link" + (isActive ? " active-nav-link" : "");
+    const activeNavToggle =
+    ({ isActive }: { isActive: boolean }, item?: string) => {
+
+        // Check for the trailing slash when loading the home page
+        // Github Pages adds it
+        return "nav-link" +
+            (isActive ||
+            ( !item && location.pathname === `${urlPath}/`) ?
+            " active-nav-link" : "");
+        
+    };
     
     // Generate dynamic routes based on units.json
     const navGroups = () => {
@@ -66,7 +78,11 @@ function Nav(){
             <NavLink id={item}
                 key={`nav-link-${index}`}
                 to={`${urlPath}/${category}/${item}`}
-                className={ activeNavToggle } data-testid={`link-${item}`}
+                className={
+                    ({ isActive }) => 
+                    activeNavToggle({ isActive }, item)
+                }
+                data-testid={`link-${item}`}
             >
                 {
                     navIcons[item as keyof typeof navIcons] ||

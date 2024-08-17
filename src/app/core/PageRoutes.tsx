@@ -17,9 +17,6 @@ import units from '../../assets/json/units.json';
 
 
 
-// mode="wait" - wait for the component to fade out before initializing the fade-in animation for the next one
-// initial={false} - don't initialize the animation when loading the website
-
 const PageRoutes = () => {
 
     const location = useLocation();
@@ -33,7 +30,6 @@ const PageRoutes = () => {
         const converters = units[groupName as keyof typeof units] as string[];
 
         return converters.map(converterName => (
-
             <Route
                 key={`${groupName}-${converterName}`}
                 path={`${urlPath}/${groupName}/${converterName}`}
@@ -48,6 +44,10 @@ const PageRoutes = () => {
 
     });
     
+
+    
+    // mode="wait" - wait for the component to fade out before initializing the fade-in animation for the next one
+    // initial={false} - don't initialize the animation when loading the website
     return (
         <AnimatePresence mode="wait" initial={false}>
             <Routes location={ location } key={ location.pathname }>
