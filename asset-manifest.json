@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Uverit-Converter/static/css/main.c499be2a.css",
-    "main.js": "/Uverit-Converter/static/js/main.cce8eefc.js",
+    "main.js": "/Uverit-Converter/static/js/main.46f3de21.js",
     "static/js/949.0b907007.chunk.js": "/Uverit-Converter/static/js/949.0b907007.chunk.js",
     "static/js/625.7e952095.chunk.js": "/Uverit-Converter/static/js/625.7e952095.chunk.js",
     "static/js/453.448c2b19.chunk.js": "/Uverit-Converter/static/js/453.448c2b19.chunk.js",
@@ -20,11 +20,11 @@
     "static/media/de.svg": "/Uverit-Converter/static/media/de.adc6c9b3594fb2f4a4df9a9cea56a1ab.svg",
     "static/media/pl.svg": "/Uverit-Converter/static/media/pl.2b5541c54505328dbc1b264a72369d23.svg",
     "main.c499be2a.css.map": "/Uverit-Converter/static/css/main.c499be2a.css.map",
-    "main.cce8eefc.js.map": "/Uverit-Converter/static/js/main.cce8eefc.js.map",
+    "main.46f3de21.js.map": "/Uverit-Converter/static/js/main.46f3de21.js.map",
     "453.448c2b19.chunk.js.map": "/Uverit-Converter/static/js/453.448c2b19.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c499be2a.css",
-    "static/js/main.cce8eefc.js"
+    "static/js/main.46f3de21.js"
   ]
 }
