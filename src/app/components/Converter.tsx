@@ -10,6 +10,8 @@ import PageTransition from '../core/PageTransition';
 
 // Components
 import PageHeading from "../elements/PageHeading";
+import ConverterFields from "./ConverterFields";
+import ConverterTable from "./ConverterTable";
 
 // TS
 interface props {
@@ -33,7 +35,6 @@ function Converter({ groupName, converterName }: props){
         try{
             const module = await import(`../../assets/json/${fileName}.json`);
             return module.default;
-
         } catch (error){
             console.error(`Failed to load ${fileName}.json`, error);
 
@@ -72,11 +73,13 @@ function Converter({ groupName, converterName }: props){
                 heading={converterName}
             />
 
-            <ul>
-                {data.works.map((item: any, index: any) => (
-                    <li key={index}>{item}</li>
-                ))}
-            </ul>
+            <ConverterFields
+                data={data}
+            />
+
+            <ConverterTable
+                data={data}
+            />
 
         </section>
     );

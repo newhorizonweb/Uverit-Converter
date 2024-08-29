@@ -13,6 +13,8 @@
     - i18next for React 14.1.2
         - i18next browser language detector 8.0.0
         - i18next http backend 2.5.2
+    - Cypress 13.13.2
+    - Decimal.js 10.4.3
     - GH-Pages 6.1.1
     - CSS 3
 

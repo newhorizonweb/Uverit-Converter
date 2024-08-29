@@ -1,7 +1,7 @@
 {
   "homepage": "https://newhorizonweb.github.io/Uverit-Converter",
   "name": "uverit-converter",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -10,6 +10,7 @@
     "@types/node": "^16.18.101",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "decimal.js": "^10.4.3",
     "framer-motion": "^11.3.2",
     "i18next": "^23.12.1",
     "i18next-browser-languagedetector": "^8.0.0",

@@ -2,10 +2,9 @@
 
 
 // RTL & React
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import { prettyDOM } from '@testing-library/dom';
-import { act } from 'react';
 
 // i18next
 import { I18nextProvider } from 'react-i18next';
