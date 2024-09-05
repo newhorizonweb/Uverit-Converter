@@ -99,40 +99,40 @@ function Nav(){
     return (
         <>
 
-        <div className="nav-support"></div>
+            <div className="nav-support no-print"></div>
 
-        <nav className="navigation wrapper glass">
-            
-            <NavLink to={`${urlPath}`} end
-            className="nav-logo app-logo-action">
-                { uveritLogo }
-            </NavLink>
+            <nav className="navigation wrapper glass no-print">
+                
+                <NavLink to={`${urlPath}`} end
+                className="nav-logo app-logo-action">
+                    { uveritLogo }
+                </NavLink>
 
-            <div className="nav-groups">
+                <div className="nav-groups">
 
-                <div className="nav-group">
+                    <div className="nav-group">
 
-                    <NavLink to={`${urlPath}`}
-                        className={ activeNavToggle } end>
-                        <h5>{ t("home") }</h5>
-                    </NavLink>
+                        <NavLink to={`${urlPath}`}
+                            className={ activeNavToggle } end>
+                            <h5>{ t("home") }</h5>
+                        </NavLink>
+
+                    </div>
+
+                    { navGroups() }
 
                 </div>
 
-                { navGroups() }
+                <MobileNav
+                    units={ units }
+                    navIcons={ navIcons }
+                />
 
-            </div>
+                <ThemeToggle />
 
-            <MobileNav
-                units={ units }
-                navIcons={ navIcons }
-            />
-
-            <ThemeToggle />
-
-            <LangSwitch />
-            
-        </nav>
+                <LangSwitch />
+                
+            </nav>
 
         </>
     );

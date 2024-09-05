@@ -150,7 +150,7 @@
     font-family:mainFont, Verdana, sans-serif;
 }
 
-p, a, select, label, button, input, textarea, th, td{
+p, a, select, label, button, input, select, textarea, th, td{
     color:var(--txt2);
     font-size:18px;
     font-weight:400;
@@ -163,7 +163,7 @@ p, a, select, label, button, input, textarea, th, td{
 
 @media screen and (width <= 440px){
     
-    p, a, label, button, input, textarea, th, td{
+    p, a, label, button, input, select, textarea, th, td{
         font-size:16px;
         line-height:1.2em;
     }
@@ -172,7 +172,7 @@ p, a, select, label, button, input, textarea, th, td{
 
 @media screen and (width <= 320px){
     
-    p, a, label, button, input, textarea, th, td{
+    p, a, label, button, input, select, textarea, th, td{
         font-size:15px;
         line-height:1.2em;
     }
@@ -280,6 +280,10 @@ h6{
 }
 
 ::-webkit-scrollbar-corner{
+    background:transparent;
+}
+
+:is(.small-scroll, .small-scroll-acc)::-webkit-scrollbar-track{
     background:transparent;
 }
 

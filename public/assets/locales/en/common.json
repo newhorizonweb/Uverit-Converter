@@ -1,0 +1,19 @@
+
+{
+
+    "metric-units": "metric units",
+    "imperial-units": "imperial units",
+
+    "metric":{
+        "centimeter": "centimeter",
+        "decimeter": "decimeter",
+        "meter": "meter"
+    },
+
+    "imperial":{
+        "inch": "inch",
+        "foot": "foot",
+        "yard": "yard"
+    }
+    
+}

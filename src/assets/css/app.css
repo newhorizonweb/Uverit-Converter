@@ -24,7 +24,6 @@ html{
 }
 
 .glass{
-    --border:var(--size05);
     padding:var(--size6);
     position:relative;
 
@@ -34,9 +33,9 @@ html{
 
     background-image:url("../img/noise-texture-big.svg");
     background-color:var(--color3st1);
-    background-size:cover;
+    background-size:max(75vw, 500px);
     background-position:center;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
 
     filter:drop-shadow(-6px 6px 3px rgb(0,0,0,0.05));
     transition:background-color var(--trans2), box-shadow var(--trans2);

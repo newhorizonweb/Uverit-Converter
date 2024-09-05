@@ -1,6 +1,10 @@
 
 
 
+// React
+import { useState, useContext, useEffect } from "react";
+import { ConvContext } from '../components/Converter';
+
 // Locales
 import { useTranslation } from 'react-i18next';
 
@@ -8,25 +12,41 @@ import { useTranslation } from 'react-i18next';
 import '../../assets/css/page-heading.css';
 import { capitalize } from '../functions/CapitalizeText';
 
-// TS
-interface PropTypes{
-    group?: string;
-    heading: string;
+
+// Define the props interface
+interface PropTypes {
+    heading?: string;
 }
 
-const PageHeading = (props: PropTypes) => {
-
-    const group = props.group;
-    const heading = props.heading;
+// Update the component to use props
+const PageHeading: React.FC<PropTypes> = ({ heading }) => {
 
     // Translation
     const { t } = useTranslation(['app']);
+
+    const { groupName, converterName } = useContext(ConvContext);
+    const [headingTxt, setHeadingTxt] = useState("");
+
+    useEffect(() => {
+
+        if (heading) {
+            setHeadingTxt(capitalize(heading));
+        } else if (groupName && converterName) {
+            setHeadingTxt(capitalize(
+                t(`groups.${groupName}.${converterName}`)
+            ));
+        } else {
+            setHeadingTxt("Error");
+        }
+        
+    }, [heading, groupName, converterName, t]);
+
+
     
     return (
-        <div className="page-heading glass">
+        <div className="page-heading glass no-print">
             <h1 className="page-heading-text glass">
-                { group && capitalize(t(`groups.${group}.${heading}`)) }
-                { !group && capitalize(heading) }
+                { headingTxt }
             </h1>
         </div>
     );

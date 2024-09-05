@@ -1,0 +1,74 @@
+
+
+
+/* 
+    Uverit Converter
+    Do not copy or distribute
+*/
+
+/* Media breakpoints - 1440, 1200, 1024, 900, 768, 540, 440, 320 */
+
+
+
+@media print{
+    
+    @page{ 
+        margin:0;
+        padding:0;
+        size:A4;
+    }
+
+        /* Reset / Disable */
+
+    .no-print{
+        display:none !important;
+    }
+
+    .App{
+        padding:0 !important;
+    }
+
+    .glass{
+        background-image:none !important;
+        filter:none !important;
+    }
+
+    .unit-tables{
+        padding:0 !important;
+        gap:0 !important;
+        box-shadow:none !important;
+    }
+    
+        /* Changes */
+
+    .pdf-table-padding{
+        padding:var(--size6);
+
+        &:nth-of-type(1){
+            padding-bottom:0;
+        }
+
+    }
+
+    .outer-table.glass{
+        page-break-inside:avoid;
+
+        & .converter-table{
+        
+            & :is(td.name, th.name){
+                width:320px;
+            }
+
+            & tbody tr{
+                border-top:solid var(--size05) var(--shadowColor2);
+            }
+
+        }
+
+    }
+
+    *{
+        background-color:#FFF !important;
+    }
+
+}

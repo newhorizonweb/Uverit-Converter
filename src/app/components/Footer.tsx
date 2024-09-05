@@ -31,7 +31,8 @@ function Footer(){
 
 
     return (
-        <footer className="wrapper glass" onClick={ scrollToTop }>
+        <footer className="wrapper glass no-print"
+        onClick={ scrollToTop }>
 
             <div className="footer-logo app-logo-action">
                 { uveritLogo }

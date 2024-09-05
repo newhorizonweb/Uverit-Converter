@@ -13,6 +13,7 @@ import '../../assets/css/not-found.css';
 import PageTransition from '../core/PageTransition';
 import { PageContext } from '../../App';
 import { notFoundIcon } from "../core/SvgIcons";
+import { capitalize } from '../functions/CapitalizeText';
 
 
 
@@ -23,6 +24,8 @@ const NotFound = () => {
 
     // Translation
     const { t } = useTranslation(['app']);
+
+    document.title = `Uverit Converter - ${capitalize(t("404.not_found"))}`;
 
     console.log(t("404.not_found"))
 
