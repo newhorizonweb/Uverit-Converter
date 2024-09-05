@@ -1,0 +1,22 @@
+
+{
+
+    "name": "name",
+    "units": "units",
+    "from": "from",
+    "to": "to",
+    "decimals": "decimals",
+    "operation": "operation",
+
+    "enter-number": "Enter a number to convert",
+    "switch-units": "Switch units",
+    "expo-toggle": "Exponential notation toggle",
+    "copy-result": "Copy result",
+    "table-print": "Print the table",
+    
+    "symbol": "symbol",
+    "notation": "notation",
+    "equivalent": "equivalent",
+    "metric": "metric"
+
+}

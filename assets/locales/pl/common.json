@@ -1,0 +1,19 @@
+
+{
+
+    "metric-units": "jednostki metryczne",
+    "imperial-units": "jednostki imperialne",
+
+    "metric":{
+        "centimeter": "centymetr",
+        "decimeter": "decymetr",
+        "meter": "metr"
+    },
+
+    "imperial":{
+        "inch": "cal",
+        "foot": "stopa",
+        "yard": "jard"
+    }
+    
+}
