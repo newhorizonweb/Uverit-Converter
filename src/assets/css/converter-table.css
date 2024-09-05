@@ -1,0 +1,180 @@
+
+
+
+/* 
+    Uverit Converter
+    Do not copy or distribute
+*/
+
+/* Media breakpoints - 1440, 1200, 1024, 900, 768, 540, 440, 320 */
+
+
+
+.unit-tables.glass{
+    display:flex;
+    flex-direction:column;
+    gap:var(--size6);
+
+    & .outer-table.glass{
+        padding:0;
+        overflow:clip;
+    }
+
+    & .group-heading{
+        padding:var(--size3) var(--size5);
+        font-size:20px;
+        text-align:center;
+        text-transform:capitalize;
+        
+        background-color:var(--color3b);
+        transition:var(--trans2);
+    }
+
+    & .converter-table{
+        width:100%;
+        background-color:var(--color3b);
+        border-radius:0 0 var(--size6) var(--size6);
+        border-collapse:collapse;
+
+        & tr{
+            background-color:var(--color3b);
+            transition:var(--trans2);
+        }
+    
+        & tbody:not(:nth-child(1)) .group-heading{
+            border-top:solid var(--size1) var(--shadowColor2);
+        }
+    
+        & .col-names{
+            background-color:var(--color3);
+    
+            & th{
+                text-transform:capitalize;
+            }
+    
+        }
+    
+        & tr:not(.group-heading, .col-names):hover{
+            background-color:var(--txt-rev2);
+        }
+        
+        & tr:nth-child(even){
+            background-color:var(--color3);
+        }
+    
+        & :is(th, td){
+            padding:var(--size3) var(--size4);
+            position:relative;
+    
+            &:not(:nth-child(1)):before{
+                content:"";
+                height:calc(100% - (var(--size3) * 2));
+                width:var(--size05);
+    
+                position:absolute;
+                top:var(--size3);
+                left:calc(var(--size05) / -2);
+    
+                background-color:var(--color1);
+                border-radius:100px;
+            }
+    
+        }
+    
+        & :is(td.name, th.name){
+            width:384px;
+        }
+
+    }
+
+    & .print-btn{
+        margin-left:auto;
+    }
+
+}
+
+@media screen and (width <= 900px){
+
+    .outer-table.glass{
+
+        & .converter-table{
+        
+            & :is(th, td){
+                padding:var(--size3);
+            }
+        
+            & :is(td.name, th.name){
+                width:256px;
+            }
+
+        }
+    
+    }
+
+}
+
+@media screen and (width <= 768px){
+
+    .unit-tables.glass{
+        
+        & .table-wrapper{
+            width:100%;
+            padding-bottom:var(--size05);
+            overflow-y:auto;
+        }
+
+        & .converter-table{
+            min-width:512px;
+            border-radius:0;
+            overflow:clip;
+        
+            & :is(th, td){
+                font-size:16px;
+            }
+
+            & .group-heading th{
+                font-size:18px;
+            }
+
+            & :is(td.name, th.name){
+                width:192px;
+            }
+
+        }
+        
+    }
+
+}
+
+@media screen and (width <= 540px){
+
+    .unit-tables.glass{
+
+        & .table-wrapper{
+            width:100%;
+            padding-bottom:var(--size05);
+            overflow-y:auto;
+        }
+
+        & .converter-table{
+            min-width:448px;
+            border-radius:0;
+            overflow:clip;
+        
+            & :is(th, td){
+                font-size:15px;
+            }
+
+            & .group-heading th{
+                font-size:16px;
+            }
+
+            & :is(td.name, th.name){
+                width:160px;
+            }
+
+        }
+        
+    }
+
+}

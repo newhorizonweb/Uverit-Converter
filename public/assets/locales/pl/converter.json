@@ -1,0 +1,22 @@
+
+{
+
+    "name": "nazwa",
+    "units": "jednostki",
+    "from": "z",
+    "to": "na",
+    "decimals": "dziesiętne",
+    "operation": "działanie",
+
+    "enter-number": "Wpisz liczbę do konwersji",
+    "switch-units": "Zamień jednostki",
+    "expo-toggle": "Przełącz notację wykładniczą",
+    "copy-result": "Kopiuj wynik",
+    "table-print": "Wydrukuj tabelę",
+    
+    "symbol": "symbol",
+    "notation": "notacja",
+    "equivalent": "odpowiednik",
+    "metric": "metryczne"
+    
+}

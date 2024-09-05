@@ -12,6 +12,8 @@ import PageTransition from '../core/PageTransition';
 
 function LandingPage(){
 
+    document.title = "Uverit Converter";
+
     return (
         <section className="wrapper">
             <PageHeading heading="Uverit-Converter" />

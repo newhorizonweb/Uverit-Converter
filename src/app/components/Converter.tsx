@@ -2,11 +2,17 @@
 
 
 // React
-import { useState, useLayoutEffect } from 'react';
+import { useState, useLayoutEffect, createContext } from 'react';
 import { useNavigate } from "react-router-dom";
+
+// Locales
+import { useTranslation } from 'react-i18next';
 
 // Transition
 import PageTransition from '../core/PageTransition';
+
+// Assets
+import '../../assets/css/converter.css';
 
 // Components
 import PageHeading from "../elements/PageHeading";
@@ -20,14 +26,56 @@ interface props {
 }
 
 
+// Context
+interface ConvContextType{
+    data: any;
+    groupName: string;
+    converterName: string;
+}
+
+const defaultContext = {
+    data: null,
+    groupName: '',
+    converterName: ''
+}
+
+const ConvContext = createContext<ConvContextType>(defaultContext);
+
+
 
 function Converter({ groupName, converterName }: props){
 
+    // Translation
+    const { t } = useTranslation(['app']);
+
     const navigate = useNavigate();
 
-    const [data, setData] = useState<any>(null);
+    // Context
+    const [convData, setConvData] = useState<ConvContextType>({
+        data: null,
+        groupName: groupName,
+        converterName: converterName
+    });
+    
     const [isLoading, setIsLoading] = useState(true);
     const [redirected, setRedirected] = useState(false);
+
+    // Capitalized Page Title
+    const capitalizeTitle = (str: string) => {
+        return str.split(' ').map(word => 
+            word.charAt(0).toUpperCase() + word.slice(1)
+        ).join(' ');
+    };
+
+    const page = t(`groups.${groupName}.${converterName}`);
+    const group = t(`groups.${groupName}.${groupName}`);
+
+    const pageTitle = () => {
+        document.title = capitalizeTitle(
+            `Uverit Converter - ${page}${groupName === 'length' ?
+            ` ${group}` : ""}`
+        );
+    }
     
     // Import json data
     const importJSON = async (fileName: string) => {
@@ -49,11 +97,19 @@ function Converter({ groupName, converterName }: props){
 
     const fetchData = async () => {
         setIsLoading(true);
-        setData(await importJSON(converterName));
+
+        // Set the context data
+        setConvData({
+            data: await importJSON(converterName),
+            groupName,
+            converterName
+        });
+
         setIsLoading(false);
     };
     
     useLayoutEffect(() => {
+        pageTitle();
         fetchData();
     }, [converterName]);
 
@@ -66,24 +122,20 @@ function Converter({ groupName, converterName }: props){
 
     // Actual content
     return (
-        <section className="wrapper">
+        <ConvContext.Provider value={ convData }>
+            <section className="wrapper converter">
 
-            <PageHeading
-                group={groupName}
-                heading={converterName}
-            />
+                <PageHeading />
 
-            <ConverterFields
-                data={data}
-            />
+                <ConverterFields />
 
-            <ConverterTable
-                data={data}
-            />
+                <ConverterTable />
 
-        </section>
+            </section>
+        </ConvContext.Provider>
     );
 
 }
 
+export { ConvContext };
 export default PageTransition(Converter);
