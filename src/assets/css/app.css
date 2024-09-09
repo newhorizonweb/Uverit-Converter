@@ -69,6 +69,24 @@ html{
     fill:var(--color1a);
 }
 
+.App:has(.whole-screen){
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+
+    & footer{
+        margin-top:auto;
+    }
+
+    & > div:has(.whole-screen){
+        flex:1;
+        margin-bottom:var(--size8);
+        display:flex;
+        align-items:center;
+    }
+
+}
+
 @media screen and (width <= 540px){
 
     .glass{

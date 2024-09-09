@@ -14,6 +14,7 @@ import PageTransition from '../core/PageTransition';
 // Assets
 import '../../assets/css/converter.css';
 import { PageContext } from '../../App';
+import { clockIcon } from '../core/SvgIcons'
 
 // Components
 import PageHeading from "../elements/PageHeading";
@@ -25,7 +26,6 @@ interface props {
     groupName: string;
     converterName: string;
 }
-
 
 // Context
 interface ConvContextType{
@@ -123,7 +123,7 @@ function Converter({ groupName, converterName }: props){
             groupName,
             converterName
         });
-
+        
         setIsLoading(false);
     };
     
@@ -137,15 +137,17 @@ function Converter({ groupName, converterName }: props){
     // No data - redirection to the 404 page
     if (redirected){
         return (
-            <div className="no-content"></div>
+            <div className="no-content whole-screen wrapper"></div>
         );
     }
 
     // Loading message
     if (isLoading){
         return (
-            <div className="no-content">
-                <p>Loading data...</p>
+            <div className="no-content whole-screen wrapper">
+                <div className="clock glass">
+                    { clockIcon }
+                </div>
             </div>
         );
     }
