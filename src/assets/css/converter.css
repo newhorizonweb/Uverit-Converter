@@ -10,9 +10,52 @@
 
 
 
+    /* No Content */
+
+.no-content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    opacity:0;
+    animation:LoadingFadeIn 0.25s 0.5s ease-in-out forwards;
+
+    & .clock{
+        width:min(256px, 100%);
+
+        & svg{
+            width:100%;
+
+            & .cls-1{
+                fill:var(--color1);
+            }
+    
+            & .cls-2{
+                fill:var(--shadowColor1);
+            }
+    
+            & .hand{
+                /* not-found-css animation */
+                animation:hand-rotate 2s linear infinite;
+                transform-origin:center;
+            }
+
+        }
+
+    }
+
+}
+
+
+
+    /* Converter */
+
 .converter{
     display:flex;
     flex-direction:column;
+
+    opacity:0;
+    animation:LoadingFadeIn 0.25s ease-in-out forwards;
 
     & .svg-icon{
         min-width:var(--size8);
@@ -76,4 +119,13 @@
     
     }
 
+}
+
+@keyframes LoadingFadeIn{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
 }

@@ -148,6 +148,12 @@
             & p{
                 width:100%;
                 display:flex;
+
+                &.operation-center{
+                    display:flex;
+                    justify-content:center;
+                }
+
             }
 
             & .operation-input{

@@ -349,12 +349,11 @@ function ConverterFields(){
                         </p>
 
                         <div className="conv-inp glass operation-field"
-                        data-testid="operation-field"
-                        style={{
-                            justifyContent: operationContent === "-----" ? 'center' : 'flex-start'
-                        }}>
+                        data-testid="operation-field">
                             { operationContent === "-----" ? (
-                                <p>{ operationContent }</p>
+                                <p className="operation-center">
+                                    { operationContent }
+                                </p>
                             ) : (
                                 <p>
                                     <span 

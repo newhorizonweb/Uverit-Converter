@@ -9,23 +9,6 @@
 /* Media breakpoints - 1440, 1200, 1024, 900, 768, 540, 440, 320 */
 
 
-.App:has(.not-found){
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-
-    & footer{
-        margin-top:auto;
-    }
-
-    & > div:has(.not-found){
-        flex:1;
-        margin-bottom:var(--size8);
-        display:flex;
-        align-items:center;
-    }
-
-}
 
 .not-found{
 

@@ -19,7 +19,7 @@ i18next
         caches: ['localStorage'],
     },
     backend: {
-        loadPath: '../../Uverit-Converter/assets/locales/{{lng}}/{{ns}}.json'
+        loadPath: `${process.env.PUBLIC_URL}/assets/locales/{{lng}}/{{ns}}.json`
     }
 });
 

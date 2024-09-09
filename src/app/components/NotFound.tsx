@@ -32,7 +32,7 @@ const NotFound = () => {
 
 
     return (
-        <section className="not-found wrapper">
+        <section className="not-found whole-screen wrapper">
             <div className="not-found-inner">
 
                 <div className="nf-img">

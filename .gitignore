@@ -5,6 +5,7 @@
 /work_files
 /.pnp
 .pnp.js
+/info.txt
 
 # testing
 /coverage

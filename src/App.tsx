@@ -32,7 +32,7 @@ function App() {
     return (
         <div className="App">
             <PageContext.Provider value={ContextContent}>
-                <Router>
+                <Router basename={""}>
 
                     <ScrollBackground />
                     <Nav />
