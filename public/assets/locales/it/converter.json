@@ -1,0 +1,21 @@
+{
+
+    "name": "nome",
+    "units": "unità",
+    "from": "da",
+    "to": "a",
+    "decimals": "decimali",
+    "operation": "calcolo",
+
+    "enter-number": "Inserisci un numero da convertire",
+    "switch-units": "Scambia unità",
+    "expo-toggle": "Attiva/disattiva notazione esponenziale",
+    "copy-result": "Copia risultato",
+    "table-print": "Stampa la tabella",
+    
+    "symbol": "simbolo",
+    "notation": "notazione",
+    "equivalent": "equivalente",
+    "metric": "metrico"
+    
+}

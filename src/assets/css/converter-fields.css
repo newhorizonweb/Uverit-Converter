@@ -192,7 +192,7 @@
             }
     
             & .user-choice{
-                width:var(--size10);
+                width:128px;
             }
     
             & .expo-btn{
