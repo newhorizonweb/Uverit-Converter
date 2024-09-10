@@ -291,8 +291,11 @@ function ConverterFields(){
                         className="conv-inp glass hover"
                         data-testid="value-input"
                         aria-label={t("converter:enter-number")}
+
+                        inputMode="numeric"
                         maxLength={24}
                         placeholder="0.00"
+                        pattern="[0-9]*"
                         value={ inputVal }
                         onChange={(e) => setInputVal(e.target.value)}
                     />
