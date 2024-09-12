@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 // Assets
 import '../../assets/css/converter-table.css';
 import '../../assets/css/print.css';
-import { pdfIcon } from "../core/NavIcons";
+import { pdfIcon } from "../core/SvgIcons";
 
 
 
@@ -81,7 +81,9 @@ function ConverterTable(){
             
                                 <tr key={ unit } className={ unit }>
 
-                                    <td className="name">{ unit }</td>
+                                    <td className="name">
+                                    { t(`${converterName}:${group}:${unit}`) }
+                                    </td>
 
                                     { data[group].table.map((col: string) => (
                                         <td key={data[group][unit][col]}

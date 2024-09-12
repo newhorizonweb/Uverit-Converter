@@ -65,6 +65,11 @@
         & :is(th, td){
             padding:var(--size3) var(--size4);
             position:relative;
+            text-transform:lowercase;
+
+            .lang-de &.name{
+                text-transform:capitalize;
+            }
     
             &:not(:nth-child(1)):before{
                 content:"";
@@ -81,8 +86,12 @@
     
         }
     
-        & :is(td.name, th.name){
+        & :is(td, th).name{
             width:384px;
+        }
+
+        & :is(td, th).symbol{
+            width:128px;
         }
 
     }
@@ -103,7 +112,7 @@
                 padding:var(--size3);
             }
         
-            & :is(td.name, th.name){
+            & :is(td, th).name{
                 width:256px;
             }
 
@@ -124,7 +133,7 @@
         }
 
         & .converter-table{
-            min-width:512px;
+            min-width:544px;
             border-radius:0;
             overflow:clip;
         
@@ -136,8 +145,12 @@
                 font-size:18px;
             }
 
-            & :is(td.name, th.name){
+            & :is(td, th).name{
                 width:192px;
+            }
+
+            & :is(td, th).symbol{
+                width:var(--size10);
             }
 
         }
@@ -157,7 +170,7 @@
         }
 
         & .converter-table{
-            min-width:448px;
+            min-width:512px;
             border-radius:0;
             overflow:clip;
         
@@ -169,7 +182,7 @@
                 font-size:16px;
             }
 
-            & :is(td.name, th.name){
+            & :is(td, th).name{
                 width:160px;
             }
 

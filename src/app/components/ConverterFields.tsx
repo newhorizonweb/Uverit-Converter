@@ -11,7 +11,7 @@ import { useTranslation } from 'react-i18next';
 
 // Assets
 import '../../assets/css/converter-fields.css';
-import { switchUnitsIcon, copyIcon, copiedIcon, expoIcon } from "../core/NavIcons";
+import { switchUnitsIcon, copyIcon, copiedIcon, expoIcon } from "../core/SvgIcons";
 
 // Components
 import RenderSelectOptions from "../functions/GenerateSelect";
@@ -189,7 +189,7 @@ function ConverterFields(){
             if (choice === "decimal" ||
             (choice === "exponential" && !isExponential)){
                 result = checkExpoDecimals(resultRaw.toDecimalPlaces(factorSelVal))
-            } else if (choice === "exponential") {
+            } else if (choice === "exponential"){
                 result = limitDecimalExpo(resultRaw);
             }
             
@@ -247,8 +247,21 @@ function ConverterFields(){
         const inputUnit = convertToDecimal(inputSelVal);
         const outputUnit = convertToDecimal(outputSelVal);
 
-        // Limit to x decimal places
-        const roundedOutput = (inputUnit.div(outputUnit)).toDecimalPlaces(5);
+        // Limit the output number to x decimal places
+        const limitToX = 5;
+        const minNum = new Decimal(10).pow(-limitToX);
+        const maxNum = new Decimal(10).pow(limitToX);
+
+        const output = inputUnit.div(outputUnit);
+        let roundedOutput;
+
+        if (output.lt(minNum) || output.gt(maxNum)){
+            roundedOutput = limitDecimalExpo(
+                new Decimal(output.toExponential(limitToX))
+            );
+        } else {
+            roundedOutput = output.toDecimalPlaces(limitToX);
+        }
         
         return {
             inputValue: inputValue,
@@ -273,7 +286,7 @@ function ConverterFields(){
 
                         <div className="conv-select">
                             <select name="units-input" id="units-input"
-                            className="conv-inp glass pointer hover"
+                            className="conv-inp glass small-scroll pointer hover"
                             data-testid="units-input" value={ inputSelVal }
                             aria-label={`${t('converter:units')} ${t('converter:from')}`}
                             onChange={(e) => {
@@ -320,7 +333,7 @@ function ConverterFields(){
 
                         <div className="conv-select">
                             <select name="units-output" id="units-output"
-                            className="conv-inp glass pointer hover"
+                            className="conv-inp glass small-scroll pointer hover"
                             data-testid="units-output"
                             value={ outputSelVal }
                             aria-label={`${t('converter:units')} ${t('converter:to')}`}
@@ -388,7 +401,7 @@ function ConverterFields(){
 
                         <div className="conv-select">
                             <select name="user-choice"
-                            className="user-choice conv-inp glass pointer hover"
+                            className="user-choice conv-inp small-scroll glass pointer hover"
                             data-testid="user-choice"
                             aria-label={t("converter:decimals")}
                             value={ factorSelVal }
