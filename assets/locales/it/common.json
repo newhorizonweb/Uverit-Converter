@@ -1,0 +1,30 @@
+
+{
+
+    "metric-units": "unità metriche",
+    "imperial-units": "unità imperiali",
+
+    "metric": {
+        "millimeter": "millimetro",
+        "centimeter": "centimetro",
+        "decimeter": "decimetro",
+        "meter": "metro",
+        "dekameter": "decametro",
+        "hectometer": "ettometro",
+        "kilometer": "chilometro"
+    },
+
+    "imperial": {
+        "inch": "pollice",
+        "link": "legame",
+        "hand": "mano",
+        "foot": "piede",
+        "yard": "yard",
+        "rod": "asta",
+        "chain": "catena",
+        "fathom": "fathom",
+        "furlong": "furlong",
+        "mile": "miglio"
+    }
+    
+}
