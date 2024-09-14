@@ -24,6 +24,10 @@ const RenderSelectOptions: React.FC<PropTypes> = ({ data }) => {
         [converterName]
     );
 
+    const cleanText = (txt: string) => {
+        return txt.replace(/<sup>|<\/sup>|<sub>|<\/sub>/g, '');
+    }
+
     return ( <>
         { data && Object.keys(data).map((group) => (
            group !== 'settings' &&
@@ -31,11 +35,16 @@ const RenderSelectOptions: React.FC<PropTypes> = ({ data }) => {
            <optgroup key={ group } label={t(`${group}-units`)} className="conv-optgroup">
 
                 { Object.keys(data[group]).map((unit) => (
-                    unit !== 'table' &&
+                unit !== 'table' &&
 
                     <option key={ unit }
                     value={ data[group][unit].val }>
-                        {`${t(`${group}.${unit}`)} (${data[group][unit].symbol})`}
+                        {`${t(`${group}.${unit}`)}
+                        
+                        ${data[group][unit].symbol !== "-" ?
+                        `(${cleanText(data[group][unit].symbol)})` :
+                        ""}`
+                        }
                     </option>
 
                 ))}

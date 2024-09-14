@@ -1,0 +1,200 @@
+
+{
+
+    "settings":{
+        "operation": "true",
+        "choice": "exponential",
+        "choice-val-min": "0",
+        "choice-val-max": "16",
+        "choice-val-def": "8"
+    },
+
+    "metric":{
+
+        "table":[
+            "symbol",
+            "notation"
+        ],
+
+        "yoctometer": {
+            "val": "1e-24",
+            "symbol": "ym",
+            "notation": "10<sup>-24</sup>"
+        },
+        "zeptometer": {
+            "val": "1e-21",
+            "symbol": "zm",
+            "notation": "10<sup>-21</sup>"
+        },
+        "attometer": {
+            "val": "1e-18",
+            "symbol": "am",
+            "notation": "10<sup>-18</sup>"
+        },
+        "femtometer": {
+            "val": "1e-15",
+            "symbol": "fm",
+            "notation": "10<sup>-15</sup>"
+        },
+        "picometer": {
+            "val": "1e-12",
+            "symbol": "pm",
+            "notation": "10<sup>-12</sup>"
+        },
+        "nanometer": {
+            "val": "1e-9",
+            "symbol": "nm",
+            "notation": "10<sup>-9</sup>"
+        },
+        "micrometer": {
+            "val": "1e-6",
+            "symbol": "µm",
+            "notation": "10<sup>-6</sup>"
+        },
+        "millimeter": {
+            "val": "1e-3",
+            "symbol": "mm",
+            "notation": "10<sup>-3</sup>"
+        },
+        "centimeter": {
+            "val": "1e-2",
+            "symbol": "cm",
+            "notation": "10<sup>-2</sup>"
+        },
+        "decimeter": {
+            "val": "1e-1",
+            "symbol": "dm",
+            "notation": "10<sup>-1</sup>"
+        },
+        "meter": {
+            "val": "1",
+            "symbol": "m",
+            "notation": "10<sup>0</sup>"
+        }
+        
+    },
+
+    "non-si":{
+
+        "table":[
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "x-unit": {
+            "val": "1.00207699282828282828e-13",
+            "symbol": "xu",
+            "metric": "~1.002<sup>-13</sup> m",
+            "equivalent": "~0.1 pm"
+        },
+        "angstrom": {
+            "val": "1e-10",
+            "symbol": "Å",
+            "metric": "10<sup>-10</sup> m",
+            "equivalent": "0.1 nm"
+        }
+        
+    },
+
+    "physics":{
+
+        "table":[
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "stoney-length": {
+            "val": "1.38067847013136959206e-36",
+            "symbol": "l<sub>S</sub>",
+            "metric": "~1.381<sup>-36</sup> m",
+            "equivalent": "~1.381<sup>-12</sup> ym"
+        },
+        "planck-length": {
+            "val": "1.61625518181818181818e-35",
+            "symbol": "ℓ<sub>p</sub>",
+            "metric": "~1.616<sup>-35</sup> m",
+            "equivalent": "~1.616<sup>-11</sup> ym"
+        },
+        "lQCD": {
+            "val": "2.103089103355592e-16",
+            "symbol": "l<sub>QCD</sub>",
+            "metric": "~2.103<sup>-16</sup> m",
+            "equivalent": "~0.21 fm"
+        },
+        "classical-electron-radius": {
+            "val": "2.81794028531313131313e-15",
+            "symbol": "r<sub>e</sub>",
+            "metric": "~2.818<sup>-15</sup> m",
+            "equivalent": "~2.818 fm"
+        },
+        "compton-wavelength": {
+            "val": "2.42631021518181818182e-12",
+            "symbol": "λ<sub>c</sub>",
+            "metric": "~2.426<sup>-12</sup> m",
+            "equivalent": "~2.426 pm"
+        },
+        "bohr-radius": {
+            "val": "5.29177208319191919192e-11",
+            "symbol": "a<sub>0</sub>",
+            "metric": "~5.292<sup>-11</sup> m",
+            "equivalent": "~52.918 pm"
+        },
+        "beard-second": {
+            "val": "5e-9",
+            "symbol": "-",
+            "metric": "5<sup>-9</sup> m",
+            "equivalent": "5 nm"
+        }
+
+    },
+
+    "imperial":{
+
+        "table":[
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "twip": {
+            "val": "1.76388888888888888889e-5",
+            "symbol": "-",
+            "metric": "~1.764<sup>-5</sup> m",
+            "equivalent": "1/1440 in"
+        },
+        "thou": {
+            "val": "2.54e-5",
+            "symbol": "-",
+            "metric": "2.54<sup>-5</sup> m",
+            "equivalent": "1/1000 in"
+        },
+        "point": {
+            "val": "3.52777777777777777778e-4",
+            "symbol": "pt",
+            "metric": "~3.528<sup>-4</sup> m",
+            "equivalent": "1/72 in"
+        },
+        "line": {
+            "val": "2.11666666666666666667e-3",
+            "symbol": "-",
+            "metric": "~2.117<sup>-3</sup> m",
+            "equivalent": "1/12 in"
+        },
+        "pica": {
+            "val": "4.23333333333333333333e-3",
+            "symbol": "pc",
+            "metric": "~4.233<sup>-3</sup> m",
+            "equivalent": "1/6 in"
+        },
+        "inch": {
+            "val": "2.54e-2",
+            "symbol": "in",
+            "metric": "2.54<sup>-2</sup> m",
+            "equivalent": "25.4 mm"
+        }
+
+    }
+
+}

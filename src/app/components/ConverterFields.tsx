@@ -273,7 +273,8 @@ function ConverterFields(){
 
 
     return (
-        <div className="converter-fields glass no-print">
+        <div className="converter-fields glass no-print"
+        data-testid="converter-fields">
 
             <div className="conv-section conv-inputs">
 
@@ -318,6 +319,7 @@ function ConverterFields(){
                 <div className="switch-units conv-elem column no-flex">
                     <p>&nbsp;</p>
                     <button className="switch-units-btn svg-icon glass"
+                    data-testid="switch-units"
                     aria-label={t("converter:switch-units")}
                     onClick={ switchUnits }>
                         { switchUnitsIcon }
@@ -349,7 +351,9 @@ function ConverterFields(){
                     </div>
 
                     <div className="result-field conv-inp glass" id="result-field">
-                        <p>{ convertedVal }</p>
+                        <p data-testid="result-txt">
+                            { convertedVal }
+                        </p>
                     </div>
 
                 </div>
@@ -424,6 +428,7 @@ function ConverterFields(){
                         <button className={`svg-icon expo-btn svg-icon glass
                             ${isExponential ? "expo-enabled" : ""}
                         `}
+                        data-testid="exponential-btn"
                         aria-label={t('converter:expo-toggle')}
                         onClick={() => setIsExponential(!isExponential)}>
                             { expoIcon }
@@ -433,6 +438,7 @@ function ConverterFields(){
                     <button className={`copy-btn svg-icon glass 
                         ${ copiedResult ? "copied-result" : "" }
                     `}
+                    data-testid="copy-btn"
                     aria-label={t("converter:copy-result")}
                     onClick={ copyResult }>
                         { copiedResult ? copiedIcon : copyIcon }

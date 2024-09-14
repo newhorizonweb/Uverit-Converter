@@ -45,7 +45,8 @@ const PageHeading: React.FC<PropTypes> = ({ heading }) => {
     
     return (
         <div className="page-heading glass no-print">
-            <h1 className="page-heading-text glass">
+            <h1 className="page-heading-text glass"
+            data-testid={converterName}>
                 { headingTxt }
             </h1>
         </div>

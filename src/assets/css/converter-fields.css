@@ -117,7 +117,7 @@
 
         & .switch-units-btn{
             margin-top:var(--size05);
-            transition:all var(--trans1), width var(--trans4);
+            transition:all var(--trans2), width var(--trans4);
         }
 
     }

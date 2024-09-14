@@ -26,12 +26,23 @@ function ConverterTable(){
         ["app", "converter", converterName]
     );
     
-    // Change notation to return a tag instead of string
-    const parseNotation = (notation: string) => {
-        const parts = notation.split(/<sup>|<\/sup>/);
-        return parts.map((part, index) => 
-            index % 2 === 0 ? part : <sup key={index}>{part}</sup>
-        );
+    // Convert Superscript and subscript
+    const parseText = (txt: string) => {
+
+        if (/<sup>/.test(txt)){
+            const parts = txt.split(/<sup>|<\/sup>/);
+            return parts.map((part, index) =>
+                index % 2 === 0 ? part : <sup key={index}>{part}</sup>
+            );
+        } else if (/<sub>/.test(txt)){
+            const parts = txt.split(/<sub>|<\/sub>/);
+            return parts.map((part, index) =>
+                index % 2 === 0 ? part : <sub key={index}>{part}</sub>
+            );
+        } else {
+            return txt;
+        }
+        
     }
 
     const printTables = () => {
@@ -88,11 +99,7 @@ function ConverterTable(){
                                     { data[group].table.map((col: string) => (
                                         <td key={data[group][unit][col]}
                                         className={col}>
-                                            { col === "notation" ? (
-                                                parseNotation(data[group][unit][col])
-                                            ) : (
-                                                data[group][unit][col]
-                                            )}
+                                            { parseText(data[group][unit][col]) }
                                         </td>
                                     ))}
 

@@ -65,12 +65,7 @@
         & :is(th, td){
             padding:var(--size3) var(--size4);
             position:relative;
-            text-transform:lowercase;
-
-            .lang-de &.name{
-                text-transform:capitalize;
-            }
-    
+            
             &:not(:nth-child(1)):before{
                 content:"";
                 height:calc(100% - (var(--size3) * 2));

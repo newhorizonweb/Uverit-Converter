@@ -10,9 +10,9 @@ describe('Routing', () => {
         cy.url().should('eq', `${baseUrl}/`);
     });
 
-    it('should navigate to the popular length page', () => {
-        cy.visit('/length/popular');
-        cy.url().should('eq', `${baseUrl}/length/popular`);
+    it('should navigate to the common length page', () => {
+        cy.visit('/length/common');
+        cy.url().should('eq', `${baseUrl}/length/common`);
     });
 
     it('should redirect to the 404 page if it is not found', () => {

@@ -1,0 +1,41 @@
+
+{
+
+    "metric-units": "jednostki metryczne",
+    "physics-units": "fizyka",
+    "imperial-units": "jednostki imperialne",
+
+    "metric": {
+        "yoctometer": "joktometr",
+        "zeptometer": "zeptometr",
+        "attometer": "attometr",
+        "femtometer": "femtometr",
+        "picometer": "pikometr",
+        "nanometer": "nanometr",
+        "micrometer": "mikrometr",
+        "millimeter": "milimetr",
+        "centimeter": "centymetr",
+        "decimeter": "decymetr",
+        "meter": "metr"
+    },
+
+    "non-si": {
+        "x-unit": "jednostka x"
+    },
+
+    "physics": {
+        "stoney-length": "Długość Stoney'a",
+        "planck-length": "Długość Plancka",
+        "classical-electron-radius": "Klasyczny promień elektronu",
+        "compton-wavelength": "Długość fali Comptona",
+        "bohr-radius": "Promień Bohra",
+        "beard-second": "Sekunda brody"
+    },
+
+    "imperial": {
+        "point": "punkt",
+        "line": "linia",
+        "inch": "cal"
+    }
+    
+}

@@ -103,11 +103,23 @@ nav.glass{
                     align-items:center;
                     gap:var(--size2);
                     text-transform:capitalize;
+
+                    &:hover svg{
+                        height:calc(100% - var(--size2));
+                    }
+
+                    & .tile-icon{
+                        height:var(--size9);
+                        display:flex;
+                        justify-content:center;
+                        align-items:center;
+                    }
                     
                     & svg{
                         width:var(--size9);
                         height:var(--size9);
                         aspect-ratio:1/1;
+                        transition:var(--trans1);
     
                         & *{
                             fill:none;

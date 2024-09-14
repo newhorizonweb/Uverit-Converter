@@ -244,10 +244,12 @@ function MobileNav(props: PropTypes){
             to={`${urlPath}/${category}/${item}`}
             className={ activeNavToggle }
             onClick={ closePopup } data-testid={`mobile-link-${item}`}>
+                <div className="tile-icon">
                 {
                     navIcons[item as keyof typeof navIcons] ||
                     navIcons.navPlaceholderIcon
                 }
+                </div>
                 <p>{ t(`groups.${category}.${item}`) }</p>
             </NavLink>
         ));
