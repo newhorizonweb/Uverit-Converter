@@ -39,8 +39,8 @@
         },
         "data":{
             "data": "dane",
-            "numeral-systems": "systemy liczbowe",
-            "data-storage": "jednostki informacji",
+            "numeral_systems": "systemy liczbowe",
+            "data_storage": "jednostki informacji",
             "quantity": "ilość"
         }
     }
