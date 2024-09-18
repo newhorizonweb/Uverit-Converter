@@ -30,8 +30,8 @@
     ],
 
     "data": [
-        "numeral-systems",
-        "data-storage",
+        "numeral_systems",
+        "data_storage",
         "quantity"
     ]
     

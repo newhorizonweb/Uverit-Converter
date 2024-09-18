@@ -87,11 +87,7 @@
                     transition:var(--trans1);
 
                     & *{
-                        fill:none;
                         stroke:var(--txt3);
-                        stroke-width:8px;
-                        stroke-miterlimit:10;
-                        stroke-linecap:round;
                         transition:var(--trans1);
                     }
     

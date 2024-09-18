@@ -62,8 +62,10 @@ function Nav(){
 
                 <div className="nav-links glass"
                 data-testid={`nav-links-${category}`}>
-                    <div className="nav-links-inner glass">
-                        { navLinks(category, (units as UnitsData)[category]) }
+                    <div className="nav-links-padding">
+                        <div className="nav-links-inner glass small-scroll">
+                            { navLinks(category, (units as UnitsData)[category]) }
+                        </div>
                     </div>
                 </div>
             </div>

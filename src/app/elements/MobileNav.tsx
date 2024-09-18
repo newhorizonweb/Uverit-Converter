@@ -270,7 +270,7 @@ function MobileNav(props: PropTypes){
             ${isBurgerOpen ? " popup-visible" : ""}`}
             ref={navPopup} data-testid="nav-popup">
 
-                <div className="nav-group-list glass">
+                <div className="nav-group-list glass small-scroll">
                     <div className="nav-group-list-inner small-scroll">
 
                         <NavLink to={`${urlPath}`}

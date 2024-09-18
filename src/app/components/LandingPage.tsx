@@ -16,7 +16,7 @@ function LandingPage(){
 
     return (
         <section className="wrapper">
-            <PageHeading heading="Uverit-Converter" />
+            <PageHeading heading="Uverit_Converter" />
             <LinkTiles />
         </section>
     );

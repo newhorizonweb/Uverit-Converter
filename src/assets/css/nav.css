@@ -65,6 +65,8 @@ nav.glass{
 
             & .nav-links{
                 min-width:320px;
+                
+
                 position:absolute;
                 top:calc(100% + var(--size6) + var(--size3));
                 left:50%;
@@ -100,10 +102,19 @@ nav.glass{
             }
 
             & .nav-links-inner{
+                max-height:calc(100dvh - (
+                    (var(--size6) * 2) +
+                    (var(--size6) * 2) +
+                    (var(--size7) + (var(--size6) * 2)) +
+                    var(--size3)
+                ));
+
                 display:grid;
                 grid-template-columns:repeat(2, minmax(min-content, auto));
                 gap:var(--size6);
+
                 background-color:var(--color3b);
+                overflow-y:auto;
             }
 
             & .nav-link{

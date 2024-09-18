@@ -39,8 +39,8 @@
         },
         "data":{
             "data": "dati",
-            "numeral-systems": "sistemi numerali",
-            "data-storage": "memorizzazione dei dati",
+            "numeral_systems": "sistemi numerali",
+            "data_storage": "memorizzazione dei dati",
             "quantity": "quantità"
         }
     }
