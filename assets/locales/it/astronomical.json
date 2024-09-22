@@ -1,0 +1,64 @@
+
+{
+
+    "metric-units": "unità metriche",
+    "astronomical-units": "unità astronomiche",
+    "light-units": "unità di luce",
+    "parsecs-units": "parsec",
+    "imperial-units": "unità imperiali",
+
+    "metric": {
+        "meter": "metro",
+        "dekameter": "decametro",
+        "hectometer": "ettometro",
+        "kilometer": "chilometro",
+        "megameter": "megametro",
+        "gigameter": "gigametro",
+        "terameter": "terametro",
+        "petameter": "petametro",
+        "exameter": "exametro",
+        "zettameter": "zettametro",
+        "yottameter": "yottametro",
+        "ronnameter": "ronnametro",
+        "quettameter": "quettametro"
+    },
+
+    "astronomical": {
+        "solar-radius": "raggio solare",
+        "astronomical-unit": "unità astronomica"
+    },
+
+    "light": {
+        "light-second": "secondo luce",
+        "light-minute": "minuto luce",
+        "light-hour": "ora luce",
+        "light-day": "giorno luce",
+        "light-week": "settimana luce",
+        "light-year": "anno luce",
+        "kilolight-year": "chiloeanno luce",
+        "megalight-year": "meganno luce",
+        "gigalight-year": "giganno luce"
+    },
+
+    "parsecs": {
+        "parsec": "parsec",
+        "kiloparsec": "chiloparsec",
+        "megaparsec": "megaparsec",
+        "gigaparsec": "gigaparsec",
+        "teraparsec": "teraparsec",
+        "petaparsec": "petaparsec",
+        "exaparsec": "exaparsec",
+        "zettaparsec": "zettaparsec",
+        "yottaparsec": "yottaparsec",
+        "ronnaparsec": "ronnaparsec",
+        "quettaparsec": "quettaparsec"
+    },
+
+    "imperial": {
+        "foot": "piede",
+        "yard": "giarda",
+        "mile": "miglio",
+        "league": "lega"
+    }
+
+}

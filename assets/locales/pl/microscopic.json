@@ -6,6 +6,8 @@
     "imperial-units": "jednostki imperialne",
 
     "metric": {
+        "quectometer": "kwektometr",
+        "rontometer": "rontometr",
         "yoctometer": "joktometr",
         "zeptometer": "zeptometr",
         "attometer": "attometr",
@@ -24,7 +26,7 @@
     },
 
     "physics": {
-        "stoney-length": "Długość Stoney'a",
+        "stoney-length": "Długość Stoney'ego",
         "planck-length": "Długość Plancka",
         "classical-electron-radius": "Klasyczny promień elektronu",
         "compton-wavelength": "Długość fali Comptona",

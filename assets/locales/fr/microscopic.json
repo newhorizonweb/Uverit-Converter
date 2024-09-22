@@ -5,6 +5,8 @@
     "imperial-units": "unités impériales",
 
     "metric": {
+        "quectometer": "quectomètre",
+        "rontometer": "rontomètre",
         "yoctometer": "yoctomètre",
         "zeptometer": "zeptomètre",
         "attometer": "attomètre",

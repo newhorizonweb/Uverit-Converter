@@ -12,7 +12,8 @@
     "switch-units": "Échanger les unités",
     "expo-toggle": "Basculer en notation exponentielle",
     "copy-result": "Copier le résultat",
-    "table-print": "Imprimer le tableau",
+    "table-print": "Imprimer les tableaux",
+    "multi-table-print": "Imprimer les tableaux sur des pages séparées",
 
     "symbol": "symbole",
     "notation": "notation",

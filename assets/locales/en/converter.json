@@ -12,7 +12,8 @@
     "switch-units": "Switch units",
     "expo-toggle": "Exponential notation toggle",
     "copy-result": "Copy result",
-    "table-print": "Print the table",
+    "table-print": "Print tables",
+    "multi-table-print": "Print tables on separate pages",
     
     "symbol": "symbol",
     "notation": "notation",
