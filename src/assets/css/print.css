@@ -94,6 +94,10 @@
     .outer-table.glass{
         page-break-inside:avoid;
 
+        .separate-pages &{
+            page-break-before:always;
+        }
+
         & .converter-table{
         
             & :is(td.name, th.name){

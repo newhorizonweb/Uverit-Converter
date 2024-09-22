@@ -12,7 +12,8 @@
     "switch-units": "Zamień jednostki",
     "expo-toggle": "Przełącz notację wykładniczą",
     "copy-result": "Kopiuj wynik",
-    "table-print": "Wydrukuj tabelę",
+    "table-print": "Drukuj tabele",
+    "multi-table-print": "Drukuj tabele na oddzielnych stronach",
     
     "symbol": "symbol",
     "notation": "notacja",

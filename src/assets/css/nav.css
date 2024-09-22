@@ -65,8 +65,6 @@ nav.glass{
 
             & .nav-links{
                 min-width:320px;
-                
-
                 position:absolute;
                 top:calc(100% + var(--size6) + var(--size3));
                 left:50%;
@@ -125,7 +123,7 @@ nav.glass{
                 text-transform:capitalize;
 
                 &:hover svg{
-                    height:calc(100% - var(--size2));
+                    scale:0.9;
                 }
 
                 & .tile-icon{

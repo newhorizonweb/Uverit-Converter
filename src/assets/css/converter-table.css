@@ -82,17 +82,21 @@
         }
     
         & :is(td, th).name{
-            width:384px;
+            width:320px;
         }
 
         & :is(td, th).symbol{
-            width:128px;
+            width:100px;
         }
 
     }
 
-    & .print-btn{
+    & .print-btns{
         margin-left:auto;
+        display:flex;
+        gap:var(--size6);
+
+
     }
 
 }
@@ -103,6 +107,10 @@
 
         & .converter-table{
         
+            & :is(th, td){
+                padding:var(--size3);
+            }
+
             & :is(th, td){
                 padding:var(--size3);
             }
@@ -128,7 +136,7 @@
         }
 
         & .converter-table{
-            min-width:544px;
+            min-width:576px;
             border-radius:0;
             overflow:clip;
         
@@ -165,7 +173,7 @@
         }
 
         & .converter-table{
-            min-width:512px;
+            min-width:576px;
             border-radius:0;
             overflow:clip;
         

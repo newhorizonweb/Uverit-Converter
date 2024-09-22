@@ -1,0 +1,64 @@
+
+{
+
+    "metric-units": "metric units",
+    "astronomical-units": "astronomical units",
+    "light-units": "light units",
+    "parsecs-units": "parsecs",
+    "imperial-units": "imperial units",
+
+    "metric": {
+        "meter": "meter",
+        "dekameter": "dekameter",
+        "hectometer": "hectometer",
+        "kilometer": "kilometer",
+        "megameter": "megameter",
+        "gigameter": "gigameter",
+        "terameter": "terameter",
+        "petameter": "petameter",
+        "exameter": "exameter",
+        "zettameter": "zettameter",
+        "yottameter": "yottameter",
+        "ronnameter": "ronnameter",
+        "quettameter": "quettameter"
+    },
+
+    "astronomical":{
+        "solar-radius": "solar radius",
+        "astronomical-unit": "astronomical unit"
+    },
+
+    "light":{
+        "light-second": "light-second",
+        "light-minute": "light-minute",
+        "light-hour": "light-hour",
+        "light-day": "light-day",
+        "light-week": "light-week",
+        "light-year": "light-year",
+        "kilolight-year": "kilolight-year",
+        "megalight-year": "megalight-year",
+        "gigalight-year": "gigalight-year"
+    },
+
+    "parsecs":{
+        "parsec": "parsec",
+        "kiloparsec": "kiloparsec",
+        "megaparsec": "megaparsec",
+        "gigaparsec": "gigaparsec",
+        "teraparsec": "teraparsec",
+        "petaparsec": "petaparsec",
+        "exaparsec": "exaparsec",
+        "zettaparsec": "zettaparsec",
+        "yottaparsec": "yottaparsec",
+        "ronnaparsec": "ronnaparsec",
+        "quettaparsec": "quettaparsec"
+    },
+
+    "imperial":{
+        "foot": "foot",
+        "yard": "yard",
+        "mile": "mile",
+        "league": "league"
+    }
+    
+}

@@ -12,7 +12,8 @@
     "switch-units": "Cambiar unidades",
     "expo-toggle": "Alternar notación exponencial",
     "copy-result": "Copiar resultado",
-    "table-print": "Imprimir la tabla",
+    "table-print": "Imprimir tablas",
+    "multi-table-print": "Imprimir tablas en páginas separadas",
     
     "symbol": "símbolo",
     "notation": "notación",

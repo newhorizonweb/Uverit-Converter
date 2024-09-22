@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 // Assets
 import '../../assets/css/converter-table.css';
 import '../../assets/css/print.css';
-import { pdfIcon } from "../core/SvgIcons";
+import { pdfIcon, multiPagePdfIcon } from "../core/SvgIcons";
 
 
 
@@ -47,6 +47,13 @@ function ConverterTable(){
 
     const printTables = () => {
         window.print();
+    }
+
+    // Each table is on a spearate page
+    const printTablesSep = () => {
+        document.body.classList.add("separate-pages");
+        window.print();
+        document.body.classList.remove("separate-pages");
     }
 
 
@@ -117,11 +124,21 @@ function ConverterTable(){
             
         ))}
 
-            <button className="print-btn svg-icon glass no-print"
-            aria-label={t('converter:table-print')}
-            onClick={ printTables }>
-                { pdfIcon }
-            </button>
+            <div className="print-btns">
+                <button className="print-btn svg-icon glass no-print"
+                aria-label={t('converter:table-print')}
+                title={t('converter:table-print')}
+                onClick={ printTables }>
+                    { pdfIcon }
+                </button>
+
+                <button className="print-btn svg-icon glass no-print"
+                aria-label={t('converter:table-print')}
+                title={t('converter:multi-table-print')}
+                onClick={ printTablesSep }>
+                    { multiPagePdfIcon }
+                </button>
+            </div>
 
         </section>
     );

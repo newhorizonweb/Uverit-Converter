@@ -11,7 +11,8 @@
     "switch-units": "Einheiten wechseln",
     "expo-toggle": "Exponentielle Notation umschalten",
     "copy-result": "Ergebnis kopieren",
-    "table-print": "Tabelle drucken",
+    "table-print": "Tabellen drucken",
+    "multi-table-print": "Tabellen auf separaten Seiten drucken",
     
     "symbol": "Symbol",
     "notation": "Notation",

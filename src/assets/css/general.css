@@ -368,7 +368,6 @@ button{
 .App > div > section.wrapper svg *{
     fill:none;
     stroke:var(--txt3);
-    stroke-width:8px;
     stroke-miterlimit:10;
     stroke-linejoin:round;
     stroke-linecap:round;
