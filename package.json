@@ -1,7 +1,7 @@
 {
   "homepage": "https://newhorizonweb.github.io/Uverit-Converter",
   "name": "uverit-converter",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
