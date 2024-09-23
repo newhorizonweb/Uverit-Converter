@@ -86,7 +86,7 @@
         }
 
         & :is(td, th).symbol{
-            width:100px;
+            width:120px;
         }
 
     }

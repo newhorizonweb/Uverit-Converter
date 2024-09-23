@@ -89,6 +89,10 @@ html{
 
 @media screen and (width <= 540px){
 
+    .App{
+        padding:0 var(--size5);
+    }
+
     .glass{
         padding:var(--size5);
     }

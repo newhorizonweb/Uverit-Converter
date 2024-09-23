@@ -43,15 +43,13 @@
 
     & .lang-popup{
         width:256px;
-        padding:var(--size6);
-
         position:absolute;
         top:calc(100% + var(--size6) + var(--size3));
         right:calc(var(--size6) * -1);
 
         opacity:0;
         pointer-events:none;
-        transition:var(--trans1);
+        transition:all var(--trans1), width 0s;
     }
 
     &.lang-expanded .lang-popup{
@@ -61,8 +59,6 @@
 
     & .lang-popup-inner{
         width:100%;
-        padding:var(--size6);
-
         display:flex;
         flex-wrap:wrap;
         gap:var(--size6);
@@ -122,6 +118,34 @@
                 color:var(--color1);
             }
 
+        }
+
+    }
+
+}
+
+@media screen and (width <= 540px){
+
+    .lang-switch{
+    
+        & .lang-popup{
+            right:calc(var(--size5) * -1);
+        }
+
+    }
+
+}
+
+@media screen and (width <= 320px){
+
+    .lang-switch{
+    
+        & .lang-popup{
+            width:calc(100vw - (var(--size6) * 2));
+    
+            position:fixed;
+            top:calc(100% + var(--size4));
+            right:0;
         }
 
     }

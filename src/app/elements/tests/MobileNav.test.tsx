@@ -122,7 +122,7 @@ describe("Mobile Navigation", () => {
         fireEvent.click(navBtn);
 
         // Click the nav link to change the page
-        const navLinkLength1 = screen.getByTestId(/link-marine/i);
+        const navLinkLength1 = screen.getByTestId(/link-nautical/i);
         fireEvent.click(navLinkLength1);
 
         const firstPage = window.location.pathname;

@@ -1,0 +1,35 @@
+
+{
+    
+    "metric-units": "jednostki metryczne",
+    "imperial-units": "jednostki imperialne",
+    "nautical-units": "jednostki morskie",
+
+    "metric": {
+        "millimeter": "milimetr",
+        "centimeter": "centymetr",
+        "decimeter": "decymetr",
+        "meter": "metr",
+        "kilometer": "kilometr"
+    },
+
+    "imperial": {
+        "inch": "cal",
+        "foot": "stopa",
+        "yard": "jard",
+        "mile": "mila",
+        "league": "liga"
+    },
+
+    "nautical": {
+        "fathom": "sążeń",
+        "shackle": "szekla",
+        "cable-uk": "kabel (UK)",
+        "cable-us": "kabel (US)",
+        "nautical-mile": "mila morska",
+        "admiralty-mile": "mila admiralicji",
+        "nautical-league": "liga morska",
+        "admiralty-league": "liga admiralicji"
+    }
+
+}
