@@ -1,0 +1,152 @@
+
+{
+
+    "metric-units": "metric units",
+    "imperial-units": "imperial units",
+    "english-units": "english units",
+    "french-units": "french units",
+    "danish-units": "danish units",
+    "indian-units": "indian units",
+    "japanese-units": "japanese units",
+    "chinese-units": "chinese units",
+    "ancient-egyptian-units": "ancient egyptian units",
+    "ancient-roman-units": "ancient roman units",
+
+    "metric":{
+        "millimeter": "millimeter",
+        "centimeter": "centimeter",
+        "decimeter": "decimeter",
+        "meter": "meter",
+        "kilometer": "kilometer"
+    },
+
+    "imperial":{
+        "inch": "inch",
+        "foot": "foot",
+        "yard": "yard",
+        "mile": "mile",
+        "league": "league"
+    },
+
+    "english": {
+        "line": "line",
+        "barleycorn": "barleycorn",
+        "digit": "digit",
+        "fingerbreadth": "fingerbreadth",
+        "nail": "nail",
+        "palm": "palm",
+        "hand": "hand",
+        "shaftment": "shaftment",
+        "link": "link",
+        "span": "span",
+        "cubit": "cubit",
+        "pace": "pace",
+        "cloth-yard": "cloth-yard",
+        "cloth-ell": "ell",
+        "fathom": "fathom",
+        "rod": "rod",
+        "chain": "chain",
+        "bolt": "bolt",
+        "furlong": "furlong"
+    },
+
+    "french": {
+        "point": "point",
+        "ligne": "ligne",
+        "pouce": "pouce",
+        "pied": "pied",
+        "toise": "toise",
+        "perche-darpent": "perche d'arpent",
+        "arpent": "arpent",
+        "lieue-de-paris": "lieue de Paris"
+    },
+
+    "danish": {
+        "skrupel": "skrupel",
+        "linie": "linie",
+        "tomme": "tomme",
+        "palme": "palme",
+        "kvarter": "kvarter",
+        "fod": "fod",
+        "alen": "alen",
+        "rut": "rut",
+        "mil": "mil"
+    },
+
+    "indian": {
+        "jow": "jow",
+        "unglie": "unglie",
+        "girah": "girah",
+        "anguli": "anguli",
+        "hath": "hat'h",
+        "gaz": "gaz",
+        "guz": "guz",
+        "karam": "karam",
+        "kathi": "kathi",
+        "kan": "kan",
+        "bamboo": "bamboo",
+        "pand": "pand",
+        "beesa": "beesa",
+        "begah": "begah",
+        "kos": "kos",
+        "yojana": "yojana"
+    },
+
+    "japanese": {
+        "mō": "mō",
+        "rin": "rin",
+        "bu": "bu",
+        "sun": "sun",
+        "shaku": "shaku",
+        "ken": "ken",
+        "jō": "jō",
+        "chō": "chō",
+        "ri": "ri"
+    },
+
+    "chinese": {
+        "háo": "háo",
+        "lí": "lí",
+        "fēn": "fēn",
+        "cùn": "cùn",
+        "chǐ": "chǐ",
+        "zhàng": "zhàng",
+        "yǐn": "yǐn",
+        "lǐ": "lǐ"
+    },
+
+    "ancient-egyptian": {
+        "finger": "finger",
+        "palm": "palm",
+        "handsbreadth": "handsbreadth",
+        "fist": "fist",
+        "double-handbreadth": "double handbreadth",
+        "small-span": "small span",
+        "great-span": "great span",
+        "foot": "foot",
+        "shoulder": "shoulder",
+        "small-cubit": "small cubit",
+        "cubit": "cubit",
+        "pole": "pole",
+        "rod": "rod",
+        "league": "league"
+    },
+
+    "ancient-roman": {
+        "digitus": "digitus",
+        "uncia": "uncia",
+        "palmus-minor": "palmus minor",
+        "palmus-maior": "palmus maior",
+        "pes": "pes",
+        "palmipes": "palmipes",
+        "cubitum": "cubitum",
+        "gradus": "gradus",
+        "passus": "passus",
+        "pertica": "pertica",
+        "actus": "actus",
+        "stadium": "stadium",
+        "mille-passus": "mille passus",
+        "leuga": "leuga"
+    }
+ 
+}

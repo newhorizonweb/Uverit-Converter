@@ -30,24 +30,25 @@ const RenderSelectOptions: React.FC<PropTypes> = ({ data }) => {
 
     return ( <>
         { data && Object.keys(data).map((group) => (
-           group !== 'settings' &&
-           
-           <optgroup key={ group } label={t(`${group}-units`)} className="conv-optgroup">
+        group !== 'settings' &&
+            
+            <optgroup key={ group } label={t(`${group}-units`)} className="conv-optgroup">
 
-                { Object.keys(data[group]).map((unit) => (
-                unit !== 'table' &&
+            { Object.keys(data[group]).map((unit) => (
+            unit !== 'table' &&
 
-                    <option key={ unit }
-                    value={ data[group][unit].val }>
-                        {`${t(`${group}.${unit}`)}
-                        
-                        ${data[group][unit].symbol !== "-" ?
+                <option key={ unit }
+                value={ data[group][unit].val }>
+                    {`${t(`${group}.${unit}`)}
+                    
+                    ${data[group][unit].symbol &&
+                    data[group][unit].symbol !== "-" ?
                         `(${cleanText(data[group][unit].symbol)})` :
                         ""}`
-                        }
-                    </option>
+                    }
+                </option>
 
-                ))}
+            ))}
 
             </optgroup>
 

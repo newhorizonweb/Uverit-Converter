@@ -85,7 +85,7 @@
             width:320px;
         }
 
-        & :is(td, th).symbol{
+        & :is(td, th):is(.symbol, .kanji, .hànzì, .egyptian){
             width:120px;
         }
 
@@ -95,8 +95,6 @@
         margin-left:auto;
         display:flex;
         gap:var(--size6);
-
-
     }
 
 }
@@ -152,7 +150,7 @@
                 width:192px;
             }
 
-            & :is(td, th).symbol{
+            & :is(td, th):is(.symbol, .kanji, .hànzì, .egyptian){
                 width:var(--size10);
             }
 

@@ -104,7 +104,7 @@
                 width:320px;
             }
 
-            & tbody tr{
+            & tr{
                 border-top:solid var(--size05) var(--shadowColor2);
             }
 

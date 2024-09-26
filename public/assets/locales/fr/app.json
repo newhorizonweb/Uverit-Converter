@@ -12,11 +12,11 @@
     "groups":{
         "length":{
             "length": "longueur",
-            "common": "commun",
+            "common": "commune",
             "microscopic": "microscopique",
             "astronomical": "astronomique",
             "nautical": "nautique",
-            "archaic": "archaïque"
+            "obsolete": "obsolète"
         },
         "space":{
             "space": "espace",

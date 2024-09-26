@@ -12,11 +12,11 @@
     "groups":{
         "length":{
             "length": "Länge",
-            "common": "gewöhnlich",
-            "microscopic": "mikroskopisch",
-            "astronomical": "astronomisch",
-            "nautical": "nautisch",
-            "archaic": "archaisch"
+            "common": "gewöhnliche",
+            "microscopic": "mikroskopische",
+            "astronomical": "astronomische",
+            "nautical": "nautische",
+            "obsolete": "veraltete"
         },
         "space":{
             "space": "Raum",

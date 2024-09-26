@@ -1,0 +1,70 @@
+
+{
+
+    "metric-units": "metrische Einheiten",
+    "imperial-units": "imperiale Einheiten",
+    "english-units": "englische Einheiten",
+    "french-units": "französische Einheiten",
+    "danish-units": "dänische Einheiten",
+    "indian-units": "indische Einheiten",
+    "japanese-units": "japanische Einheiten",
+    "chinese-units": "chinesische Einheiten",
+    "ancient-egyptian-units": "altägyptische Einheiten",
+    "ancient-roman-units": "antike römische Einheiten",
+
+    "metric": {
+        "millimeter": "Millimeter",
+        "centimeter": "Zentimeter",
+        "decimeter": "Dezimeter",
+        "meter": "Meter",
+        "kilometer": "Kilometer"
+    },
+
+    "imperial": {
+        "inch": "Zoll",
+        "foot": "Fuß",
+        "yard": "Yard",
+        "mile": "Meile",
+        "league": "Leuge"
+    },
+
+    "english": {
+        "line": "Linie",
+        "barleycorn": "Gerstenkorn",
+        "digit": "Finger",
+        "fingerbreadth": "Fingerbreite",
+        "nail": "Nagel",
+        "palm": "Handfläche",
+        "hand": "Hand",
+        "shaftment": "Schaft",
+        "link": "Kettenglied",
+        "span": "Spanne",
+        "cubit": "Ellen",
+        "pace": "Schritt",
+        "cloth-yard": "Stoffyard",
+        "cloth-ell": "Stoffellbogen",
+        "fathom": "Faden",
+        "rod": "Rute",
+        "chain": "Kette",
+        "bolt": "Bolzen",
+        "furlong": "Furlong"
+    },
+
+    "ancient-egyptian": {
+        "finger": "Finger",
+        "palm": "Handfläche",
+        "handsbreadth": "Handbreite",
+        "fist": "Faust",
+        "double-handbreadth": "Doppelte Handbreite",
+        "small-span": "Kleine Spanne",
+        "great-span": "Große Spanne",
+        "foot": "Fuß",
+        "shoulder": "Schulter",
+        "small-cubit": "Kleine Elle",
+        "cubit": "Elle",
+        "pole": "Stange",
+        "rod": "Rute",
+        "league": "Leuge"
+    }
+    
+}

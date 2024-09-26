@@ -128,7 +128,7 @@ describe("Mobile Navigation", () => {
         const firstPage = window.location.pathname;
 
         // Click ANOTHER nav link to change the page to compare the URLs
-        const navLinkLength2 = screen.getByTestId(/link-archaic/i);
+        const navLinkLength2 = screen.getByTestId(/link-obsolete/i);
         fireEvent.click(navLinkLength2);
 
         // Compare URLs
