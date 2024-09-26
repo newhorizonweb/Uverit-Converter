@@ -183,19 +183,19 @@
         "point": {
             "val": "3.52777777777777777778e-4",
             "symbol": "pt",
-            "metric": "~3.528e-4 m",
+            "metric": "3.52(7)e-4 m",
             "equivalent": "1/72 in"
         },
         "line": {
             "val": "2.11666666666666666667e-3",
             "symbol": "-",
-            "metric": "~2.117e-3 m",
+            "metric": "2.11(6)e-3 m",
             "equivalent": "1/12 in"
         },
         "pica": {
             "val": "4.23333333333333333333e-3",
             "symbol": "pc",
-            "metric": "~4.233e-3 m",
+            "metric": "4.2(3)e-3 m",
             "equivalent": "1/6 in"
         },
         "inch": {

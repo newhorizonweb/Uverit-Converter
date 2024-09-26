@@ -1,0 +1,70 @@
+
+{
+
+    "metric-units": "jednostki metryczne",
+    "imperial-units": "jednostki imperialne",
+    "english-units": "jednostki angielskie",
+    "french-units": "jednostki francuskie",
+    "danish-units": "jednostki duńskie",
+    "indian-units": "jednostki indyjskie",
+    "japanese-units": "jednostki japońskie",
+    "chinese-units": "jednostki chińskie",
+    "ancient-egyptian-units": "jednostki starożytnego Egiptu",
+    "ancient-roman-units": "jednostki starożytnego Rzymu",
+
+    "metric": {
+        "millimeter": "milimetr",
+        "centimeter": "centymetr",
+        "decimeter": "decymetr",
+        "meter": "metr",
+        "kilometer": "kilometr"
+    },
+
+    "imperial": {
+        "inch": "cal",
+        "foot": "stopa",
+        "yard": "jard",
+        "mile": "mila",
+        "league": "liga"
+    },
+
+    "english": {
+        "line": "linia",
+        "barleycorn": "jęczmienny ziarno",
+        "digit": "palec",
+        "fingerbreadth": "szerokość palca",
+        "nail": "gwóźdź",
+        "palm": "dłoń",
+        "hand": "ręka",
+        "shaftment": "wałek",
+        "link": "ogniwo",
+        "span": "przęsło",
+        "cubit": "łokieć",
+        "pace": "krok",
+        "cloth-yard": "jard materiałowy",
+        "cloth-ell": "łokieć materiałowy",
+        "fathom": "sążeń",
+        "rod": "pręt",
+        "chain": "łańcuch",
+        "bolt": "śruba",
+        "furlong": "furlong"
+    },
+
+    "ancient-egyptian": {
+        "finger": "palec",
+        "palm": "dłoń",
+        "handsbreadth": "szerokość dłoni",
+        "fist": "pięść",
+        "double-handbreadth": "podwójna szerokość dłoni",
+        "small-span": "małe przęsło",
+        "great-span": "wielkie przęsło",
+        "foot": "stopa",
+        "shoulder": "ramię",
+        "small-cubit": "mały łokieć",
+        "cubit": "łokieć",
+        "pole": "słup",
+        "rod": "pręt",
+        "league": "liga"
+    }
+
+}

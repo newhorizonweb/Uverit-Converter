@@ -76,18 +76,6 @@
             "metric": "2.54 cm",
             "equivalent": "1/12 ft"
         },
-        "link": {
-            "val": "0.201168",
-            "symbol": "li",
-            "metric": "20.1168 cm",
-            "equivalent": "1/100 ch"
-        },
-        "hand": {
-            "val": "0.1016",
-            "symbol": "h",
-            "metric": "10.16 cm",
-            "equivalent": "4 in"
-        },
         "foot": {
             "val": "0.3048",
             "symbol": "ft",
@@ -99,24 +87,6 @@
             "symbol": "yd",
             "metric": "91.44 cm",
             "equivalent": "3 ft"
-        },
-        "rod": {
-            "val": "5.0292",
-            "symbol": "rd",
-            "metric": "5.0292 m",
-            "equivalent": "16.5 ft"
-        },
-        "chain": {
-            "val": "20.1168",
-            "symbol": "ch",
-            "metric": "20.1168 m",
-            "equivalent": "4 rd"
-        },
-        "furlong": {
-            "val": "201.168",
-            "symbol": "fur",
-            "metric": "201.168 m",
-            "equivalent": "10 ch"
         },
         "mile": {
             "val": "1609.344",

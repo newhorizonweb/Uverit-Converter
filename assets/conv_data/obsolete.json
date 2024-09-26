@@ -1,0 +1,713 @@
+
+{
+
+    "settings":{
+        "operation": "true",
+        "choice": "decimal",
+        "choice-val-min": "0",
+        "choice-val-max": "12",
+        "choice-val-def": "5"
+    },
+
+    "metric":{
+
+        "table":[
+            "symbol",
+            "notation",
+            "equivalent"
+        ],
+
+        "millimeter":{
+            "val": "1e-3",
+            "symbol": "mm",
+            "notation": "10<sup>-3</sup>",
+            "equivalent": "0.001 m"
+        },
+        "centimeter":{
+            "val": "1e-2",
+            "symbol": "cm",
+            "notation": "10<sup>-2</sup>",
+            "equivalent": "0.01 m"
+        },
+        "decimeter":{
+            "val": "1e-1",
+            "symbol": "dm",
+            "notation": "10<sup>-1</sup>",
+            "equivalent": "0.1 m"
+        },
+        "meter":{
+            "val": "1",
+            "symbol": "m",
+            "notation": "1<sup>0</sup>",
+            "equivalent": "1 m"
+        },
+        "kilometer":{
+            "val": "1e+3",
+            "symbol": "km",
+            "notation": "1<sup>3</sup>",
+            "equivalent": "1000 m"
+        }
+        
+    },
+
+    "imperial":{
+
+        "table":[
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "inch": {
+            "val": "0.0254",
+            "symbol": "in",
+            "metric": "2.54 cm",
+            "equivalent": "1/12 ft"
+        },
+        "foot": {
+            "val": "0.3048",
+            "symbol": "ft",
+            "metric": "30.48 cm",
+            "equivalent": "12 in"
+        },
+        "yard": {
+            "val": "0.9144",
+            "symbol": "yd",
+            "metric": "91.44 cm",
+            "equivalent": "3 ft"
+        },
+        "mile": {
+            "val": "1609.344",
+            "symbol": "mi",
+            "metric": "1609.344 m",
+            "equivalent": "1760 yd"
+        },
+        "league": {
+            "val": "4828.032",
+            "symbol": "lea",
+            "metric": "4828.032 m",
+            "equivalent": "3 mi"
+        }
+            
+    },
+
+    "english":{
+
+        "table":[
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "line": {
+            "val": "2.11666666666666666666e-3",
+            "symbol": "-",
+            "metric": "2.11(6) mm",
+            "equivalent": "1/12 in"
+        },
+        "barleycorn": {
+            "val": "8.46666666666666666666e-3",
+            "symbol": "-",
+            "metric": "8.4(6) mm",
+            "equivalent": "1/3 in"
+        },
+        "digit": {
+            "val": "0.01905",
+            "symbol": "-",
+            "metric": "1.905 cm",
+            "equivalent": "3/4 in"
+        },
+        "fingerbreadth": {
+            "val": "0.022225",
+            "symbol": "-",
+            "metric": "~2.223 cm",
+            "equivalent": "7/8 in"
+        },
+        "nail": {
+            "val": "0.05715",
+            "symbol": "-",
+            "metric": "5.715 cm",
+            "equivalent": "1/16 yd"
+        },
+        "palm": {
+            "val": "0.0762",
+            "symbol": "-",
+            "metric": "7.62 cm",
+            "equivalent": "3 in"
+        },
+        "hand": {
+            "val": "0.1016",
+            "symbol": "h",
+            "metric": "10.16 cm",
+            "equivalent": "4 in"
+        },
+        "shaftment": {
+            "val": "0.1524",
+            "symbol": "-",
+            "metric": "15.24 cm",
+            "equivalent": "6 in"
+        },
+        "link": {
+            "val": "0.201168",
+            "symbol": "li",
+            "metric": "20.1168 cm",
+            "equivalent": "1/100 ch"
+        },
+        "span": {
+            "val": "0.2286",
+            "symbol": "-",
+            "metric": "22.86 cm",
+            "equivalent": "9 in"
+        },
+        "cubit": {
+            "val": "0.4572",
+            "symbol": "-",
+            "metric": "45.72 cm",
+            "equivalent": "1.5 ft"
+        },
+        "pace": {
+            "val": "0.762",
+            "symbol": "-",
+            "metric": "76.2 cm",
+            "equivalent": "2.5 ft"
+        },
+        "cloth-yard": {
+            "val": "0.9398",
+            "symbol": "-",
+            "metric": "93.98 cm",
+            "equivalent": "37 in"
+        },
+        "cloth-ell": {
+            "val": "1.143",
+            "symbol": "-",
+            "metric": "1.143 m",
+            "equivalent": "1 1/4 yd"
+        },
+        "fathom": {
+            "val": "1.8288",
+            "symbol": "fth",
+            "metric": "~1.829 m",
+            "equivalent": "6 ft"
+        },
+        "rod": {
+            "val": "5.0292",
+            "symbol": "rd",
+            "metric": "~5.029 m",
+            "equivalent": "16.5 ft"
+        },
+        "chain": {
+            "val": "20.1168",
+            "symbol": "ch",
+            "metric": "~20.117 m",
+            "equivalent": "4 rd"
+        },
+        "bolt": {
+            "val": "36.576",
+            "symbol": "-",
+            "metric": "36.576 m",
+            "equivalent": "40 yd"
+        },
+        "furlong": {
+            "val": "201.168",
+            "symbol": "fur",
+            "metric": "201.168 m",
+            "equivalent": "10 ch"
+        }
+
+    },
+
+    "french":{
+
+        "table":[
+            "metric",
+            "equivalent"
+        ],
+
+        "point": {
+            "val": "1.87962962962962962963e-4",
+            "metric": "~0.188 mm",
+            "equivalent": "1/12 ligne"
+        },
+        "ligne": {
+            "val": "2.25555555555555555556e-3",
+            "metric": "2.2(5) mm",
+            "equivalent": "1/12 pouce"
+        },
+        "pouce": {
+            "val": "2.70666666666666666667e-2",
+            "metric": "27.0(6) mm",
+            "equivalent": "1/12 pied"
+        },
+        "pied": {
+            "val": "0.3248",
+            "metric": "32.48 cm",
+            "equivalent": "~1.066 ft"
+        },
+        "toise": {
+            "val": "1.9488",
+            "metric": "~1.949 m",
+            "equivalent": "6 pied"
+        },
+        "perche-darpent": {
+            "val": "7.1456",
+            "metric": "~7.146 m",
+            "equivalent": "22 pied"
+        },
+        "arpent": {
+            "val": "71.456",
+            "metric": "71.456 m",
+            "equivalent": "220 pied"
+        },
+        "lieue-de-paris": {
+            "val": "3897.6",
+            "metric": "~3.898 km",
+            "equivalent": "12 000 pied"
+        }
+        
+    },
+
+    "danish":{
+
+        "table":[
+            "metric",
+            "equivalent"
+        ],
+
+        "skrupel": {
+            "val": "1.816217592592592592593e-4",
+            "metric": "~0.182 mm",
+            "equivalent": "1/12 linie"
+        },
+        "linie": {
+            "val": "2.179461111111111111111e-3",
+            "metric": "~2.179 mm",
+            "equivalent": "1/12 tomme"
+        },
+        "tomme": {
+            "val": "0.02615353333333333333",
+            "metric": "~2.615 cm",
+            "equivalent": "1/12 fod"
+        },
+        "palme": {
+            "val": "0.088646",
+            "metric": "~8.865 cm",
+            "equivalent": "3.49 in"
+        },
+        "kvarter": {
+            "val": "0.1569212",
+            "metric": "~15.692 cm",
+            "equivalent": "1/4 alen"
+        },
+        "fod": {
+            "val": "0.3138424",
+            "metric": "~31.384 cm",
+            "equivalent": "12 tomme"
+        },
+        "alen": {
+            "val": "0.6276848",
+            "metric": "~62.769 cm",
+            "equivalent": "2 fod"
+        },
+        "rut": {
+            "val": "5.0214784",
+            "metric": "~5.021 m",
+            "equivalent": "16 fod"
+        },
+        "mil": {
+            "val": "7532.2176",
+            "metric": "~7.532 km",
+            "equivalent": "1200 fod"
+        }
+        
+    },
+
+    "indian":{
+
+        "table":[
+            "metric",
+            "equivalent"
+        ],
+
+        "jow": { 
+            "val": "0.00635",
+            "metric": "6.35 mm",
+            "equivalent": "0.25 in"
+        },
+        "unglie": { 
+            "val": "0.01905",
+            "metric": "1.905cm",
+            "equivalent": "0.75 in"
+        },
+        "girah": { 
+            "val": "0.0523875",
+            "metric": "~5.239 cm",
+            "equivalent": "2.0625 in"
+        },
+        "anguli": { 
+            "val": "0.0523875",
+            "metric": "~5.239 cm",
+            "equivalent": "2.0625 in"
+        },
+        "hath": { 
+            "val": "0.4191",
+            "metric": "41.91 cm",
+            "equivalent": "16.5 in"
+        },
+        "gaz": { 
+            "val": "0.8382",
+            "metric": "83.82 cm",
+            "equivalent": "33 in"
+        },
+        "guz": { 
+            "val": "0.9144",
+            "metric": "91.44 cm",
+            "equivalent": "1 yd"
+        },
+        "karam": { 
+            "val": "1.1303",
+            "metric": "~1.13 m",
+            "equivalent": "44.5 in"
+        },
+        "kathi": { 
+            "val": "2.44575",
+            "metric": "~2.446 m",
+            "equivalent": "96.25 in"
+        },
+        "kan": { 
+            "val": "3.3909",
+            "metric": "~3.391 m",
+            "equivalent": "133.5 in"
+        },
+        "bamboo": { 
+            "val": "12.8016",
+            "metric": "12.802 m",
+            "equivalent": "42 ft"
+        },
+        "pand": { 
+            "val": "48.895",
+            "metric": "48.895 m",
+            "equivalent": "1925 in"
+        },
+        "beesa": { 
+            "val": "48.895",
+            "metric": "48.895 m",
+            "equivalent": "1925 in"
+        },
+        "begah": { 
+            "val": "977.9",
+            "metric": "977.9 m",
+            "equivalent": "38500 in"
+        },
+        "kos": { 
+            "val": "3057.7536",
+            "metric": "~3.058 km",
+            "equivalent": "1.9 mi"
+        },
+        "yojana": { 
+            "val": "4345.2288",
+            "metric": "~4.345 km",
+            "equivalent": "2.7 mi"
+        }
+
+    },
+
+    "japanese":{
+
+        "table":[
+            "kanji",
+            "metric",
+            "equivalent"
+        ],
+
+        "mō": {
+            "val": "3.03030303030303030303e-5",
+            "kanji": "毛",
+            "metric": "0.(03) mm",
+            "equivalent": "1/10 rin"
+        },
+        "rin": {
+            "val": "3.03030303030303030303e-4",
+            "kanji": "厘",
+            "metric": "0.3(03) mm",
+            "equivalent": "1/10 bu"
+        },
+        "bu": {
+            "val": "3.03030303030303030303e-3",
+            "kanji": "分",
+            "metric": "3.(03) mm",
+            "equivalent": "1/10 sun"
+        },
+        "sun": {
+            "val": "3.03030303030303030303e-2",
+            "kanji": "寸",
+            "metric": "3.(03) cm",
+            "equivalent": "1/10 shaku"
+        },
+        "shaku": {
+            "val": "3.03030303030303030303e-1",
+            "kanji": "尺",
+            "metric": "30.3(03) cm",
+            "equivalent": "~11.93 in"
+        },
+        "ken": {
+            "val": "1.81818181818181818182",
+            "kanji": "間",
+            "metric": "1.(81) m",
+            "equivalent": "6 shaku"
+        },
+        "jō": {
+            "val": "3.03030303030303030303",
+            "kanji": "丈",
+            "metric": "3.(03) m",
+            "equivalent": "10 shaku"
+        },
+        "chō": {
+            "val": "109.09090909090909090909",
+            "kanji": "町",
+            "metric": "109.(09) m",
+            "equivalent": "360 shaku"
+        },
+        "ri": {
+            "val": "3927.27272727272727272727",
+            "kanji": "里",
+            "metric": "3.9(27) km",
+            "equivalent": "12960 shaku"
+        }
+        
+    },
+
+    "chinese":{
+
+        "table":[
+            "hànzì",
+            "metric",
+            "equivalent"
+        ],
+
+        "háo": {
+            "val": "3.33333333333333333333e-5",
+            "hànzì": "毫",
+            "metric": "33.(3) µm",
+            "equivalent": "1/10 lí"
+        },
+        "lí": {
+            "val": "3.33333333333333333333e-4",
+            "hànzì": "釐",
+            "metric": "0.(3) mm",
+            "equivalent": "1/10 fēn"
+        },
+        "fēn": {
+            "val": "3.33333333333333333333e-3",
+            "hànzì": "市分",
+            "metric": "3.(3) mm",
+            "equivalent": "1/10 cùn"
+        },
+        "cùn": {
+            "val": "3.33333333333333333333e-2",
+            "hànzì": "市寸",
+            "metric": "3.(3)cm",
+            "equivalent": "1/10 chǐ"
+        },
+        "chǐ": {
+            "val": "3.33333333333333333333e-1",
+            "hànzì": "市尺",
+            "metric": "33.(3) cm",
+            "equivalent": "~13.123 in"
+        },
+        "zhàng": {
+            "val": "3.33333333333333333333",
+            "hànzì": "市丈",
+            "metric": "3.(3) m",
+            "equivalent": "10 chǐ"
+        },
+        "yǐn": {
+            "val": "3.33333333333333333333e1",
+            "hànzì": "引",
+            "metric": "33.(3) m",
+            "equivalent": "10 zhàng"
+        },
+        "lǐ": {
+            "val": "500",
+            "hànzì": "市里",
+            "metric": "500 m",
+            "equivalent": "15 yǐn"
+        }
+        
+    },
+
+    "ancient-egyptian":{
+
+        "table":[
+            "egyptian",
+            "metric",
+            "equivalent"
+        ],
+
+        "finger": {
+            "val": "0.01875",
+            "egyptian": "ḏbꜥ",
+            "metric": "1.875 cm",
+            "equivalent": "1/4 šsp"
+        },
+        "palm": {
+            "val": "0.075",
+            "egyptian": "šsp",
+            "metric": "7.5 cm",
+            "equivalent": "4 ḏbꜥ"
+        },
+        "handsbreadth": {
+            "val": "0,09375",
+            "egyptian": "ḏrt",
+            "metric": "9.375 cm",
+            "equivalent": "5 ḏbꜥ"
+        },
+        "fist": {
+            "val": "0.1125",
+            "egyptian": "ḫfꜥ",
+            "metric": "11.25 cm",
+            "equivalent": "6 ḏbꜥ"
+        },
+        "double-handbreadth": {
+            "val": "0.15",
+            "egyptian": "šspwy",
+            "metric": "15 cm",
+            "equivalent": "8 ḏbꜥ"
+        },
+        "small-span": {
+            "val": "0.225",
+            "egyptian": "pḏ šsr",
+            "metric": "22.5 cm",
+            "equivalent": "12 ḏbꜥ"
+        },
+        "great-span": {
+            "val": "0.2625",
+            "egyptian": "pḏ ꜥꜣ",
+            "metric": "26.25 cm",
+            "equivalent": "14 ḏbꜥ"
+        },
+        "foot": {
+            "val": "0.3",
+            "egyptian": "ḏsr",
+            "metric": "30 cm",
+            "equivalent": "16 ḏbꜥ"
+        },
+        "shoulder": {
+            "val": "0.375",
+            "egyptian": "rmn",
+            "metric": "37.5 cm",
+            "equivalent": "20 ḏbꜥ"
+        },
+        "small-cubit": {
+            "val": "0.45",
+            "egyptian": "mḥ šsr",
+            "metric": "45 cm",
+            "equivalent": "24 ḏbꜥ"
+        },
+        "cubit": {
+            "val": "0.525",
+            "egyptian": "mḥ",
+            "metric": "52.5 cm",
+            "equivalent": "28 ḏbꜥ"
+        },
+        "pole": {
+            "val": "0.6",
+            "egyptian": "nbiw",
+            "metric": "60 cm",
+            "equivalent": "32 ḏbꜥ"
+        },
+        "rod": {
+            "val": "52.5",
+            "egyptian": "ḫt",
+            "metric": "52.5 m",
+            "equivalent": "100 mḥ"
+        },
+        "league": {
+            "val": "10500",
+            "egyptian": "i͗trw",
+            "metric": "10.5 km",
+            "equivalent": "200 ḫt"
+        }
+        
+    },
+
+    "ancient-roman":{
+
+        "table":[
+            "metric",
+            "equivalent"
+        ],
+
+        "digitus": {
+            "val": "0.0185",
+            "metric": "1.85 cm",
+            "equivalent": "1/16 pes"
+        },
+        "uncia": {
+            "val": "2.46666666666666666666e-2",
+            "metric": "2.4(6) cm",
+            "equivalent": "1/12 pes"
+        },
+        "palmus-minor": {
+            "val": "0.074",
+            "metric": "7.4 cm",
+            "equivalent": "1/4 pes"
+        },
+        "palmus-maior": {
+            "val": "0.222",
+            "metric": "22.2 cm",
+            "equivalent": "3/4 pes"
+        },
+        "pes": {
+            "val": "0.296",
+            "metric": "29.6 cm",
+            "equivalent": "~0.971 ft"
+        },
+        "palmipes": {
+            "val": "0.37",
+            "metric": "37 cm",
+            "equivalent": "1 1/4 pedes"
+        },
+        "cubitum": {
+            "val": "0.444",
+            "metric": "44.4 cm",
+            "equivalent": "1 1/2 pedes"
+        },
+        "gradus": {
+            "val": "0.74",
+            "metric": "74 cm",
+            "equivalent": "2 1/2 pedes"
+        },
+        "passus": {
+            "val": "1.48",
+            "metric": "1.48 m",
+            "equivalent": "5 pedes"
+        },
+        "pertica": {
+            "val": "2.96",
+            "metric": "2.96 m",
+            "equivalent": "10 pedes"
+        },
+        "actus": {
+            "val": "35.52",
+            "metric": "35.52 m",
+            "equivalent": "120 pedes"
+        },
+        "stadium": {
+            "val": "185",
+            "metric": "185 m",
+            "equivalent": "625 pedes"
+        },
+        "mille-passus": {
+            "val": "1480",
+            "metric": "1.48 km",
+            "equivalent": "5000 pedes"
+        },
+        "leuga": {
+            "val": "2220",
+            "metric": "2.22 km",
+            "equivalent": "7500 pedes"
+        }
+
+    }
+
+}

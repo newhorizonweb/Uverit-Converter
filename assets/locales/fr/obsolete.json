@@ -1,0 +1,70 @@
+
+{
+
+    "metric-units": "unités métriques",
+    "imperial-units": "unités impériales",
+    "english-units": "unités anglaises",
+    "french-units": "unités françaises",
+    "danish-units": "unités danoises",
+    "indian-units": "unités indiennes",
+    "japanese-units": "unités japonaises",
+    "chinese-units": "unités chinoises",
+    "ancient-egyptian-units": "unités égyptiennes anciennes",
+    "ancient-roman-units": "unités romaines anciennes",
+
+    "metric": {
+        "millimeter": "millimètre",
+        "centimeter": "centimètre",
+        "decimeter": "décimètre",
+        "meter": "mètre",
+        "kilometer": "kilomètre"
+    },
+
+    "imperial": {
+        "inch": "pouce",
+        "foot": "pied",
+        "yard": "yard",
+        "mile": "mile",
+        "league": "lieue"
+    },
+
+    "english": {
+        "line": "ligne",
+        "barleycorn": "grain d'orge",
+        "digit": "doigt",
+        "fingerbreadth": "largeur de doigt",
+        "nail": "clou",
+        "palm": "paume",
+        "hand": "main",
+        "shaftment": "tige",
+        "link": "maillon",
+        "span": "portée",
+        "cubit": "coudée",
+        "pace": "pas",
+        "cloth-yard": "verge de tissu",
+        "cloth-ell": "coude de tissu",
+        "fathom": "toise",
+        "rod": "perche",
+        "chain": "chaîne",
+        "bolt": "rouleau",
+        "furlong": "stade"
+    },
+
+    "ancient-egyptian": {
+        "finger": "doigt",
+        "palm": "paume",
+        "handsbreadth": "largeur de main",
+        "fist": "poing",
+        "double-handbreadth": "double largeur de main",
+        "small-span": "petite portée",
+        "great-span": "grande portée",
+        "foot": "pied",
+        "shoulder": "épaule",
+        "small-cubit": "petite coudée",
+        "cubit": "coudée",
+        "pole": "perche",
+        "rod": "perche",
+        "league": "lieue"
+    }
+
+}

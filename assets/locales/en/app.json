@@ -16,7 +16,7 @@
             "microscopic": "microscopic",
             "astronomical": "astronomical",
             "nautical": "nautical",
-            "archaic": "archaic"
+            "obsolete": "obsolete"
         },
         "space":{
             "space": "space",

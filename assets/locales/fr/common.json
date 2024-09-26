@@ -16,13 +16,8 @@
 
     "imperial": {
         "inch": "pouce",
-        "link": "chaîne",
-        "hand": "main",
         "foot": "pied",
         "yard": "yard",
-        "rod": "tige",
-        "chain": "chaîne",
-        "furlong": "furlong",
         "mile": "mille"
     }
     
