@@ -6,7 +6,7 @@
         "choice": "exponential",
         "choice-val-min": "0",
         "choice-val-max": "16",
-        "choice-val-def": "8"
+        "choice-val-def": "5"
     },
 
     "metric":{

@@ -50,6 +50,71 @@
         "furlong": "Furlong"
     },
 
+    "french": {
+        "point": "Point",
+        "ligne": "Ligne",
+        "pouce": "Pouce",
+        "pied": "Pied",
+        "toise": "Toise",
+        "perche-darpent": "Perche d'arpent",
+        "arpent": "Arpent",
+        "lieue-de-paris": "Lieue de Paris"
+    },
+
+    "danish": {
+        "skrupel": "Skrupel",
+        "linie": "Linie",
+        "tomme": "Tomme",
+        "palme": "Palme",
+        "kvarter": "Kvarter",
+        "fod": "Fod",
+        "alen": "Alen",
+        "rut": "Rut",
+        "mil": "Mil"
+    },
+
+    "indian": {
+        "jow": "Jow",
+        "unglie": "Unglie",
+        "girah": "Girah",
+        "anguli": "Anguli",
+        "hath": "Hat'h",
+        "gaz": "Gaz",
+        "guz": "Guz",
+        "karam": "Karam",
+        "kathi": "Kathi",
+        "kan": "Kan",
+        "bamboo": "Bamboo",
+        "pand": "Pand",
+        "beesa": "Beesa",
+        "begah": "Begah",
+        "kos": "Kos",
+        "yojana": "Yojana"
+    },
+
+    "japanese": {
+        "mō": "Mō",
+        "rin": "Rin",
+        "bu": "Bu",
+        "sun": "Sun",
+        "shaku": "Shaku",
+        "ken": "Ken",
+        "jō": "Jō",
+        "chō": "Chō",
+        "ri": "Ri"
+    },
+
+    "chinese": {
+        "háo": "Háo",
+        "lí": "Lí",
+        "fēn": "Fēn",
+        "cùn": "Cùn",
+        "chǐ": "Chǐ",
+        "zhàng": "Zhàng",
+        "yǐn": "Yǐn",
+        "lǐ": "Lǐ"
+    },
+
     "ancient-egyptian": {
         "finger": "Finger",
         "palm": "Handfläche",
@@ -65,6 +130,23 @@
         "pole": "Stange",
         "rod": "Rute",
         "league": "Leuge"
+    },
+
+    "ancient-roman": {
+        "digitus": "Digitus",
+        "uncia": "Uncia",
+        "palmus-minor": "Palmus Minor",
+        "palmus-maior": "Palmus Maior",
+        "pes": "Pes",
+        "palmipes": "Palmipes",
+        "cubitum": "Cubitum",
+        "gradus": "Gradus",
+        "passus": "Passus",
+        "pertica": "Pertica",
+        "actus": "Actus",
+        "stadium": "Stadium",
+        "mille-passus": "Mille Passus",
+        "leuga": "Leuga"
     }
     
 }

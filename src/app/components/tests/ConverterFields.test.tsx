@@ -105,11 +105,11 @@ describe("Common Length Converter Fields", () => {
         const userChoice = await screen.findByTestId("user-choice");
 
         userEvent.selectOptions(selFrom, '1e-2'); // cm
-        userEvent.selectOptions(selTo, '5.0292'); // rod
+        userEvent.selectOptions(selTo, '0.3048'); // ft
         userEvent.selectOptions(userChoice, '12');
         fireEvent.change(valInp, { target: { value: '12.22' } });
 
-        expect(result.textContent).toBe('0.024298099101');
+        expect(result.textContent).toBe('0.400918635171');
     });
 
     it('converts with changed units & min decimals', async () => {
@@ -120,7 +120,7 @@ describe("Common Length Converter Fields", () => {
         const userChoice = await screen.findByTestId("user-choice");
 
         userEvent.selectOptions(selFrom, '1e-2'); // cm
-        userEvent.selectOptions(selTo, '5.0292'); // rod
+        userEvent.selectOptions(selTo, '0.9144'); // yd
         userEvent.selectOptions(userChoice, '0');
         fireEvent.change(valInp, { target: { value: '12.22' } });
 

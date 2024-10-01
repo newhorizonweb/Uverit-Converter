@@ -50,7 +50,7 @@ describe('Converter', () => {
             .should('contain', '0.42092526');
     });
 
-    it('should switch to the common length page (mobile) and convert hands to centimeters', () => {
+    it('should switch to the common length page (mobile) and convert yards to centimeters', () => {
         setViewport(device.mobile);
 
         // Cypress thinks select elements do not have options
@@ -62,17 +62,18 @@ describe('Converter', () => {
         cy.get('[data-testid="mobile-nav-btn-length"]').click();
         cy.get('[data-testid="mobile-link-common"]').click();
 
-        // Hand
-        cy.get('[data-testid="units-input"]').select('0.1016', { force: true });
+        // Yard
+        cy.get('[data-testid="units-input"]').select('0.9144', { force: true });
 
         // Centimeter
         cy.get('[data-testid="units-output"]').select('1e-2', { force: true });
 
-        cy.get('[data-testid="user-choice"]').select('12', { force: true });
+        cy.get('[data-testid="user-choice"]').select('3', { force: true });
         cy.get('[data-testid="value-input"]').type('128.64', { force: true });
 
+        // Also checks the rounding from 11762.8416
         cy.get('[data-testid="result-txt"]')
-            .should('contain', '1306.9824');
+            .should('contain', '11762.842');
     });
     
 });

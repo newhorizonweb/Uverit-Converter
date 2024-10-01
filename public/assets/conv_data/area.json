@@ -1,0 +1,238 @@
+
+{
+
+    "settings":{
+        "operation": "true",
+        "choice": "decimal",
+        "choice-val-min": "0",
+        "choice-val-max": "16",
+        "choice-val-def": "5"
+    },
+
+    "metric":{
+
+        "table":[
+            "symbol",
+            "notation",
+            "equivalent"
+        ],
+
+        "sq-millimeter": {
+            "val": "1e-6",
+            "symbol": "mm<sup>2</sup>",
+            "notation": "10<sup>-6</sup>",
+            "equivalent": "0.000001 m<sup>2</sup>"
+        },
+        "sq-centimeter": {
+            "val": "1e-4",
+            "symbol": "cm<sup>2</sup>",
+            "notation": "10<sup>-4</sup>",
+            "equivalent": "0.0001 m<sup>2</sup>"
+        },
+        "sq-decimeter": {
+            "val": "1e-2",
+            "symbol": "dm<sup>2</sup>",
+            "notation": "10<sup>-2</sup>",
+            "equivalent": "0.01 m<sup>2</sup>"
+        },
+        "sq-meter": {
+            "val": "1",
+            "symbol": "m<sup>2</sup>",
+            "notation": "1<sup>0</sup>",
+            "equivalent": "1 m<sup>2</sup>"
+        },
+        "sq-dekameter": {
+            "val": "1e2",
+            "symbol": "dam<sup>2</sup>",
+            "notation": "10<sup>2</sup>",
+            "equivalent": "100 m<sup>2</sup>"
+        },
+        "sq-hectometer": {
+            "val": "1e4",
+            "symbol": "hm<sup>2</sup>",
+            "notation": "10<sup>4</sup>",
+            "equivalent": "10000 m<sup>2</sup>"
+        },
+        "sq-kilometer": {
+            "val": "1e6",
+            "symbol": "km<sup>2</sup>",
+            "notation": "10<sup>6</sup>",
+            "equivalent": "1000000 m<sup>2</sup>"
+        }
+        
+    },
+
+    "imperial":{
+
+        "table":[
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "sq-inch": {
+            "val": "6.4516e-4",
+            "symbol": "in<sup>2</sup>",
+            "metric": "6.452 cm<sup>2</sup>",
+            "equivalent": "1/144 ft<sup>2</sup>"
+        },
+        "sq-foot": {
+            "val": "9.290304e-2",
+            "symbol": "ft<sup>2</sup>",
+            "metric": "~9.29 dm<sup>2</sup>",
+            "equivalent": "144 in<sup>2</sup>"
+        },
+        "sq-yard": {
+            "val": "8.3612736e-1",
+            "symbol": "yd<sup>2</sup>",
+            "metric": "~0.836 m<sup>2</sup>",
+            "equivalent": "9 ft<sup>2</sup>"
+        },
+        "sq-rod": {
+            "val": "25.29285264",
+            "symbol": "rd<sup>2</sup>",
+            "metric": "~25.293 m<sup>2</sup>",
+            "equivalent": "272 1/4 ft<sup>2</sup>"
+        },
+        "rood": {
+            "val": "1.0117141056e3",
+            "symbol": "ro",
+            "metric": "~10.117 dam<sup>2</sup>",
+            "equivalent": "40 rd<sup>2</sup>"
+        },
+        "acre": {
+            "val": "4.0468564224e3",
+            "symbol": "ac",
+            "metric": "~40.469 dam<sup>2</sup>",
+            "equivalent": "4 ro"
+        },
+        "sq-mile": {
+            "val": "2.589988110336e6",
+            "symbol": "mi<sup>2</sup>",
+            "metric": "~2.59 km<sup>2</sup>",
+            "equivalent": "640 ac"
+        }
+        
+    },
+
+    "south-asian":{
+
+        "table":[
+            "metric",
+            "equivalent"
+        ],
+
+        "decimal": {
+            "val": "4.04686",
+            "metric": "~4.047 m<sup>2</sup>",
+            "equivalent": "1/100 ac"
+        },
+        "anna": {
+            "val": "6.32321316",
+            "metric": "~6.323 m<sup>2</sup>",
+            "equivalent": "1/640 ac"
+        },
+        "ankanam": {
+            "val": "6.68901888",
+            "metric": "~6.689 m<sup>2</sup>",
+            "equivalent": "72 ft<sup>2</sup>"
+        },
+        "chatak": {
+            "val": "16.7225472",
+            "metric": "~16.723 m<sup>2</sup>",
+            "equivalent": "180 ft<sup>2</sup>"
+        },
+        "guntha": {
+            "val": "101.17141056",
+            "metric": "~101.171 m<sup>2</sup>",
+            "equivalent": "1/40 ac"
+        },
+        "ground": {
+            "val": "222.967296",
+            "metric": "~222.967 m<sup>2</sup>",
+            "equivalent": "2400 ft<sup>2</sup>"
+        },
+        "kanal": {
+            "val": "505.8570528",
+            "metric": "~5.059 dam<sup>2</sup>",
+            "equivalent": "1/8 ac"
+        },
+        "killa": {
+            "val": "4.0468564224e3",
+            "metric": "~40.469 dam<sup>2</sup>",
+            "equivalent": "1 ac"
+        },
+        "ghumaon": {
+            "val": "4.0468564224e3",
+            "metric": "~40.469 dam<sup>2</sup>",
+            "equivalent": "1 ac"
+        }
+        
+    },
+
+    "other":{
+
+        "table":[
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "pyeong": {
+            "val": "3.30578512396694214876",
+            "symbol": "py",
+            "metric": "~3.306 m<sup>2</sup>",
+            "equivalent": "100/30.25 m<sup>2</sup>"
+        },
+        "tsubo": {
+            "val": "3.30578512396694214876",
+            "symbol": "-",
+            "metric": "~3.306 m<sup>2</sup>",
+            "equivalent": "100/30.25 m<sup>2</sup>"
+        },
+        "are": {
+            "val": "1e2",
+            "symbol": "a",
+            "metric": "100 m<sup>2</sup>",
+            "equivalent": "1 dam<sup>2</sup>"
+        },
+        "dunam": {
+            "val": "1e3",
+            "symbol": "-",
+            "metric": "1000 m<sup>2</sup>",
+            "equivalent": "10 a"
+        },
+        "cureda": {
+            "val": "3930.395625",
+            "symbol": "cda",
+            "metric": "~39.304 dam<sup>2</sup>",
+            "equivalent": "~39.304 a"
+        },
+        "hectare": {
+            "val": "1e4",
+            "symbol": "ha",
+            "metric": "10000 m<sup>2</sup>",
+            "equivalent": "1 hm<sup>2</sup>"
+        },
+        "tetrad": {
+            "val": "4e6",
+            "symbol": "-",
+            "metric": "4 km<sup>2</sup>",
+            "equivalent": "400 ha"
+        },
+        "hectad": {
+            "val": "1e8",
+            "symbol": "-",
+            "metric": "100 km<sup>2</sup>",
+            "equivalent": "10000 ha"
+        },
+        "myriad": {
+            "val": "1e10",
+            "symbol": "-",
+            "metric": "10000 km<sup>2</sup>",
+            "equivalent": "1000000 ha"
+        }
+            
+    }
+
+}
