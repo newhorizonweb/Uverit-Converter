@@ -1,0 +1,53 @@
+
+{
+
+    "metric-units": "metric units",
+    "imperial-units": "imperial units",
+    "south-asian-units": "south asian units",
+    "other-units": "other units",
+
+    "metric":{
+        "sq-millimeter": "square millimeter",
+        "sq-centimeter": "square centimeter",
+        "sq-decimeter": "square decimeter",
+        "sq-meter": "square meter",
+        "sq-dekameter": "square dekameter",
+        "sq-hectometer": "square hectometer",
+        "sq-kilometer": "square kilometer"
+    },
+
+    "imperial":{
+        "sq-inch": "square inch",
+        "sq-foot": "square foot",
+        "sq-yard": "square yard",
+        "sq-rod": "square rod",
+        "rood": "rood",
+        "acre": "acre",
+        "sq-mile": "square mile"
+    },
+
+    "south-asian":{
+        "decimal": "decimal",
+        "anna": "anna",
+        "ankanam": "ankanam",
+        "chatak": "chatak",
+        "guntha": "guntha",
+        "ground": "ground",
+        "kanal": "kanal",
+        "killa": "killa",
+        "ghumaon": "ghumaon"
+    },
+
+    "other":{
+        "pyeong": "pyeong",
+        "tsubo": "tsubo",
+        "are": "are",
+        "dunam": "dunam",
+        "cureda": "cureda",
+        "hectare": "hectare",
+        "tetrad": "tetrad",
+        "hectad": "hectad",
+        "myriad": "myriad"
+    }
+    
+}

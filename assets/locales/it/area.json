@@ -1,0 +1,36 @@
+
+{
+
+    "metric-units": "unità metriche",
+    "imperial-units": "unità imperiali",
+    "south-asian-units": "unità sudasiatiche",
+    "other-units": "altre unità",
+
+    "metric": {
+        "sq-millimeter": "millimetro quadrato",
+        "sq-centimeter": "centimetro quadrato",
+        "sq-decimeter": "decimetro quadrato",
+        "sq-meter": "metro quadrato",
+        "sq-dekameter": "decametro quadrato",
+        "sq-hectometer": "ettometro quadrato",
+        "sq-kilometer": "chilometro quadrato"
+    },
+
+    "imperial": {
+        "sq-inch": "pollice quadrato",
+        "sq-foot": "piede quadrato",
+        "sq-yard": "yd quadrato",
+        "sq-rod": "asta quadrata",
+        "acre": "acri",
+        "sq-mile": "miglio quadrato"
+    },
+
+    "other": {
+        "are": "are",
+        "hectare": "ettaro",
+        "tetrad": "tetrade",
+        "hectad": "ettade",
+        "myriad": "miriade"
+    }
+
+}

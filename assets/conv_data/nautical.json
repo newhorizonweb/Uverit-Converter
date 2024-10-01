@@ -5,7 +5,7 @@
         "operation": "true",
         "choice": "decimal",
         "choice-val-min": "0",
-        "choice-val-max": "12",
+        "choice-val-max": "16",
         "choice-val-def": "5"
     },
 
