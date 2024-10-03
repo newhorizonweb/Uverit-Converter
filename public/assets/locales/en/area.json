@@ -3,6 +3,7 @@
 
     "metric-units": "metric units",
     "imperial-units": "imperial units",
+    "japanese-units": "imperial units",
     "south-asian-units": "south asian units",
     "other-units": "other units",
 
@@ -26,6 +27,17 @@
         "sq-mile": "square mile"
     },
 
+    "japanese":{
+        "shaku": "shaku",
+        "gō": "gō",
+        "jō": "jō",
+        "tsubo": "tsubo",
+        "bu": "bu",
+        "se": "se",
+        "tan": "tan",
+        "chō": "chō"
+    },
+
     "south-asian":{
         "decimal": "decimal",
         "anna": "anna",
@@ -40,7 +52,6 @@
 
     "other":{
         "pyeong": "pyeong",
-        "tsubo": "tsubo",
         "are": "are",
         "dunam": "dunam",
         "cureda": "cureda",

@@ -4,6 +4,10 @@
     "settings":{
         "operation": "true",
         "choice": "exponential",
+
+        "input-def": "3",
+        "output-def": "24",
+
         "choice-val-min": "0",
         "choice-val-max": "16",
         "choice-val-def": "5"

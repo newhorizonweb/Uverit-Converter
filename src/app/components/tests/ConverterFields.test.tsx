@@ -81,7 +81,7 @@ describe("Common Length Converter Fields", () => {
         const result = await screen.findByTestId("result-txt");
 
         fireEvent.change(valInp, { target: { value: '20' } });
-        expect(result.textContent).toBe('2');
+        expect(result.textContent).toBe('7.87402');
     });
 
     it('converts with changed units', async () => {
@@ -90,8 +90,8 @@ describe("Common Length Converter Fields", () => {
         const valInp = await screen.findByTestId("value-input");
         const result = await screen.findByTestId("result-txt");
 
-        userEvent.selectOptions(selFrom, '1e-1'); // dm
-        userEvent.selectOptions(selTo, '0.3048'); // ft
+        userEvent.selectOptions(selFrom, 'metric&decimeter_&_1e-1');
+        userEvent.selectOptions(selTo, 'imperial&foot_&_0.3048');
         fireEvent.change(valInp, { target: { value: '6.4' } });
 
         expect(result.textContent).toBe('2.09974');
@@ -104,8 +104,8 @@ describe("Common Length Converter Fields", () => {
         const result = await screen.findByTestId("result-txt");
         const userChoice = await screen.findByTestId("user-choice");
 
-        userEvent.selectOptions(selFrom, '1e-2'); // cm
-        userEvent.selectOptions(selTo, '0.3048'); // ft
+        userEvent.selectOptions(selFrom, 'metric&centimeter_&_1e-2');
+        userEvent.selectOptions(selTo, 'imperial&foot_&_0.3048');
         userEvent.selectOptions(userChoice, '12');
         fireEvent.change(valInp, { target: { value: '12.22' } });
 
@@ -119,8 +119,8 @@ describe("Common Length Converter Fields", () => {
         const result = await screen.findByTestId("result-txt");
         const userChoice = await screen.findByTestId("user-choice");
 
-        userEvent.selectOptions(selFrom, '1e-2'); // cm
-        userEvent.selectOptions(selTo, '0.9144'); // yd
+        userEvent.selectOptions(selFrom, 'metric&centimeter_&_1e-2');
+        userEvent.selectOptions(selTo, 'imperial&yard_&_0.9144');
         userEvent.selectOptions(userChoice, '0');
         fireEvent.change(valInp, { target: { value: '12.22' } });
 
@@ -135,8 +135,8 @@ describe("Common Length Converter Fields", () => {
         const switchUnits = await screen.findByTestId("switch-units");
         const userChoice = await screen.findByTestId("user-choice");
 
-        userEvent.selectOptions(selFrom, '0.9144'); // yd
-        userEvent.selectOptions(selTo, '0.3048'); // ft
+        userEvent.selectOptions(selFrom, 'imperial&yard_&_0.9144');
+        userEvent.selectOptions(selTo, 'imperial&foot_&_0.3048');
         userEvent.selectOptions(userChoice, '6');
         fireEvent.change(valInp, { target: { value: '6' } });
         fireEvent.click(switchUnits);
@@ -151,8 +151,8 @@ describe("Common Length Converter Fields", () => {
         const userChoice = await screen.findByTestId("user-choice");
         const operation = await screen.findByTestId("operation-field");
 
-        userEvent.selectOptions(selFrom, '1e+3'); // km
-        userEvent.selectOptions(selTo, '1e-2'); // cm
+        userEvent.selectOptions(selFrom, 'metric&kilometer_&_1e+3');
+        userEvent.selectOptions(selTo, 'metric&centimeter_&_1e-2');
         userEvent.selectOptions(userChoice, '9');
         fireEvent.change(valInp, { target: { value: '9.1' } });
 

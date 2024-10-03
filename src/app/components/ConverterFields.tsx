@@ -55,9 +55,11 @@ function ConverterFields(){
 
     // Input Unit Select Value
     const [ inputSelVal, setInputSelVal ] = useState("");
+    const [ inputSelName, setInputSelName ] = useState("");
 
     // Output Unit Select Value
     const [ outputSelVal, setOutputSelVal ] = useState("");
+    const [ outputSelName, setOutputSelName ] = useState("");
 
     const [ copiedResult, setCopiedResult ] = useState(false);
 
@@ -69,9 +71,21 @@ function ConverterFields(){
     
     // Update the select unit values to the first option on page load
     useEffect(() => {
+        
         const select = (document.querySelector('#units-input') as HTMLSelectElement);
-        setInputSelVal(select.options[0].value);
-        setOutputSelVal(select.options[1].value);
+
+        // Default options (first and second if not found)
+        const inputDef = parseInt(data.settings["input-def"]) || 0;
+        const outputDef = parseInt(data.settings["output-def"]) || 1;
+
+        // Input
+        setInputSelVal(select.options[inputDef]?.value.split('_&_')[1] ?? 0);
+        setInputSelName(select.options[inputDef]?.value ?? '');
+
+        // Output
+        setOutputSelVal(select.options[outputDef]?.value.split('_&_')[1] ?? 1);
+        setOutputSelName(select.options[outputDef]?.value ?? '');
+
     }, [ data ]);
 
         /* Focus */
@@ -206,16 +220,11 @@ function ConverterFields(){
         /* Features */
 
     const switchUnits = () => {
+        setInputSelVal(outputSelVal);
+        setInputSelName(outputSelName);
 
-        const inputSelect =
-            document.querySelector('#units-input') as HTMLInputElement;
-
-        const outputSelect =
-            document.querySelector('#units-output') as HTMLInputElement;
-
-        setInputSelVal(outputSelect.value);
-        setOutputSelVal(inputSelect.value);
-
+        setOutputSelVal(inputSelVal);
+        setOutputSelName(inputSelName);
     };
 
     const copyResult = () => {
@@ -288,10 +297,12 @@ function ConverterFields(){
                         <div className="conv-select">
                             <select name="units-input" id="units-input"
                             className="conv-inp glass small-scroll pointer hover"
-                            data-testid="units-input" value={ inputSelVal }
+                            data-testid="units-input" value={ inputSelName }
                             aria-label={`${t('converter:units')} ${t('converter:from')}`}
                             onChange={(e) => {
-                                setInputSelVal(e.target.value);
+                                const eVal = e.target.value;
+                                setInputSelVal(eVal.split('_&_')[1]);
+                                setInputSelName(eVal);
                                 blurElem(e);
                             }}>
                                 <RenderSelectOptions
@@ -337,10 +348,12 @@ function ConverterFields(){
                             <select name="units-output" id="units-output"
                             className="conv-inp glass small-scroll pointer hover"
                             data-testid="units-output"
-                            value={ outputSelVal }
+                            value={ outputSelName }
                             aria-label={`${t('converter:units')} ${t('converter:to')}`}
                             onChange={(e) => {
-                                setOutputSelVal(e.target.value);
+                                const eVal = e.target.value;
+                                setOutputSelVal(eVal.split('_&_')[1]);
+                                setOutputSelName(eVal);
                                 blurElem(e);
                             }}>
                                 <RenderSelectOptions

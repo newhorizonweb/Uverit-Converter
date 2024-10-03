@@ -4,6 +4,10 @@
     "settings":{
         "operation": "true",
         "choice": "decimal",
+
+        "input-def": "1",
+        "output-def": "7",
+
         "choice-val-min": "0",
         "choice-val-max": "16",
         "choice-val-def": "5"

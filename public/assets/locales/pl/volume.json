@@ -1,0 +1,58 @@
+
+{
+
+    "metric-units": "jednostki metryczne",
+    "imperial-units": "jednostki imperialne",
+    "us-fluid-volume-units": "US (płynna objętość)",
+    "us-dry-volume-units": "US (sucha objętość)",
+    "japanese-units": "japońskie jednostki",
+
+    "metric": {
+        "microliter": "mikrolitr",
+        "milliliter": "mililitr",
+        "centiliter": "centylitr",
+        "decyliter": "decy litr",
+        "liter": "litr",
+        "decaliter": "dekalitr",
+        "hectoliter": "hektolitr",
+        "kiloliter": "kilolitr",
+        "megaliter": "megalitr"
+    },
+
+    "imperial": {
+        "cu-inch": "cal sześcienny",
+        "cu-foot": "stopa sześcienna",
+        "cu-yard": "jard sześcienny",
+        "acre-ft": "akr-stopa",
+        "cu-mile": "mila sześcienna"
+    },
+
+    "us-fluid-volume": {
+        "minim": "minim",
+        "fluid-dram": "płynna drachma",
+        "teaspoon": "łyżeczka",
+        "tablespoon": "łyżka stołowa",
+        "fluid-ounce": "uncja płynna",
+        "shot": "kieliszek",
+        "gill": "gill",
+        "cup": "kubek",
+        "pint": "pinta",
+        "quart": "kwarta",
+        "pottle": "pottle",
+        "gallon": "galon",
+        "beer-barrel": "beczka piwa",
+        "barrel": "beczka",
+        "oil-barrel": "beczka ropy",
+        "hogshead": "hogshead"
+    },
+
+    "us-dry-volume": {
+        "dry-pint": "sucha pinta",
+        "dry-quart": "sucha kwarta",
+        "dry-gallon": "suchy galon",
+        "peck": "peck",
+        "bushel": "buszel",
+        "dry-barrel": "sucha beczka"
+    }
+
+}

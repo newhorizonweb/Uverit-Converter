@@ -37,15 +37,16 @@ const RenderSelectOptions: React.FC<PropTypes> = ({ data }) => {
             { Object.keys(data[group]).map((unit) => (
             unit !== 'table' &&
 
-                <option key={ unit }
-                value={ data[group][unit].val }>
-                    {`${t(`${group}.${unit}`)}
+                <option key={unit}
+                value={`${group}&${unit}_&_${data[group][unit].val}`}>
+
+                    {`${t(`${group}.${unit}`)} 
                     
-                    ${data[group][unit].symbol &&
-                    data[group][unit].symbol !== "-" ?
-                        `(${cleanText(data[group][unit].symbol)})` :
-                        ""}`
-                    }
+                    ${data[group][unit].symbol && data[group][unit].symbol !== "-"
+                        ? `(${cleanText(data[group][unit].symbol)})`
+                        : ""
+                    }`}
+
                 </option>
 
             ))}

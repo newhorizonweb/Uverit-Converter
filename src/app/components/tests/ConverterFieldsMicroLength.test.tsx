@@ -49,8 +49,8 @@ describe("Microscopic Length Converter Fields", () => {
         const result = await screen.findByTestId("result-txt");
         const userChoice = await screen.findByTestId("user-choice");
 
-        userEvent.selectOptions(selFrom, '1e-9'); // nm
-        userEvent.selectOptions(selTo, '2.54e-5'); // thou
+        userEvent.selectOptions(selFrom, 'metric&nanometer_&_1e-9');
+        userEvent.selectOptions(selTo, 'imperial&thou_&_2.54e-5');
         userEvent.selectOptions(userChoice, '8');
         fireEvent.change(valInp, { target: { value: '15' } });
 
@@ -65,8 +65,9 @@ describe("Microscopic Length Converter Fields", () => {
         const expoBtn = await screen.findByTestId("exponential-btn");
         const userChoice = await screen.findByTestId("user-choice");
 
-        userEvent.selectOptions(selFrom, '1.00207699282828282828e-13'); // x unit
-        userEvent.selectOptions(selTo, '1e-12'); // pm
+        userEvent.selectOptions(selFrom,
+            'non-si&x-unit_&_1.00207699282828282828e-13');
+        userEvent.selectOptions(selTo, 'metric&picometer_&_1e-12'); // pm
         userEvent.selectOptions(userChoice, '5');
         fireEvent.change(valInp, { target: { value: '1' } });
         fireEvent.click(expoBtn);

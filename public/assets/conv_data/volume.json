@@ -1,0 +1,323 @@
+
+{
+
+    "settings":{
+        "operation": "true",
+        "choice": "decimal",
+
+        "input-def": "4",
+        "output-def": "25",
+
+        "choice-val-min": "0",
+        "choice-val-max": "16",
+        "choice-val-def": "5"
+    },
+
+    "metric":{
+
+        "table":[
+            "symbol",
+            "notation",
+            "equivalent"
+        ],
+
+        "microliter": {
+            "val": "1e-6",
+            "symbol": "μl",
+            "notation": "10<sup>-6</sup>",
+            "equivalent": "1 mm<sup>3</sup>"
+        },
+        "milliliter": {
+            "val": "1e-3",
+            "symbol": "ml",
+            "notation": "10<sup>-3</sup>",
+            "equivalent": "1 cm<sup>3</sup>"
+        },
+        "centiliter": {
+            "val": "1e-2",
+            "symbol": "cl",
+            "notation": "10<sup>-2</sup>",
+            "equivalent": "10 cm<sup>3</sup>"
+        },
+        "decyliter": {
+            "val": "1e-1",
+            "symbol": "dl",
+            "notation": "10<sup>-1</sup>",
+            "equivalent": "100 cm<sup>3</sup>"
+        },
+        "liter": {
+            "val": "1",
+            "symbol": "l",
+            "notation": "10<sup>0</sup>",
+            "equivalent": "1 dm<sup>3</sup>"
+        },
+        "decaliter": {
+            "val": "1e1",
+            "symbol": "dal",
+            "notation": "10<sup>1</sup>",
+            "equivalent": "10 dm<sup>3</sup>"
+        },
+        "hectoliter": {
+            "val": "1e2",
+            "symbol": "hl",
+            "notation": "10<sup>2</sup>",
+            "equivalent": "100 dm<sup>3</sup>"
+        },
+        "kiloliter": {
+            "val": "1e3",
+            "symbol": "kl",
+            "notation": "10<sup>3</sup>",
+            "equivalent": "1 m<sup>3</sup>"
+        },
+        "megaliter": {
+            "val": "1e6",
+            "symbol": "Ml",
+            "notation": "10<sup>6</sup>",
+            "equivalent": "1 dam<sup>3</sup>"
+        }
+        
+    },
+
+    "imperial":{
+
+        "table":[
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "cu-inch": {
+            "val": "0.016387064",
+            "symbol": "in<sup>3</sup>",
+            "metric": "~16.387 ml",
+            "equivalent": "1/1728 ft<sup>3</sup>"
+        },
+        "cu-foot": {
+            "val": "28.316846592",
+            "symbol": "ft<sup>3</sup>",
+            "metric": "~28.317 l",
+            "equivalent": "1728 in<sup>3</sup>"
+        },
+        "cu-yard": {
+            "val": "764.554857984",
+            "symbol": "yd<sup>3</sup>",
+            "metric": "~764.555 l",
+            "equivalent": "27 ft<sup>3</sup>"
+        },
+        "acre-ft": {
+            "val": "1233481.83754752",
+            "symbol": "ac⋅ft",
+            "metric": "~1.233 Ml",
+            "equivalent": "43560 ft<sup>3</sup>"
+        },
+        "cu-mile": {
+            "val": "4.168181825440579584e12",
+            "symbol": "mi<sup>3</sup>",
+            "metric": "~4.168e6 Ml",
+            "equivalent": "3379200 ac⋅ft"
+        }
+        
+    },
+
+    "us-fluid-volume":{
+
+        "table":[
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+        
+        "minim": {
+            "val": "6.1611519921875e-5",
+            "symbol": "min",
+            "metric": "~61.612 μL",
+            "equivalent": "1/80 tsp"
+        },
+        "fluid-dram": {
+            "val": "0.0036966911953125",
+            "symbol": "fl dr",
+            "metric": "~3.697 ml",
+            "equivalent": "3/4 tsp"
+        },
+        "teaspoon": {
+            "val": "0.00492892159375",
+            "symbol": "tsp",
+            "metric": "~4.929 ml",
+            "equivalent": "1/3 tbsp"
+        },
+        "tablespoon": {
+            "val": "0.01478676478125",
+            "symbol": "tbsp",
+            "metric": "~14.787 ml",
+            "equivalent": "3 tsp"
+        },
+        "fluid-ounce": {
+            "val": "0.0295735295625",
+            "symbol": "fl oz",
+            "metric": "~29.574 ml",
+            "equivalent": "2 tbsp"
+        },
+        "shot": {
+            "val": "0.04436029434375",
+            "symbol": "jig",
+            "metric": "~44.36 ml",
+            "equivalent": "1.5 fl oz"
+        },
+        "gill": {
+            "val": "0.11829411825",
+            "symbol": "gi",
+            "metric": "~118.294 ml",
+            "equivalent": "4 fl oz"
+        },
+        "cup": {
+            "val": "0.2365882365",
+            "symbol": "c",
+            "metric": "~236.588 ml",
+            "equivalent": "8 fl oz"
+        },
+        "pint": {
+            "val": "0.473176473",
+            "symbol": "pt",
+            "metric": "~473.176 ml",
+            "equivalent": "2 c"
+        },
+        "quart": {
+            "val": "0.946352946",
+            "symbol": "qt",
+            "metric": "~946.353 ml",
+            "equivalent": "4 c"
+        },
+        "pottle": {
+            "val": "1.892705892",
+            "symbol": "pot",
+            "metric": "~1.893 l",
+            "equivalent": "8 c"
+        },
+        "gallon": {
+            "val": "3.785411784",
+            "symbol": "gal",
+            "metric": "~3.785 l",
+            "equivalent": "16 c"
+        },
+        "beer-barrel": {
+            "val": "117.34777",
+            "symbol": "bbl",
+            "metric": "~119.24 l",
+            "equivalent": "31 gal"
+        },
+        "barrel": {
+            "val": "119.240471196",
+            "symbol": "bbl",
+            "metric": "~119.24 l",
+            "equivalent": "31.5 gal"
+        },
+        "oil-barrel": {
+            "val": "158.987294928",
+            "symbol": "bbl",
+            "metric": "~158.987 l",
+            "equivalent": "42 gal"
+        },
+        "hogshead": {
+            "val": "238.480942392",
+            "symbol": "hhd",
+            "metric": "~238.481 l",
+            "equivalent": "63 gal"
+        }
+        
+    },
+
+    "us-dry-volume":{
+
+        "table":[
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "dry-pint": {
+            "val": "0.5506104713575",
+            "symbol": "pt",
+            "metric": "~550.61 ml",
+            "equivalent": "1/2 qt"
+        },
+        "dry-quart": {
+            "val": "1.101220942715",
+            "symbol": "qt",
+            "metric": "~1.101 l",
+            "equivalent": "2 pt"
+        },
+        "dry-gallon": {
+            "val": "4.40488377086",
+            "symbol": "gal",
+            "metric": "~4.405 l",
+            "equivalent": "4 qt"
+        },
+        "peck": {
+            "val": "8.80976754172",
+            "symbol": "pk",
+            "metric": "~8.81 l",
+            "equivalent": "2 gal"
+        },
+        "bushel": {
+            "val": "35.23907016688",
+            "symbol": "bu",
+            "metric": "~35.239 l",
+            "equivalent": "8 gal"
+        },
+        "dry-barrel": {
+            "val": "115.627123584",
+            "symbol": "bbl",
+            "metric": "~115.627 l",
+            "equivalent": "7056 in<sup>3</sup>"
+        }
+        
+    },
+
+    "japanese":{
+
+        "table":[
+            "kanji",
+            "metric",
+            "equivalent"
+        ],
+
+        "sai": {
+            "val": "0.00180390683696468820436",
+            "kanji": "才",
+            "metric": "~1.804 ml",
+            "equivalent": "1/1000 shō"
+        },
+        "shaku": {
+            "val": "0.0180390683696468820436",
+            "kanji": "勺",
+            "metric": "~18.039 ml",
+            "equivalent": "1/100  shō"
+        },
+        "gō": {
+            "val": "0.180390683696468820436",
+            "kanji": "合",
+            "metric": "~180.391 ml",
+            "equivalent": "1/10 shō"
+        },
+        "shō": {
+            "val": "1.80390683696468820436",
+            "kanji": "升",
+            "metric": "~1.804 l",
+            "equivalent": "1 shō"
+        },
+        "to": {
+            "val": "18.0390683696468820436",
+            "kanji": "斗",
+            "metric": "~18.039 l",
+            "equivalent": "10 shō"
+        },
+        "koku": {
+            "val": "180.390683696468820436",
+            "kanji": "石",
+            "metric": "~180.391 l",
+            "equivalent": "100 shō"
+        }
+        
+    }
+
+}

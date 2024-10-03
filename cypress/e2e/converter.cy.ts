@@ -21,10 +21,10 @@ describe('Converter', () => {
     it('converts nanometers to planck length and switches the units', () => {
 
         // Yoctometer
-        cy.get('[data-testid="units-input"]').select('1e-24');
+        cy.get('[data-testid="units-input"]').select('metric&yoctometer_&_1e-24');
 
         // Planck Length
-        cy.get('[data-testid="units-output"]').select('1.61625518181818181818e-35');
+        cy.get('[data-testid="units-output"]').select('physics&planck-length_&_1.61625518181818181818e-35');
 
         cy.get('[data-testid="user-choice"]').select('5', { force: true });
         cy.get('[data-testid="value-input"]').type('1234567');
@@ -37,10 +37,10 @@ describe('Converter', () => {
     it('switches off the exponential notation', () => {
 
         // lQCD
-        cy.get('[data-testid="units-input"]').select('2.103089103355592e-16');
+        cy.get('[data-testid="units-input"]').select('physics&lQCD_&_2.103089103355592e-16');
 
         // Classical electron radius
-        cy.get('[data-testid="units-output"]').select('2.81794028531313131313e-15');
+        cy.get('[data-testid="units-output"]').select('physics&classical-electron-radius_&_2.81794028531313131313e-15');
 
         cy.get('[data-testid="exponential-btn"]').click();
         cy.get('[data-testid="user-choice"]').select('8', { force: true });
@@ -63,10 +63,10 @@ describe('Converter', () => {
         cy.get('[data-testid="mobile-link-common"]').click();
 
         // Yard
-        cy.get('[data-testid="units-input"]').select('0.9144', { force: true });
+        cy.get('[data-testid="units-input"]').select('imperial&yard_&_0.9144', { force: true });
 
         // Centimeter
-        cy.get('[data-testid="units-output"]').select('1e-2', { force: true });
+        cy.get('[data-testid="units-output"]').select('metric&centimeter_&_1e-2', { force: true });
 
         cy.get('[data-testid="user-choice"]').select('3', { force: true });
         cy.get('[data-testid="value-input"]').type('128.64', { force: true });

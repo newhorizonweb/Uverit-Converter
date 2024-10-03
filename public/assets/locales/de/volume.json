@@ -1,0 +1,67 @@
+
+{
+
+    "metric-units": "metrische Einheiten",
+    "imperial-units": "imperiale Einheiten",
+    "us-fluid-volume-units": "US (Flüssigkeitsvolumen)",
+    "us-dry-volume-units": "US (Trockenvolumen)",
+    "japanese-units": "japanische Einheiten",
+
+    "metric": {
+        "microliter": "Mikroliter",
+        "milliliter": "Milliliter",
+        "centiliter": "Zentiliter",
+        "decyliter": "Deziliter",
+        "liter": "Liter",
+        "decaliter": "Dekaliter",
+        "hectoliter": "Hektoliter",
+        "kiloliter": "Kiloliter",
+        "megaliter": "Megaliter"
+    },
+
+    "imperial": {
+        "cu-inch": "Kubikzoll",
+        "cu-foot": "Kubikfuß",
+        "cu-yard": "Kubikyard",
+        "acre-ft": "Acre-Fuß",
+        "cu-mile": "Kubikmeile"
+    },
+
+    "us-fluid-volume": {
+        "minim": "Minim",
+        "fluid-dram": "Flüssigdrachme",
+        "teaspoon": "Teelöffel",
+        "tablespoon": "Esslöffel",
+        "fluid-ounce": "Flüssigunze",
+        "shot": "Schnapsglas",
+        "gill": "Gill",
+        "cup": "Tasse",
+        "pint": "Pint",
+        "quart": "Quart",
+        "pottle": "Pottle",
+        "gallon": "Gallone",
+        "beer-barrel": "Bierfass",
+        "barrel": "Fass",
+        "oil-barrel": "Ölfass",
+        "hogshead": "Hogshead"
+    },
+
+    "us-dry-volume": {
+        "dry-pint": "Trockene Pint",
+        "dry-quart": "Trockene Quart",
+        "dry-gallon": "Trockene Gallone",
+        "peck": "Peck",
+        "bushel": "Bushel",
+        "dry-barrel": "Trockenfass"
+    },
+
+    "japanese":{
+        "sai": "Sai",
+        "shaku": "Shaku",
+        "gō": "Gō",
+        "shō": "Shō",
+        "to": "To",
+        "koku": "Koku"
+    }
+
+}
