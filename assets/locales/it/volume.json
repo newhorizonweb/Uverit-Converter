@@ -1,0 +1,58 @@
+
+{
+
+    "metric-units": "unità metriche",
+    "imperial-units": "unità imperiali",
+    "us-fluid-volume-units": "US (volume fluido)",
+    "us-dry-volume-units": "US (volume secco)",
+    "japanese-units": "unità giapponesi",
+
+    "metric": {
+        "microliter": "microlitro",
+        "milliliter": "millilitro",
+        "centiliter": "centilitro",
+        "decyliter": "decilitro",
+        "liter": "litro",
+        "decaliter": "decalitro",
+        "hectoliter": "ettolitro",
+        "kiloliter": "kilolitro",
+        "megaliter": "megalitro"
+    },
+
+    "imperial": {
+        "cu-inch": "pollice cubo",
+        "cu-foot": "piede cubo",
+        "cu-yard": "iarda cubo",
+        "acre-ft": "acro-piede",
+        "cu-mile": "miglio cubo"
+    },
+
+    "us-fluid-volume": {
+        "minim": "minim",
+        "fluid-dram": "dramma fluida",
+        "teaspoon": "cucchiaino",
+        "tablespoon": "cucchiaio",
+        "fluid-ounce": "oncia fluida",
+        "shot": "bicchierino",
+        "gill": "gill",
+        "cup": "tazza",
+        "pint": "pinta",
+        "quart": "quarto",
+        "pottle": "pottle",
+        "gallon": "gallone",
+        "beer-barrel": "barile di birra",
+        "barrel": "barile",
+        "oil-barrel": "barile di petrolio",
+        "hogshead": "hogshead"
+    },
+
+    "us-dry-volume": {
+        "dry-pint": "pinta secca",
+        "dry-quart": "quarto secco",
+        "dry-gallon": "gallone secco",
+        "peck": "peck",
+        "bushel": "bushel",
+        "dry-barrel": "barile secco"
+    }
+
+}

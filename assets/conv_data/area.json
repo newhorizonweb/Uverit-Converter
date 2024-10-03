@@ -4,6 +4,10 @@
     "settings":{
         "operation": "true",
         "choice": "decimal",
+
+        "input-def": "1",
+        "output-def": "3",
+
         "choice-val-min": "0",
         "choice-val-max": "16",
         "choice-val-def": "5"
@@ -115,6 +119,65 @@
         
     },
 
+    "japanese":{
+
+        "table":[
+            "kanji",
+            "metric",
+            "equivalent"
+        ],
+
+        "shaku": {
+            "val": "3.30578512396694214876e-2",
+            "kanji": "勺",
+            "metric": "~330.579 cm<sup>2</sup>",
+            "equivalent": "1/100 tsubo"
+        },
+        "gō": {
+            "val": "3.30578512396694214876e-1",
+            "kanji": "合",
+            "metric": "~0.331 m<sup>2</sup>",
+            "equivalent": "1/10 tsubo"
+        },
+        "jō": {
+            "val": "1.65289256198347107438",
+            "kanji": "畳",
+            "metric": "~1.653 m<sup>2</sup>",
+            "equivalent": "1/2 tsubo"
+        },
+        "tsubo": {
+            "val": "3.30578512396694214876",
+            "kanji": "坪",
+            "metric": "~3.306 m<sup>2</sup>",
+            "equivalent": "1 bu"
+        },
+        "bu": {
+            "val": "3.30578512396694214876",
+            "kanji": "歩",
+            "metric": "~3.306 m<sup>2</sup>",
+            "equivalent": "1 tsubo"
+        },
+        "se": {
+            "val": "99.1735537190082644628",
+            "kanji": "畝",
+            "metric": "~99.174 m<sup>2</sup>",
+            "equivalent": "30 tsubo"
+        },
+        "tan": {
+            "val": "99.1735537190082644628e1",
+            "kanji": "段",
+            "metric": "~991.736 m<sup>2</sup>",
+            "equivalent": "300 tsubo"
+        },
+        "chō": {
+            "val": "99.1735537190082644628e2",
+            "kanji": "町",
+            "metric": "~0.992 hm<sup>2</sup>",
+            "equivalent": "3000 tsubo"
+        }
+        
+    },
+    
     "south-asian":{
 
         "table":[
@@ -181,12 +244,6 @@
         "pyeong": {
             "val": "3.30578512396694214876",
             "symbol": "py",
-            "metric": "~3.306 m<sup>2</sup>",
-            "equivalent": "100/30.25 m<sup>2</sup>"
-        },
-        "tsubo": {
-            "val": "3.30578512396694214876",
-            "symbol": "-",
             "metric": "~3.306 m<sup>2</sup>",
             "equivalent": "100/30.25 m<sup>2</sup>"
         },

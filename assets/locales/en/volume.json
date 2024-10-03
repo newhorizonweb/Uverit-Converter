@@ -1,0 +1,67 @@
+
+{
+
+    "metric-units": "metric units",
+    "imperial-units": "imperial units",
+    "us-fluid-volume-units": "US (fluid volume)",
+    "us-dry-volume-units": "US (dry volume)",
+    "japanese-units": "japanese units",
+
+    "metric": {
+        "microliter": "microliter",
+        "milliliter": "milliliter",
+        "centiliter": "centiliter",
+        "decyliter": "decyliter",
+        "liter": "liter",
+        "decaliter": "decaliter",
+        "hectoliter": "hectoliter",
+        "kiloliter": "kiloliter",
+        "megaliter": "megaliter"
+    },
+
+    "imperial":{
+        "cu-inch": "cubic inch",
+        "cu-foot": "cubic foot",
+        "cu-yard": "cubic yard",
+        "acre-ft": "acre-foot",
+        "cu-mile": "cubic mile"
+    },
+
+    "us-fluid-volume":{
+        "minim": "minim",
+        "fluid-dram": "fluid dram",
+        "teaspoon": "teaspoon",
+        "tablespoon": "tablespoon",
+        "fluid-ounce": "fluid ounce",
+        "shot": "shot",
+        "gill": "gill",
+        "cup": "cup",
+        "pint": "pint",
+        "quart": "quart",
+        "pottle": "pottle",
+        "gallon": "gallon",
+        "beer-barrel": "beer barrel",
+        "barrel": "barrel",
+        "oil-barrel": "oil barrel",
+        "hogshead": "hogshead"
+    },
+
+    "us-dry-volume":{
+        "dry-pint": "dry pint",
+        "dry-quart": "dry quart",
+        "dry-gallon": "dry gallon",
+        "peck": "peck",
+        "bushel": "bushel",
+        "dry-barrel": "dry barrel"
+    },
+
+    "japanese":{
+        "sai": "sai",
+        "shaku": "shaku",
+        "gō": "gō",
+        "shō": "shō",
+        "to": "to",
+        "koku": "koku"
+    }
+    
+}
