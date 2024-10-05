@@ -127,7 +127,7 @@
         },
         "planck-length": {
             "val": "1.61625518181818181818e-35",
-            "symbol": "ℓ<sub>p</sub>",
+            "symbol": "ℓ<sub>P</sub>",
             "metric": "~1.616e-35 m",
             "equivalent": "~1.616e-5 qm"
         },

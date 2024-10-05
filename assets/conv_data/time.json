@@ -1,0 +1,262 @@
+
+{
+
+    "settings":{
+        "operation": "true",
+        "choice": "decimal",
+
+        "input-def": "2",
+        "output-def": "3",
+
+        "choice-val-min": "0",
+        "choice-val-max": "16",
+        "choice-val-def": "5"
+    },
+
+    "common":{
+
+        "table":[
+            "symbol",
+            "seconds",
+            "equivalent"
+        ],
+
+        "millisecond": {
+            "val": "1e-3",
+            "symbol": "ms",
+            "seconds": "0.001 s",
+            "equivalent": "1/1000 s"
+        },
+        "second": {
+            "val": "1",
+            "symbol": "s",
+            "seconds": "1 s",
+            "equivalent": "1000 ms"
+        },
+        "minute": {
+            "val": "60",
+            "symbol": "min",
+            "seconds": "60 s",
+            "equivalent": "1/60 h"
+        },
+        "hour": {
+            "val": "3600",
+            "symbol": "h",
+            "seconds": "3600 s",
+            "equivalent": "60 min"
+        },
+        "solar-day": {
+            "val": "86400",
+            "symbol": "d",
+            "seconds": "86400 s",
+            "equivalent": "24 h"
+        },
+        "week": {
+            "val": "604800",
+            "symbol": "wk",
+            "seconds": "604800 s",
+            "equivalent": "7 d"
+        },
+        "fortnight": {
+            "val": "1209600",
+            "symbol": "-",
+            "seconds": "1209600 s",
+            "equivalent": "14 d"
+        },
+        "month": {
+            "val": "18144e3",
+            "symbol": "mo.",
+            "seconds": "18144e3 s",
+            "equivalent": "30 d"
+        },
+        "common-year": {
+            "val": "3.1536e7",
+            "symbol": "yr",
+            "seconds": "~3.154e7 s",
+            "equivalent": "365 d"
+        },
+        "leap-year": {
+            "val": "3.16224e7",
+            "symbol": "yr",
+            "seconds": "~3.162e7 s",
+            "equivalent": "366 d"
+        },
+        "decade": {
+            "val": "3.155692597469999993336386978626251616e8",
+            "symbol": "-",
+            "seconds": "~3.156e8 s",
+            "equivalent": "~3652.422 d"
+        },
+        "century": {
+            "val": "3.155692597469999993336386978626251616e9",
+            "symbol": "c.",
+            "seconds": "~3.156e9 s",
+            "equivalent": "~36524.22 d"
+        },
+        "millennium": {
+            "val": "3.155692597469999993336386978626251616e10",
+            "symbol": "k.",
+            "seconds": "~3.156e10 s",
+            "equivalent": "~365242.199 d"
+        }
+        
+    },
+
+    "second-multiples":{
+
+        "table":[
+            "symbol",
+            "seconds"
+        ],
+
+        "quectosecond": {
+            "val": "1e-30",
+            "symbol": "qs",
+            "seconds": "1e-30 s"
+        },
+        "rontosecond": {
+            "val": "1e-27",
+            "symbol": "rs",
+            "seconds": "1e-27 s"
+        },
+        "yoctosecond": {
+            "val": "1e-24",
+            "symbol": "ys",
+            "seconds": "1e-24 s"
+        },
+        "zeptosecond": {
+            "val": "1e-21",
+            "symbol": "zs",
+            "seconds": "1e-21 s"
+        },
+        "attosecond": {
+            "val": "1e-18",
+            "symbol": "as",
+            "seconds": "1e-18 s"
+        },
+        "femtosecond": {
+            "val": "1e-15",
+            "symbol": "fs",
+            "seconds": "1e-15 s"
+        },
+        "picosecond": {
+            "val": "1e-12",
+            "symbol": "ps",
+            "seconds": "1e-12 s"
+        },
+        "nanosecond": {
+            "val": "1e-9",
+            "symbol": "ns",
+            "seconds": "1e-9 s"
+        },
+        "microsecond": {
+            "val": "1e-6",
+            "symbol": "µs",
+            "seconds": "1e-6 s"
+        }
+        
+    },
+
+    "scientific":{
+
+        "table":[
+            "symbol",
+            "seconds",
+            "equivalent"
+        ],
+
+        "planck-time": {
+            "val": "5.39124760606060606061e-44",
+            "symbol": "t<sub>P</sub>",
+            "seconds": "~5.391e-44 s",
+            "equivalent": "~5.391e-14 qs"
+        },
+        "jiffy-physics": {
+            "val": "3.335640951981520495765e-24",
+            "symbol": "-",
+            "seconds": "~3.336e-24 s",
+            "equivalent": "~3.336 ys"
+        },
+        "Svedberg": {
+            "val": "1e-13",
+            "symbol": "S",
+            "seconds": "1e-13 s",
+            "equivalent": "100 fs"
+        },
+        "time-unit": {
+            "val": "1.024e-4",
+            "symbol": "TU",
+            "seconds": "1.024e-4 s",
+            "equivalent": "1024 µs"
+        },
+        "galactic-year": {
+            "val": "7.4947761e15",
+            "symbol": "gal",
+            "seconds": "~7.495e15 s",
+            "equivalent": "2.375e8 y"
+        },
+        "eon": {
+            "val": "3.1556952e16",
+            "symbol": "AE",
+            "seconds": "~3.156e16",
+            "equivalent": "~4.211 gal"
+        }
+        
+    },
+
+    "other":{
+
+        "table":[
+            "seconds",
+            "equivalent"
+        ],
+
+        "moment": {
+            "val": "90",
+            "seconds": "90 s",
+            "equivalent": "1.5 min"
+        },
+        "sidereal-day": {
+            "val": "86164.090530833",
+            "seconds": "~8.616e4 s",
+            "equivalent": "~0.997 d"
+        },
+        "lunar-month-synodic": {
+            "val": "2.5514429e6",
+            "seconds": "2.551e6",
+            "equivalent": "~29.531 d"
+        },
+        "quarantine": {
+            "val": "3456000",
+            "seconds": "3.456e6 s",
+            "equivalent": "40 d"
+        },
+        "semester": {
+            "val": "10886400",
+            "seconds": "~1.089e7",
+            "equivalent": "18 wk"
+        },
+        "lunar-year": {
+            "val": "3.06173148e7",
+            "seconds": "~3.062e7",
+            "equivalent": "~354.367 d"
+        },
+        "gregorian-mean-year": {
+            "val": "31556952",
+            "seconds": "3.156e7 s",
+            "equivalent": "365.2425 d"
+        },
+        "olympiad": {
+            "val": "126227808",
+            "seconds": "~1.262e8",
+            "equivalent": "4 yr"
+        },
+        "lustrum": {
+            "val": "1.57335629309301058e8",
+            "seconds": "~1.573e8",
+            "equivalent": "5 yr"
+        }
+        
+    }
+
+}

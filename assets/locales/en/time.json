@@ -1,0 +1,58 @@
+
+{
+
+    "common-units": "common units",
+    "second-multiples-units": "second multiples",
+    "scientific-units": "scientific units",
+    "other-units": "other units",
+
+    "common": {
+        "millisecond": "millisecond",
+        "second": "second",
+        "minute": "minute",
+        "hour": "hour",
+        "solar-day": "solar day",
+        "week": "week",
+        "fortnight": "fortnight",
+        "month": "month",
+        "common-year": "common year",
+        "leap-year": "leap-year",
+        "decade": "decade",
+        "century": "century",
+        "millennium": "millennium"
+    },
+
+    "second-multiples": {
+        "quectosecond": "quectosecond",
+        "rontosecond": "rontosecond",
+        "yoctosecond": "yoctosecond",
+        "zeptosecond": "zeptosecond",
+        "attosecond": "attosecond",
+        "femtosecond": "femtosecond",
+        "picosecond": "picosecond",
+        "nanosecond": "nanosecond",
+        "microsecond": "microsecond"
+    },
+    
+    "scientific": {
+        "planck-time": "planck time",
+        "jiffy-physics": "jiffy (physics)",
+        "Svedberg": "Svedberg",
+        "time-unit": "time unit",
+        "galactic-year": "galactic year",
+        "eon": "eon"
+    },
+    
+    "other": {
+        "moment": "moment",
+        "sidereal-day": "sidereal day",
+        "lunar-month-synodic": "lunar month (synodic)",
+        "quarantine": "quarantine",
+        "semester": "semester",
+        "lunar-year": "lunar year",
+        "gregorian-mean-year": "gregorian mean year",
+        "olympiad": "olympiad",
+        "lustrum": "lustrum"
+    }
+    
+}
