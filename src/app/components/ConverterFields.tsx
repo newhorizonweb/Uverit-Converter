@@ -144,7 +144,7 @@ function ConverterFields(){
         // Check if the number uses exponential notation
         // Which automatically happens with big numbers
         if (!strVal.includes('e') && !strVal.includes('E')){
-            return val;
+            return val.toDecimalPlaces(factorSelVal);
         } else {
             const [coefficient, exponent] = strVal.split('e');
             const number = new Decimal(coefficient).toDecimalPlaces(factorSelVal);
@@ -202,7 +202,7 @@ function ConverterFields(){
             // Change the conversion based on the current converter settings
             if (choice === "decimal" ||
             (choice === "exponential" && !isExponential)){
-                result = checkExpoDecimals(resultRaw.toDecimalPlaces(factorSelVal))
+                result = checkExpoDecimals(resultRaw)
             } else if (choice === "exponential"){
                 result = limitDecimalExpo(resultRaw);
             }

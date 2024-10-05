@@ -1,0 +1,58 @@
+
+{
+
+    "common-units": "unités communes",
+    "second-multiples-units": "multiples de seconde",
+    "scientific-units": "unités scientifiques",
+    "other-units": "autres unités",
+
+    "common": {
+        "millisecond": "milliseconde",
+        "second": "seconde",
+        "minute": "minute",
+        "hour": "heure",
+        "solar-day": "jour (solaire)",
+        "week": "semaine",
+        "fortnight": "fortnight",
+        "month": "mois",
+        "common-year": "année commune",
+        "leap-year": "année bissextile",
+        "decade": "décennie",
+        "century": "siècle",
+        "millennium": "millénaire"
+    },
+
+    "second-multiples": {
+        "quectosecond": "quectoseconde",
+        "rontosecond": "rontoseconde",
+        "yoctosecond": "yoctoseconde",
+        "zeptosecond": "zeptoseconde",
+        "attosecond": "attoseconde",
+        "femtosecond": "femtoseconde",
+        "picosecond": "picoseconde",
+        "nanosecond": "nanoseconde",
+        "microsecond": "microseconde"
+    },
+    
+    "scientific": {
+        "planck-time": "temps de Planck",
+        "jiffy-physics": "jiffy (physique)",
+        "Svedberg": "Svedberg",
+        "time-unit": "unité de temps",
+        "galactic-year": "année galactique",
+        "eon": "éon"
+    },
+    
+    "other": {
+        "moment": "moment",
+        "sidereal-day": "jour sidéral",
+        "lunar-month-synodic": "mois lunaire (synodique)",
+        "quarantine": "quarantaine",
+        "semester": "semestre",
+        "lunar-year": "année lunaire",
+        "gregorian-mean-year": "année moyenne grégorienne",
+        "olympiad": "olympiade",
+        "lustrum": "lustre"
+    }
+
+}
