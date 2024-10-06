@@ -1,0 +1,52 @@
+
+{
+
+    "metric-units": "jednostki metryczne",
+    "imperial-units": "jednostki imperialne",
+    "nautical-units": "jednostki morskie",
+    "scientific-units": "jednostki naukowe",
+
+    "metric": {
+        "centimeter-second": "centymetr na sekundę",
+        "centimeter-minute": "centymetr na minutę",
+        "centimeter-hour": "centymetr na godzinę",
+        "meter-second": "metr na sekundę",
+        "meter-minute": "metr na minutę",
+        "meter-hour": "metr na godzinę",
+        "kilometer-second": "kilometr na sekundę",
+        "kilometer-minute": "kilometr na minutę",
+        "kilometer-hour": "kilometr na godzinę"
+    },
+
+    "imperial": {
+        "inch-second": "cal na sekundę",
+        "inch-minute": "cal na minutę",
+        "inch-hour": "cal na godzinę",
+        "foot-second": "stopa na sekundę",
+        "foot-minute": "stopa na minutę",
+        "foot-hour": "stopa na godzinę",
+        "yard-second": "jard na sekundę",
+        "yard-minute": "jard na minutę",
+        "yard-hour": "jard na godzinę",
+        "mile-second": "mila na sekundę",
+        "mile-minute": "mila na minutę",
+        "mile-hour": "mila na godzinę"
+    },
+
+    "nautical": {
+        "knot": "węzeł"
+    },
+
+    "scientific": {
+        "sound-air-0": "prędkość dźwięku (powietrze, 0°C)",
+        "sound-air-20": "prędkość dźwięku (powietrze, 20°C)",
+        "sound-water-0": "prędkość dźwięku (woda, 0°C)",
+        "sound-water-20": "prędkość dźwięku (woda, 20°C)",
+        "au-day": "jednostka astronomiczna na dzień",
+        "light-water-20": "prędkość światła (woda, 20°C)",
+        "light-air-20": "prędkość światła (powietrze, 20°C)",
+        "light-vacuum": "prędkość światła (próżnia)",
+        "parsec-year": "parsek na rok"
+    }
+
+}
