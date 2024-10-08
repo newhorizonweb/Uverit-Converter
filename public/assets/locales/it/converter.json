@@ -18,6 +18,9 @@
     "notation": "notazione",
     "equivalent": "equivalente",
     "metric": "metrico",
-    "egyptian": "egiziano"
+    "egyptian": "egiziano",
+    "per-turn": "per giro",
+    "in-radians": "in radianti",
+    "in-degrees": "in gradi"
     
 }

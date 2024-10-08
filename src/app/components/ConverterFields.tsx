@@ -174,7 +174,7 @@ function ConverterFields(){
     }
 
     const convertToDecimal = (value: string) => {
-
+        
         // Return 0 for empty input
         if (value.trim() === "") return new Decimal(0);
 
