@@ -1,0 +1,41 @@
+
+{
+
+    "radian-based-units": "unités basées sur le radian",
+    "degree-based-units": "unités basées sur le degré",
+    "divisions-units": "divisions",
+    "other-units": "autres unités",
+
+    "radian-based": {
+        "microradian": "microradian",
+        "milliradian": "milliradian",
+        "diameter-part": "partie de diamètre",
+        "radian": "radian",
+        "π-radian": "radian π"
+    },
+
+    "degree-based": {
+        "arcsecond": "seconde d'arc",
+        "arcminute": "minute d'arc",
+        "degree": "degré",
+        "hour-angle": "angle horaire"
+    },
+
+    "divisions": {
+        "hexacontade": "hexacontade",
+        "octant": "octant",
+        "sextant": "sextant",
+        "quadrant": "quadrant",
+        "turn": "tour"
+    },
+
+    "other": {
+        "perigon": "périgone",
+        "gradian": "grade",
+        "akhnam": "akhnam",
+        "zam": "zam",
+        "point": "point",
+        "NATO-mil": "mil (OTAN)"
+    }
+
+}
