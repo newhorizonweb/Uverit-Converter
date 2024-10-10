@@ -1,0 +1,35 @@
+
+{
+
+    "metric-units": "unità metriche",
+    "imperial-units": "unità imperiali",
+
+    "metric": {
+        "nanogram": "nanogrammo",
+        "microgram": "microgrammo",
+        "milligram": "milligrammo",
+        "centigram": "centigrammo",
+        "decigram": "decigrammo",
+        "gram": "grammo",
+        "dekagram": "decagrammo",
+        "hectogram": "ettogrammo",
+        "kilogram": "chilogrammo",
+        "megagram": "megagrammo (tonnellata)",
+        "gigagram": "gigagrammo"
+    },
+
+    "imperial": {
+        "grain": "grano",
+        "drachm": "dracma",
+        "ounce": "oncia",
+        "pound": "libbra",
+        "stone": "pietra",
+        "quarter": "quarto",
+        "slug": "slug",
+        "hundredweight-us": "quintale (US)",
+        "hundredweight-uk": "quintale (UK)",
+        "ton-us": "tonnellata (US)",
+        "ton-uk": "tonnellata (UK)"
+    }
+
+}

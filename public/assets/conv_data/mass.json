@@ -1,0 +1,170 @@
+
+{
+
+    "settings":{
+        "operation": "true",
+        "choice": "decimal",
+
+        "input-def": "5",
+        "output-def": "13",
+
+        "choice-val-min": "0",
+        "choice-val-max": "16",
+        "choice-val-def": "5"
+    },
+
+    "metric":{
+
+        "table":[
+            "symbol",
+            "notation",
+            "equivalent"
+        ],
+
+        "nanogram": {
+            "val": "1e-9",
+            "symbol": "ng",
+            "notation": "1<sup>-0</sup>",
+            "equivalent": "0.000000001 g"
+        },
+        "microgram": {
+            "val": "1e-6",
+            "symbol": "µg",
+            "notation": "1<sup>-6</sup>",
+            "equivalent": "0.000001 g"
+        },
+        "milligram": {
+            "val": "1e-3",
+            "symbol": "mg",
+            "notation": "1<sup>-3</sup>",
+            "equivalent": "0.001 g"
+        },
+        "centigram": {
+            "val": "1e-2",
+            "symbol": "cg",
+            "notation": "1<sup>-2</sup>",
+            "equivalent": "0.01 g"
+        },
+        "decigram": {
+            "val": "1e-1",
+            "symbol": "dg",
+            "notation": "1<sup>-1</sup>",
+            "equivalent": "0.1 g"
+        },
+        "gram": {
+            "val": "1",
+            "symbol": "g",
+            "notation": "1<sup>0</sup>",
+            "equivalent": "1 g"
+        },
+        "dekagram": {
+            "val": "1e1",
+            "symbol": "dag",
+            "notation": "1<sup>1</sup>",
+            "equivalent": "10 g"
+        },
+        "hectogram": {
+            "val": "1e2",
+            "symbol": "hg",
+            "notation": "1<sup>2</sup>",
+            "equivalent": "100 g"
+        },
+        "kilogram": {
+            "val": "1e3",
+            "symbol": "kg",
+            "notation": "1<sup>3</sup>",
+            "equivalent": "1000 g"
+        },
+        "megagram": {
+            "val": "1e6",
+            "symbol": "Mg",
+            "notation": "1<sup>6</sup>",
+            "equivalent": "1000000 g"
+        },
+        "gigagram": {
+            "val": "1e9",
+            "symbol": "Gg",
+            "notation": "1<sup>9</sup>",
+            "equivalent": "1000000000 g"
+        }
+        
+    },
+
+    "imperial":{
+
+        "table":[
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "grain": {
+            "val": "0.06479891",
+            "symbol": "gr",
+            "metric": "~64.799 mg",
+            "equivalent": "1/7000 lb"
+        },
+        "drachm": {
+            "val": "1.7718451953125",
+            "symbol": "dr",
+            "metric": "~1.772 g",
+            "equivalent": "1/256 lb"
+        },
+        "ounce": {
+            "val": "28.349523125",
+            "symbol": "oz",
+            "metric": "~28.35 g",
+            "equivalent": "1/16 lb"
+        },
+        "pound": {
+            "val": "453.59237",
+            "symbol": "lb",
+            "metric": "~453.592 g",
+            "equivalent": "16 oz"
+        },
+        "stone": {
+            "val": "6350.29318",
+            "symbol": "st",
+            "metric": "~6.35 kg",
+            "equivalent": "14 lb"
+        },
+        "quarter": {
+            "val": "12700.58636",
+            "symbol": "qtr",
+            "metric": "~12.701 kg",
+            "equivalent": "28 lb"
+        },
+        "slug": {
+            "val": "14593.90293720636482939684",
+            "symbol": "-",
+            "metric": "~14.594 kg",
+            "equivalent": "~32.174 lb"
+        },
+        "hundredweight-us": {
+            "val": "45359.237",
+            "symbol": "cwt",
+            "metric": "~45.359 kg",
+            "equivalent": "100 lb"
+        },
+        "hundredweight-uk": {
+            "val": "50802.34544",
+            "symbol": "cwt",
+            "metric": "~50.802 kg",
+            "equivalent": "112 lb"
+        },
+        "ton-us": {
+            "val": "907184.74",
+            "symbol": "st",
+            "metric": "~907.185 kg",
+            "equivalent": "2000 lb"
+        },
+        "ton-uk": {
+            "val": "1016046.9088",
+            "symbol": "lt",
+            "metric": "~1016.047 kg",
+            "equivalent": "2240 lb"
+        }
+        
+    }
+
+}
