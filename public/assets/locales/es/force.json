@@ -1,0 +1,57 @@
+
+{
+
+    "SI-units": "Unidades SI",
+    "CGS-units": "Unidades CGS",
+    "gravitational-units": "Unidades gravitacionales",
+    "imperial-units": "Unidades imperiales",
+    "other-units": "Otras unidades",
+
+    "SI": {
+        "nanonewton": "nanonewton",
+        "micronewton": "micronewton",
+        "millinewton": "milinewton",
+        "centinewton": "centinewton",
+        "decinewton": "decinewton",
+        "newton": "newton",
+        "decanewton": "decánewton",
+        "hectonewton": "hectonewton",
+        "kilonewton": "kilonewton",
+        "meganewton": "meganewton",
+        "giganewton": "giganewton"
+    },
+
+    "CGS": {
+        "nanodyne": "nanodina",
+        "microdyne": "microdina",
+        "millidyne": "milidina",
+        "centidyne": "centidina",
+        "decidyne": "decidina",
+        "dyne": "dina",
+        "decadyne": "decadina",
+        "hectodyne": "hectodina",
+        "kilodyne": "kilodina",
+        "megadyne": "megadina",
+        "gigadyne": "gigadina"
+    },
+
+    "gravitational": {
+        "gram-force": "gramo-fuerza",
+        "kilogram-force": "kilogramo-fuerza",
+        "ton-force": "tonelada-fuerza (métrica)"
+    },
+
+    "imperial": {
+        "ounce-force": "onza-fuerza",
+        "pound-force": "libra-fuerza",
+        "kip": "kip",
+        "ton-force-us": "tonelada-fuerza (EE.UU.)",
+        "ton-force-uk": "tonelada-fuerza (UK)"
+    },
+
+    "other": {
+        "sthène": "sthène",
+        "planck-force": "fuerza de Planck"
+    }
+
+}

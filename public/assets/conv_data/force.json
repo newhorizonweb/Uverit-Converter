@@ -1,0 +1,260 @@
+
+{
+
+    "settings":{
+        "operation": "true",
+        "choice": "decimal",
+
+        "input-def": "5",
+        "output-def": "26",
+
+        "choice-val-min": "0",
+        "choice-val-max": "16",
+        "choice-val-def": "5"
+    },
+
+    "SI":{
+
+        "table":[
+            "symbol",
+            "notation",
+            "equivalent"
+        ],
+
+        "nanonewton": {
+            "val": "1e-9",
+            "symbol": "nN",
+            "notation": "10<sup>-9</sup>",
+            "equivalent": "0.000000001 N"
+        },
+        "micronewton": {
+            "val": "1e-6",
+            "symbol": "μN",
+            "notation": "10<sup>-6</sup>",
+            "equivalent": "0.000001 N"
+        },
+        "millinewton": {
+            "val": "1e-3",
+            "symbol": "mN",
+            "notation": "10<sup>-3</sup>",
+            "equivalent": "0.001 N"
+        },
+        "centinewton": {
+            "val": "1e-2",
+            "symbol": "cN",
+            "notation": "10<sup>-2</sup>",
+            "equivalent": "0.01 N"
+        },
+        "decinewton": {
+            "val": "1e-1",
+            "symbol": "dN",
+            "notation": "10<sup>-1</sup>",
+            "equivalent": "0.1 N"
+        },
+        "newton": {
+            "val": "1",
+            "symbol": "N",
+            "notation": "10<sup>0</sup>",
+            "equivalent": "1 N"
+        },
+        "decanewton": {
+            "val": "1e1",
+            "symbol": "daN",
+            "notation": "10<sup>1</sup>",
+            "equivalent": "10 N"
+        },
+        "hectonewton": {
+            "val": "1e2",
+            "symbol": "hN",
+            "notation": "10<sup>2</sup>",
+            "equivalent": "100 N"
+        },
+        "kilonewton": {
+            "val": "1e3",
+            "symbol": "kN",
+            "notation": "10<sup>3</sup>",
+            "equivalent": "1000 N"
+        },
+        "meganewton": {
+            "val": "1e6",
+            "symbol": "MN",
+            "notation": "10<sup>6</sup>",
+            "equivalent": "1000000 N"
+        },
+        "giganewton": {
+            "val": "1e9",
+            "symbol": "GN",
+            "notation": "10<sup>9</sup>",
+            "equivalent": "1000000000 N"
+        }
+        
+    },
+
+    "CGS":{
+
+        "table":[
+            "symbol",
+            "in-newtons",
+            "equivalent"
+        ],
+
+        "nanodyne": {
+            "val": "1e-14",
+            "symbol": "ndyn",
+            "in-newtons": "10<sup>-14</sup> N",
+            "equivalent": "0.000000001 dyn"
+        },
+        "microdyne": {
+            "val": "1e-11",
+            "symbol": "μdyn",
+            "in-newtons": "10<sup>-11</sup> N",
+            "equivalent": "0.000001 dyn"
+        },
+        "millidyne": {
+            "val": "1e-8",
+            "symbol": "mdyn",
+            "in-newtons": "10<sup>-8</sup> N",
+            "equivalent": "0.001 dyn"
+        },
+        "centidyne": {
+            "val": "1e-7",
+            "symbol": "cdyn",
+            "in-newtons": "10<sup>-7</sup> N",
+            "equivalent": "0.01 dyn"
+        },
+        "decidyne": {
+            "val": "1e-6",
+            "symbol": "ddyn",
+            "in-newtons": "10<sup>-6</sup> N",
+            "equivalent": "0.1 dyn"
+        },
+        "dyne": {
+            "val": "1e-5",
+            "symbol": "dyn",
+            "in-newtons": "10<sup>-5</sup> N",
+            "equivalent": "1 dyn"
+        },
+        "decadyne": {
+            "val": "1e-4",
+            "symbol": "dadyn",
+            "in-newtons": "10<sup>-4</sup> N",
+            "equivalent": "10 dyn"
+        },
+        "hectodyne": {
+            "val": "1e-3",
+            "symbol": "hdyn",
+            "in-newtons": "10<sup>-3</sup> N",
+            "equivalent": "100 dyn"
+        },
+        "kilodyne": {
+            "val": "1e-2",
+            "symbol": "kdyn",
+            "in-newtons": "10<sup>-2</sup> N",
+            "equivalent": "1000 dyn"
+        },
+        "megadyne": {
+            "val": "1e1",
+            "symbol": "Mdyn",
+            "in-newtons": "10<sup>1</sup> N",
+            "equivalent": "1000000 dyn"
+        },
+        "gigadyne": {
+            "val": "1e4",
+            "symbol": "Gdyn",
+            "in-newtons": "10<sup>4</sup> N",
+            "equivalent": "1000000000 dyn"
+        }
+        
+    },
+
+    "gravitational":{
+
+        "table":[
+            "symbol",
+            "in-newtons",
+            "equivalent"
+        ],
+
+        "gram-force": {
+            "val": "9.80665e-3",
+            "symbol": "gf",
+            "in-newtons": "~9.807e-3 N",
+            "equivalent": "0.001 kgf"
+        },
+        "kilogram-force": {
+            "val": "9.80665",
+            "symbol": "kgf",
+            "in-newtons": "~9.807 N",
+            "equivalent": "~2.205 lbf"
+        },
+        "ton-force": {
+            "val": "9.80665e3",
+            "symbol": "tf",
+            "in-newtons": "~9.807e3 N",
+            "equivalent": "1000 kgf"
+        }
+
+    },
+
+    "imperial":{
+
+        "table":[
+            "symbol",
+            "in-newtons",
+            "equivalent"
+        ],
+
+        "ounce-force": {
+            "val": "0.27801385095378125",
+            "symbol": "ozf",
+            "in-newtons": "~0.2780 N",
+            "equivalent": "1/16 lbf"
+        },
+        "pound-force": {
+            "val": "4.4482216152605",
+            "symbol": "lbf",
+            "in-newtons": "~4.448 N",
+            "equivalent": "~0.454 kgf"
+        },
+        "kip": {
+            "val": "4448.2216152605",
+            "symbol": "kip",
+            "in-newtons": "~4.448 kN",
+            "equivalent": "1000 lbf"
+        },
+        "ton-force-us": {
+            "val": "8896.443230521",
+            "symbol": "stf",
+            "in-newtons": "~8.896 kN",
+            "equivalent": "2000 lbf"
+        },
+        "ton-force-uk": {
+            "val": "9964.01641818352",
+            "symbol": "ltf",
+            "in-newtons": "~9.964 kN",
+            "equivalent": "2240 lbf"
+        }
+        
+    },
+
+    "other":{
+
+        "table":[
+            "symbol",
+            "in-newtons"
+        ],
+
+        "sthène": {
+            "val": "1e3",
+            "symbol": "sn",
+            "in-newtons": "1 kN"
+        },
+        "planck-force": {
+            "val": "1.2102552895947671635402339213024264620586e44",
+            "symbol": "F<sub>P</sub>",
+            "in-newtons": "~1.21e44 N"
+        }
+        
+    }
+
+}
