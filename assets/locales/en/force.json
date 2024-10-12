@@ -1,0 +1,57 @@
+
+{
+
+    "SI-units": "SI units",
+    "CGS-units": "CGS units",
+    "gravitational-units": "gravitational units",
+    "imperial-units": "imperial units",
+    "other-units": "other units",
+
+    "SI": {
+        "nanonewton": "nanonewton",
+        "micronewton": "micronewton",
+        "millinewton": "millinewton",
+        "centinewton": "centinewton",
+        "decinewton": "decinewton",
+        "newton": "newton",
+        "decanewton": "decanewton",
+        "hectonewton": "hectonewton",
+        "kilonewton": "kilonewton",
+        "meganewton": "meganewton",
+        "giganewton": "giganewton"
+    },
+
+    "CGS": {
+        "nanodyne": "nanodyne",
+        "microdyne": "microdyne",
+        "millidyne": "millidyne",
+        "centidyne": "centidyne",
+        "decidyne": "decidyne",
+        "dyne": "dyne",
+        "decadyne": "decadyne",
+        "hectodyne": "hectodyne",
+        "kilodyne": "kilodyne",
+        "megadyne": "megadyne",
+        "gigadyne": "gigadyne"
+    },
+
+    "gravitational": {
+        "gram-force": "gram-force",
+        "kilogram-force": "kilogram-force",
+        "ton-force": "ton-force (metric)"
+    },
+
+    "imperial": {
+        "ounce-force": "ounce-force",
+        "pound-force": "pound-force",
+        "kip": "kip",
+        "ton-force-us": "ton-force (US)",
+        "ton-force-uk": "ton-force (UK)"
+    },
+
+    "other": {
+        "sthène": "sthène",
+        "planck-force": "Planck force"
+    }
+    
+}

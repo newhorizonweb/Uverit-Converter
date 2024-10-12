@@ -1,0 +1,57 @@
+
+{
+
+    "SI-units": "SI-Einheiten",
+    "CGS-units": "CGS-Einheiten",
+    "gravitational-units": "Gravitationseinheiten",
+    "imperial-units": "Imperiale Einheiten",
+    "other-units": "Andere Einheiten",
+
+    "SI": {
+        "nanonewton": "Nanonewton",
+        "micronewton": "Mikronewton",
+        "millinewton": "Millinewton",
+        "centinewton": "Zentinewton",
+        "decinewton": "Dezinewton",
+        "newton": "Newton",
+        "decanewton": "Dekanewton",
+        "hectonewton": "Hektonewton",
+        "kilonewton": "Kilonewton",
+        "meganewton": "Meganewton",
+        "giganewton": "Giganewton"
+    },
+
+    "CGS": {
+        "nanodyne": "Nanodyn",
+        "microdyne": "Mikrodyn",
+        "millidyne": "Millidyn",
+        "centidyne": "Zentidyn",
+        "decidyne": "Dezidyn",
+        "dyne": "Dyn",
+        "decadyne": "Dekadyn",
+        "hectodyne": "Hektodyn",
+        "kilodyne": "Kilodyn",
+        "megadyne": "Megadyn",
+        "gigadyne": "Gigadyn"
+    },
+
+    "gravitational": {
+        "gram-force": "Gramm-Kraft",
+        "kilogram-force": "Kilogramm-Kraft",
+        "ton-force": "Tonnen-Kraft (metrisch)"
+    },
+
+    "imperial": {
+        "ounce-force": "Unzen-Kraft",
+        "pound-force": "Pfund-Kraft",
+        "kip": "Kip",
+        "ton-force-us": "Tonnen-Kraft (US)",
+        "ton-force-uk": "Tonnen-Kraft (UK)"
+    },
+
+    "other": {
+        "sthène": "Sten",
+        "planck-force": "Planck-Kraft"
+    }
+
+}
