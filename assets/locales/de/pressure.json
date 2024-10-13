@@ -1,0 +1,77 @@
+
+{
+
+    "SI-units": "SI-Einheiten",
+    "barometric-units": "barometrische Einheiten",
+    "atmospheric-units": "atmosphärische Einheiten",
+    "water-based-units": "wasserbasierte Einheiten",
+    "mercury-based-units": "quecksilberbasierte Einheiten",
+    "imperial-units": "imperiale Einheiten",
+    "other-units": "andere Einheiten",
+
+    "SI": {
+        "nanopascal": "Nanopascal",
+        "micropascal": "Mikropascal",
+        "millipascal": "Millipascal",
+        "centipascal": "Zentipascal",
+        "decipascal": "Dezipascal",
+        "pascal": "Pascal",
+        "decapascal": "Dekapascal",
+        "hectopascal": "Hektopascal",
+        "kilopascal": "Kilopascal",
+        "megapascal": "Megapascal",
+        "gigapascal": "Gigapascal"
+    },
+
+    "barometric": {
+        "nanobar": "Nanobar",
+        "microbar": "Mikrobar",
+        "millibar": "Millibar",
+        "centibar": "Zentibar",
+        "decibar": "Dezibar",
+        "bar": "Bar",
+        "decabar": "Dekabar",
+        "hectobar": "Hektobar",
+        "kilobar": "Kilobar",
+        "megabar": "Megabar",
+        "gigabar": "Gigabar"
+    },
+
+    "atmospheric": {
+        "technical-atmosphere": "technische Atmosphäre",
+        "standard-atmosphere": "Standardatmosphäre"
+    },
+
+    "water-based": {
+        "millimeter-water": "Millimeter Wassersäule",
+        "centimeter-water": "Zentimeter Wassersäule",
+        "inch-water": "Zoll Wassersäule",
+        "foot-water": "Fuß Wassersäule",
+        "meter-sea-water": "Meter Meerwassersäule",
+        "foot-sea-water": "Fuß Meerwassersäule"
+    },
+
+    "mercury-based": {
+        "millimeter-mercury": "Millimeter Quecksilbersäule",
+        "centimeter-mercury": "Zentimeter Quecksilbersäule",
+        "inch-mercury": "Zoll Quecksilbersäule",
+        "foot-mercury": "Fuß Quecksilbersäule"
+    },
+
+    "imperial": {
+        "pound-sq-foot": "Pfund pro Quadratfuß",
+        "pound-sq-inch": "Pfund pro Quadratzoll",
+        "kilopound-sq-foot": "Kilopfund pro Quadratfuß",
+        "kilopound-sq-inch": "Kilopfund pro Quadratzoll"
+    },
+
+    "other": {
+        "millitorr": "Millitorr",
+        "barye": "Barie",
+        "newton-sq-meter": "Newton pro Quadratmeter",
+        "torr": "Torr",
+        "kilonewton-sq-meter": "Kilonewton pro Quadratmeter",
+        "pièze": "Pieze"
+    }
+
+}

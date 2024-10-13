@@ -23,6 +23,7 @@
     "per-turn": "per turn",
     "in-radians": "in radians",
     "in-degrees": "in degrees",
-    "in-newtons": "in newtons"
+    "in-newtons": "in newtons",
+    "in-pascals": "in pascals"
 
 }

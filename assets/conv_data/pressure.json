@@ -1,0 +1,348 @@
+
+{
+
+    "settings":{
+        "operation": "true",
+        "choice": "decimal",
+
+        "input-def": "5",
+        "output-def": "23",
+
+        "choice-val-min": "0",
+        "choice-val-max": "16",
+        "choice-val-def": "5"
+    },
+
+    "SI":{
+
+        "table":[
+            "symbol",
+            "notation",
+            "equivalent"
+        ],
+
+        "nanopascal": {
+            "val": "1e-9",
+            "symbol": "nPa",
+            "notation": "10<sup>-9</sup>",
+            "equivalent": "0.000000001 Pa"
+        },
+        "micropascal": {
+            "val": "1e-6",
+            "symbol": "μPa",
+            "notation": "10<sup>-6</sup>",
+            "equivalent": "0.000001 Pa"
+        },
+        "millipascal": {
+            "val": "1e-3",
+            "symbol": "mPa",
+            "notation": "10<sup>-3</sup>",
+            "equivalent": "0.001 Pa"
+        },
+        "centipascal": {
+            "val": "1e-2",
+            "symbol": "cPa",
+            "notation": "10<sup>-2</sup>",
+            "equivalent": "0.01 Pa"
+        },
+        "decipascal": {
+            "val": "1e-1",
+            "symbol": "dPa",
+            "notation": "10<sup>-1</sup>",
+            "equivalent": "0.1 Pa"
+        },
+        "pascal": {
+            "val": "1",
+            "symbol": "Pa",
+            "notation": "10<sup>0</sup>",
+            "equivalent": "1 Pa"
+        },
+        "decapascal": {
+            "val": "1e1",
+            "symbol": "daPa",
+            "notation": "10<sup>1</sup>",
+            "equivalent": "10 Pa"
+        },
+        "hectopascal": {
+            "val": "1e2",
+            "symbol": "hPa",
+            "notation": "10<sup>2</sup>",
+            "equivalent": "100 Pa"
+        },
+        "kilopascal": {
+            "val": "1e3",
+            "symbol": "kPa",
+            "notation": "10<sup>3</sup>",
+            "equivalent": "1000 Pa"
+        },
+        "megapascal": {
+            "val": "1e6",
+            "symbol": "MPa",
+            "notation": "10<sup>6</sup>",
+            "equivalent": "1000000 Pa"
+        },
+        "gigapascal": {
+            "val": "1e9",
+            "symbol": "GPa",
+            "notation": "10<sup>9</sup>",
+            "equivalent": "1000000000 Pa"
+        }
+        
+    },
+
+    "barometric":{
+
+        "table":[
+            "symbol",
+            "in-pascals",
+            "equivalent"
+        ],
+
+        "nanobar": {
+            "val": "1e-4",
+            "symbol": "nbar",
+            "in-pascals": "10<sup>-4</sup> Pa",
+            "equivalent": "0.000000001 bar"
+        },
+        "microbar": {
+            "val": "1e-1",
+            "symbol": "μbar",
+            "in-pascals": "10<sup>-1</sup> Pa",
+            "equivalent": "0.000001 bar"
+        },
+        "millibar": {
+            "val": "1e2",
+            "symbol": "mbar",
+            "in-pascals": "10<sup>2</sup> Pa",
+            "equivalent": "0.001 bar"
+        },
+        "centibar": {
+            "val": "1e3",
+            "symbol": "cbar",
+            "in-pascals": "10<sup>3</sup> Pa",
+            "equivalent": "0.01 bar"
+        },
+        "decibar": {
+            "val": "1e4",
+            "symbol": "dbar",
+            "in-pascals": "10<sup>4</sup> Pa",
+            "equivalent": "0.1 bar"
+        },
+        "bar": {
+            "val": "1e5",
+            "symbol": "bar",
+            "in-pascals": "10<sup>5</sup> Pa",
+            "equivalent": "1 bar"
+        },
+        "decabar": {
+            "val": "1e6",
+            "symbol": "dabar",
+            "in-pascals": "10<sup>6</sup> Pa",
+            "equivalent": "10 bar"
+        },
+        "hectobar": {
+            "val": "1e7",
+            "symbol": "hbar",
+            "in-pascals": "10<sup>7</sup> Pa",
+            "equivalent": "100 bar"
+        },
+        "kilobar": {
+            "val": "1e8",
+            "symbol": "kbar",
+            "in-pascals": "10<sup>8</sup> Pa",
+            "equivalent": "1000 bar"
+        },
+        "megabar": {
+            "val": "1e11",
+            "symbol": "Mbar",
+            "in-pascals": "10<sup>11</sup> Pa",
+            "equivalent": "1000000 bar"
+        },
+        "gigabar": {
+            "val": "1e14",
+            "symbol": "Gbar",
+            "in-pascals": "10<sup>14</sup> Pa",
+            "equivalent": "1000000000 bar"
+        }
+        
+    },
+
+    "atmospheric":{
+
+        "table":[
+            "symbol",
+            "in-pascals"
+        ],
+
+        "technical-atmosphere": {
+            "val": "98066.5",
+            "symbol": "at",
+            "in-pascals": "~98.067 kPa"
+        },
+        "standard-atmosphere": {
+            "val": "101325",
+            "symbol": "atm",
+            "in-pascals": "101.325 kPa"
+        }
+        
+    },
+
+    "water-based":{
+
+        "table":[
+            "symbol",
+            "in-pascals",
+            "equivalent"
+        ],
+
+        "millimeter-water": {
+            "val": "9.80665",
+            "symbol": "mmH₂O",
+            "in-pascals": "~9.807 Pa",
+            "equivalent": "0.1 cmH₂O"
+        },
+        "centimeter-water": {
+            "val": "98.0665",
+            "symbol": "cmH₂O",
+            "in-pascals": "~98.067 Pa",
+            "equivalent": "10 mmH₂O"
+        },
+        "inch-water": {
+            "val": "249.08891",
+            "symbol": "inH₂O",
+            "in-pascals": "~2.491 hPa",
+            "equivalent": "1/12 ftH₂O"
+        },
+        "foot-water": {
+            "val": "2989.06692",
+            "symbol": "ftH₂O",
+            "in-pascals": "~29.891 hPa",
+            "equivalent": "12 inH₂O"
+        },
+        "meter-sea-water": {
+            "val": "10051.81625",
+            "symbol": "msw",
+            "in-pascals": "~10.052 kPa",
+            "equivalent": "102.5 cmH₂O"
+        },
+        "foot-sea-water": {
+            "val": "3063.793593",
+            "symbol": "fsw",
+            "in-pascals": "~3.064 kPa",
+            "equivalent": "1.025 ftH₂O"
+        }
+
+    },
+
+    "mercury-based":{
+
+        "table":[
+            "symbol",
+            "in-pascals",
+            "equivalent"
+        ],
+
+        "millimeter-mercury": {
+            "val": "133.322387415",
+            "symbol": "mmHg",
+            "in-pascals": "~1.333 hPa",
+            "equivalent": "0.1 cmHg"
+        },
+        "centimeter-mercury": {
+            "val": "1333.22387415",
+            "symbol": "cmHg",
+            "in-pascals": "~13.332 hPa",
+            "equivalent": "10 mmHg"
+        },
+        "inch-mercury": {
+            "val": "3386.388640341",
+            "symbol": "inHg",
+            "in-pascals": "~3.386 kPa",
+            "equivalent": "1/12 ftHg"
+        },
+        "foot-mercury": {
+            "val": "40636.663684092",
+            "symbol": "ftHg",
+            "in-pascals": "~40.6367 kPa",
+            "equivalent": "12 inHg"
+        }
+
+    },
+
+    "imperial":{
+
+        "table":[
+            "symbol",
+            "in-pascals",
+            "equivalent"
+        ],
+
+        "pound-sq-foot": {
+            "val": "47.88025898033584261613",
+            "symbol": "psf",
+            "in-pascals": "~47.88 Pa",
+            "equivalent": "1/144 psi"
+        },
+        "pound-sq-inch": {
+            "val": "6894.75729316836133672267",
+            "symbol": "psi",
+            "in-pascals": "~6.895 kPa",
+            "equivalent": "144 psf"
+        },
+        "kilopound-sq-foot": {
+            "val": "47880.25898033584261612968",
+            "symbol": "ksf",
+            "in-pascals": "~47.88 kPa",
+            "equivalent": "1000 psf"
+        },
+        "kilopound-sq-inch": {
+            "val": "6894757.29316836133672267345",
+            "symbol": "ksi",
+            "in-pascals": "~6.895 MPa",
+            "equivalent": "1000 ksf"
+        }
+
+    },
+
+    "other":{
+
+        "table":[
+            "symbol",
+            "in-pascals",
+            "equivalent"
+        ],
+
+        "millitorr": {
+            "val": "1.33322368421052631579e-1",
+            "symbol": "mTorr",
+            "in-pascals": "~1.333 Pa"
+        },
+        "barye": {
+            "val": "0.1",
+            "symbol": "Ba ",
+            "in-pascals": "0.1 Pa"
+        },
+        "newton-sq-meter": {
+            "val": "1",
+            "symbol": "N/m²",
+            "in-pascals": "1 Pa"
+        },
+        "torr": {
+            "val": "133.32236842105263157896",
+            "symbol": "Torr",
+            "in-pascals": "~1.333 hPa"
+        },
+        "kilonewton-sq-meter": {
+            "val": "1000",
+            "symbol": "kN/m²",
+            "in-pascals": "1 kPa"
+        },
+        "pièze": {
+            "val": "1000",
+            "symbol": "pz",
+            "in-pascals": "1 kPa"
+        }
+
+    }
+
+}
