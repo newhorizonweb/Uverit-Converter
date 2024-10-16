@@ -1,0 +1,68 @@
+
+{
+
+    "metric-units": "metrische Einheiten",
+    "metric-microscopic-units": "metrische Einheiten (mikroskopisch)",
+    "imperial-units": "imperiale Einheiten",
+    "scientific-units": "wissenschaftliche Einheiten",
+    
+    "metric": {
+        "gram-micrometer": "Gramm pro Kubikmikrometer",
+        "gram-millimeter": "Gramm pro Kubikmillimeter",
+        "gram-centimeter": "Gramm pro Kubikzentimeter",
+        "gram-decimeter": "Gramm pro Kubikdezimeter",
+        "gram-meter": "Gramm pro Kubikmeter",
+        "kilogram-centimeter": "Kilogramm pro Kubikzentimeter",
+        "kilogram-decimeter": "Kilogramm pro Kubikdezimeter",
+        "kilogram-meter": "Kilogramm pro Kubikmeter",
+        "tonne-meter": "Tonne pro Kubikmeter"
+    },
+
+    "metric-microscopic": {
+        "quectogram-meter": "Quektogramm pro Kubikmeter",
+        "rontogram-meter": "Rontogramm pro Kubikmeter",
+        "yoctogram-meter": "Joktogramm pro Kubikmeter",
+        "attogram-meter": "Attogramm pro Kubikmeter",
+        "femtogram-micrometer": "Femtogramm pro Kubikmikrometer",
+        "femtogram-meter": "Femtogramm pro Kubikmeter",
+        "picogram-nanometer": "Pikogramm pro Kubiknanometer",
+        "picogram-meter": "Pikogramm pro Kubikmeter",
+        "nanogram-micrometer": "Nanogramm pro Kubikmikrometer",
+        "nanogram-meter": "Nanogramm pro Kubikmeter",
+        "microgram-centimeter": "Mikrogramm pro Kubikzentimeter",
+        "microgram-meter": "Mikrogramm pro Kubikmeter",
+        "milligram-centimeter": "Milligramm pro Kubikzentimeter",
+        "milligram-meter": "Milligramm pro Kubikmeter"
+    },
+    
+    "imperial": {
+        "grain-gallon": "Grain pro Gallone",
+        "ounce-inch": "Unze pro Kubikzoll",
+        "ounce-foot": "Unze pro Kubikfuß",
+        "ounce-yard": "Unze pro Kubikyard",
+        "pound-inch": "Pfund pro Kubikzoll",
+        "pound-foot": "Pfund pro Kubikfuß",
+        "pound-yard": "Pfund pro Kubikyard",
+        "pound-bushel": "Pfund pro Scheffel",
+        "pound-gallon": "Pfund pro Gallone",
+        "slug-foot": "Slug pro Kubikfuß",
+        "troy-ounce-inch": "Troy-Unze pro Kubikzoll",
+        "troy-ounce-foot": "Troy-Unze pro Kubikfuß",
+        "troy-pound-inch": "Troy-Pfund pro Kubikzoll",
+        "troy-pound-foot": "Troy-Pfund pro Kubikfuß"
+    },
+
+    "scientific": {
+        "proton-mass-parsec": "Protonenmasse pro Kubikparsec",
+        "electronvolt-meter": "Elektronenvolt pro Kubikmeter",
+        "electron-mass-meter": "Elektronenmasse pro Kubikmeter",
+        "dalton-centimeter": "Dalton pro Kubikzentimeter",
+        "dalton-meter": "Dalton pro Kubikmeter",
+        "solar-parsec": "Sonnenmasse pro Kubikparsec",
+        "solar-light-year": "Sonnenmasse pro Kubiklichtjahr",
+        "planck-mass-meter": "Planck-Masse pro Kubikmeter",
+        "earth-kilometer": "Erdmasse pro Kubikkilometer",
+        "jupiter-kilometer": "Jupitermasse pro Kubikkilometer"
+    }
+
+}
