@@ -197,39 +197,39 @@
 
         "millimeter-water": {
             "val": "9.80665",
-            "symbol": "mmH₂O",
+            "symbol": "mmH<sub>2</sub>O",
             "in-pascals": "~9.807 Pa",
-            "equivalent": "0.1 cmH₂O"
+            "equivalent": "0.1 cmH<sub>2</sub>O"
         },
         "centimeter-water": {
             "val": "98.0665",
-            "symbol": "cmH₂O",
+            "symbol": "cmH<sub>2</sub>O",
             "in-pascals": "~98.067 Pa",
-            "equivalent": "10 mmH₂O"
+            "equivalent": "10 mmH<sub>2</sub>O"
         },
         "inch-water": {
             "val": "249.08891",
-            "symbol": "inH₂O",
+            "symbol": "inH<sub>2</sub>O",
             "in-pascals": "~2.491 hPa",
-            "equivalent": "1/12 ftH₂O"
+            "equivalent": "1/12 ftH<sub>2</sub>O"
         },
         "foot-water": {
             "val": "2989.06692",
-            "symbol": "ftH₂O",
+            "symbol": "ftH<sub>2</sub>O",
             "in-pascals": "~29.891 hPa",
-            "equivalent": "12 inH₂O"
+            "equivalent": "12 inH<sub>2</sub>O"
         },
         "meter-sea-water": {
             "val": "10051.81625",
             "symbol": "msw",
             "in-pascals": "~10.052 kPa",
-            "equivalent": "102.5 cmH₂O"
+            "equivalent": "102.5 cmH<sub>2</sub>O"
         },
         "foot-sea-water": {
             "val": "3063.793593",
             "symbol": "fsw",
             "in-pascals": "~3.064 kPa",
-            "equivalent": "1.025 ftH₂O"
+            "equivalent": "1.025 ftH<sub>2</sub>O"
         }
 
     },
@@ -308,8 +308,7 @@
 
         "table":[
             "symbol",
-            "in-pascals",
-            "equivalent"
+            "in-pascals"
         ],
 
         "millitorr": {
@@ -324,7 +323,7 @@
         },
         "newton-sq-meter": {
             "val": "1",
-            "symbol": "N/m²",
+            "symbol": "N/m<sup>2</sup>",
             "in-pascals": "1 Pa"
         },
         "torr": {
@@ -334,7 +333,7 @@
         },
         "kilonewton-sq-meter": {
             "val": "1000",
-            "symbol": "kN/m²",
+            "symbol": "kN/m<sup>2</sup>",
             "in-pascals": "1 kPa"
         },
         "pièze": {

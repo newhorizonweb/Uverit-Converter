@@ -1,0 +1,69 @@
+
+{
+
+    "metric-units": "metric units",
+    "metric-microscopic-units": "metric units (microscopic)",
+    "imperial-units": "imperial units",
+    "scientific-units": "scientific units",
+    
+
+    "metric": {
+        "gram-micrometer": "gram per cubic micrometer",
+        "gram-millimeter": "gram per cubic millimeter",
+        "gram-centimeter": "gram per cubic centimeter",
+        "gram-decimeter": "gram per cubic decimeter",
+        "gram-meter": "gram per cubic meter",
+        "kilogram-centimeter": "kilogram per cubic centimeter",
+        "kilogram-decimeter": "kilogram per cubic decimeter",
+        "kilogram-meter": "kilogram per cubic meter",
+        "tonne-meter": "tonne per cubic meter"
+    },
+
+    "metric-microscopic": {
+        "quectogram-meter": "quectogram per cubic meter",
+        "rontogram-meter": "rontogram per cubic meter",
+        "yoctogram-meter": "yoctogram per cubic meter",
+        "attogram-meter": "attogram per cubic meter",
+        "femtogram-micrometer": "femtogram per cubic micrometer",
+        "femtogram-meter": "femtogram per cubic meter",
+        "picogram-nanometer": "picogram per cubic nanometer",
+        "picogram-meter": "picogram per cubic meter",
+        "nanogram-micrometer": "nanogram per cubic micrometer",
+        "nanogram-meter": "nanogram per cubic meter",
+        "microgram-centimeter": "microgram per cubic centimeter",
+        "microgram-meter": "microgram per cubic meter",
+        "milligram-centimeter": "milligram per cubic centimeter",
+        "milligram-meter": "milligram per cubic meter"
+    },
+    
+    "imperial": {
+        "grain-gallon": "grain per gallon",
+        "ounce-inch": "ounce per cubic inch",
+        "ounce-foot": "ounce per cubic foot",
+        "ounce-yard": "ounce per cubic yard",
+        "pound-inch": "pound per cubic inch",
+        "pound-foot": "pound per cubic foot",
+        "pound-yard": "pound per cubic yard",
+        "pound-bushel": "pound per bushel",
+        "pound-gallon": "pound per gallon",
+        "slug-foot": "slug per cubic foot",
+        "troy-ounce-inch": "troy ounce per cubic inch",
+        "troy-ounce-foot": "troy ounce per cubic foot",
+        "troy-pound-inch": "troy pound per cubic inch",
+        "troy-pound-foot": "troy pound per cubic foot"
+    },
+
+    "scientific": {
+        "proton-mass-parsec": "proton mass per cubic parsec",
+        "electronvolt-meter": "electronvolt per cubic meter",
+        "electron-mass-meter": "electron mass per cubic meter",
+        "dalton-centimeter": "dalton per cubic centimeter",
+        "dalton-meter": "dalton per cubic meter",
+        "solar-parsec": "solar mass per cubic parsec",
+        "solar-light-year": "solar mass per cubic light-year",
+        "planck-mass-meter": "Planck mass per cubic meter",
+        "earth-kilometer": "Earth mass per cubic kilometer",
+        "jupiter-kilometer": "Jupiter mass per cubic kilometer"
+    }
+    
+}

@@ -26,25 +26,36 @@ function ConverterTable(){
         ["app", "converter", converterName]
     );
     
-    // Convert Superscript and subscript
+    // Convert superscript and subscript tags
     const parseText = (txt: string) => {
 
-        if (/<sup>/.test(txt)){
-            const parts = txt.split(/<sup>|<\/sup>/);
-            return parts.map((part, index) =>
-                index % 2 === 0 ? part : <sup key={index}>{part}</sup>
-            );
-        } else if (/<sub>/.test(txt)){
-            const parts = txt.split(/<sub>|<\/sub>/);
-            return parts.map((part, index) =>
-                index % 2 === 0 ? part : <sub key={index}>{part}</sub>
-            );
-        } else {
-            return txt;
-        }
-        
-    }
+        // Split the string
+        const parts = txt.split(/(<\/?sub>|<\/?sup>)/);
+    
+        return parts.map((part, index) => {
+            switch (part){
+                case "<sub>":
+                    return <sub key={index}>{parts[index + 1]}</sub>;
 
+                case "<sup>":
+                    return <sup key={index}>{parts[index + 1]}</sup>;
+
+                case "</sub>":
+                case "</sup>":
+                    return null; // Skip closing tags
+
+                default:
+                    if (index > 0 && (parts[index - 1] === "<sub>" ||
+                    parts[index - 1] === "<sup>")){
+                        // Detect the text between the sub/sup tags
+                        // and skip it (it's already inserted above)
+                        return null;
+                    }
+                    return part; // Return normal text
+            }
+        }).filter(Boolean); // Remove null values
+    };
+    
     const printTables = () => {
         window.print();
     }

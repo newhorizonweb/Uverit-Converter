@@ -1,0 +1,306 @@
+
+{
+
+    "settings":{
+        "operation": "true",
+        "choice": "exponential",
+
+        "input-def": "7",
+        "output-def": "28",
+
+        "choice-val-min": "0",
+        "choice-val-max": "16",
+        "choice-val-def": "5"
+    },
+
+    "metric":{
+
+        "table":[
+            "symbol",
+            "equivalent"
+        ],
+
+        "gram-micrometer": {
+            "val": "1e9",
+            "symbol": "g/µm<sup>3</sup>",
+            "equivalent": "1e9 kg/m<sup>3</sup>"
+        },
+        "gram-millimeter": {
+            "val": "1e6",
+            "symbol": "g/mm<sup>3</sup>",
+            "equivalent": "1e6 kg/m<sup>3</sup>"
+        },
+        "gram-centimeter": {
+            "val": "1e3",
+            "symbol": "g/cm<sup>3</sup>",
+            "equivalent": "1e3 kg/m<sup>3</sup>"
+        },
+        "gram-decimeter": {
+            "val": "1",
+            "symbol": "g/dm<sup>3</sup>",
+            "equivalent": "1 kg/m<sup>3</sup>"
+        },
+        "gram-meter": {
+            "val": "1e-3",
+            "symbol": "g/m<sup>3</sup>",
+            "equivalent": "1e-3 kg/m<sup>3</sup>"
+        },
+        "kilogram-centimeter": {
+            "val": "1e6",
+            "symbol": "kg/cm<sup>3</sup>",
+            "equivalent": "1e6 kg/m<sup>3</sup>"
+        },
+        "kilogram-decimeter": {
+            "val": "1e3",
+            "symbol": "kg/dm<sup>3</sup>",
+            "equivalent": "1e3 kg/m<sup>3</sup>"
+        },
+        "kilogram-meter": {
+            "val": "1",
+            "symbol": "kg/m<sup>3</sup>",
+            "equivalent": "1 kg/m<sup>3</sup>"
+        },
+        "tonne-meter": {
+            "val": "1e3",
+            "symbol": "t/m<sup>3</sup>",
+            "equivalent": "1e3 kg/m<sup>3</sup>"
+        }
+        
+    },
+
+    "metric-microscopic":{
+
+        "table":[
+            "symbol",
+            "equivalent"
+        ],
+        
+        "quectogram-meter": {
+            "val": "1e-30",
+            "symbol": "qg/m<sup>3</sup>",
+            "equivalent": "1e-30 kg/m<sup>3</sup>"
+        },
+        "rontogram-meter": {
+            "val": "1e-27",
+            "symbol": "rg/m<sup>3</sup>",
+            "equivalent": "1e-27 kg/m<sup>3</sup>"
+        },
+        "yoctogram-meter": {
+            "val": "1e-24",
+            "symbol": "yg/m<sup>3</sup>",
+            "equivalent": "1e-24 kg/m<sup>3</sup>"
+        },
+        "attogram-meter": {
+            "val": "1e-21",
+            "symbol": "ag/m<sup>3</sup>",
+            "equivalent": "1e-21 kg/m<sup>3</sup>"
+        },
+        "femtogram-micrometer": {
+            "val": "1",
+            "symbol": "fg/µm<sup>3</sup>",
+            "equivalent": "1 kg/m<sup>3</sup>"
+        },
+        "femtogram-meter": {
+            "val": "1e-18",
+            "symbol": "fg/m<sup>3</sup>",
+            "equivalent": "1e-18 kg/m<sup>3</sup>"
+        },
+        "picogram-nanometer": {
+            "val": "1e-12",
+            "symbol": "pg/nm<sup>3</sup>",
+            "equivalent": "1e-12 kg/m<sup>3</sup>"
+        },
+        "picogram-meter": {
+            "val": "1e-15",
+            "symbol": "pg/m<sup>3</sup>",
+            "equivalent": "1e-15 kg/m<sup>3</sup>"
+        },
+        "nanogram-micrometer": {
+            "val": "1e-6",
+            "symbol": "ng/µm<sup>3</sup>",
+            "equivalent": "1e-6 kg/m<sup>3</sup>"
+        },
+        "nanogram-meter": {
+            "val": "1e-12",
+            "symbol": "ng/m<sup>3</sup>",
+            "equivalent": "1e-12 kg/m<sup>3</sup>"
+        },
+        "microgram-centimeter": {
+            "val": "1e-3",
+            "symbol": "µg/cm<sup>3</sup>",
+            "equivalent": "1e-3 kg/m<sup>3</sup>"
+        },
+        "microgram-meter": {
+            "val": "1e-9",
+            "symbol": "µg/m<sup>3</sup>",
+            "equivalent": "1e-9 kg/m<sup>3</sup>"
+        },
+        "milligram-centimeter": {
+            "val": "1",
+            "symbol": "mg/cm<sup>3</sup>",
+            "equivalent": "1 kg/m<sup>3</sup>"
+        },
+        "milligram-meter": {
+            "val": "1e-6",
+            "symbol": "mg/m<sup>3</sup>",
+            "equivalent": "1e-6 kg/m<sup>3</sup>"
+        }
+
+    },
+
+    "imperial":{
+
+        "table":[
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "grain-gallon": { 
+            "val": "1.71180610452709469348e-2",
+            "symbol": "gr/gal", 
+            "metric": "~17.118 g/m<sup>3</sup>",
+            "equivalent": "~0.462 oz/yd<sup>3</sup>"
+        },
+        "ounce-inch": { 
+            "val": "1729.99404438769507460275",
+            "symbol": "oz/in<sup>3</sup>", 
+            "metric": "~1.73 g/cm<sup>3</sup>",
+            "equivalent": "1/16 lb/in<sup>3</sup>"
+        },
+        "ounce-foot": { 
+            "val": "1.00115396087250872373",
+            "symbol": "oz/ft<sup>3</sup>", 
+            "metric": "~1.001 kg/m<sup>3</sup>",
+            "equivalent": "1/1728 oz/in<sup>3</sup>"
+        },
+        "ounce-yard": { 
+            "val": "3.70797763286114342122e-2",
+            "symbol": "oz/yd<sup>3</sup>", 
+            "metric": "~37.08 g/m<sup>3</sup>",
+            "equivalent": "1/27 oz/ft<sup>3</sup>"
+        },
+        "pound-inch": { 
+            "val": "27679.90471020312119364396",
+            "symbol": "lb/in<sup>3</sup>", 
+            "metric": "~27.68 kg/m<sup>3</sup>",
+            "equivalent": "16 oz/in<sup>3</sup>"
+        },
+        "pound-foot": { 
+            "val": "16.01846337396013957966",
+            "symbol": "lb/ft<sup>3</sup>", 
+            "metric": "~16.018 kg/m<sup>3</sup>",
+            "equivalent": "1/1728 lb/in<sup>3</sup>"
+        },
+        "pound-yard": { 
+            "val": "0.59327642125778294739",
+            "symbol": "lb/yd<sup>3</sup>", 
+            "metric": "~0.593 kg/m<sup>3</sup>",
+            "equivalent": "1/27 lb/ft<sup>3</sup>"
+        },
+        "pound-bushel": { 
+            "val": "12.87185978097447065859",
+            "symbol": "lb/bu", 
+            "metric": "~12.872 kg/m<sup>3</sup>",
+            "equivalent": "~0.804 lb/ft<sup>3</sup>"
+        },
+        "pound-gallon": { 
+            "val": "119.82642731689662854391",
+            "symbol": "lb/gal", 
+            "metric": "~0.12 g/cm<sup>3</sup>",
+            "equivalent": "~7.481 lb/ft<sup>3</sup>"
+        },
+        "slug-foot": { 
+            "val": "515.37881839319620344104",
+            "symbol": "slug/ft<sup>3</sup>", 
+            "metric": "~0.515 g/cm<sup>3</sup>",
+            "equivalent": "~0.298 oz/in<sup>3</sup>"
+        },
+        "troy-ounce-inch": { 
+            "val": "1898.05060869964259613559",
+            "symbol": "oz t/in<sup>3</sup>", 
+            "metric": "~1.898 g/cm<sup>3</sup>",
+            "equivalent": "~1.097 oz/in<sup>3</sup>"
+        },
+        "troy-ounce-foot": { 
+            "val": "1.09840891707155242832",
+            "symbol": "oz t/ft<sup>3</sup>", 
+            "metric": "~1.098 kg/m<sup>3</sup>",
+            "equivalent": "~1.097 oz/ft<sup>3</sup>"
+        },
+        "troy-pound-inch": { 
+            "val": "22776.60730439571115362703",
+            "symbol": "lb t/in<sup>3</sup>", 
+            "metric": "~22.777 g/cm<sup>3</sup>",
+            "equivalent": "~0.823 lb/in<sup>3</sup>"
+        },
+        "troy-pound-foot": { 
+            "val": "13.180907004858629139830",
+            "symbol": "lb t/ft<sup>3</sup>", 
+            "metric": "~13.181 kg/m<sup>3</sup>",
+            "equivalent": "~0.823 lb/ft<sup>3</sup>"
+        }
+        
+    },
+
+    "scientific":{
+
+        "table":[
+            "symbol",
+            "metric"
+        ],
+
+        "proton-mass-parsec": { 
+            "val": "5.69306509853459035986e-77",
+            "symbol": "m<sub>p</sub>/pc<sup>3</sup>", 
+            "metric": "~5.693e-47 qg/m<sup>3</sup>"
+        },
+        "electronvolt-meter": { 
+            "val": "1.78266192162789770318e-36",
+            "symbol": "eV/m<sup>3</sup>", 
+            "metric": "~1.783e-6 qg/m<sup>3</sup>"
+        },
+        "electron-mass-meter": { 
+            "val": "9.10938371392828282828e-31",
+            "symbol": "m<sub>e</sub>/m<sup>3</sup>", 
+            "metric": "~0.911 qg/m<sup>3</sup>"
+        },
+        "dalton-centimeter": { 
+            "val": "1.66053906892525252525e-21",
+            "symbol": "Da/cm<sup>3</sup>", 
+            "metric": "~1.661 ag/m<sup>3</sup>"
+        },
+        "dalton-meter": { 
+            "val": "1.66053906892525252525e-27",
+            "symbol": "Da/m<sup>3</sup>", 
+            "metric": "~1.661 rg/m<sup>3</sup>"
+        },
+        "solar-parsec": { 
+            "val": "6.76792618541256862076e-20",
+            "symbol": "M☉/pc<sup>3</sup>", 
+            "metric": "~67.679 ag/m<sup>3</sup>"
+        },
+        "solar-light-year": { 
+            "val": "2.34819002597790402852e-18",
+            "symbol": "M☉/ly<sup>3</sup>", 
+            "metric": "~2.348 fg/m<sup>3</sup>"
+        },
+        "planck-mass-meter": { 
+            "val": "2.17643424242424242424e-8",
+            "symbol": "m<sub>P</sub>/m<sup>3</sup>", 
+            "metric": "~21.764 µg/m<sup>3</sup>"
+        },
+        "earth-kilometer": { 
+            "val": "5.9722e15",
+            "symbol": "M⊕/km<sup>3</sup>", 
+            "metric": "5.9722e15 kg/m<sup>3</sup>"
+        },
+        "jupiter-kilometer": { 
+            "val": "1.89813e18",
+            "symbol": "M<sub>J</sub>/km<sup>3</sup>", 
+            "metric": "~1.898e18 kg/m<sup>3</sup>"
+        }
+
+    }
+
+}
