@@ -1,0 +1,118 @@
+
+{
+
+    "metric-units": "unidades métricas",
+    "CGS-units": "unidades CGS",
+    "watt-hours-units": "vatios-hora",
+    "electronvolts-units": "electrón-voltios",
+    "tons-of-tnt-units": "toneladas de TNT",
+    "imperial-units": "unidades imperiales",
+    "scientific-units": "unidades científicas",
+    "other-units": "otras unidades",
+    
+    "metric": {
+        "quectojoule": "quectojulio",
+        "rontojoule": "rontojulio",
+        "yoctojoule": "yoctojulio",
+        "zeptojoule": "zeptojulio",
+        "attojoule": "attojulio",
+        "femtojoule": "femtojulio",
+        "picojoule": "picojulio",
+        "nanojoule": "nanojulio",
+        "microjoule": "microjulio",
+        "millijoule": "milijulio",
+        "centijoule": "centijulio",
+        "decijoule": "decijulio",
+        "joule": "julio",
+        "dekajoule": "dekajulio",
+        "hectojoule": "hectojulio",
+        "kilojoule": "kilojulio",
+        "megajoule": "megajulio",
+        "gigajoule": "gigajulio",
+        "terajoule": "terajulio",
+        "petajoule": "petajulio",
+        "exajoule": "exajulio",
+        "zettajoule": "zettajulio",
+        "yottajoule": "yottajulio",
+        "ronnajoule": "ronnajulio",
+        "quettajoule": "quettajulio"
+    },
+
+    "CGS": {
+        "erg": "ergio",
+        "calorie": "caloría",
+        "table-calorie": "caloría de la Tabla Internacional de Vapor",
+        "kilocalorie": "kilocaloría"
+    },
+
+    "watt-hours": {
+        "femtowatt-hour": "femtovatio-hora",
+        "picowatt-hour": "picovatio-hora",
+        "nanowatt-hour": "nanovatio-hora",
+        "microwatt-hour": "microvatio-hora",
+        "milliwatt-hour": "milivatio-hora",
+        "centiwatt-hour": "centivatio-hora",
+        "deciwatt-hour": "decivatio-hora",
+        "watt-hour": "vatio-hora",
+        "dekawatt-hour": "dekavatio-hora",
+        "hectowatt-hour": "hectovatio-hora",
+        "kilowatt-hour": "kilovatio-hora",
+        "megawatt-hour": "megavatio-hora",
+        "gigawatt-hour": "gigavatio-hora",
+        "terawatt-hour": "teravatio-hora",
+        "petawatt-hour": "petavatio-hora"
+    },
+
+    "electronvolts": {
+        "femtoelectronvolt": "femtoelectrón-voltio",
+        "picoelectronvolt": "picoelectrón-voltio",
+        "nanoelectronvolt": "nanoelectrón-voltio",
+        "microelectronvolt": "microelectrón-voltio",
+        "millielectronvolt": "milielectrón-voltio",
+        "centielectronvolt": "centielectrón-voltio",
+        "decielectronvolt": "decielectrón-voltio",
+        "electronvolt": "electrón-voltio",
+        "dekaelectronvolt": "dekaelectrón-voltio",
+        "hectoelectronvolt": "hectoelectrón-voltio",
+        "kiloelectronvolt": "kiloelectrón-voltio",
+        "megaelectronvolt": "megaelectrón-voltio",
+        "gigaelectronvolt": "gigaelectrón-voltio",
+        "teraelectronvolt": "teraelectrón-voltio",
+        "petaelectronvolt": "petaelectrón-voltio"
+    },
+
+    "tons-of-tnt": {
+        "ton-tnt": "tonelada de TNT",
+        "kiloton-tnt": "kilotonelada de TNT",
+        "megaton-tnt": "megatonelada de TNT",
+        "gigaton-tnt": "gigatonelada de TNT",
+        "teraton-tnt": "teratonelada de TNT",
+        "petaton-tnt": "petatonelada de TNT"
+    },
+
+    "imperial": {
+        "foot-pound-force": "pie-libra fuerza",
+        "horsepower-hour": "caballo de vapor-hora",
+        "btu": "unidad térmica británica (BTU)",
+        "kilobtu": "kiloBTU",
+        "therm": "termia",
+        "decatherm": "decatermia",
+        "quad": "quad"
+    },
+
+    "scientific": {
+        "rydberg-constant": "constante de Rydberg",
+        "hartree": "hartree",
+        "planck-energy": "energía de Planck"
+    },
+
+    "other": {
+        "tonne-coal": "tonelada equivalente de carbón",
+        "kilotonne-coal": "kilotonelada equivalente de carbón",
+        "megatonne-coal": "megatonelada equivalente de carbón",
+        "tonne-oil": "tonelada equivalente de petróleo",
+        "kilotonne-oil": "kilotonelada equivalente de petróleo",
+        "megatonne-oil": "megatonelada equivalente de petróleo"
+    }
+
+}
