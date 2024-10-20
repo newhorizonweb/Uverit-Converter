@@ -158,7 +158,7 @@
 
         "erg": {  
             "val": "1e-7", 
-            "symbol": "-",  
+            "symbol": "erg",  
             "metric": "0.1 µJ",
             "equivalent": "~2.39e-8 cal"
         },

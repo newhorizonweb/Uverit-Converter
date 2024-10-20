@@ -169,8 +169,9 @@ function ConverterFields(){
         const number = new Decimal(coefficient).toDecimalPlaces(factorSelVal);
 
         // Recombine the coefficient and exponent
-        return `${number}e${exponent}`;
-
+        return !isNaN(Number(val)) ?
+            `${number}e${exponent}` : new Decimal(NaN);
+        
     }
 
     const convertToDecimal = (value: string) => {

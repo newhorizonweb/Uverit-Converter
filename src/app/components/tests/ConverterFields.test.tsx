@@ -144,6 +144,13 @@ describe("Common Length Converter Fields", () => {
         expect(result.textContent).toBe('2');
     });
 
+    it('tests NaN', async () => {
+        const valInp = await screen.findByTestId("value-input");
+        const result = await screen.findByTestId("result-txt");
+        fireEvent.change(valInp, { target: { value: 'x' } });
+        expect(result.textContent).toBe('NaN');
+    });
+
     it('checks the operation field', async () => {
         const selFrom = await screen.findByTestId("units-input");
         const selTo = await screen.findByTestId("units-output");

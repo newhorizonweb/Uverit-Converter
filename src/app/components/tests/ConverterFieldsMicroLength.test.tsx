@@ -75,4 +75,11 @@ describe("Microscopic Length Converter Fields", () => {
         expect(result.textContent).toBe('0.10021');
     });
 
+    it('tests NaN', async () => {
+        const valInp = await screen.findByTestId("value-input");
+        const result = await screen.findByTestId("result-txt");
+        fireEvent.change(valInp, { target: { value: 'x' } });
+        expect(result.textContent).toBe('NaN');
+    });
+
 });
