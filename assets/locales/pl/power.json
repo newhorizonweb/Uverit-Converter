@@ -1,0 +1,94 @@
+
+{
+
+    "metric-units": "jednostki metryczne",
+    "electrical-power-units": "jednostki mocy elektrycznej",
+    "CGS-units": "jednostki CGS",
+    "imperial-units": "jednostki imperialne",
+    "horsepower-units": "konie mechaniczne",
+    "caloric-power-units": "jednostki mocy kalorycznej",
+    "other-units": "inne jednostki",
+
+    "metric": {
+        "quectowatt": "kwektowat",
+        "rontowatt": "rontowat",
+        "yoctowatt": "joktowat",
+        "zeptowatt": "zeptowat",
+        "attowatt": "attowat",
+        "femtowatt": "femtowat",
+        "picowatt": "pikowat",
+        "nanowatt": "nanowat",
+        "microwatt": "mikrowat",
+        "milliwatt": "miliwat",
+        "centiwatt": "centywat",
+        "deciwatt": "decywat",
+        "watt": "wat",
+        "dekawatt": "dekawat",
+        "hectowatt": "hektowat",
+        "kilowatt": "kilowat",
+        "megawatt": "megawat",
+        "gigawatt": "gigawat",
+        "terawatt": "terawat",
+        "petawatt": "petawat",
+        "exawatt": "eksawat",
+        "zettawatt": "zettawat",
+        "yottawatt": "jottawat",
+        "ronnawatt": "ronnawat",
+        "quettawatt": "kwettawat"
+    },
+    
+    "electrical-power": {
+        "nanovolt-ampere": "nanowolt-amper",
+        "microvolt-ampere": "mikrowolt-amper",
+        "millivolt-ampere": "miliwolt-amper",
+        "centivolt-ampere": "centywolt-amper",
+        "decivolt-ampere": "decywolt-amper",
+        "volt-ampere": "wolt-amper",
+        "dekavolt-ampere": "dekawolt-amper",
+        "hectovolt-ampere": "hektowolt-amper",
+        "kilovolt-ampere": "kilowolt-amper",
+        "megavolt-ampere": "megawolt-amper",
+        "gigavolt-ampere": "gigawolt-amper"
+    },
+
+    "CGS": {
+        "erg-second": "erg na sekundę",
+        "erg-minute": "erg na minutę",
+        "erg-hour": "erg na godzinę"
+    },
+
+    "imperial": {
+        "foot-pound-force-second": "stopo-funt siły na sekundę",
+        "foot-pound-force-minute": "stopo-funt siły na minutę",
+        "BTU-second": "BTU na sekundę",
+        "BTU-minute": "BTU na minutę",
+        "BTU-hour": "BTU na godzinę",
+        "ton-refrigeration": "tona chłodnicza",
+        "therm-hour": "term na godzinę"
+    },
+
+    "horsepower": {
+        "horsepower-metric": "metryczny koń mechaniczny",
+        "horsepower-mechanical": "koń mechaniczny",
+        "horsepower-electrical": "elektryczny koń mechaniczny",
+        "horsepower-boiler": "kotłowy koń mechaniczny"
+    },
+
+    "caloric-power": {
+        "calorie-second": "kaloria na sekundę",
+        "calorie-minute": "kaloria na minutę",
+        "calorie-hour": "kaloria na godzinę",
+        "kilocalorie-second": "kilokaloria na sekundę",
+        "kilocalorie-minute": "kilokaloria na minutę",
+        "kilocalorie-hour": "kilokaloria na godzinę"
+    },
+
+    "other": {
+        "newton-meter-second": "newtonometr na sekundę",
+        "joule-second": "dżul na sekundę",
+        "kilojoule-second": "kilodżul na sekundę",
+        "dyne-centimeter-second": "dyna-centymetr na sekundę",
+        "planck-power": "moc Plancka"
+    }
+    
+}
