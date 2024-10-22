@@ -6,7 +6,7 @@
         "choice": "exponential",
 
         "input-def": "12",
-        "output-def": "25",
+        "output-def": "39",
 
         "choice-val-min": "0",
         "choice-val-max": "16",
@@ -419,7 +419,7 @@
         "planck-power": {  
             "val": "36282540807511707189541470916223299042478100193891586.43090333592960243939", 
             "symbol": "P<sub>P</sub>",
-            "metric": "~3.628e+22 QW"
+            "metric": "~3.628e22 QW"
         }
         
     }

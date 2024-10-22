@@ -3,7 +3,12 @@
 
     "metric-units": "metrische Einheiten",
     "imperial-units": "imperiale Einheiten",
-
+    "metric-microscopic-units": "metrische Einheiten (mikroskopisch)",
+    "metric-astronomical-units": "metrische Einheiten (astronomisch)",
+    "microscopic-units": "mikroskopische Einheiten",
+    "astronomical-units": "astronomische Einheiten",
+    "other-units": "andere Einheiten",
+    
     "metric": {
         "nanogram": "Nanogramm",
         "microgram": "Mikrogramm",
@@ -30,6 +35,46 @@
         "hundredweight-uk": "Zentner (UK)",
         "ton-us": "Tonne (US)",
         "ton-uk": "Tonne (UK)"
+    },
+
+    "metric-microscopic": {
+        "quectogram": "Quektogramm",
+        "rontogram": "Rontogramm",
+        "yoctogram": "Joktogramm",
+        "zeptogram": "Zeptogramm",
+        "attogram": "Attogramm",
+        "femtogram": "Femtogramm",
+        "picogram": "Pikogramm"
+    },
+    
+    "metric-astronomical": {
+        "teragram": "Teragramm",
+        "petagram": "Petagramm",
+        "exagram": "Exagramm",
+        "zettagram": "Zettagramm",
+        "yottagram": "Jottagramm",
+        "ronnagram": "Ronnagramm",
+        "quettagram": "Quektagramm"
+    },
+
+    "microscopic": {
+        "electron-mass": "Elektronenmasse",
+        "dalton": "Dalton",
+        "proton-mass": "Protonenmasse",
+        "neutron-mass": "Neutronenmasse",
+        "planck-mass": "Planck-Masse"
+    },
+    
+    "astronomical": {
+        "lunar-mass": "Mondmasse",
+        "earth-mass": "Erdmasse",
+        "jupiter-mass": "Jupitermasse",
+        "solar-mass": "Sonnenmasse"
+    },
+    
+    "other": {
+        "point": "Punkt",
+        "carat": "Karat"
     }
 
 }

@@ -24,6 +24,8 @@
     "in-radians": "en radianes",
     "in-degrees": "en grados",
     "in-newtons": "en newtons",
-    "in-pascals": "en pascales"
+    "in-pascals": "en pascales",
+    "water-freezing": "punto de congelación del agua",
+    "water-boiling": "punto de ebullición del agua"
     
 }

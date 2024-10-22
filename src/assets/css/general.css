@@ -161,6 +161,10 @@ p, a, select, label, button, input, select, textarea, th, td{
     transition:color var(--trans2);
 }
 
+th, td{
+    text-wrap:balance;
+}
+
 @media screen and (width <= 440px){
     
     p, a, label, button, input, select, textarea, th, td{

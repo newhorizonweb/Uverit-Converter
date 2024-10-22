@@ -1,0 +1,86 @@
+
+{
+
+    "settings":{
+        "operation": "false",
+        "choice": "decimal",
+
+        "input-def": "0",
+        "output-def": "2",
+
+        "choice-val-min": "0",
+        "choice-val-max": "16",
+        "choice-val-def": "2"
+    },
+
+    "common": {
+
+        "table": [
+            "symbol",
+            "water-freezing",
+            "water-boiling"
+        ],
+
+        "celsius": {  
+            "val": "val => val.plus(273.15)|val => val.minus(273.15)", 
+            "symbol": "°C",  
+            "water-freezing": "0 °C",
+            "water-boiling": "100 °C"
+        },
+        "kelvin": {  
+            "val": "val => val|val => val", 
+            "symbol": "K",  
+            "water-freezing": "273.15 K",
+            "water-boiling": "373.15 K" 
+        },
+        "fahrenheit": {  
+            "val": "val => val.minus(32).times(5).dividedBy(9).plus(273.15)|val => val.minus(273.15).times(9).dividedBy(5).plus(32)", 
+            "symbol": "°F",  
+            "water-freezing": "32 °F",
+            "water-boiling": "212 °F"
+        },
+        "rankine": {  
+            "val": "val => val.dividedBy(1.8)|val => val.times(1.8)", 
+            "symbol": "°R",  
+            "water-freezing": "491.67 °R",
+            "water-boiling": "671.67 °R"
+        }
+
+    },
+
+    "obsolete": {
+
+        "table": [
+            "symbol",
+            "water-freezing",
+            "water-boiling"
+        ],
+
+        "réaumur": {  
+            "val": "val => val.times(5).dividedBy(4).plus(273.15)|val => val.minus(273.15).times(4).dividedBy(5)", 
+            "symbol": "°Re",  
+            "water-freezing": "0 °Re",
+            "water-boiling": "80 °Re"
+        },
+        "rømer": {  
+            "val": "val => val.minus(7.5).times(40).dividedBy(21).plus(273.15)|val => val.minus(273.15).times(21).dividedBy(40).plus(7.5)", 
+            "symbol": "°Rø",  
+            "water-freezing": "7.5 °Rø",
+            "water-boiling": "60 °Rø"
+        },
+        "delisle": {  
+            "val": "val => val.times(2).dividedBy(3).minus(373.15).negated()|val => val.minus(373.15).times(-3).dividedBy(2)", 
+            "symbol": "°De",  
+            "water-freezing": "150 °De",
+            "water-boiling": "0 °De"
+        },
+        "newton": {  
+            "val": "val => val.times(100).dividedBy(33).plus(273.15)|val => val.minus(273.15).times(33).dividedBy(100)",
+            "symbol": "°N",  
+            "water-freezing": "0 °N",
+            "water-boiling": "33 °N"
+        }
+        
+    }
+
+}

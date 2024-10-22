@@ -24,6 +24,8 @@
     "in-radians": "w radianach",
     "in-degrees": "w stopniach",
     "in-newtons": "w niutonach",
-    "in-pascals": "w paskalach"
+    "in-pascals": "w paskalach",
+    "water-freezing": "temperatura zamarzania wody",
+    "water-boiling": "temperatura wrzenia wody"
     
 }

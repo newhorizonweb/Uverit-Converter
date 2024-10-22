@@ -97,6 +97,7 @@ function ConverterFields(){
     }
 
     useEffect(() => {
+
         const handleKeyDown = (e: KeyboardEvent) => {
             if (e.key === 'Tab'){
                 setKeyboardFocus(true);
@@ -120,6 +121,7 @@ function ConverterFields(){
             window.removeEventListener('mousedown', handleMouseDown);
             window.removeEventListener('scroll', handleScroll);
         };
+
     }, []);
 
     useEffect(() => {
@@ -150,7 +152,8 @@ function ConverterFields(){
             const number = new Decimal(coefficient).toDecimalPlaces(factorSelVal);
 
             // Recombine the coefficient and exponent
-            return `${number}e${exponent}`;
+            return !isNaN(Number(val)) ?
+                `${number}e${exponent}` : new Decimal(NaN);
         }
 
     }
@@ -180,34 +183,63 @@ function ConverterFields(){
         if (value.trim() === "") return new Decimal(0);
 
         // Return decimal.js value or NaN (e.g. when there are letters in the input)
-        return !isNaN(Number(value)) ? new Decimal(value) : new Decimal(NaN);
+        return !isNaN(Number(value)) ?
+            new Decimal(value) : new Decimal(NaN);
 
     };
+
+        /* Temperature */
+
+    const toBase = (value: string, formula: string) => {
+        const extFormula = formula.split('|')[0];
+        const fn = new Function("val", `return ${extFormula.split('=>')[1]}`);
+        return fn(new Decimal(Number(value)));
+    };
+    
+    const fromBase = (value: Decimal, formula: string) => {
+        const extFormula = formula.split('|')[1];
+        const fn = new Function("val", `return ${extFormula.split('=>')[1]}`);
+        return fn(new Decimal(value));
+    };
+
+        /* Result Conversion */
 
     const convertedVal = useMemo(() => {
         
         const convertUnits = () => {
 
-            // Input Values
-            // Use decimal.js to remove js floating poin shitshow
-            const inputValue = convertToDecimal(inputVal);
-            const inputUnit = convertToDecimal(inputSelVal);
-            const outputUnit = convertToDecimal(outputSelVal);
-
-            // Convert to the output value
-            const resultRaw = inputValue.times(inputUnit).div(outputUnit);
-
             // Will return 0 if somthing's wrong (cath 'em all solution)
             let result: string | Decimal = new Decimal(0);
 
-            // Change the conversion based on the current converter settings
-            if (choice === "decimal" ||
-            (choice === "exponential" && !isExponential)){
-                result = checkExpoDecimals(resultRaw)
-            } else if (choice === "exponential"){
-                result = limitDecimalExpo(resultRaw);
+            if (converterName === "temperature"){
+
+                const baseValue = toBase(inputVal, inputSelVal);
+                const resultRaw = outputSelVal && inputVal ?
+                    fromBase(baseValue, outputSelVal) : new Decimal(0);
+                
+                result = checkExpoDecimals(resultRaw);
+                
+            } else {
+
+                // Input Values
+                // Use decimal.js to remove js floating poin shitshow
+                const inputValue = convertToDecimal(inputVal);
+                const inputUnit = convertToDecimal(inputSelVal);
+                const outputUnit = convertToDecimal(outputSelVal);
+
+                // Convert to the output value
+                const resultRaw = inputValue.times(inputUnit).div(outputUnit);
+
+                // Change the conversion based on the current converter settings
+                if (choice === "decimal" ||
+                (choice === "exponential" && !isExponential)){
+                    result = checkExpoDecimals(resultRaw)
+                } else if (choice === "exponential"){
+                    result = limitDecimalExpo(resultRaw);
+                }
+
             }
-            
+                
             return result.toString();
 
         };
@@ -256,7 +288,7 @@ function ConverterFields(){
         const inputValue = convertToDecimal(inputVal).toFixed(); // Prevent expo notat.
         const inputUnit = convertToDecimal(inputSelVal);
         const outputUnit = convertToDecimal(outputSelVal);
-
+        
         // Limit the output number to x decimal places
         const limitToX = 5;
         const minNum = new Decimal(10).pow(-limitToX);
@@ -376,33 +408,34 @@ function ConverterFields(){
 
             <div className="conv-section conv-features">
 
-                { operation &&
-                    <div className="operation conv-elem column">
-                        <p className="inp-label">
-                            {t("converter:operation")}
-                        </p>
+            
+                <div className="operation conv-elem column">
+                { operation && <>
+                    <p className="inp-label">
+                        {t("converter:operation")}
+                    </p>
 
-                        <div className="conv-inp glass operation-field"
-                        data-testid="operation-field">
-                            { operationContent === "-----" ? (
-                                <p className="operation-center">
-                                    { operationContent }
-                                </p>
-                            ) : (
-                                <p>
-                                    <span 
-                                    className="operation-input">
-                                        {operationContent.inputValue.toString()}
-                                        </span>
-                                    <span>&nbsp;*&nbsp;</span>
-                                    <span>
-                                        {operationContent.roundedOutput.toString()}
+                    <div className="conv-inp glass operation-field"
+                    data-testid="operation-field">
+                        { operationContent === "-----" ? (
+                            <p className="operation-center">
+                                { operationContent }
+                            </p>
+                        ) : (
+                            <p>
+                                <span 
+                                className="operation-input">
+                                    {operationContent.inputValue.toString()}
                                     </span>
-                                </p>
-                            )}
-                        </div>
+                                <span>&nbsp;*&nbsp;</span>
+                                <span>
+                                    {operationContent.roundedOutput.toString()}
+                                </span>
+                            </p>
+                        )}
                     </div>
-                }
+                </>}
+                </div>
 
                 <div className="gap-placeholder">
                     <p>&nbsp;</p>

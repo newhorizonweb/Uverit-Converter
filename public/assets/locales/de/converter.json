@@ -23,6 +23,8 @@
     "in-radians": "in Bogenmaß",
     "in-degrees": "in Grad",
     "in-newtons": "in Newton",
-    "in-pascals": "in Pascal"
-
+    "in-pascals": "in Pascal",
+    "water-freezing": "Gefrierpunkt des Wassers",
+    "water-boiling": "Siedepunkt des Wassers"
+    
 }

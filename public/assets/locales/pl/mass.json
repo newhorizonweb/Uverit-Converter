@@ -1,15 +1,19 @@
-
 {
 
     "metric-units": "jednostki metryczne",
     "imperial-units": "jednostki imperialne",
-
+    "metric-microscopic-units": "jednostki metryczne (mikroskopijne)",
+    "metric-astronomical-units": "jednostki metryczne (astronomiczne)",
+    "microscopic-units": "jednostki mikroskopijne",
+    "astronomical-units": "jednostki astronomiczne",
+    "other-units": "inne jednostki",
+    
     "metric": {
         "nanogram": "nanogram",
         "microgram": "mikrogram",
         "milligram": "miligram",
         "centigram": "centygram",
-        "decigram": "decogram",
+        "decigram": "decygram",
         "gram": "gram",
         "dekagram": "dekagram",
         "hectogram": "hektogram",
@@ -30,6 +34,46 @@
         "hundredweight-uk": "cetnar (UK)",
         "ton-us": "tona (US)",
         "ton-uk": "tona (UK)"
+    },
+
+    "metric-microscopic": {
+        "quectogram": "kwektogram",
+        "rontogram": "rontogram",
+        "yoctogram": "joktogram",
+        "zeptogram": "zeptogram",
+        "attogram": "attogram",
+        "femtogram": "femtogram",
+        "picogram": "pikogram"
+    },
+    
+    "metric-astronomical": {
+        "teragram": "teragram",
+        "petagram": "petagram",
+        "exagram": "eksagram",
+        "zettagram": "zettagram",
+        "yottagram": "jottagram",
+        "ronnagram": "ronnagram",
+        "quettagram": "kwektagram"
+    },
+
+    "microscopic": {
+        "electron-mass": "masa elektronu",
+        "dalton": "dalton",
+        "proton-mass": "masa protonu",
+        "neutron-mass": "masa neutronu",
+        "planck-mass": "masa Plancka"
+    },
+    
+    "astronomical": {
+        "lunar-mass": "masa Księżyca",
+        "earth-mass": "masa Ziemi",
+        "jupiter-mass": "masa Jowisza",
+        "solar-mass": "masa Słońca"
+    },
+    
+    "other": {
+        "point": "punkt",
+        "carat": "karat"
     }
 
 }
