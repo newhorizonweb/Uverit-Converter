@@ -1,0 +1,21 @@
+
+{
+
+    "common-units": "escalas comunes",
+    "obsolete-units": "escalas obsoletas",
+
+    "common": {
+        "celsius": "Celsius",
+        "kelvin": "Kelvin",
+        "fahrenheit": "Fahrenheit",
+        "rankine": "Rankine"
+    },
+
+    "obsolete": {
+        "réaumur": "Réaumur",
+        "rømer": "Rømer",
+        "delisle": "Delisle",
+        "newton": "Newton"
+    }
+
+}

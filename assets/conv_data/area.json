@@ -42,7 +42,7 @@
         "sq-meter": {
             "val": "1",
             "symbol": "m<sup>2</sup>",
-            "notation": "1<sup>0</sup>",
+            "notation": "10<sup>0</sup>",
             "equivalent": "1 m<sup>2</sup>"
         },
         "sq-dekameter": {
