@@ -1,0 +1,236 @@
+
+{
+
+    "settings":{
+        "operation": "true",
+        "choice": "decimal",
+
+        "input-def": "12",
+        "output-def": "16",
+
+        "choice-val-min": "0",
+        "choice-val-max": "16",
+        "choice-val-def": "9"
+    },
+
+    "SI":{
+
+        "table": [
+            "symbol",
+            "notation"
+        ],
+
+        "quectohertz": {  
+            "val": "1e-30", 
+            "symbol": "qHz",  
+            "notation": "10<sup>-30</sup>" 
+        },
+        "rontohertz": {  
+            "val": "1e-27", 
+            "symbol": "rHz",  
+            "notation": "10<sup>-27</sup>" 
+        },
+        "yoctohertz": {  
+            "val": "1e-24", 
+            "symbol": "yHz",  
+            "notation": "10<sup>-24</sup>" 
+        },
+        "zeptohertz": {  
+            "val": "1e-21", 
+            "symbol": "zHz",  
+            "notation": "10<sup>-21</sup>" 
+        },
+        "attohertz": {  
+            "val": "1e-18", 
+            "symbol": "aHz",  
+            "notation": "10<sup>-18</sup>" 
+        },
+        "femtohertz": {  
+            "val": "1e-15", 
+            "symbol": "fHz",  
+            "notation": "10<sup>-15</sup>" 
+        },
+        "picohertz": {  
+            "val": "1e-12", 
+            "symbol": "pHz",  
+            "notation": "10<sup>-12</sup>" 
+        },
+        "nanohertz": {  
+            "val": "1e-9", 
+            "symbol": "nHz",  
+            "notation": "10<sup>-9</sup>" 
+        },
+        "microhertz": {  
+            "val": "1e-6", 
+            "symbol": "µHz",  
+            "notation": "10<sup>-6</sup>" 
+        },
+        "millihertz": {  
+            "val": "1e-3", 
+            "symbol": "mHz",  
+            "notation": "10<sup>-3</sup>" 
+        },
+        "centihertz": {  
+            "val": "1e-2", 
+            "symbol": "cHz",  
+            "notation": "10<sup>-2</sup>" 
+        },
+        "decihertz": {  
+            "val": "1e-1", 
+            "symbol": "dHz",  
+            "notation": "10<sup>-1</sup>" 
+        },
+        "hertz": {  
+            "val": "1", 
+            "symbol": "Hz",  
+            "notation": "10<sup>0</sup>" 
+        },
+        "dekahertz": {  
+            "val": "1e1", 
+            "symbol": "daHz",  
+            "notation": "10<sup>1</sup>" 
+        },
+        "hectohertz": {  
+            "val": "1e2", 
+            "symbol": "hHz",  
+            "notation": "10<sup>2</sup>" 
+        },
+        "kilohertz": {  
+            "val": "1e3", 
+            "symbol": "kHz",  
+            "notation": "10<sup>3</sup>" 
+        },
+        "megahertz": {  
+            "val": "1e6", 
+            "symbol": "MHz",  
+            "notation": "10<sup>6</sup>" 
+        },
+        "gigahertz": {  
+            "val": "1e9", 
+            "symbol": "GHz",  
+            "notation": "10<sup>9</sup>" 
+        },
+        "terahertz": {  
+            "val": "1e12", 
+            "symbol": "THz",  
+            "notation": "10<sup>12</sup>" 
+        },
+        "petahertz": {  
+            "val": "1e15", 
+            "symbol": "PHz",  
+            "notation": "10<sup>15</sup>" 
+        },
+        "exahertz": {  
+            "val": "1e18", 
+            "symbol": "EHz",  
+            "notation": "10<sup>18</sup>" 
+        },
+        "zettahertz": {  
+            "val": "1e21", 
+            "symbol": "ZHz",  
+            "notation": "10<sup>21</sup>" 
+        },
+        "yottahertz": {  
+            "val": "1e24", 
+            "symbol": "YHz",  
+            "notation": "10<sup>24</sup>" 
+        },
+        "ronnahertz": {  
+            "val": "1e27", 
+            "symbol": "RHz",  
+            "notation": "10<sup>27</sup>" 
+        },
+        "quettahertz": {  
+            "val": "1e30", 
+            "symbol": "QHz",  
+            "notation": "10<sup>30</sup>" 
+        }
+        
+    },
+
+    "scientific":{
+
+        "table": [
+            "symbol",
+            "in-hertz"
+        ],
+
+        "becquerel": {  
+            "val": "1", 
+            "symbol": "Bq",  
+            "in-hertz": "1 Hz"
+        },
+        "curie": {  
+            "val": "3.7e10", 
+            "symbol": "Ci",  
+            "in-hertz": "37 GHz"
+        }
+
+    },
+
+    "angular":{
+
+        "table": [
+            "symbol",
+            "in-hertz"
+        ],
+
+        "degree-second": {  
+            "val": "2.77777777777777777778e-3", 
+            "symbol": "deg/s",  
+            "in-hertz": "1/360 Hz"
+        },
+        "radian-second": {  
+            "val": "0.15915494309189533577", 
+            "symbol": "rad/s",  
+            "in-hertz": "π/2 Hz"
+        }
+        
+    },
+
+    "other":{
+
+        "table": [
+            "symbol",
+            "in-hertz"
+        ],
+
+        "beat-minute": {  
+            "val": "1.66666666666666666667e-2", 
+            "symbol": "bpm",  
+            "in-hertz": "1/60 Hz"
+        },
+        "beat-second": {  
+            "val": "1", 
+            "symbol": "bps",  
+            "in-hertz": "1 Hz"
+        },
+        "cycle-minute": {  
+            "val": "1.66666666666666666667e-2", 
+            "symbol": "cpm",  
+            "in-hertz": "1/60 Hz"
+        },
+        "cycle-second": {  
+            "val": "1", 
+            "symbol": "cps",  
+            "in-hertz": "1 Hz"
+        },
+        "frame-second": {  
+            "val": "1", 
+            "symbol": "fps",  
+            "in-hertz": "1 Hz"
+        },
+        "revolution-minute": {  
+            "val": "1.66666666666666666667e-2", 
+            "symbol": "rpm",  
+            "in-hertz": "1/60 Hz"
+        },
+        "revolution-second": {  
+            "val": "1", 
+            "symbol": "rps",  
+            "in-hertz": "1 Hz"
+        }
+        
+    }
+
+}
