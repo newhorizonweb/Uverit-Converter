@@ -18,6 +18,11 @@
         size:A4;
     }
 
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
         /* Reset / Disable */
 
     :root .theme-dark{

@@ -12,6 +12,7 @@ import { useTranslation } from 'react-i18next';
 // Assets
 import '../../assets/css/converter-fields.css';
 import { switchUnitsIcon, copyIcon, copiedIcon, expoIcon } from "../core/SvgIcons";
+import { isBaseValid, numSys } from "../functions/NumSys";
 
 // Components
 import RenderSelectOptions from "../functions/GenerateSelect";
@@ -75,8 +76,8 @@ function ConverterFields(){
         const select = (document.querySelector('#units-input') as HTMLSelectElement);
 
         // Default options (first and second if not found)
-        const inputDef = parseInt(data.settings["input-def"]) || 0;
-        const outputDef = parseInt(data.settings["output-def"]) || 1;
+        const inputDef = parseInt(data.settings["input-def"] || 0);
+        const outputDef = parseInt(data.settings["output-def"] || 1);
 
         // Input
         setInputSelVal(select.options[inputDef]?.value.split('_&_')[1] ?? 0);
@@ -132,8 +133,7 @@ function ConverterFields(){
         }
     }, [ keyboardFocus ]);
 
-
-
+    
 
         /* Conversion */
 
@@ -219,6 +219,25 @@ function ConverterFields(){
                 
                 result = checkExpoDecimals(resultRaw);
                 
+            } else if (converterName === "numeral_systems"){
+
+                // Base validation
+                const validBase = (base: number) =>
+                    Math.max(2, Math.min(36, base));
+                
+                const fromBase = validBase(Number(inputSelVal));
+                const toBase = validBase(Number(outputSelVal));
+
+                // Input validation (invalid characters)
+                if (!isBaseValid(inputVal, fromBase)) return "NaN";
+
+                // Converted value
+                const resultRaw = numSys(
+                    inputVal, fromBase, toBase, factorSelVal
+                ).toString();
+                
+                result = resultRaw;
+
             } else {
 
                 // Input Values
@@ -233,7 +252,7 @@ function ConverterFields(){
                 // Change the conversion based on the current converter settings
                 if (choice === "decimal" ||
                 (choice === "exponential" && !isExponential)){
-                    result = checkExpoDecimals(resultRaw)
+                    result = checkExpoDecimals(resultRaw);
                 } else if (choice === "exponential"){
                     result = limitDecimalExpo(resultRaw);
                 }

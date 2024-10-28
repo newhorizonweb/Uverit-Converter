@@ -1,0 +1,25 @@
+
+{
+
+    "numeral-systems-units": "systemy liczbowe",
+    
+    "numeral-systems": {
+        "binary": "dwójkowy",
+        "ternary": "trójkowy",
+        "quaternary": "czwórkowy",
+        "quinary": "piątkowy",
+        "senary": "szóstkowy",
+        "septenary": "siódemkowy",
+        "octal": "ósemkowy",
+        "nonary": "dziewiątkowy",
+        "decimal": "dziesiętny",
+        "undecimal": "jedenastkowy",
+        "duodecimal": "dwunastkowy",
+        "hexadecimal": "szesnastkowy",
+        "vigesimal": "dwudziestkowy",
+        "tetravigesimal": "dwudziestoczwórkowy",
+        "duotrigesimal": "trzydziestodwójkowy",
+        "hexatrigesimal": "trzydziestoszóstkowy"
+    }
+
+}

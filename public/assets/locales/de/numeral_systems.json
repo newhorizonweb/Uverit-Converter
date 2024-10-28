@@ -1,0 +1,25 @@
+
+{
+
+    "numeral-systems-units": "Zahlensysteme",
+    
+    "numeral-systems": {
+        "binary": "binär",
+        "ternary": "ternär",
+        "quaternary": "quaternär",
+        "quinary": "quinär",
+        "senary": "senär",
+        "septenary": "septenär",
+        "octal": "oktal",
+        "nonary": "nonär",
+        "decimal": "dezimal",
+        "undecimal": "undezimal",
+        "duodecimal": "duodezimal",
+        "hexadecimal": "hexadezimal",
+        "vigesimal": "vigesimal",
+        "tetravigesimal": "tetravigesimal",
+        "duotrigesimal": "duotrigesimal",
+        "hexatrigesimal": "hexatrigesimal"
+    }
+
+}

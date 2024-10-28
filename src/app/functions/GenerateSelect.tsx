@@ -25,7 +25,7 @@ const RenderSelectOptions: React.FC<PropTypes> = ({ data }) => {
     );
 
     const cleanText = (txt: string) => {
-        return txt.replace(/<sup>|<\/sup>|<sub>|<\/sub>/g, '');
+        return txt.replace(/<sup>|<\/sup>|<sub>|<\/sub>|\(x\)/g, '');
     }
 
     return ( <>
