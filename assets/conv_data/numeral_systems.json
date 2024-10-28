@@ -1,0 +1,106 @@
+
+{
+
+    "settings":{
+        "operation": "false",
+        "choice": "decimal",
+
+        "input-def": "8",
+        "output-def": "0",
+
+        "choice-val-min": "0",
+        "choice-val-max": "16",
+        "choice-val-def": "5"
+    },
+
+    "numeral-systems":{
+
+        "table":[
+            "symbol",
+            "decimal-100"
+        ],
+
+        "binary": {
+            "val": "2",
+            "symbol": "(x)<sub>2</sub>",
+            "decimal-100": "1100100"
+        },
+        "ternary": {
+            "val": "3",
+            "symbol": "(x)<sub>3</sub>",
+            "decimal-100": "10201"
+        },
+        "quaternary": {
+            "val": "4",
+            "symbol": "(x)<sub>4</sub>",
+            "decimal-100": "1210"
+        },
+        "quinary": {
+            "val": "5",
+            "symbol": "(x)<sub>5</sub>",
+            "decimal-100": "400"
+        },
+        "senary": {
+            "val": "6",
+            "symbol": "(x)<sub>6</sub>",
+            "decimal-100": "244"
+        },
+        "septenary": {
+            "val": "7",
+            "symbol": "(x)<sub>7</sub>",
+            "decimal-100": "202"
+        },
+        "octal": {
+            "val": "8",
+            "symbol": "(x)<sub>8</sub>",
+            "decimal-100": "144"
+        },
+        "nonary": {
+            "val": "9",
+            "symbol": "(x)<sub>9</sub>",
+            "decimal-100": "121"
+        },
+        "decimal": {
+            "val": "10",
+            "symbol": "(x)<sub>10</sub>",
+            "decimal-100": "100"
+        },
+        "undecimal": {
+            "val": "11",
+            "symbol": "(x)<sub>11</sub>",
+            "decimal-100": "91"
+        },
+        "duodecimal": {
+            "val": "12",
+            "symbol": "(x)<sub>12</sub>",
+            "decimal-100": "84"
+        },
+        "hexadecimal": {
+            "val": "16",
+            "symbol": "(x)<sub>16</sub>",
+            "decimal-100": "64"
+        },
+        "vigesimal": {
+            "val": "20",
+            "symbol": "(x)<sub>20</sub>",
+            "decimal-100": "50"
+        },
+        "tetravigesimal": {
+            "val": "24",
+            "symbol": "(x)<sub>24</sub>",
+            "decimal-100": "44"
+        },
+        "duotrigesimal": {
+            "val": "32",
+            "symbol": "(x)<sub>32</sub>",
+            "decimal-100": "34"
+        },
+        "hexatrigesimal": {
+            "val": "36",
+            "symbol": "(x)<sub>36</sub>",
+            "decimal-100": "2S"
+        }
+        
+    }
+
+}
