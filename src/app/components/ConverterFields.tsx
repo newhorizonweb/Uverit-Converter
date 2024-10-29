@@ -163,8 +163,8 @@ function ConverterFields(){
         if (val.isZero()) return "0";
 
         // Convert the number to exponential notation
-        const exponentialString = val.toNumber().toExponential();
-    
+        const exponentialString = new Decimal(val).toExponential();
+        
         // Split the string into coefficient and exponent parts
         const [coefficient, exponent] = exponentialString.split('e');
     
@@ -182,24 +182,29 @@ function ConverterFields(){
         // Return 0 for empty input
         if (value.trim() === "") return new Decimal(0);
 
-        // Return decimal.js value or NaN (e.g. when there are letters in the input)
+        // Return decimal.js value or NaN
+        // e.g. when there are letters in the input
         return !isNaN(Number(value)) ?
             new Decimal(value) : new Decimal(NaN);
 
     };
 
-        /* Temperature */
+        /* Formulas */
 
-    const toBase = (value: string, formula: string) => {
+    const toFormula = (value: Decimal, formula: string) => {
         const extFormula = formula.split('|')[0];
-        const fn = new Function("val", `return ${extFormula.split('=>')[1]}`);
-        return fn(new Decimal(Number(value)));
+        const fn = new Function("Decimal", "val",
+            `return ${extFormula.split('=>')[1]}`
+        );
+        return fn(Decimal, new Decimal(value));
     };
     
-    const fromBase = (value: Decimal, formula: string) => {
+    const fromFormula = (value: Decimal, formula: string) => {
         const extFormula = formula.split('|')[1];
-        const fn = new Function("val", `return ${extFormula.split('=>')[1]}`);
-        return fn(new Decimal(value));
+        const fn = new Function("Decimal", "val",
+            `return ${extFormula.split('=>')[1]}`
+        );
+        return fn(Decimal, new Decimal(value));
     };
 
         /* Result Conversion */
@@ -211,13 +216,25 @@ function ConverterFields(){
             // Will return 0 if somthing's wrong (cath 'em all solution)
             let result: string | Decimal = new Decimal(0);
 
-            if (converterName === "temperature"){
+            if (converterName === "temperature" ||
+                converterName === "data_storage"
+            ){
 
-                const baseValue = toBase(inputVal, inputSelVal);
-                const resultRaw = outputSelVal && inputVal ?
-                    fromBase(baseValue, outputSelVal) : new Decimal(0);
+                const baseValue = toFormula(
+                    new Decimal(Number(inputVal)), inputSelVal
+                );
                 
-                result = checkExpoDecimals(resultRaw);
+                const resultRaw = outputSelVal && inputVal ?
+                    fromFormula(baseValue, outputSelVal) :
+                    new Decimal(0);
+                
+                if (choice === "decimal" ||
+                    (choice === "exponential" && !isExponential)
+                ){
+                    result = checkExpoDecimals(resultRaw);
+                } else if (choice === "exponential"){
+                    result = limitDecimalExpo(resultRaw);
+                }
                 
             } else if (converterName === "numeral_systems"){
 
@@ -251,7 +268,8 @@ function ConverterFields(){
 
                 // Change the conversion based on the current converter settings
                 if (choice === "decimal" ||
-                (choice === "exponential" && !isExponential)){
+                    (choice === "exponential" && !isExponential)
+                ){
                     result = checkExpoDecimals(resultRaw);
                 } else if (choice === "exponential"){
                     result = limitDecimalExpo(resultRaw);

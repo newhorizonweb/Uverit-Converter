@@ -1,0 +1,183 @@
+
+{
+
+    "settings":{
+        "operation": "false",
+        "choice": "exponential",
+
+        "input-def": "2",
+        "output-def": "5",
+
+        "choice-val-min": "0",
+        "choice-val-max": "16",
+        "choice-val-def": "5"
+    },
+
+    "basic": {
+
+        "table": [
+            "symbol",
+            "in-bytes"
+        ],
+
+        "bit": {
+            "val": "val => val.times(0.125)|val => val.dividedBy(0.125)",
+            "symbol": "b",
+            "in-bytes": "1/8 B"
+        },
+        "nibble": {
+            "val": "val => val.times(0.5)|val => val.dividedBy(0.5)",
+            "symbol": "-",
+            "in-bytes": "1/2 B"
+        },
+        "byte": {
+            "val": "val => val|val => val",
+            "symbol": "B",
+            "in-bytes": "1 B"
+        }
+
+    },
+
+    "decimal-based": {
+
+        "table": [
+            "symbol",
+            "dec-based",
+            "in-bytes"
+        ],
+
+        "kilobyte": {
+            "val": "val => val.times('1e3')|val => val.dividedBy('1e3')",
+            "symbol": "KB",
+            "dec-based": "1e3 B",
+            "in-bytes": "1000 B"
+        },
+        "megabyte": {
+            "val": "val => val.times('1e6')|val => val.dividedBy('1e6')",
+            "symbol": "MB",
+            "dec-based": "1e6 B",
+            "in-bytes": "1000<sup>2</sup> B"
+        },
+        "gigabyte": {
+            "val": "val => val.times('1e9')|val => val.dividedBy('1e9')",
+            "symbol": "GB",
+            "dec-based": "1e9 B",
+            "in-bytes": "1000<sup>3</sup> B"
+        },
+        "terabyte": {
+            "val": "val => val.times('1e12')|val => val.dividedBy('1e12')",
+            "symbol": "TB",
+            "dec-based": "1e12 B",
+            "in-bytes": "1000<sup>4</sup> B"
+        },
+        "petabyte": {
+            "val": "val => val.times('1e15')|val => val.dividedBy('1e15')",
+            "symbol": "PB",
+            "dec-based": "1e15 B",
+            "in-bytes": "1000<sup>5</sup> B"
+        },
+        "exabyte": {
+            "val": "val => val.times('1e18')|val => val.dividedBy('1e18')",
+            "symbol": "EB",
+            "dec-based": "1e18 B",
+            "in-bytes": "1000<sup>6</sup> B"
+        },
+        "zettabyte": {
+            "val": "val => val.times('1e21')|val => val.dividedBy('1e21')",
+            "symbol": "ZB",
+            "dec-based": "1e21 B",
+            "in-bytes": "1000<sup>7</sup> B"
+        },
+        "yottabyte": {
+            "val": "val => val.times('1e24')|val => val.dividedBy('1e24')",
+            "symbol": "YB",
+            "dec-based": "1e24 B",
+            "in-bytes": "1000<sup>8</sup> B"
+        },
+        "ronnabyte": {
+            "val": "val => val.times('1e27')|val => val.dividedBy('1e27')",
+            "symbol": "RB",
+            "dec-based": "1e27 B",
+            "in-bytes": "1000<sup>9</sup> B"
+        },
+        "quettabyte": {
+            "val": "val => val.times('1e30')|val => val.dividedBy('1e30')",
+            "symbol": "QB",
+            "dec-based": "1e30 B",
+            "in-bytes": "1000<sup>10</sup> B"
+        }
+
+    },
+
+    "binary-based":{
+
+        "table":[
+            "symbol",
+            "bin-based",
+            "in-bytes"
+        ],
+
+        "kibibyte": {
+            "val": "val => val.times(new Decimal(2).toPower(10))|val => val.dividedBy(new Decimal(2).toPower(10))",
+            "symbol": "KiB",
+            "bin-based": "2<sup>10</sup> B",
+            "in-bytes": "1024 B"
+        },
+        "mebibyte": {
+            "val": "val => val.times(new Decimal(2).toPower(20))|val => val.dividedBy(new Decimal(2).toPower(20))",
+            "symbol": "MiB",
+            "bin-based": "2<sup>20</sup> B",
+            "in-bytes": "1024<sup>2</sup> B"
+        },
+        "gibibyte": {
+            "val": "val => val.times(new Decimal(2).toPower(30))|val => val.dividedBy(new Decimal(2).toPower(30))",
+            "symbol": "GiB",
+            "bin-based": "2<sup>30</sup> B",
+            "in-bytes": "1024<sup>3</sup> B"
+        },
+        "tebibyte": {
+            "val": "val => val.times(new Decimal(2).toPower(40))|val => val.dividedBy(new Decimal(2).toPower(40))",
+            "symbol": "TiB",
+            "bin-based": "2<sup>40</sup> B",
+            "in-bytes": "1024<sup>4</sup> B"
+        },
+        "pebibyte": {
+            "val": "val => val.times(new Decimal(2).toPower(50))|val => val.dividedBy(new Decimal(2).toPower(50))",
+            "symbol": "PiB",
+            "bin-based": "2<sup>50</sup> B",
+            "in-bytes": "1024<sup>5</sup> B"
+        },
+        "exbibyte": {
+            "val": "val => val.times(new Decimal(2).toPower(60))|val => val.dividedBy(new Decimal(2).toPower(60))",
+            "symbol": "EiB",
+            "bin-based": "2<sup>60</sup> B",
+            "in-bytes": "1024<sup>6</sup> B"
+        },
+        "zebibyte": {
+            "val": "val => val.times(new Decimal(2).toPower(70))|val => val.dividedBy(new Decimal(2).toPower(70))",
+            "symbol": "ZiB",
+            "bin-based": "2<sup>70</sup> B",
+            "in-bytes": "1024<sup>7</sup> B"
+        },
+        "yobibyte": {
+            "val": "val => val.times(new Decimal(2).toPower(80))|val => val.dividedBy(new Decimal(2).toPower(80))",
+            "symbol": "YiB",
+            "bin-based": "2<sup>80</sup> B",
+            "in-bytes": "1024<sup>8</sup> B"
+        },
+        "robibyte": {
+            "val": "val => val.times(new Decimal(2).toPower(90))|val => val.dividedBy(new Decimal(2).toPower(90))",
+            "symbol": "RiB",
+            "bin-based": "2<sup>90</sup> B",
+            "in-bytes": "1024<sup>9</sup> B"
+        },
+        "quebibyte": {
+            "val": "val => val.times(new Decimal(2).toPower(100))|val => val.dividedBy(new Decimal(2).toPower(100))",
+            "symbol": "QiB",
+            "bin-based": "2<sup>100</sup> B",
+            "in-bytes": "1024<sup>10</sup> B"
+        }
+        
+    }
+
+}
