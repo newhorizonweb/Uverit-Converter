@@ -28,6 +28,9 @@
     "water-freezing": "temperatura zamarzania wody",
     "water-boiling": "temperatura wrzenia wody",
     "in-hertz": "w hercach",
-    "decimal-100": "100 (dziesiętny)"
+    "decimal-100": "100 (dziesiętny)",
+    "in-bytes": "w bajtach",
+    "dec-based": "system dziesiętny",
+    "bin-based": "system binarny"
     
 }

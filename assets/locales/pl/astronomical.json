@@ -17,10 +17,10 @@
         "terameter": "terametr",
         "petameter": "petametr",
         "exameter": "eksametr",
-        "zettameter": "zetametr",
-        "yottameter": "jotametr",
+        "zettameter": "zettametr",
+        "yottameter": "jottametr",
         "ronnameter": "ronnametr",
-        "quettameter": "kwetametr"
+        "quettameter": "kwettametr"
     },
 
     "astronomical": {

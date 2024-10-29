@@ -1,0 +1,40 @@
+
+{
+
+    "basic-units": "basic units",
+    "decimal-based-units": "decimal-based units",
+    "binary-based-units": "binary-based units",
+
+    "basic": {
+        "bit": "bit",
+        "nibble": "nibble",
+        "byte": "byte"
+    },
+
+    "decimal-based": {
+        "kilobyte": "kilobyte",
+        "megabyte": "megabyte",
+        "gigabyte": "gigabyte",
+        "terabyte": "terabyte",
+        "petabyte": "petabyte",
+        "exabyte": "exabyte",
+        "zettabyte": "zettabyte",
+        "yottabyte": "yottabyte",
+        "ronnabyte": "ronnabyte",
+        "quettabyte": "quettabyte"
+    },
+
+    "binary-based": {
+        "kibibyte": "kibibyte",
+        "mebibyte": "mebibyte",
+        "gibibyte": "gibibyte",
+        "tebibyte": "tebibyte",
+        "pebibyte": "pebibyte",
+        "exbibyte": "exbibyte",
+        "zebibyte": "zebibyte",
+        "yobibyte": "yobibyte",
+        "robibyte": "robibyte",
+        "quebibyte": "quebibyte"
+    }
+    
+}

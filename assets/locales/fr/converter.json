@@ -28,6 +28,9 @@
     "water-freezing": "point de congélation de l'eau",
     "water-boiling": "point d'ébullition de l'eau",
     "in-hertz": "en hertz",
-    "decimal-100": "100 (décimal)"
+    "decimal-100": "100 (décimal)",
+    "in-bytes": "en octets",
+    "dec-based": "basé sur le décimal",
+    "bin-based": "basé sur le binaire"
     
 }

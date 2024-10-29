@@ -27,6 +27,9 @@
     "water-freezing": "Gefrierpunkt des Wassers",
     "water-boiling": "Siedepunkt des Wassers",
     "in-hertz": "in Hertz",
-    "decimal-100": "100 (dezimal)"
+    "decimal-100": "100 (dezimal)",
+    "in-bytes": "in Bytes",
+    "dec-based": "dezimalbasiert",
+    "bin-based": "binärbasiert"
     
 }
