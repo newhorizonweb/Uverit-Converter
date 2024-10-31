@@ -30,6 +30,11 @@
     "decimal-100": "100 (dezimal)",
     "in-bytes": "in Bytes",
     "dec-based": "dezimalbasiert",
-    "bin-based": "binärbasiert"
+    "bin-based": "binärbasiert",
+    "quantity": "Menge",
+    "common": "gebräuchlich",
+    "region": "Region",
+    "decimal": "dezimal",
+    "civilization": "Zivilisation"
     
 }

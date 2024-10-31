@@ -31,10 +31,10 @@ function Footer(){
 
 
     return (
-        <footer className="wrapper glass no-print"
-        onClick={ scrollToTop }>
+        <footer className="wrapper glass no-print">
 
-            <div className="footer-logo app-logo-action">
+            <div className="footer-logo app-logo-action"
+            onClick={ scrollToTop }>
                 { uveritLogo }
             </div>
 
@@ -48,7 +48,7 @@ function Footer(){
                     </a>
                 </div>
 
-                <a href="https://github.com/newhorizonweb"
+                <a href="https://github.com/newhorizonweb/Uverit-Converter"
                 className="app-version" target="_blank" rel="noreferrer">
                     {`© Uverit Converter v${appVersion} - 2024`}
                 </a>

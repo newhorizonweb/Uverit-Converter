@@ -117,7 +117,12 @@ function ConverterTable(){
                                     { data[group].table.map((col: string) => (
                                         <td key={data[group][unit][col]}
                                         className={col}>
-                                            { parseText(data[group][unit][col]) }
+                {(() => {
+                    const cellData = data[group][unit][col];
+                    return !cellData.includes("t('")
+                        ? parseText(cellData)
+                        : t(`${converterName}:table-content:${cellData.replace(/^t\('|'\)$/g, '')}`);
+                })()}
                                         </td>
                                     ))}
 

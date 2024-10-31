@@ -85,7 +85,7 @@
             width:320px;
         }
 
-        & :is(td, th):is(.symbol, .kanji, .hànzì, .egyptian){
+        & :is(td, th):is(.symbol, .kanji, .hànzì, .egyptian, .quantity){
             width:120px;
         }
 
@@ -150,7 +150,7 @@
                 width:192px;
             }
 
-            & :is(td, th):is(.symbol, .kanji, .hànzì, .egyptian){
+            & :is(td, th):is(.symbol, .kanji, .hànzì, .egyptian, .quantity){
                 width:var(--size10);
             }
 

@@ -26,7 +26,7 @@ const context = {
 
     /* Tests */
 
-describe("Temperature Converter Fields", () => {
+describe("Numeral Systems Converter Fields", () => {
 
     let container;
     

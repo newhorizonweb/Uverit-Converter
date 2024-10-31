@@ -81,4 +81,35 @@ describe('Locales', () => {
         cy.get('.page-heading-text').contains(/Powszechna/i).should('exist');
     });
 
+    it('checks if the table content on the Quantity page is loaded with i18next working correctly', () => {
+        setViewport(device.mobile);
+        cy.visit('/data/quantity');
+
+        // check if there are any cells matching t('
+        cy.get('td').invoke('text').should('not.match', /t\('/);
+    });
+
+    it('chooses English and checks if the table content on the Quantity page is translated', () => {
+        setViewport(device.mobile);
+        cy.visit('/data/quantity');
+
+        cy.get('[data-testid="lang-switch"]').click();
+        cy.get('[data-testid="lang-switch-English"]').click();
+
+        cy.get('td').invoke('text').should('match', /Germany/);
+    });
+
+    it('chooses English, switches ot Italian and checks if the table content on the Quantity page is translated', () => {
+        setViewport(device.mobile);
+        cy.visit('/data/quantity');
+
+        cy.get('[data-testid="lang-switch"]').click();
+        cy.get('[data-testid="lang-switch-English"]').click();
+
+        cy.get('[data-testid="lang-switch"]').click();
+        cy.get('[data-testid="lang-switch-Italiano"]').click();
+
+        cy.get('td').invoke('text').should('match', /Inghilterra/);
+    });
+
 });

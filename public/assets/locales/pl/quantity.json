@@ -1,0 +1,54 @@
+
+{
+
+    "europe-units": "Europa",
+    "europe-regional-units": "Europa (regionalna)",
+    "fractions-units": "ułamki",
+    "historical-units": "jednostki historyczne",
+    "africa-units": "Afryka",
+    "native-america-units": "Natywna Ameryka",
+
+    "europe": {
+        "piece": "sztuka",
+        "pair": "para",
+        "dozen": "tuzin",
+        "score": "kopa",
+        "long-hundred": "długa setka",
+        "gross": "gros",
+        "great-gross": "wielki gros"
+    },
+    
+    "fractions": {
+        "tenth": "jedna dziesiąta",
+        "eighth": "jedna ósma",
+        "sixth": "jedna szósta",
+        "fifth": "jedna piąta",
+        "quarter": "ćwierć",
+        "third": "jedna trzecia",
+        "half": "połowa"
+    },
+    
+    "table-content": {
+        "yes": "tak",
+        "no": "nie",
+        "moderately": "średnio",
+    
+        "germany": "Niemcy",
+        "poland": "Polska",
+        "netherlands": "Holandia",
+        "estonia": "Estonia",
+        "england": "Anglia",
+        "russia": "Rosja",
+    
+        "rome": "Rzym",
+        "greece": "Grecja",
+        "babylon": "Babilon",
+    
+        "east-africa": "Afryka Wschodnia",
+    
+        "quechua": "Inków",
+        "aztec": "Azteków",
+        "maya": "Majów"
+    }
+
+}
