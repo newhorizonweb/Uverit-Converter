@@ -5,15 +5,20 @@
     "imperial-units": "imperial units",
 
     "metric":{
+        "millimeter": "millimeter",
         "centimeter": "centimeter",
         "decimeter": "decimeter",
-        "meter": "meter"
+        "meter": "meter",
+        "dekameter": "dekameter",
+        "hectometer": "hectometer",
+        "kilometer": "kilometer"
     },
 
     "imperial":{
         "inch": "inch",
         "foot": "foot",
-        "yard": "yard"
+        "yard": "yard",
+        "mile": "mile"
     }
     
 }

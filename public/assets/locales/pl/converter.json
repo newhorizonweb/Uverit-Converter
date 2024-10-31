@@ -12,11 +12,30 @@
     "switch-units": "Zamień jednostki",
     "expo-toggle": "Przełącz notację wykładniczą",
     "copy-result": "Kopiuj wynik",
-    "table-print": "Wydrukuj tabelę",
+    "table-print": "Drukuj tabele",
+    "multi-table-print": "Drukuj tabele na oddzielnych stronach",
     
     "symbol": "symbol",
     "notation": "notacja",
     "equivalent": "odpowiednik",
-    "metric": "metryczne"
+    "metric": "metryczne",
+    "egyptian": "egipski",
+    "per-turn": "na obrót",
+    "in-radians": "w radianach",
+    "in-degrees": "w stopniach",
+    "in-newtons": "w niutonach",
+    "in-pascals": "w paskalach",
+    "water-freezing": "temperatura zamarzania wody",
+    "water-boiling": "temperatura wrzenia wody",
+    "in-hertz": "w hercach",
+    "decimal-100": "100 (system dziesiętny)",
+    "in-bytes": "w bajtach",
+    "dec-based": "system dziesiętny",
+    "bin-based": "system binarny",
+    "quantity": "ilość",
+    "common": "powszechne",
+    "region": "region",
+    "decimal": "system dziesiętny",
+    "civilization": "cywilizacja"
     
 }

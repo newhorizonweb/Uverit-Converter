@@ -1,0 +1,180 @@
+
+{
+
+    "settings":{
+        "operation": "true",
+        "choice": "decimal",
+
+        "input-def": "0",
+        "output-def": "1",
+
+        "choice-val-min": "0",
+        "choice-val-max": "16",
+        "choice-val-def": "5"
+    },
+
+    "radian-based":{
+        
+        "table":[
+            "symbol",
+            "per-turn",
+            "equivalent"
+        ],
+
+        "microradian":{
+            "val": "1e-6",
+            "symbol": "µrad",
+            "per-turn": "2000000π",
+            "equivalent": "1e-6 rad"
+        },
+        "milliradian":{
+            "val": "1e-3",
+            "symbol": "mrad",
+            "per-turn": "2000π",
+            "equivalent": "1e-3 rad"
+        },
+        "diameter-part":{
+            "val": "1.66666666666666666667e-2",
+            "symbol": "-",
+            "per-turn": "120π",
+            "equivalent": "1/60 rad"
+        },
+        "radian":{
+            "val": "1",
+            "symbol": "rad",
+            "per-turn": "2π",
+            "equivalent": "180/π°"
+        },
+        "π-radian":{
+            "val": "3.14159265358979323846",
+            "symbol": "π rad",
+            "per-turn": "2",
+            "equivalent": "180°"
+        }
+        
+    },
+    
+    "degree-based":{
+
+        "table":[
+            "symbol",
+            "per-turn",
+            "equivalent"
+        ],
+
+        "arcsecond":{
+            "val": "4.848136811095359935899e-6",
+            "symbol": "″",
+            "per-turn": "1296000",
+            "equivalent": "1/3600°"
+        },
+        "arcminute":{
+            "val": "2.90888208665721596153e-4",
+            "symbol": "′",
+            "per-turn": "21600",
+            "equivalent": "1/60°"
+        },
+        "degree":{
+            "val": "1.745329251994329576923e-2",
+            "symbol": "°",
+            "per-turn": "360",
+            "equivalent": "π/180 rad"
+        },
+        "hour-angle":{
+            "val": "2.61799387799149436539e-1",
+            "symbol": "h",
+            "per-turn": "24",
+            "equivalent": "15°"
+        }
+
+    },
+
+    "divisions":{
+
+        "table":[
+            "per-turn",
+            "in-radians",
+            "in-degrees"
+        ],
+
+        "hexacontade":{
+            "val": "1.04719755119659774615e-1",
+            "per-turn": "60",
+            "in-radians": "π/30 rad",
+            "in-degrees": "6°"
+        },
+        "octant":{
+            "val": "7.85398163397448309616e-1",
+            "per-turn": "8",
+            "in-radians": "π/4 rad",
+            "in-degrees": "45°"
+        },
+        "sextant":{
+            "val": "1.04719755119659774615",
+            "per-turn": "6",
+            "in-radians": "π/3 rad",
+            "in-degrees": "60°"
+        },
+        "quadrant":{
+            "val": "1.57079632679489661923",
+            "per-turn": "4",
+            "in-radians": "π/2 rad",
+            "in-degrees": "90°"
+        },
+        "turn":{
+            "val": "6.28318530717958647693",
+            "per-turn": "1",
+            "in-radians": "2π rad",
+            "in-degrees": "360°"
+        }
+
+    },
+
+    "other":{
+
+        "table":[
+            "symbol",
+            "per-turn",
+            "equivalent"
+        ],
+
+        "perigon":{
+            "val": "6.28318530717958647693",
+            "symbol": "-",
+            "per-turn": "1",
+            "equivalent": "2π rad"
+        },
+        "gradian":{
+            "val": "1.57079632679489661923e-2",
+            "symbol": "gon",
+            "per-turn": "400",
+            "equivalent": "π/200 rad"
+        },
+        "akhnam":{
+            "val": "1.96349540849362077404e-1",
+            "symbol": "-",
+            "per-turn": "32",
+            "equivalent": "π/16 rad"
+        },
+        "zam":{
+            "val": "2.80499344070517253434e-2",
+            "symbol": "-",
+            "per-turn": "224",
+            "equivalent": "7 akhnam"
+        },
+        "point":{
+            "val": "1.96349540849362077404e-1",
+            "symbol": "-",
+            "per-turn": "32",
+            "equivalent": "π/16 rad"
+        },
+        "NATO-mil":{
+            "val": "9.8174770424681038701957605727484375e-4",
+            "symbol": "-",
+            "per-turn": "6400",
+            "equivalent": "π/3200 rad"
+        }
+
+    }
+
+}

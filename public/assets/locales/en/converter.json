@@ -12,11 +12,30 @@
     "switch-units": "Switch units",
     "expo-toggle": "Exponential notation toggle",
     "copy-result": "Copy result",
-    "table-print": "Print the table",
+    "table-print": "Print tables",
+    "multi-table-print": "Print tables on separate pages",
     
     "symbol": "symbol",
     "notation": "notation",
     "equivalent": "equivalent",
-    "metric": "metric"
-
+    "metric": "metric",
+    "egyptian": "egyptian",
+    "per-turn": "per turn",
+    "in-radians": "in radians",
+    "in-degrees": "in degrees",
+    "in-newtons": "in newtons",
+    "in-pascals": "in pascals",
+    "water-freezing": "freezing point of water",
+    "water-boiling": "boiling point of water",
+    "in-hertz": "in hertz",
+    "decimal-100": "100 (decimal)",
+    "in-bytes": "in bytes",
+    "dec-based": "decimal-based",
+    "bin-based": "binary-based",
+    "quantity": "quantity",
+    "common": "common",
+    "region": "region",
+    "decimal": "decimal",
+    "civilization": "civilization"
+    
 }

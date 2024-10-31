@@ -57,10 +57,12 @@ function LinkTiles(){
                 to={`${urlPath}/${category}/${item}`}
                 className="tile-link-inner glass"
                 data-testid={`tile-link-${item}`}>
+                    <div className="tile-icon">
                     {
                         navIcons[item as keyof typeof navIcons] ||
                         navIcons.navPlaceholderIcon
                     }
+                    </div>
                     <h3>{ t(`groups.${category}.${item}`) }</h3>
                 </NavLink>
             </div>

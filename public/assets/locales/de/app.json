@@ -12,11 +12,11 @@
     "groups":{
         "length":{
             "length": "Länge",
-            "common": "gewöhnlich",
-            "microscopic": "mikroskopisch",
-            "astronomical": "astronomisch",
-            "marine": "marin",
-            "archaic": "archaisch"
+            "common": "gewöhnliche",
+            "microscopic": "mikroskopische",
+            "astronomical": "astronomische",
+            "nautical": "nautische",
+            "obsolete": "veraltete"
         },
         "space":{
             "space": "Raum",
@@ -39,8 +39,8 @@
         },
         "data":{
             "data": "Daten",
-            "numeral-systems": "Zahlensysteme",
-            "data-storage": "Datenspeicherung",
+            "numeral_systems": "Zahlensysteme",
+            "data_storage": "Datenspeicherung",
             "quantity": "Menge"
         }
     }

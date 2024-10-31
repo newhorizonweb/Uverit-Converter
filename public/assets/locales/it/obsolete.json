@@ -1,0 +1,70 @@
+
+{
+
+    "metric-units": "unità metriche",
+    "imperial-units": "unità imperiali",
+    "english-units": "unità inglesi",
+    "french-units": "unità francesi",
+    "danish-units": "unità danesi",
+    "indian-units": "unità indiane",
+    "japanese-units": "unità giapponesi",
+    "chinese-units": "unità cinesi",
+    "ancient-egyptian-units": "unità dell'antico Egitto",
+    "ancient-roman-units": "unità dell'antica Roma",
+
+    "metric": {
+        "millimeter": "millimetro",
+        "centimeter": "centimetro",
+        "decimeter": "decimetro",
+        "meter": "metro",
+        "kilometer": "chilometro"
+    },
+
+    "imperial": {
+        "inch": "pollice",
+        "foot": "piede",
+        "yard": "iarda",
+        "mile": "miglio",
+        "league": "lega"
+    },
+
+    "english": {
+        "line": "linea",
+        "barleycorn": "orzo",
+        "digit": "dito",
+        "fingerbreadth": "larghezza del dito",
+        "nail": "chiodo",
+        "palm": "palmo",
+        "hand": "mano",
+        "shaftment": "albero",
+        "link": "maglia",
+        "span": "campata",
+        "cubit": "cubito",
+        "pace": "passo",
+        "cloth-yard": "iarda di stoffa",
+        "cloth-ell": "gomito di stoffa",
+        "fathom": "sagena",
+        "rod": "asta",
+        "chain": "catena",
+        "bolt": "rotolo",
+        "furlong": "furlong"
+    },
+
+    "ancient-egyptian": {
+        "finger": "dito",
+        "palm": "palmo",
+        "handsbreadth": "larghezza della mano",
+        "fist": "pugno",
+        "double-handbreadth": "doppia larghezza della mano",
+        "small-span": "piccola campata",
+        "great-span": "grande campata",
+        "foot": "piede",
+        "shoulder": "spalla",
+        "small-cubit": "piccolo cubito",
+        "cubit": "cubito",
+        "pole": "palo",
+        "rod": "asta",
+        "league": "lega"
+    }
+
+}

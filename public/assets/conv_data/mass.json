@@ -1,0 +1,335 @@
+
+{
+
+    "settings":{
+        "operation": "true",
+        "choice": "decimal",
+
+        "input-def": "5",
+        "output-def": "13",
+
+        "choice-val-min": "0",
+        "choice-val-max": "16",
+        "choice-val-def": "5"
+    },
+
+    "metric":{
+
+        "table":[
+            "symbol",
+            "notation"
+        ],
+
+        "nanogram": {
+            "val": "1e-9",
+            "symbol": "ng",
+            "notation": "10<sup>-9</sup>"
+        },
+        "microgram": {
+            "val": "1e-6",
+            "symbol": "µg",
+            "notation": "10<sup>-6</sup>"
+        },
+        "milligram": {
+            "val": "1e-3",
+            "symbol": "mg",
+            "notation": "10<sup>-3</sup>"
+        },
+        "centigram": {
+            "val": "1e-2",
+            "symbol": "cg",
+            "notation": "10<sup>-2</sup>"
+        },
+        "decigram": {
+            "val": "1e-1",
+            "symbol": "dg",
+            "notation": "10<sup>-1</sup>"
+        },
+        "gram": {
+            "val": "1",
+            "symbol": "g",
+            "notation": "10<sup>0</sup>"
+        },
+        "dekagram": {
+            "val": "1e1",
+            "symbol": "dag",
+            "notation": "10<sup>1</sup>"
+        },
+        "hectogram": {
+            "val": "1e2",
+            "symbol": "hg",
+            "notation": "10<sup>2</sup>"
+        },
+        "kilogram": {
+            "val": "1e3",
+            "symbol": "kg",
+            "notation": "10<sup>3</sup>"
+        },
+        "megagram": {
+            "val": "1e6",
+            "symbol": "Mg",
+            "notation": "10<sup>6</sup>"
+        },
+        "gigagram": {
+            "val": "1e9",
+            "symbol": "Gg",
+            "notation": "10<sup>9</sup>"
+        }
+        
+    },
+
+    "imperial":{
+
+        "table":[
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "grain": {
+            "val": "0.06479891",
+            "symbol": "gr",
+            "metric": "~64.799 mg",
+            "equivalent": "1/7000 lb"
+        },
+        "drachm": {
+            "val": "1.7718451953125",
+            "symbol": "dr",
+            "metric": "~1.772 g",
+            "equivalent": "1/256 lb"
+        },
+        "ounce": {
+            "val": "28.349523125",
+            "symbol": "oz",
+            "metric": "~28.35 g",
+            "equivalent": "1/16 lb"
+        },
+        "pound": {
+            "val": "453.59237",
+            "symbol": "lb",
+            "metric": "~453.592 g",
+            "equivalent": "16 oz"
+        },
+        "stone": {
+            "val": "6350.29318",
+            "symbol": "st",
+            "metric": "~6.35 kg",
+            "equivalent": "14 lb"
+        },
+        "quarter": {
+            "val": "12700.58636",
+            "symbol": "qtr",
+            "metric": "~12.701 kg",
+            "equivalent": "28 lb"
+        },
+        "slug": {
+            "val": "14593.90293720636482939684",
+            "symbol": "-",
+            "metric": "~14.594 kg",
+            "equivalent": "~32.174 lb"
+        },
+        "hundredweight-us": {
+            "val": "45359.237",
+            "symbol": "cwt",
+            "metric": "~45.359 kg",
+            "equivalent": "100 lb"
+        },
+        "hundredweight-uk": {
+            "val": "50802.34544",
+            "symbol": "cwt",
+            "metric": "~50.802 kg",
+            "equivalent": "112 lb"
+        },
+        "ton-us": {
+            "val": "907184.74",
+            "symbol": "st",
+            "metric": "~907.185 kg",
+            "equivalent": "2000 lb"
+        },
+        "ton-uk": {
+            "val": "1016046.9088",
+            "symbol": "lt",
+            "metric": "~1016.047 kg",
+            "equivalent": "2240 lb"
+        }
+        
+    },
+
+    "metric-microscopic":{
+
+        "table":[
+            "symbol",
+            "notation"
+        ],
+
+        "quectogram": {  
+            "val": "1e-30",
+            "symbol": "qg",
+            "notation": "10<sup>-30</sup>" 
+        },
+        "rontogram": {  
+            "val": "1e-27",
+            "symbol": "rg",
+            "notation": "10<sup>-27</sup>" 
+        },
+        "yoctogram": {  
+            "val": "1e-24",
+            "symbol": "yg",
+            "notation": "10<sup>-24</sup>" 
+        },
+        "zeptogram": {  
+            "val": "1e-21", 
+            "symbol": "zg",
+            "notation": "10<sup>-21</sup>" 
+        },
+        "attogram": {  
+            "val": "1e-18",
+            "symbol": "ag",
+            "notation": "10<sup>-18</sup>" 
+        },
+        "femtogram": {  
+            "val": "1e-15",
+            "symbol": "fg",
+            "notation": "10<sup>-15</sup>" 
+        },
+        "picogram": {  
+            "val": "1e-12",
+            "symbol": "pg",
+            "notation": "10<sup>-12</sup>" 
+        }
+        
+    },
+
+    "metric-astronomical":{
+
+        "table":[
+            "symbol",
+            "notation"
+        ],
+
+        "teragram": {  
+            "val": "1e12", 
+            "symbol": "Tg",  
+            "notation": "10<sup>12</sup>" 
+        },
+        "petagram": {  
+            "val": "1e15", 
+            "symbol": "Pg",  
+            "notation": "10<sup>15</sup>" 
+        },
+        "exagram": {  
+            "val": "1e18", 
+            "symbol": "Eg",  
+            "notation": "10<sup>18</sup>" 
+        },
+        "zettagram": {  
+            "val": "1e21", 
+            "symbol": "Zg",  
+            "notation": "10<sup>21</sup>" 
+        },
+        "yottagram": {  
+            "val": "1e24", 
+            "symbol": "Yg",  
+            "notation": "10<sup>24</sup>" 
+        },
+        "ronnagram": {  
+            "val": "1e27", 
+            "symbol": "Rg",  
+            "notation": "10<sup>27</sup>" 
+        },
+        "quettagram": {  
+            "val": "1e30", 
+            "symbol": "Qg",  
+            "notation": "10<sup>30</sup>" 
+        }
+        
+    },
+
+    "microscopic":{
+
+        "table":[
+            "symbol",
+            "metric"
+        ],
+
+        "electron-mass": {
+            "val": "9.10938371392828282828e-28",
+            "symbol": "m<sub>e</sub>",
+            "metric": "~0.911 rg"
+        },
+        "dalton": {
+            "val": "1.66053906892525252525e-24",
+            "symbol": "Da",
+            "metric": "~1.661 yg"
+        },
+        "proton-mass": {
+            "val": "1.67262192595525252525e-24",
+            "symbol": "m<sub>p</sub>",
+            "metric": "~1.673 yg"
+        },
+        "neutron-mass": {
+            "val": "1.67492749804959595959e-24",
+            "symbol": "m<sub>n</sub>",
+            "metric": "~1.675 yg"
+        },
+        "planck-mass": {
+            "val": "2.176434e-5",
+            "symbol": "m<sub>P</sub>",
+            "metric": "~21.764 µg"
+        }
+        
+    },
+
+    "astronomical":{
+
+        "table":[
+            "symbol",
+            "metric"
+        ],
+
+        "lunar-mass": {
+            "val": "7.34767309e25",
+            "symbol": "M<sub>L<sub>",
+            "metric": "~73.477 Yg"
+        },
+        "earth-mass": {
+            "val": "5.9722e27",
+            "symbol": "M<sub>⊕<sub>",
+            "metric": "~5.972 Rg"
+        },
+        "jupiter-mass": {
+            "val": "1.89813e30",
+            "symbol": "M<sub>J</sub>",
+            "metric": "~1.898 Qg"
+        },
+        "solar-mass": {
+            "val": "1.988475e33",
+            "symbol": "M<sub>☉</sub>",
+            "metric": "~1988.475 Qg"
+        }
+        
+    },
+
+    "other":{
+
+        "table":[
+            "symbol",
+            "metric"
+        ],
+
+        "point": {
+            "val": "2e-3",
+            "symbol": "pt",
+            "metric": "2 mg",
+            "equivalent": "0.01 ct"
+        },
+        "carat": {
+            "val": "2e-1",
+            "symbol": "ct",
+            "metric": "0.2 g",
+            "equivalent": "100 pt"
+        }
+        
+    }
+
+}

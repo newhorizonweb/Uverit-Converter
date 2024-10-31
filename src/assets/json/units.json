@@ -6,8 +6,8 @@
         "common",
         "microscopic",
         "astronomical",
-        "marine",
-        "archaic"
+        "nautical",
+        "obsolete"
     ],
 
     "space": [
@@ -30,8 +30,8 @@
     ],
 
     "data": [
-        "numeral-systems",
-        "data-storage",
+        "numeral_systems",
+        "data_storage",
         "quantity"
     ]
     

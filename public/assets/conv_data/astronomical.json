@@ -1,0 +1,293 @@
+
+{
+
+    "settings":{
+        "operation": "true",
+        "choice": "exponential",
+
+        "input-def": "3",
+        "output-def": "24",
+
+        "choice-val-min": "0",
+        "choice-val-max": "16",
+        "choice-val-def": "5"
+    },
+
+    "metric":{
+
+        "table":[
+            "symbol",
+            "notation"
+        ],
+
+        "meter": {
+            "val": "1",
+            "symbol": "m",
+            "notation": "10<sup>0</sup>"
+        },
+        "dekameter": {
+            "val": "1e1",
+            "symbol": "dam",
+            "notation": "10<sup>1</sup>"
+        },
+        "hectometer": {
+            "val": "1e2",
+            "symbol": "hm",
+            "notation": "10<sup>2</sup>"
+        },
+        "kilometer": {
+            "val": "1e3",
+            "symbol": "km",
+            "notation": "10<sup>3</sup>"
+        },
+        "megameter": {
+            "val": "1e6",
+            "symbol": "Mm",
+            "notation": "10<sup>6</sup>"
+        },
+        "gigameter": {
+            "val": "1e9",
+            "symbol": "Gm",
+            "notation": "10<sup>9</sup>"
+        },
+        "terameter": {
+            "val": "1e12",
+            "symbol": "Tm",
+            "notation": "10<sup>12</sup>"
+        },
+        "petameter": {
+            "val": "1e15",
+            "symbol": "Pm",
+            "notation": "10<sup>15</sup>"
+        },
+        "exameter": {
+            "val": "1e18",
+            "symbol": "Em",
+            "notation": "10<sup>18</sup>"
+        },
+        "zettameter": {
+            "val": "1e21",
+            "symbol": "Zm",
+            "notation": "10<sup>21</sup>"
+        },
+        "yottameter": {
+            "val": "1e24",
+            "symbol": "Ym",
+            "notation": "10<sup>24</sup>"
+        },
+        "ronnameter": {
+            "val": "1e27",
+            "symbol": "Rm",
+            "notation": "10<sup>27</sup>"
+        },
+        "quettameter": {
+            "val": "1e30",
+            "symbol": "Qm",
+            "notation": "10<sup>30</sup>"
+        }
+        
+    },
+
+    "astronomical":{
+
+        "table":[
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "solar-radius": {
+            "val": "16.957e8",
+            "symbol": "R<sub>☉</sub>",
+            "metric": "6.957e8 m",
+            "equivalent": "~5.656 ls"
+        },
+        "astronomical-unit": {
+            "val": "1.495978707e11",
+            "symbol": "au",
+            "metric": "~1.496e11 m",
+            "equivalent": "~8.317 lm"
+        }
+
+    },
+    
+    
+    "light":{
+
+        "table":[
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "light-second": {
+            "val": "2.99792458e8",
+            "symbol": "ls",
+            "metric": "~2.998e8 m",
+            "equivalent": "~2.004e-3 au"
+        },
+        "light-minute": {
+            "val": "1.798754748e10",
+            "symbol": "lm",
+            "metric": "~1.799e10 m",
+            "equivalent": "~0.12 au"
+        },
+        "light-hour": {
+            "val": "1.0792528488e12",
+            "symbol": "lh",
+            "metric": "~1.079e12 m",
+            "equivalent": "~7.214 au"
+        },
+        "light-day": {
+            "val": "2.59020683712e13",
+            "symbol": "ld",
+            "metric": "~2.59e13 m",
+            "equivalent": "~173.145 au"
+        },
+        "light-week": {
+            "val": "1.813144785984e14",
+            "symbol": "lw",
+            "metric": "~1.813e14 m",
+            "equivalent": "~5.876e-3 pc"
+        },
+        "light-year": {
+            "val": "9.46073047258e15",
+            "symbol": "ly",
+            "metric": "~9.461e15 m",
+            "equivalent": "~0.307 pc"
+        },
+        "kilolight-year": {
+            "val": "9.46073047258e18",
+            "symbol": "kly",
+            "metric": "~9.461e18 m",
+            "equivalent": "~3.066e2 pc"
+        },
+        "megalight-year": {
+            "val": "9.46073047258e21",
+            "symbol": "Mly",
+            "metric": "~9.461e21 m",
+            "equivalent": "~3.066e5 pc"
+        },
+        "gigalight-year": {
+            "val": "9.46073047258e24",
+            "symbol": "Gly",
+            "metric": "~9.461e24 m",
+            "equivalent": "~3.066e8 pc"
+        }
+
+    },
+
+    "parsecs":{
+
+        "table":[
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "parsec": {
+            "val": "3.08567758149136736701e16",
+            "symbol": "pc",
+            "metric": "~3.086e16 m",
+            "equivalent": "~30.857 pm"
+        },
+        "kiloparsec": {
+            "val": "3.08567758149136736701e19",
+            "symbol": "kpc",
+            "metric": "~3.086e19 m",
+            "equivalent": "~30.857 Em"
+        },
+        "megaparsec": {
+            "val": "3.08567758149136736701e22",
+            "symbol": "Mpc",
+            "metric": "~3.086e22 m",
+            "equivalent": "~30.857 Zm"
+        },
+        "gigaparsec": {
+            "val": "3.08567758149136736701e25",
+            "symbol": "Gpc",
+            "metric": "~3.086e25 m",
+            "equivalent": "~30.857 Ym"
+        },
+        "teraparsec": {
+            "val": "3.08567758149136736701e28",
+            "symbol": "Tpc",
+            "metric": "~3.086e28 m",
+            "equivalent": "~30.857 Rm"
+        },
+        "petaparsec": {
+            "val": "3.08567758149136736701e31",
+            "symbol": "Ppc",
+            "metric": "~3.086e31 m",
+            "equivalent": "~30.857 Qm"
+        },
+        "exaparsec": {
+            "val": "3.08567758149136736701e34",
+            "symbol": "Epc",
+            "metric": "~3.086e34 m",
+            "equivalent": "~3.086e4 Qm"
+        },
+        "zettaparsec": {
+            "val": "3.08567758149136736701e37",
+            "symbol": "Zpc",
+            "metric": "~3.086e37 m",
+            "equivalent": "~3.086e7 Qm"
+        },
+        "yottaparsec": {
+            "val": "3.08567758149136736701e40",
+            "symbol": "Ypc",
+            "metric": "~3.086e40 m",
+            "equivalent": "~3.086e10 Qm"
+        },
+        "ronnaparsec": {
+            "val": "3.08567758149136736701e43",
+            "symbol": "Rpc",
+            "metric": "~3.086e43 m",
+            "equivalent": "~3.086e13 Qm"
+        },
+        "quettaparsec": {
+            "val": "3.08567758149136736701e46",
+            "symbol": "Qpc",
+            "metric": "~3.086e46 m",
+            "equivalent": "~3.086e16 Qm"
+        }
+
+    },
+
+    "imperial":{
+
+        "table":[
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "foot": {
+            "val": "0.3048",
+            "symbol": "ft",
+            "metric": "30.48 cm",
+            "equivalent": "12 in"
+        },
+        "yard": {
+            "val": "0.9144",
+            "symbol": "yd",
+            "metric": "91.44 cm",
+            "equivalent": "3 ft"
+        },
+        "mile": {
+            "val": "1609.344",
+            "symbol": "mi",
+            "metric": "1609.344 m",
+            "equivalent": "1760 yd"
+        },
+        "league": {
+            "val": "4828.032",
+            "symbol": "lea",
+            "metric": "4828.032 m",
+            "equivalent": "3 mi"
+        }
+            
+    }
+    
+
+}

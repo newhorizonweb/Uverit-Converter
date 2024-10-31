@@ -1,0 +1,24 @@
+
+{
+
+    "metric-units": "unités métriques",
+    "imperial-units": "unités impériales",
+
+    "metric": {
+        "millimeter": "millimètre",
+        "centimeter": "centimètre",
+        "decimeter": "décimètre",
+        "meter": "mètre",
+        "dekameter": "décamètre",
+        "hectometer": "hectomètre",
+        "kilometer": "kilomètre"
+    },
+
+    "imperial": {
+        "inch": "pouce",
+        "foot": "pied",
+        "yard": "yard",
+        "mile": "mille"
+    }
+    
+}

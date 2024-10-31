@@ -65,11 +65,19 @@
             box-shadow:var(--boxShadow1c1);
         }
 
+        & p{
+            max-width:100%;
+            display:block;
+            
+            white-space:nowrap;
+            text-overflow:ellipsis;
+            overflow:hidden;
+        }
+
     }
 
     & .conv-select{
         position:relative;
-        text-transform:uppercase !important;
         
         & select{
             appearance:none;
@@ -102,8 +110,8 @@
             text-transform:capitalize;
         }
 
-        & option {
-            text-transform:lowercase;
+        & option{
+            text-transform:none;
         }
 
     }
@@ -113,12 +121,13 @@
     & .conv-inputs{
 
         & :is(.conv-from, .conv-to){
+            max-width:calc((100% - var(--size8) - (var(--size6) * 2)) / 2);
             gap:var(--size4);
         }
 
         & .switch-units-btn{
             margin-top:var(--size05);
-            transition:all var(--trans1), width var(--trans4);
+            transition:all var(--trans2), width var(--trans4);
         }
 
     }
@@ -192,7 +201,7 @@
             }
     
             & .user-choice{
-                width:var(--size10);
+                width:128px;
             }
     
             & .expo-btn{
@@ -225,6 +234,7 @@
             
             & :is(.conv-from, .conv-to){
                 width:100%;
+                max-width:100%;
             }
 
             & .switch-units{

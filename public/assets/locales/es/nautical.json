@@ -1,0 +1,35 @@
+
+{
+
+    "metric-units": "unidades métricas",
+    "imperial-units": "unidades imperiales",
+    "nautical-units": "unidades náuticas",
+
+    "metric": {
+        "millimeter": "milímetro",
+        "centimeter": "centímetro",
+        "decimeter": "decímetro",
+        "meter": "metro",
+        "kilometer": "kilómetro"
+    },
+
+    "imperial": {
+        "inch": "pulgada",
+        "foot": "pie",
+        "yard": "yarda",
+        "mile": "milla",
+        "league": "legua"
+    },
+
+    "nautical": {
+        "fathom": "braza",
+        "shackle": "grillete",
+        "cable-uk": "cable (UK)",
+        "cable-us": "cable (EE. UU.)",
+        "nautical-mile": "milla náutica",
+        "admiralty-mile": "milla del almirantazgo",
+        "nautical-league": "legua náutica",
+        "admiralty-league": "legua del almirantazgo"
+    }
+    
+}

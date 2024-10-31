@@ -1,0 +1,64 @@
+
+{
+
+    "metric-units": "metrische Einheiten",
+    "imperial-units": "imperiale Einheiten",
+    "japanese-units": "japanische Einheiten",
+    "south-asian-units": "südasiatische Einheiten",
+    "other-units": "andere Einheiten",
+
+    "metric": {
+        "sq-millimeter": "Quadratmillimeter",
+        "sq-centimeter": "Quadratzentimeter",
+        "sq-decimeter": "Quadratdezimeter",
+        "sq-meter": "Quadratmeter",
+        "sq-dekameter": "Quadratdekameter",
+        "sq-hectometer": "Quadrathektometer",
+        "sq-kilometer": "Quadratkilometer"
+    },
+
+    "imperial": {
+        "sq-inch": "Quadratzoll",
+        "sq-foot": "Quadratfuß",
+        "sq-yard": "Quadratyard",
+        "sq-rod": "Quadratrute",
+        "rood": "Rood",
+        "acre": "Acre",
+        "sq-mile": "Quadratmeile"
+    },
+
+    "japanese":{
+        "shaku": "Shaku",
+        "gō": "Gō",
+        "jō": "Jō",
+        "tsubo": "Tsubo",
+        "bu": "Bu",
+        "se": "Se",
+        "tan": "Tan",
+        "chō": "Chō"
+    },
+
+    "south-asian":{
+        "decimal": "Decimal",
+        "anna": "Anna",
+        "ankanam": "Ankanam",
+        "chatak": "Chatak",
+        "guntha": "Guntha",
+        "ground": "Ground",
+        "kanal": "Kanal",
+        "killa": "Killa",
+        "ghumaon": "Ghumaon"
+    },
+
+    "other": {
+        "pyeong": "Pyeong",
+        "are": "Ar",
+        "dunam": "Dunam",
+        "cureda": "Cureda",
+        "hectare": "Hektar",
+        "tetrad": "Tetrad",
+        "hectad": "Hektad",
+        "myriad": "Myriade"
+    }
+
+}

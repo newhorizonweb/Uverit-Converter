@@ -1,0 +1,216 @@
+
+{
+
+    "settings":{
+        "operation": "true",
+        "choice": "decimal",
+
+        "input-def": "3",
+        "output-def": "8",
+
+        "choice-val-min": "0",
+        "choice-val-max": "16",
+        "choice-val-def": "5"
+    },
+
+    "metric":{
+
+        "table":[
+            "symbol",
+            "equivalent"
+        ],
+
+        "centimeter-second":{
+            "val": "1e-2",
+            "symbol": "cm/s",
+            "equivalent": "0.01 m/s"
+        },
+        "centimeter-minute":{
+            "val": "1.666666666666666667e-4",
+            "symbol": "cm/min",
+            "equivalent": "~1.667e-4 m/s"
+        },
+        "centimeter-hour":{
+            "val": "2.77777777777777777778e-6",
+            "symbol": "cm/h",
+            "equivalent": "~2.778e-6 m/s"
+        },
+        "meter-second":{
+            "val": "1",
+            "symbol": "m/s",
+            "equivalent": "3.6 km/h"
+        },
+        "meter-minute":{
+            "val": "0.01666666666666666667",
+            "symbol": "m/min",
+            "equivalent": "60 m/s"
+        },
+        "meter-hour":{
+            "val": "2.77777777777777777778e-4",
+            "symbol": "m/h",
+            "equivalent": "3600 m/s"
+        },
+        "kilometer-second":{
+            "val": "1e3",
+            "symbol": "km/s",
+            "equivalent": "1000 m/s"
+        },
+        "kilometer-minute":{
+            "val": "1.666666666666666667e1",
+            "symbol": "km/min",
+            "equivalent": "~16.667 m/s"
+        },
+        "kilometer-hour":{
+            "val": "2.77777777777777777778e-1",
+            "symbol": "km/h",
+            "equivalent": "~0.27778 m/s"
+        }
+        
+    },
+
+    "imperial":{
+
+        "table":[
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "inch-second":{
+            "val": "0.0254",
+            "symbol": "in/s",
+            "metric": "2.54 cm/s",
+            "equivalent": "1/12 fps"
+        },
+        "inch-minute":{
+            "val": "4.23333333333333333333e-4",
+            "symbol": "in/min",
+            "metric": "2.54 cm/min",
+            "equivalent": "1/60 in/s"
+        },
+        "inch-hour":{
+            "val": "7.05555555555555555556e-6",
+            "symbol": "in/h",
+            "metric": "2.54 cm/h",
+            "equivalent": "1/3600 in/s"
+        },
+        "foot-second":{
+            "val": "0.3048",
+            "symbol": "fps",
+            "metric": "0.3048 m/s",
+            "equivalent": "15/22 mph"
+        },
+        "foot-minute":{
+            "val": "0.00508",
+            "symbol": "ft/min",
+            "metric": "0.3048 m/min",
+            "equivalent": "1/60 fps"
+        },
+        "foot-hour":{
+            "val": "8.46666666666666666667e-5",
+            "symbol": "ft/h",
+            "metric": "0.3048 m/h",
+            "equivalent": "1/3600 fps"
+        },
+        "yard-second":{
+            "val": "0.9144",
+            "symbol": "yd/s",
+            "metric": "0.9144 m/s",
+            "equivalent": "3 fps"
+        },
+        "yard-minute":{
+            "val": "0.01524",
+            "symbol": "yd/min",
+            "metric": "0.9144 m/min",
+            "equivalent": "1/60 yd/s"
+        },
+        "yard-hour":{
+            "val": "0.000254",
+            "symbol": "yd/h",
+            "metric": "0.9144 m/h",
+            "equivalent": "1/3600 yd/s"
+        },
+        "mile-second":{
+            "val": "1609.344",
+            "symbol": "mps",
+            "metric": "~1.609 km/s",
+            "equivalent": "5280 fps"
+        },
+        "mile-minute":{
+            "val": "26.8224",
+            "symbol": "mi/min",
+            "metric": "~1.609 km/min",
+            "equivalent": "1/60 mps"
+        },
+        "mile-hour":{
+            "val": "0.44704",
+            "symbol": "mph",
+            "metric": "~1.609 km/h",
+            "equivalent": "1/3600 mps"
+        }
+        
+    },
+
+    "nautical":{
+
+        "table":[
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "knot":{
+            "val": "0.51444444444444444444",
+            "symbol": "kt",
+            "metric": "1.852 km/h",
+            "equivalent": "~1.151 mph"
+        }
+
+    },
+
+    "scientific":{
+
+        "table":[
+            "metric"
+        ],
+
+        "sound-air-0":{
+            "val": "331.2",
+            "metric": "331.2 m/s"
+        },
+        "sound-air-20":{
+            "val": "343.14",
+            "metric": "343.14 m/s"
+        },
+        "sound-water-0":{
+            "val": "1403",
+            "metric": "1403 m/s"
+        },
+        "sound-water-20":{
+            "val": "1481",
+            "metric": "1481 m/s"
+        },
+        "au-day":{
+            "val": "1731456.83680555555555555556",
+            "metric": "~1731456 m/s"
+        },
+        "light-water-20":{
+            "val": "224900568.64216054013503375844",
+            "metric": "~224900568 m/s"
+        },
+        "light-air-20":{
+            "val": "299710636.99610006468234172071",
+            "metric": "~299710636 m/s"
+        },
+        "light-vacuum":{
+            "val": "299792458",
+            "metric": "299792458 m/s"
+        },
+        "parsec-year":{
+            "val": "977812299.96210260325838819922",
+            "metric": "~977812299 m/s"
+        }
+
+    }
+
+}

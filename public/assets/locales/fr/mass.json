@@ -1,0 +1,80 @@
+
+{
+    
+    "metric-units": "unités métriques",
+    "imperial-units": "unités impériales",
+    "metric-microscopic-units": "unités métriques (microscopiques)",
+    "metric-astronomical-units": "unités métriques (astronomiques)",
+    "microscopic-units": "unités microscopiques",
+    "astronomical-units": "unités astronomiques",
+    "other-units": "autres unités",
+
+    "metric": {
+        "nanogram": "nanogramme",
+        "microgram": "microgramme",
+        "milligram": "milligramme",
+        "centigram": "centigramme",
+        "decigram": "décigramme",
+        "gram": "gramme",
+        "dekagram": "décagramme",
+        "hectogram": "hectogramme",
+        "kilogram": "kilogramme",
+        "megagram": "mégagramme (tonne)",
+        "gigagram": "gigagramme"
+    },
+
+    "imperial": {
+        "grain": "grain",
+        "drachm": "drachme",
+        "ounce": "once",
+        "pound": "livre",
+        "stone": "stone",
+        "quarter": "quarteron",
+        "slug": "slug",
+        "hundredweight-us": "quintal (US)",
+        "hundredweight-uk": "quintal (UK)",
+        "ton-us": "tonne (US)",
+        "ton-uk": "tonne (UK)"
+    },
+
+    "metric-microscopic": {
+        "quectogram": "queckogramme",
+        "rontogram": "rontogramme",
+        "yoctogram": "yoctogramme",
+        "zeptogram": "zeptogramme",
+        "attogram": "attogramme",
+        "femtogram": "femtogramme",
+        "picogram": "picogramme"
+    },
+    
+    "metric-astronomical": {
+        "teragram": "tégramme",
+        "petagram": "pégramme",
+        "exagram": "exagramme",
+        "zettagram": "zettagramme",
+        "yottagram": "yottagramme",
+        "ronnagram": "ronnagramme",
+        "quettagram": "quettagramme"
+    },
+
+    "microscopic": {
+        "electron-mass": "masse de l'électron",
+        "dalton": "dalton",
+        "proton-mass": "masse du proton",
+        "neutron-mass": "masse du neutron",
+        "planck-mass": "masse de Planck"
+    },
+    
+    "astronomical": {
+        "lunar-mass": "masse lunaire",
+        "earth-mass": "masse terrestre",
+        "jupiter-mass": "masse de Jupiter",
+        "solar-mass": "masse solaire"
+    },
+    
+    "other": {
+        "point": "point",
+        "carat": "carat"
+    }
+
+}

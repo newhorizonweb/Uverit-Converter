@@ -1,0 +1,41 @@
+
+{
+    
+    "name": "nom",
+    "units": "unités",
+    "from": "de",
+    "to": "à",
+    "decimals": "décimales",
+    "operation": "calcul",
+
+    "enter-number": "Entrez un nombre à convertir",
+    "switch-units": "Échanger les unités",
+    "expo-toggle": "Basculer en notation exponentielle",
+    "copy-result": "Copier le résultat",
+    "table-print": "Imprimer les tableaux",
+    "multi-table-print": "Imprimer les tableaux sur des pages séparées",
+
+    "symbol": "symbole",
+    "notation": "notation",
+    "equivalent": "équivalent",
+    "metric": "métrique",
+    "egyptian": "égyptien",
+    "per-turn": "par tour",
+    "in-radians": "en radians",
+    "in-degrees": "en degrés",
+    "in-newtons": "en newtons",
+    "in-pascals": "en pascals",
+    "water-freezing": "point de congélation de l'eau",
+    "water-boiling": "point d'ébullition de l'eau",
+    "in-hertz": "en hertz",
+    "decimal-100": "100 (décimal)",
+    "in-bytes": "en octets",
+    "dec-based": "basé sur le décimal",
+    "bin-based": "basé sur le binaire",
+    "quantity": "quantité",
+    "common": "courant",
+    "region": "région",
+    "decimal": "décimal",
+    "civilization": "civilisation"
+    
+}

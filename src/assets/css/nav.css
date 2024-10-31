@@ -100,10 +100,19 @@ nav.glass{
             }
 
             & .nav-links-inner{
+                max-height:calc(100dvh - (
+                    (var(--size6) * 2) +
+                    (var(--size6) * 2) +
+                    (var(--size7) + (var(--size6) * 2)) +
+                    var(--size3)
+                ));
+
                 display:grid;
                 grid-template-columns:repeat(2, minmax(min-content, auto));
                 gap:var(--size6);
+
                 background-color:var(--color3b);
+                overflow-y:auto;
             }
 
             & .nav-link{
@@ -113,10 +122,29 @@ nav.glass{
                 gap:var(--size2);
                 text-transform:capitalize;
 
-                & svg{
-                    width:var(--size9);
+                &:hover svg{
+                    scale:0.9;
+                }
+
+                & .tile-icon{
                     height:var(--size9);
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                }
+
+                & .tile-icon{
+                    height:calc(var(--size9) + var(--size4));
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                }
+
+                & svg{
+                    width:100%;
+                    height:100%;
                     aspect-ratio:1/1;
+                    transition:var(--trans1);
 
                     & *{
                         fill:none;
@@ -132,6 +160,7 @@ nav.glass{
                 & p{
                     font-size:16px;
                     text-align:center;
+                    transition:var(--trans1);
                 }
 
                 &:hover *{

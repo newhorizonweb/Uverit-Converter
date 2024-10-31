@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 // Assets
 import '../../assets/css/converter-table.css';
 import '../../assets/css/print.css';
-import { pdfIcon } from "../core/NavIcons";
+import { pdfIcon, multiPagePdfIcon } from "../core/SvgIcons";
 
 
 
@@ -26,16 +26,45 @@ function ConverterTable(){
         ["app", "converter", converterName]
     );
     
-    // Change notation to return a tag instead of string
-    const parseNotation = (notation: string) => {
-        const parts = notation.split(/<sup>|<\/sup>/);
-        return parts.map((part, index) => 
-            index % 2 === 0 ? part : <sup key={index}>{part}</sup>
-        );
-    }
+    // Convert superscript and subscript tags
+    const parseText = (txt: string) => {
 
+        // Split the string
+        const parts = txt.split(/(<\/?sub>|<\/?sup>)/);
+    
+        return parts.map((part, index) => {
+            switch (part){
+                case "<sub>":
+                    return <sub key={index}>{parts[index + 1]}</sub>;
+
+                case "<sup>":
+                    return <sup key={index}>{parts[index + 1]}</sup>;
+
+                case "</sub>":
+                case "</sup>":
+                    return null; // Skip closing tags
+
+                default:
+                    if (index > 0 && (parts[index - 1] === "<sub>" ||
+                    parts[index - 1] === "<sup>")){
+                        // Detect the text between the sub/sup tags
+                        // and skip it (it's already inserted above)
+                        return null;
+                    }
+                    return part; // Return normal text
+            }
+        }).filter(Boolean); // Remove null values
+    };
+    
     const printTables = () => {
         window.print();
+    }
+
+    // Each table is on a spearate page
+    const printTablesSep = () => {
+        document.body.classList.add("separate-pages");
+        window.print();
+        document.body.classList.remove("separate-pages");
     }
 
 
@@ -81,16 +110,19 @@ function ConverterTable(){
             
                                 <tr key={ unit } className={ unit }>
 
-                                    <td className="name">{ unit }</td>
+                                    <td className="name">
+                                    { t(`${converterName}:${group}:${unit}`) }
+                                    </td>
 
                                     { data[group].table.map((col: string) => (
                                         <td key={data[group][unit][col]}
                                         className={col}>
-                                            { col === "notation" ? (
-                                                parseNotation(data[group][unit][col])
-                                            ) : (
-                                                data[group][unit][col]
-                                            )}
+                {(() => {
+                    const cellData = data[group][unit][col];
+                    return !cellData.includes("t('")
+                        ? parseText(cellData)
+                        : t(`${converterName}:table-content:${cellData.replace(/^t\('|'\)$/g, '')}`);
+                })()}
                                         </td>
                                     ))}
 
@@ -108,11 +140,21 @@ function ConverterTable(){
             
         ))}
 
-            <button className="print-btn svg-icon glass no-print"
-            aria-label={t('converter:table-print')}
-            onClick={ printTables }>
-                { pdfIcon }
-            </button>
+            <div className="print-btns">
+                <button className="print-btn svg-icon glass no-print"
+                aria-label={t('converter:table-print')}
+                title={t('converter:table-print')}
+                onClick={ printTables }>
+                    { pdfIcon }
+                </button>
+
+                <button className="print-btn svg-icon glass no-print"
+                aria-label={t('converter:table-print')}
+                title={t('converter:multi-table-print')}
+                onClick={ printTablesSep }>
+                    { multiPagePdfIcon }
+                </button>
+            </div>
 
         </section>
     );

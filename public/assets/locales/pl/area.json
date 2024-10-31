@@ -1,0 +1,35 @@
+
+{
+    "metric-units": "jednostki metryczne",
+    "imperial-units": "jednostki imperialne",
+    "japanese-units": "jednostki japońskie",
+    "south-asian-units": "południowoazjatyckie jednostki",
+    "other-units": "inne jednostki",
+
+    "metric": {
+        "sq-millimeter": "milimetr kwadratowy",
+        "sq-centimeter": "centymetr kwadratowy",
+        "sq-decimeter": "decymetr kwadratowy",
+        "sq-meter": "metr kwadratowy",
+        "sq-dekameter": "dekametr kwadratowy",
+        "sq-hectometer": "hektometr kwadratowy",
+        "sq-kilometer": "kilometr kwadratowy"
+    },
+
+    "imperial": {
+        "sq-inch": "cal kwadratowy",
+        "sq-foot": "stopa kwadratowa",
+        "sq-yard": "jard kwadratowy",
+        "sq-rod": "pręt kwadratowy",
+        "acre": "akr",
+        "sq-mile": "mila kwadratowa"
+    },
+
+    "other": {
+        "are": "ar",
+        "hectare": "hektar",
+        "tetrad": "tetrada",
+        "hectad": "hektada",
+        "myriad": "miriada"
+    }
+}

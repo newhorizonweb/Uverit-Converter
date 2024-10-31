@@ -1,0 +1,68 @@
+
+{
+
+    "metric-units": "jednostki metryczne",
+    "metric-microscopic-units": "jednostki metryczne (mikroskopijne)",
+    "imperial-units": "jednostki imperialne",
+    "scientific-units": "jednostki naukowe",
+    
+    "metric": {
+        "gram-micrometer": "gram na mikrometr sześcienny",
+        "gram-millimeter": "gram na milimetr sześcienny",
+        "gram-centimeter": "gram na centymetr sześcienny",
+        "gram-decimeter": "gram na decymetr sześcienny",
+        "gram-meter": "gram na metr sześcienny",
+        "kilogram-centimeter": "kilogram na centymetr sześcienny",
+        "kilogram-decimeter": "kilogram na decymetr sześcienny",
+        "kilogram-meter": "kilogram na metr sześcienny",
+        "tonne-meter": "tona na metr sześcienny"
+    },
+
+    "metric-microscopic": {
+        "quectogram-meter": "kwektogram na metr sześcienny",
+        "rontogram-meter": "rontogram na metr sześcienny",
+        "yoctogram-meter": "joktogram na metr sześcienny",
+        "attogram-meter": "attogram na metr sześcienny",
+        "femtogram-micrometer": "femtogram na mikrometr sześcienny",
+        "femtogram-meter": "femtogram na metr sześcienny",
+        "picogram-nanometer": "pikogram na nanometr sześcienny",
+        "picogram-meter": "pikogram na metr sześcienny",
+        "nanogram-micrometer": "nanogram na mikrometr sześcienny",
+        "nanogram-meter": "nanogram na metr sześcienny",
+        "microgram-centimeter": "mikrogram na centymetr sześcienny",
+        "microgram-meter": "mikrogram na metr sześcienny",
+        "milligram-centimeter": "miligram na centymetr sześcienny",
+        "milligram-meter": "miligram na metr sześcienny"
+    },
+    
+    "imperial": {
+        "grain-gallon": "grain na galon",
+        "ounce-inch": "uncja na cal sześcienny",
+        "ounce-foot": "uncja na stopę sześcienną",
+        "ounce-yard": "uncja na jard sześcienny",
+        "pound-inch": "funt na cal sześcienny",
+        "pound-foot": "funt na stopę sześcienną",
+        "pound-yard": "funt na jard sześcienny",
+        "pound-bushel": "funt na buszel",
+        "pound-gallon": "funt na galon",
+        "slug-foot": "slug na stopę sześcienną",
+        "troy-ounce-inch": "uncja trojańska na cal sześcienny",
+        "troy-ounce-foot": "uncja trojańska na stopę sześcienną",
+        "troy-pound-inch": "funt trojański na cal sześcienny",
+        "troy-pound-foot": "funt trojański na stopę sześcienną"
+    },
+
+    "scientific": {
+        "proton-mass-parsec": "masa protonu na parsek sześcienny",
+        "electronvolt-meter": "elektronowolt na metr sześcienny",
+        "electron-mass-meter": "masa elektronu na metr sześcienny",
+        "dalton-centimeter": "dalton na centymetr sześcienny",
+        "dalton-meter": "dalton na metr sześcienny",
+        "solar-parsec": "masa słoneczna na parsek sześcienny",
+        "solar-light-year": "masa słoneczna na rok świetlny sześcienny",
+        "planck-mass-meter": "masa Plancka na metr sześcienny",
+        "earth-kilometer": "masa Ziemi na kilometr sześcienny",
+        "jupiter-kilometer": "masa Jowisza na kilometr sześcienny"
+    }
+
+}

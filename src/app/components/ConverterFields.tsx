@@ -11,7 +11,8 @@ import { useTranslation } from 'react-i18next';
 
 // Assets
 import '../../assets/css/converter-fields.css';
-import { switchUnitsIcon, copyIcon, copiedIcon, expoIcon } from "../core/NavIcons";
+import { switchUnitsIcon, copyIcon, copiedIcon, expoIcon } from "../core/SvgIcons";
+import { isBaseValid, numSys } from "../functions/NumSys";
 
 // Components
 import RenderSelectOptions from "../functions/GenerateSelect";
@@ -55,9 +56,11 @@ function ConverterFields(){
 
     // Input Unit Select Value
     const [ inputSelVal, setInputSelVal ] = useState("");
+    const [ inputSelName, setInputSelName ] = useState("");
 
     // Output Unit Select Value
     const [ outputSelVal, setOutputSelVal ] = useState("");
+    const [ outputSelName, setOutputSelName ] = useState("");
 
     const [ copiedResult, setCopiedResult ] = useState(false);
 
@@ -69,9 +72,21 @@ function ConverterFields(){
     
     // Update the select unit values to the first option on page load
     useEffect(() => {
+        
         const select = (document.querySelector('#units-input') as HTMLSelectElement);
-        setInputSelVal(select.options[0].value);
-        setOutputSelVal(select.options[1].value);
+
+        // Default options (first and second if not found)
+        const inputDef = parseInt(data.settings["input-def"] || 0);
+        const outputDef = parseInt(data.settings["output-def"] || 1);
+
+        // Input
+        setInputSelVal(select.options[inputDef]?.value.split('_&_')[1] ?? 0);
+        setInputSelName(select.options[inputDef]?.value ?? '');
+
+        // Output
+        setOutputSelVal(select.options[outputDef]?.value.split('_&_')[1] ?? 1);
+        setOutputSelName(select.options[outputDef]?.value ?? '');
+
     }, [ data ]);
 
         /* Focus */
@@ -83,6 +98,7 @@ function ConverterFields(){
     }
 
     useEffect(() => {
+
         const handleKeyDown = (e: KeyboardEvent) => {
             if (e.key === 'Tab'){
                 setKeyboardFocus(true);
@@ -106,6 +122,7 @@ function ConverterFields(){
             window.removeEventListener('mousedown', handleMouseDown);
             window.removeEventListener('scroll', handleScroll);
         };
+
     }, []);
 
     useEffect(() => {
@@ -116,8 +133,7 @@ function ConverterFields(){
         }
     }, [ keyboardFocus ]);
 
-
-
+    
 
         /* Conversion */
 
@@ -130,13 +146,14 @@ function ConverterFields(){
         // Check if the number uses exponential notation
         // Which automatically happens with big numbers
         if (!strVal.includes('e') && !strVal.includes('E')){
-            return val;
+            return val.toDecimalPlaces(factorSelVal);
         } else {
             const [coefficient, exponent] = strVal.split('e');
             const number = new Decimal(coefficient).toDecimalPlaces(factorSelVal);
 
             // Recombine the coefficient and exponent
-            return `${number}e${exponent}`;
+            return !isNaN(Number(val)) ?
+                `${number}e${exponent}` : new Decimal(NaN);
         }
 
     }
@@ -146,8 +163,8 @@ function ConverterFields(){
         if (val.isZero()) return "0";
 
         // Convert the number to exponential notation
-        const exponentialString = val.toNumber().toExponential();
-    
+        const exponentialString = new Decimal(val).toExponential();
+        
         // Split the string into coefficient and exponent parts
         const [coefficient, exponent] = exponentialString.split('e');
     
@@ -155,44 +172,111 @@ function ConverterFields(){
         const number = new Decimal(coefficient).toDecimalPlaces(factorSelVal);
 
         // Recombine the coefficient and exponent
-        return `${number}e${exponent}`;
-
+        return !isNaN(Number(val)) ?
+            `${number}e${exponent}` : new Decimal(NaN);
+        
     }
 
     const convertToDecimal = (value: string) => {
-
+        
         // Return 0 for empty input
         if (value.trim() === "") return new Decimal(0);
 
-        // Return decimal.js value or NaN (e.g. when there are letters in the input)
-        return !isNaN(Number(value)) ? new Decimal(value) : new Decimal(NaN);
+        // Return decimal.js value or NaN
+        // e.g. when there are letters in the input
+        return !isNaN(Number(value)) ?
+            new Decimal(value) : new Decimal(NaN);
 
     };
+
+        /* Formulas */
+
+    const toFormula = (value: Decimal, formula: string) => {
+        const extFormula = formula.split('|')[0];
+        const fn = new Function("Decimal", "val",
+            `return ${extFormula.split('=>')[1]}`
+        );
+        return fn(Decimal, new Decimal(value));
+    };
+    
+    const fromFormula = (value: Decimal, formula: string) => {
+        const extFormula = formula.split('|')[1];
+        const fn = new Function("Decimal", "val",
+            `return ${extFormula.split('=>')[1]}`
+        );
+        return fn(Decimal, new Decimal(value));
+    };
+
+        /* Result Conversion */
 
     const convertedVal = useMemo(() => {
         
         const convertUnits = () => {
 
-            // Input Values
-            // Use decimal.js to remove js floating poin shitshow
-            const inputValue = convertToDecimal(inputVal);
-            const inputUnit = convertToDecimal(inputSelVal);
-            const outputUnit = convertToDecimal(outputSelVal);
-
-            // Convert to the output value
-            const resultRaw = inputValue.times(inputUnit).div(outputUnit);
-
             // Will return 0 if somthing's wrong (cath 'em all solution)
             let result: string | Decimal = new Decimal(0);
 
-            // Change the conversion based on the current converter settings
-            if (choice === "decimal" ||
-            (choice === "exponential" && !isExponential)){
-                result = checkExpoDecimals(resultRaw.toDecimalPlaces(factorSelVal))
-            } else if (choice === "exponential") {
-                result = limitDecimalExpo(resultRaw);
+            if (converterName === "temperature" ||
+                converterName === "data_storage"
+            ){
+
+                const baseValue = toFormula(
+                    new Decimal(Number(inputVal)), inputSelVal
+                );
+                
+                const resultRaw = outputSelVal && inputVal ?
+                    fromFormula(baseValue, outputSelVal) :
+                    new Decimal(0);
+                
+                if (choice === "decimal" ||
+                    (choice === "exponential" && !isExponential)
+                ){
+                    result = checkExpoDecimals(resultRaw);
+                } else if (choice === "exponential"){
+                    result = limitDecimalExpo(resultRaw);
+                }
+                
+            } else if (converterName === "numeral_systems"){
+
+                // Base validation
+                const validBase = (base: number) =>
+                    Math.max(2, Math.min(36, base));
+                
+                const fromBase = validBase(Number(inputSelVal));
+                const toBase = validBase(Number(outputSelVal));
+
+                // Input validation (invalid characters)
+                if (!isBaseValid(inputVal, fromBase)) return "NaN";
+
+                // Converted value
+                const resultRaw = numSys(
+                    inputVal, fromBase, toBase, factorSelVal
+                ).toString();
+                
+                result = resultRaw;
+
+            } else {
+
+                // Input Values
+                // Use decimal.js to remove js floating poin shitshow
+                const inputValue = convertToDecimal(inputVal);
+                const inputUnit = convertToDecimal(inputSelVal);
+                const outputUnit = convertToDecimal(outputSelVal);
+
+                // Convert to the output value
+                const resultRaw = inputValue.times(inputUnit).div(outputUnit);
+
+                // Change the conversion based on the current converter settings
+                if (choice === "decimal" ||
+                    (choice === "exponential" && !isExponential)
+                ){
+                    result = checkExpoDecimals(resultRaw);
+                } else if (choice === "exponential"){
+                    result = limitDecimalExpo(resultRaw);
+                }
+
             }
-            
+                
             return result.toString();
 
         };
@@ -206,16 +290,11 @@ function ConverterFields(){
         /* Features */
 
     const switchUnits = () => {
+        setInputSelVal(outputSelVal);
+        setInputSelName(outputSelName);
 
-        const inputSelect =
-            document.querySelector('#units-input') as HTMLInputElement;
-
-        const outputSelect =
-            document.querySelector('#units-output') as HTMLInputElement;
-
-        setInputSelVal(outputSelect.value);
-        setOutputSelVal(inputSelect.value);
-
+        setOutputSelVal(inputSelVal);
+        setOutputSelName(inputSelName);
     };
 
     const copyResult = () => {
@@ -246,9 +325,22 @@ function ConverterFields(){
         const inputValue = convertToDecimal(inputVal).toFixed(); // Prevent expo notat.
         const inputUnit = convertToDecimal(inputSelVal);
         const outputUnit = convertToDecimal(outputSelVal);
+        
+        // Limit the output number to x decimal places
+        const limitToX = 5;
+        const minNum = new Decimal(10).pow(-limitToX);
+        const maxNum = new Decimal(10).pow(limitToX);
 
-        // Limit to x decimal places
-        const roundedOutput = (inputUnit.div(outputUnit)).toDecimalPlaces(5);
+        const output = inputUnit.div(outputUnit);
+        let roundedOutput;
+
+        if (output.lt(minNum) || output.gt(maxNum)){
+            roundedOutput = limitDecimalExpo(
+                new Decimal(output.toExponential(limitToX))
+            );
+        } else {
+            roundedOutput = output.toDecimalPlaces(limitToX);
+        }
         
         return {
             inputValue: inputValue,
@@ -260,7 +352,8 @@ function ConverterFields(){
 
 
     return (
-        <div className="converter-fields glass no-print">
+        <div className="converter-fields glass no-print"
+        data-testid="converter-fields">
 
             <div className="conv-section conv-inputs">
 
@@ -273,11 +366,13 @@ function ConverterFields(){
 
                         <div className="conv-select">
                             <select name="units-input" id="units-input"
-                            className="conv-inp glass pointer hover"
-                            data-testid="units-input" value={ inputSelVal }
+                            className="conv-inp glass small-scroll pointer hover"
+                            data-testid="units-input" value={ inputSelName }
                             aria-label={`${t('converter:units')} ${t('converter:from')}`}
                             onChange={(e) => {
-                                setInputSelVal(e.target.value);
+                                const eVal = e.target.value;
+                                setInputSelVal(eVal.split('_&_')[1]);
+                                setInputSelName(eVal);
                                 blurElem(e);
                             }}>
                                 <RenderSelectOptions
@@ -305,6 +400,7 @@ function ConverterFields(){
                 <div className="switch-units conv-elem column no-flex">
                     <p>&nbsp;</p>
                     <button className="switch-units-btn svg-icon glass"
+                    data-testid="switch-units"
                     aria-label={t("converter:switch-units")}
                     onClick={ switchUnits }>
                         { switchUnitsIcon }
@@ -320,12 +416,14 @@ function ConverterFields(){
 
                         <div className="conv-select">
                             <select name="units-output" id="units-output"
-                            className="conv-inp glass pointer hover"
+                            className="conv-inp glass small-scroll pointer hover"
                             data-testid="units-output"
-                            value={ outputSelVal }
+                            value={ outputSelName }
                             aria-label={`${t('converter:units')} ${t('converter:to')}`}
                             onChange={(e) => {
-                                setOutputSelVal(e.target.value);
+                                const eVal = e.target.value;
+                                setOutputSelVal(eVal.split('_&_')[1]);
+                                setOutputSelName(eVal);
                                 blurElem(e);
                             }}>
                                 <RenderSelectOptions
@@ -336,7 +434,9 @@ function ConverterFields(){
                     </div>
 
                     <div className="result-field conv-inp glass" id="result-field">
-                        <p>{ convertedVal }</p>
+                        <p data-testid="result-txt">
+                            { convertedVal }
+                        </p>
                     </div>
 
                 </div>
@@ -345,33 +445,34 @@ function ConverterFields(){
 
             <div className="conv-section conv-features">
 
-                { operation &&
-                    <div className="operation conv-elem column">
-                        <p className="inp-label">
-                            {t("converter:operation")}
-                        </p>
+            
+                <div className="operation conv-elem column">
+                { operation && <>
+                    <p className="inp-label">
+                        {t("converter:operation")}
+                    </p>
 
-                        <div className="conv-inp glass operation-field"
-                        data-testid="operation-field">
-                            { operationContent === "-----" ? (
-                                <p className="operation-center">
-                                    { operationContent }
-                                </p>
-                            ) : (
-                                <p>
-                                    <span 
-                                    className="operation-input">
-                                        {operationContent.inputValue.toString()}
-                                        </span>
-                                    <span>&nbsp;*&nbsp;</span>
-                                    <span>
-                                        {operationContent.roundedOutput.toString()}
+                    <div className="conv-inp glass operation-field"
+                    data-testid="operation-field">
+                        { operationContent === "-----" ? (
+                            <p className="operation-center">
+                                { operationContent }
+                            </p>
+                        ) : (
+                            <p>
+                                <span 
+                                className="operation-input">
+                                    {operationContent.inputValue.toString()}
                                     </span>
-                                </p>
-                            )}
-                        </div>
+                                <span>&nbsp;*&nbsp;</span>
+                                <span>
+                                    {operationContent.roundedOutput.toString()}
+                                </span>
+                            </p>
+                        )}
                     </div>
-                }
+                </>}
+                </div>
 
                 <div className="gap-placeholder">
                     <p>&nbsp;</p>
@@ -388,7 +489,7 @@ function ConverterFields(){
 
                         <div className="conv-select">
                             <select name="user-choice"
-                            className="user-choice conv-inp glass pointer hover"
+                            className="user-choice conv-inp small-scroll glass pointer hover"
                             data-testid="user-choice"
                             aria-label={t("converter:decimals")}
                             value={ factorSelVal }
@@ -411,6 +512,7 @@ function ConverterFields(){
                         <button className={`svg-icon expo-btn svg-icon glass
                             ${isExponential ? "expo-enabled" : ""}
                         `}
+                        data-testid="exponential-btn"
                         aria-label={t('converter:expo-toggle')}
                         onClick={() => setIsExponential(!isExponential)}>
                             { expoIcon }
@@ -420,6 +522,7 @@ function ConverterFields(){
                     <button className={`copy-btn svg-icon glass 
                         ${ copiedResult ? "copied-result" : "" }
                     `}
+                    data-testid="copy-btn"
                     aria-label={t("converter:copy-result")}
                     onClick={ copyResult }>
                         { copiedResult ? copiedIcon : copyIcon }

@@ -1,0 +1,560 @@
+
+{
+
+    "settings":{
+        "operation": "true",
+        "choice": "exponential",
+
+        "input-def": "12",
+        "output-def": "36",
+
+        "choice-val-min": "0",
+        "choice-val-max": "16",
+        "choice-val-def": "5"
+    },
+
+    "metric": {
+
+        "table": [
+            "symbol",
+            "notation"
+        ],
+
+        "quectojoule": {  
+            "val": "1e-30", 
+            "symbol": "qJ",  
+            "notation": "10<sup>-30</sup>" 
+        },
+        "rontojoule": {  
+            "val": "1e-27", 
+            "symbol": "rJ",  
+            "notation": "10<sup>-27</sup>" 
+        },
+        "yoctojoule": {  
+            "val": "1e-24", 
+            "symbol": "yJ",  
+            "notation": "10<sup>-24</sup>" 
+        },
+        "zeptojoule": {  
+            "val": "1e-21", 
+            "symbol": "zJ",  
+            "notation": "10<sup>-21</sup>" 
+        },
+        "attojoule": {  
+            "val": "1e-18", 
+            "symbol": "aJ",  
+            "notation": "10<sup>-18</sup>" 
+        },
+        "femtojoule": {  
+            "val": "1e-15", 
+            "symbol": "fJ",  
+            "notation": "10<sup>-15</sup>" 
+        },
+        "picojoule": {  
+            "val": "1e-12", 
+            "symbol": "pJ",  
+            "notation": "10<sup>-12</sup>" 
+        },
+        "nanojoule": {  
+            "val": "1e-9", 
+            "symbol": "nJ",  
+            "notation": "10<sup>-9</sup>" 
+        },
+        "microjoule": {  
+            "val": "1e-6", 
+            "symbol": "µJ",  
+            "notation": "10<sup>-6</sup>" 
+        },
+        "millijoule": {  
+            "val": "1e-3", 
+            "symbol": "mJ",  
+            "notation": "10<sup>-3</sup>" 
+        },
+        "centijoule": {  
+            "val": "1e-2", 
+            "symbol": "cJ",  
+            "notation": "10<sup>-2</sup>" 
+        },
+        "decijoule": {  
+            "val": "1e-1", 
+            "symbol": "dJ",  
+            "notation": "10<sup>-1</sup>" 
+        },
+        "joule": {  
+            "val": "1", 
+            "symbol": "J",  
+            "notation": "10<sup>0</sup>" 
+        },
+        "dekajoule": {  
+            "val": "1e1", 
+            "symbol": "daJ",  
+            "notation": "10<sup>1</sup>" 
+        },
+        "hectojoule": {  
+            "val": "1e2", 
+            "symbol": "hJ",  
+            "notation": "10<sup>2</sup>" 
+        },
+        "kilojoule": {  
+            "val": "1e3", 
+            "symbol": "kJ",  
+            "notation": "10<sup>3</sup>" 
+        },
+        "megajoule": {  
+            "val": "1e6", 
+            "symbol": "MJ",  
+            "notation": "10<sup>6</sup>" 
+        },
+        "gigajoule": {  
+            "val": "1e9", 
+            "symbol": "GJ",  
+            "notation": "10<sup>9</sup>" 
+        },
+        "terajoule": {  
+            "val": "1e12", 
+            "symbol": "TJ",  
+            "notation": "10<sup>12</sup>" 
+        },
+        "petajoule": {  
+            "val": "1e15", 
+            "symbol": "PJ",  
+            "notation": "10<sup>15</sup>" 
+        },
+        "exajoule": {  
+            "val": "1e18", 
+            "symbol": "EJ",  
+            "notation": "10<sup>18</sup>" 
+        },
+        "zettajoule": {  
+            "val": "1e21", 
+            "symbol": "ZJ",  
+            "notation": "10<sup>21</sup>" 
+        },
+        "yottajoule": {  
+            "val": "1e24", 
+            "symbol": "YJ",  
+            "notation": "10<sup>24</sup>" 
+        },
+        "ronnajoule": {  
+            "val": "1e27", 
+            "symbol": "RJ",  
+            "notation": "10<sup>27</sup>" 
+        },
+        "quettajoule": {  
+            "val": "1e30", 
+            "symbol": "QJ",  
+            "notation": "10<sup>30</sup>" 
+        }
+        
+    },
+
+    "CGS": {
+
+        "table": [
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "erg": {  
+            "val": "1e-7", 
+            "symbol": "erg",  
+            "metric": "0.1 µJ",
+            "equivalent": "~2.39e-8 cal"
+        },
+        "calorie": {  
+            "val": "4.184", 
+            "symbol": "cal",  
+            "metric": "4.184 J",
+            "equivalent": "~0.999 cal<sub>IT</sub>"
+        },
+        "table-calorie": {  
+            "val": "4.1868", 
+            "symbol": "cal<sub>IT</sub>",  
+            "metric": "4.1868 J",
+            "equivalent": "~1.001 cal"
+        },
+        "kilocalorie": {  
+            "val": "4184", 
+            "symbol": "kcal",  
+            "metric": "4.184 kJ",
+            "equivalent": "1000 cal"
+        }
+        
+    },
+
+    "watt-hours": {
+
+        "table": [
+            "symbol",
+            "notation",
+            "metric"
+        ],
+
+        "femtowatt-hour": {  
+            "val": "3.6e-12", 
+            "symbol": "fWh",  
+            "notation": "10<sup>-15</sup>",
+            "metric": "3.6 pJ"
+        },
+        "picowatt-hour": {  
+            "val": "3.6e-9", 
+            "symbol": "pWh",  
+            "notation": "10<sup>-12</sup>",
+            "metric": "3.6 nJ"
+        },
+        "nanowatt-hour": {  
+            "val": "3.6e-6", 
+            "symbol": "nWh",  
+            "notation": "10<sup>-9</sup>",
+            "metric": "3.6 µJ"
+        },
+        "microwatt-hour": {  
+            "val": "3.6e-3", 
+            "symbol": "µWh",  
+            "notation": "10<sup>-6</sup>",
+            "metric": "3.6 mJ"
+        },
+        "milliwatt-hour": {  
+            "val": "3.6", 
+            "symbol": "mWh",  
+            "notation": "10<sup>-3</sup>",
+            "metric": "3.6 J"
+        },
+        "centiwatt-hour": {  
+            "val": "3.6e1", 
+            "symbol": "cWh",  
+            "notation": "10<sup>-2</sup>",
+            "metric": "3.6 daJ"
+        },
+        "deciwatt-hour": {  
+            "val": "3.6e2", 
+            "symbol": "dWh",  
+            "notation": "10<sup>-1</sup>",
+            "metric": "3.6 hJ"
+        },
+        "watt-hour": {  
+            "val": "3.6e3", 
+            "symbol": "Wh",  
+            "notation": "10<sup>0</sup>",
+            "metric": "3.6 kJ"
+        },
+        "dekawatt-hour": {  
+            "val": "3.6e4", 
+            "symbol": "daWh",  
+            "notation": "10<sup>1</sup>",
+            "metric": "36 kJ"
+        },
+        "hectowatt-hour": {  
+            "val": "3.6e5", 
+            "symbol": "hWh",  
+            "notation": "10<sup>2</sup>",
+            "metric": "360 kJ"
+        },
+        "kilowatt-hour": {  
+            "val": "3.6e6", 
+            "symbol": "kWh",  
+            "notation": "10<sup>3</sup>",
+            "metric": "3.6 MJ"
+        },
+        "megawatt-hour": {  
+            "val": "3.6e9", 
+            "symbol": "MWh",  
+            "notation": "10<sup>6</sup>",
+            "metric": "3.6 GJ"
+        },
+        "gigawatt-hour": {  
+            "val": "3.6e12", 
+            "symbol": "GWh",  
+            "notation": "10<sup>9</sup>",
+            "metric": "3.6 TJ"
+        },
+        "terawatt-hour": {  
+            "val": "3.6e15", 
+            "symbol": "TWh",  
+            "notation": "10<sup>12</sup>",
+            "metric": "3.6 PJ"
+        },
+        "petawatt-hour": {  
+            "val": "3.6e18", 
+            "symbol": "PWh",  
+            "notation": "10<sup>15</sup>",
+            "metric": "3.6 EJ"
+        }
+        
+    },
+
+    "electronvolts": {
+
+        "table": [
+            "symbol",
+            "notation",
+            "metric"
+        ],
+
+        "femtoelectronvolt": {  
+            "val": "1.602176634e-34", 
+            "symbol": "feV",  
+            "notation": "10<sup>-15</sup>",
+            "metric": "~1.602e-4 qJ"
+        },
+        "picoelectronvolt": {  
+            "val": "1.602176634e-31", 
+            "symbol": "peV",  
+            "notation": "10<sup>-12</sup>",
+            "metric": "~1.602e-1 qJ"
+        },
+        "nanoelectronvolt": {  
+            "val": "1.602176634e-28", 
+            "symbol": "neV",  
+            "notation": "10<sup>-9</sup>",
+            "metric": "~160.218 qJ"
+        },
+        "microelectronvolt": {  
+            "val": "1.602176634e-25", 
+            "symbol": "µeV",  
+            "notation": "10<sup>-6</sup>",
+            "metric": "~160.218 rJ"
+        },
+        "millielectronvolt": {  
+            "val": "1.602176634e-22", 
+            "symbol": "meV",  
+            "notation": "10<sup>-3</sup>",
+            "metric": "~160.218 yJ"
+        },
+        "centielectronvolt": {  
+            "val": "1.602176634e-21", 
+            "symbol": "ceV",  
+            "notation": "10<sup>-2</sup>",
+            "metric": "~1.602 zJ"
+        },
+        "decielectronvolt": {  
+            "val": "1.602176634e-20", 
+            "symbol": "deV",  
+            "notation": "10<sup>-1</sup>",
+            "metric": "~16.022 zJ"
+        },
+        "electronvolt": {  
+            "val": "1.602176634e-19", 
+            "symbol": "eV",  
+            "notation": "10<sup>0</sup>",
+            "metric": "~160.218 zJ"
+        },
+        "dekaelectronvolt": {  
+            "val": "1.602176634e-18", 
+            "symbol": "daeV",  
+            "notation": "10<sup>1</sup>",
+            "metric": "~1.602 aJ"
+        },
+        "hectoelectronvolt": {  
+            "val": "1.602176634e-17", 
+            "symbol": "heV",  
+            "notation": "10<sup>2</sup>",
+            "metric": "~16.022 aJ"
+        },
+        "kiloelectronvolt": {  
+            "val": "1.602176634e-16", 
+            "symbol": "keV",  
+            "notation": "10<sup>3</sup>",
+            "metric": "~160.218 aJ"
+        },
+        "megaelectronvolt": {  
+            "val": "1.602176634e-13", 
+            "symbol": "MeV",  
+            "notation": "10<sup>6</sup>",
+            "metric": "~160.218 fJ"
+        },
+        "gigaelectronvolt": {  
+            "val": "1.602176634e-10", 
+            "symbol": "GeV",  
+            "notation": "10<sup>9</sup>",
+            "metric": "~160.218 pJ"
+        },
+        "teraelectronvolt": {  
+            "val": "1.602176634e-7", 
+            "symbol": "TeV",  
+            "notation": "10<sup>12</sup>",
+            "metric": "~160.218 nJ"
+        },
+        "petaelectronvolt": {  
+            "val": "1.602176634e-4", 
+            "symbol": "PeV",  
+            "notation": "10<sup>15</sup>",
+            "metric": "~160.218 µJ"
+        }
+
+    },
+
+    "tons-of-tnt": {
+
+        "table": [
+            "symbol",
+            "notation",
+            "metric"
+        ],
+
+        "ton-tnt": {  
+            "val": "4.184e9", 
+            "symbol": "tTNT",  
+            "notation": "10<sup>0</sup>",
+            "metric": "4.184 GJ"
+        },
+        "kiloton-tnt": {  
+            "val": "4.184e12", 
+            "symbol": "ktTNT",  
+            "notation": "10<sup>3</sup>",
+            "metric": "4.184 TJ"
+        },
+        "megaton-tnt": {  
+            "val": "4.184e15", 
+            "symbol": "MtTNT",  
+            "notation": "10<sup>6</sup>",
+            "metric": "4.184 PJ"
+        },
+        "gigaton-tnt": {  
+            "val": "4.184e18", 
+            "symbol": "GtTNT",  
+            "notation": "10<sup>9</sup>",
+            "metric": "4.184 EJ"
+        },
+        "teraton-tnt": {  
+            "val": "4.184e21", 
+            "symbol": "TtTNT",  
+            "notation": "10<sup>12</sup>",
+            "metric": "4.184 ZJ"
+        },
+        "petaton-tnt": {  
+            "val": "4.184e24", 
+            "symbol": "PtTNT",  
+            "notation": "10<sup>15</sup>",
+            "metric": "4.184 YJ"
+        }
+
+    },
+
+    "imperial": {
+
+        "table": [
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "foot-pound-force": {  
+            "val": "1.3558179483314004", 
+            "symbol": "ft⋅lbf",  
+            "metric": "~1.356 J",
+            "equivalent": "~1.285e-3 BTU"
+        },
+        "horsepower-hour": {  
+            "val": "2684519.537696172792", 
+            "symbol": "hp⋅h",  
+            "metric": "~2.685 MJ",
+            "equivalent": "~2.544 kBTU"
+        },
+        "btu": {  
+            "val": "1.05505585261999999999e3", 
+            "symbol": "BTU",  
+            "metric": "~1.055 kJ",
+            "equivalent": "~778.169 ft⋅lbf"
+        },
+        "kilobtu": {  
+            "val": "1.05505585261999999999e6", 
+            "symbol": "kBTU",  
+            "metric": "~1.055 MJ",
+            "equivalent": "1000 BTU"
+        },
+        "therm": {  
+            "val": "1.05505585261999999999e8", 
+            "symbol": "thm",  
+            "metric": "~0.106 GJ",
+            "equivalent": "100 kBTU"
+        },
+        "decatherm": {  
+            "val": "1.05505585261999999999e9", 
+            "symbol": "Dth",  
+            "metric": "~1.055 GJ",
+            "equivalent": "10 thm"
+        },
+        "quad": {  
+            "val": "1.05505585261999999999e18", 
+            "symbol": "-",  
+            "metric": "~1.055 EJ",
+            "equivalent": "1e15 BTU"
+        }
+
+    },
+
+    "scientific": {
+
+        "table": [
+            "symbol",
+            "metric"
+        ],
+
+        "rydberg-constant": {  
+            "val": "2.17987236110302424242e-18", 
+            "symbol": "E<sub>R</sub>",  
+            "metric": "~2.18 aJ"
+        },
+        "hartree": {  
+            "val": "4.35974472220604848485e-18", 
+            "symbol": "E<sub>h</sub>",  
+            "metric": "~4.36 aJ"
+        },
+        "planck-energy": {  
+            "val": "1956081414.07136396061058285359", 
+            "symbol": "E<sub>P</sub>",  
+            "metric": "~1.956 GJ"
+        }
+        
+    },
+
+    "other": {
+
+        "table": [
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "tonne-coal": {  
+            "val": "2.93076e10", 
+            "symbol": "tce",  
+            "metric": "29.3076 GJ",
+            "equivalent": "0.7 toe"
+        },
+        "kilotonne-coal": {  
+            "val": "2.93076e13", 
+            "symbol": "ktce",  
+            "metric": "29.3076 TJ",
+            "equivalent": "1000 tce"
+        },
+        "megatonne-coal": {  
+            "val": "2.93076e16", 
+            "symbol": "Mtce",  
+            "metric": "29.3076 PJ",
+            "equivalent": "1000 ktce"
+        },
+        "tonne-oil": {  
+            "val": "4.1868e10", 
+            "symbol": "toe",  
+            "metric": "41.868 GJ",
+            "equivalent": "~1.429 tce"
+        },
+        "kilotonne-oil": {  
+            "val": "4.1868e13", 
+            "symbol": "ktoe",  
+            "metric": "41.868 TJ",
+            "equivalent": "1000 toe"
+        },
+        "megatonne-oil": {  
+            "val": "4.1868e16", 
+            "symbol": "Mtoe",  
+            "metric": "41.868 PJ",
+            "equivalent": "1000 ktoe"
+        }
+       
+    }
+
+}

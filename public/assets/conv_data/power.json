@@ -1,0 +1,427 @@
+
+{
+
+    "settings":{
+        "operation": "true",
+        "choice": "exponential",
+
+        "input-def": "12",
+        "output-def": "39",
+
+        "choice-val-min": "0",
+        "choice-val-max": "16",
+        "choice-val-def": "5"
+    },
+
+    "metric": {
+
+        "table": [
+            "symbol",
+            "notation"
+        ],
+
+        "quectowatt": {  
+            "val": "1e-30", 
+            "symbol": "qW",  
+            "notation": "10<sup>-30</sup>" 
+        },
+        "rontowatt": {  
+            "val": "1e-27", 
+            "symbol": "rW",  
+            "notation": "10<sup>-27</sup>" 
+        },
+        "yoctowatt": {  
+            "val": "1e-24", 
+            "symbol": "yW",  
+            "notation": "10<sup>-24</sup>" 
+        },
+        "zeptowatt": {  
+            "val": "1e-21", 
+            "symbol": "zW",  
+            "notation": "10<sup>-21</sup>" 
+        },
+        "attowatt": {  
+            "val": "1e-18", 
+            "symbol": "aW",  
+            "notation": "10<sup>-18</sup>" 
+        },
+        "femtowatt": {  
+            "val": "1e-15", 
+            "symbol": "fW",  
+            "notation": "10<sup>-15</sup>" 
+        },
+        "picowatt": {  
+            "val": "1e-12", 
+            "symbol": "pW",  
+            "notation": "10<sup>-12</sup>" 
+        },
+        "nanowatt": {  
+            "val": "1e-9", 
+            "symbol": "nW",  
+            "notation": "10<sup>-9</sup>" 
+        },
+        "microwatt": {  
+            "val": "1e-6", 
+            "symbol": "µW",  
+            "notation": "10<sup>-6</sup>" 
+        },
+        "milliwatt": {  
+            "val": "1e-3", 
+            "symbol": "mW",  
+            "notation": "10<sup>-3</sup>" 
+        },
+        "centiwatt": {  
+            "val": "1e-2", 
+            "symbol": "cW",  
+            "notation": "10<sup>-2</sup>" 
+        },
+        "deciwatt": {  
+            "val": "1e-1", 
+            "symbol": "dW",  
+            "notation": "10<sup>-1</sup>" 
+        },
+        "watt": {  
+            "val": "1", 
+            "symbol": "W",  
+            "notation": "10<sup>0</sup>" 
+        },
+        "dekawatt": {  
+            "val": "1e1", 
+            "symbol": "daW",  
+            "notation": "10<sup>1</sup>" 
+        },
+        "hectowatt": {  
+            "val": "1e2", 
+            "symbol": "hW",  
+            "notation": "10<sup>2</sup>" 
+        },
+        "kilowatt": {  
+            "val": "1e3", 
+            "symbol": "kW",  
+            "notation": "10<sup>3</sup>" 
+        },
+        "megawatt": {  
+            "val": "1e6", 
+            "symbol": "MW",  
+            "notation": "10<sup>6</sup>" 
+        },
+        "gigawatt": {  
+            "val": "1e9", 
+            "symbol": "GW",  
+            "notation": "10<sup>9</sup>" 
+        },
+        "terawatt": {  
+            "val": "1e12", 
+            "symbol": "TW",  
+            "notation": "10<sup>12</sup>" 
+        },
+        "petawatt": {  
+            "val": "1e15", 
+            "symbol": "PW",  
+            "notation": "10<sup>15</sup>" 
+        },
+        "exawatt": {  
+            "val": "1e18", 
+            "symbol": "EW",  
+            "notation": "10<sup>18</sup>" 
+        },
+        "zettawatt": {  
+            "val": "1e21", 
+            "symbol": "ZW",  
+            "notation": "10<sup>21</sup>" 
+        },
+        "yottawatt": {  
+            "val": "1e24", 
+            "symbol": "YW",  
+            "notation": "10<sup>24</sup>" 
+        },
+        "ronnawatt": {  
+            "val": "1e27", 
+            "symbol": "RW",  
+            "notation": "10<sup>27</sup>" 
+        },
+        "quettawatt": {  
+            "val": "1e30", 
+            "symbol": "QW",  
+            "notation": "10<sup>30</sup>" 
+        }
+        
+    },
+
+    "electrical-power": {
+
+        "table": [
+            "symbol",
+            "notation",
+            "metric"
+        ],
+
+        "nanovolt-ampere": {  
+            "val": "1e-9", 
+            "symbol": "nV⋅A",  
+            "notation": "10<sup>-9</sup>",
+            "metric": "1 nW"
+        },
+        "microvolt-ampere": {  
+            "val": "1e-6", 
+            "symbol": "µV⋅A",  
+            "notation": "10<sup>-6</sup>",
+            "metric": "1 µW"
+        },
+        "millivolt-ampere": {  
+            "val": "1e-3", 
+            "symbol": "mV⋅A",  
+            "notation": "10<sup>-3</sup>",
+            "metric": "1 mW"
+        },
+        "centivolt-ampere": {  
+            "val": "1e-2", 
+            "symbol": "cV⋅A",  
+            "notation": "10<sup>-2</sup>",
+            "metric": "1 cW"
+        },
+        "decivolt-ampere": {  
+            "val": "1e-1", 
+            "symbol": "dV⋅A",  
+            "notation": "10<sup>-1</sup>",
+            "metric": "1 dW"
+        },
+        "volt-ampere": {  
+            "val": "1", 
+            "symbol": "V⋅A",  
+            "notation": "10<sup>0</sup>",
+            "metric": "1 W"
+        },
+        "dekavolt-ampere": {  
+            "val": "1e1", 
+            "symbol": "daV⋅A",  
+            "notation": "10<sup>1</sup>",
+            "metric": "1 daW"
+        },
+        "hectovolt-ampere": {  
+            "val": "1e2", 
+            "symbol": "hV⋅A",  
+            "notation": "10<sup>2</sup>",
+            "metric": "1 hW"
+        },
+        "kilovolt-ampere": {  
+            "val": "1e3", 
+            "symbol": "kV⋅A",  
+            "notation": "10<sup>3</sup>",
+            "metric": "1 kW"
+        },
+        "megavolt-ampere": {  
+            "val": "1e6", 
+            "symbol": "MV⋅A",  
+            "notation": "10<sup>6</sup>",
+            "metric": "1 MW"
+        },
+        "gigavolt-ampere": {  
+            "val": "1e9", 
+            "symbol": "GV⋅A",  
+            "notation": "10<sup>9</sup>",
+            "metric": "1 GW"
+        }
+        
+    },
+
+    "CGS": {
+
+        "table": [
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "erg-second": {  
+            "val": "1e-7", 
+            "symbol": "erg/s",
+            "metric": "0.1 µW",
+            "equivalent": "60 erg/min"
+        },
+        "erg-minute": {  
+            "val": "1.66666666666666666667e-9", 
+            "symbol": "erg/min",
+            "metric": "~1.667 nW",
+            "equivalent": "1/60 erg/s"
+        },
+        "erg-hour": {  
+            "val": "2.77777777777777777778e-11", 
+            "symbol": "erg/h",
+            "metric": "~2.778 dW",
+            "equivalent": "1/3600 erg/s"
+        }
+        
+    },
+
+    "imperial": {
+
+        "table": [
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "foot-pound-force-second": {  
+            "val": "1.3558179483314004", 
+            "symbol": "ft⋅lbf/s",
+            "metric": "~1.356 W",
+            "equivalent": "60 ft⋅lbf/min"
+        },
+        "foot-pound-force-minute": {  
+            "val": "0.02259696580552334", 
+            "symbol": "ft⋅lbf/min",
+            "metric": "~22.597 mW",
+            "equivalent": "1/60 ft⋅lbf/s"
+        },
+        "BTU-second": {  
+            "val": "1.05505585261999999999e3", 
+            "symbol": "BTU/s",
+            "metric": "~1.055 kW",
+            "equivalent": "60 BTU/min"
+        },
+        "BTU-minute": {  
+            "val": "17.58426421033333333317", 
+            "symbol": "BTU/min",
+            "metric": "~17.584 W",
+            "equivalent": "1/60 BTU/s"
+        },
+        "BTU-hour": {  
+            "val": "2.93071070172222222219e-1", 
+            "symbol": "BTU/h",
+            "metric": "~0.293 W",
+            "equivalent": "1/3600 BTU/s"
+        },
+        "ton-refrigeration": {  
+            "val": "3516.85284206666666663333", 
+            "symbol": "TR",
+            "metric": "~3.517 kW",
+            "equivalent": "12000 BTU/h"
+        },
+        "therm-hour": {  
+            "val": "29307.1070172222222219", 
+            "symbol": "thm/h",
+            "metric": "~29.307 kW",
+            "equivalent": "100000 BTU/h"
+        }
+        
+    },
+
+    "horsepower": {
+
+        "table": [
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "horsepower-metric": {  
+            "val": "735.49875", 
+            "symbol": "PS",
+            "metric": "~0.735 kW",
+            "equivalent": "75 kgf⋅m/s"
+        },
+        "horsepower-mechanical": {  
+            "val": "745.69987158227022", 
+            "symbol": "hp",
+            "metric": "~0.746 kW",
+            "equivalent": "33000 ft⋅lbf/min"
+        },
+        "horsepower-electrical": {  
+            "val": "746", 
+            "symbol": "hp(E)",
+            "metric": "~0.746 kW",
+            "equivalent": "~1 hp"
+        },
+        "horsepower-boiler": {  
+            "val": "9810.554074015138888781025", 
+            "symbol": "bhp",
+            "metric": "~9.811 kW",
+            "equivalent": "33475 BTU/h"
+        }
+        
+    },
+
+    "caloric-power": {
+
+        "table": [
+            "symbol",
+            "metric",
+            "equivalent"
+        ],
+
+        "calorie-second": {  
+            "val": "4.184", 
+            "symbol": "cal/s",
+            "metric": "4.184 W",
+            "equivalent": "0.001 kcal/s"
+        },
+        "calorie-minute": {  
+            "val": "6.97333333333333333333e-2", 
+            "symbol": "cal/min",
+            "metric": "~69.733 mW",
+            "equivalent": "1/60 cal/s"
+        },
+        "calorie-hour": {  
+            "val": "1.16222222222222222222e-3", 
+            "symbol": "cal/h",
+            "metric": "~1.162 mW",
+            "equivalent": "1/3600 cal/s"
+        },
+        "kilocalorie-second": {  
+            "val": "4.184e3", 
+            "symbol": "kcal/s",
+            "metric": "4.184 kW",
+            "equivalent": "1000 cal/s"
+        },
+        "kilocalorie-minute": {  
+            "val": "6.97333333333333333333e1", 
+            "symbol": "kcal/min",
+            "metric": "~69.733 W",
+            "equivalent": "1/60 kcal/s"
+        },
+        "kilocalorie-hour": {  
+            "val": "1.16222222222222222222", 
+            "symbol": "kcal/h",
+            "metric": "~1.162 W",
+            "equivalent": "1/3600 kcal/s"
+        }
+        
+    },
+
+    "other": {
+
+        "table": [
+            "symbol",
+            "metric"
+        ],
+
+        "newton-meter-second": {  
+            "val": "1", 
+            "symbol": "N·m/s",
+            "metric": "1 W"
+        },
+        "joule-second": {  
+            "val": "1", 
+            "symbol": "J/s",  
+            "metric": "1 W" 
+        },
+        "kilojoule-second": {  
+            "val": "1e3", 
+            "symbol": "kJ/s",
+            "metric": "1 kW"
+        },
+        "dyne-centimeter-second": {  
+            "val": "1e-7", 
+            "symbol": "dyn·cm/s",
+            "metric": "0.1 µW"
+        },
+        "planck-power": {  
+            "val": "36282540807511707189541470916223299042478100193891586.43090333592960243939", 
+            "symbol": "P<sub>P</sub>",
+            "metric": "~3.628e22 QW"
+        }
+        
+    }
+
+}

@@ -18,7 +18,53 @@
         size:A4;
     }
 
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
         /* Reset / Disable */
+
+    :root .theme-dark{
+
+            /* Colors */
+    
+        /* Main */
+        --color1a:#62D2FD;
+        --color1b:#2086B6;
+    
+        /* Accent */
+        --color2a:#BF4FFF;
+        --color2b:#A727DA;
+    
+        /* Main BG */
+        --color3:#F8FAFE;
+        --color3st1:rgb(248,250,254,0.92);
+        --color3b:#FFFFFF;
+    
+    
+    
+            /* Text Colors */
+    
+        --txt1:#333333;
+        --txt2:#4A4A4A;
+        --txt3:#777777;
+    
+        --txt-rev1:#FFFFFF;
+        --txt-rev2:#EEEEEE;
+    
+    
+    
+            /* Box Shadows */
+    
+        --shadowColor1:#CFCFCF;
+        --shadowColor2:#D4DFE5;
+    
+        --boxShadow1:0 0 10px 1px var(--shadowColor2);
+        --boxShadow2:0 0 2px 1px var(--shadowColor2);
+        --boxShadowIns1:inset 0 0 2px 0 var(--shadowColor1);
+        
+    }
 
     .no-print{
         display:none !important;
@@ -53,13 +99,17 @@
     .outer-table.glass{
         page-break-inside:avoid;
 
+        .separate-pages &{
+            page-break-before:always;
+        }
+
         & .converter-table{
         
             & :is(td.name, th.name){
                 width:320px;
             }
 
-            & tbody tr{
+            & tr{
                 border-top:solid var(--size05) var(--shadowColor2);
             }
 

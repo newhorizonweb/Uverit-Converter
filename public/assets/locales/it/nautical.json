@@ -1,0 +1,35 @@
+
+{
+
+    "metric-units": "unità metriche",
+    "imperial-units": "unità imperiali",
+    "nautical-units": "unità nautiche",
+
+    "metric": {
+        "millimeter": "millimetro",
+        "centimeter": "centimetro",
+        "decimeter": "decimetro",
+        "meter": "metro",
+        "kilometer": "chilometro"
+    },
+
+    "imperial": {
+        "inch": "pollice",
+        "foot": "piede",
+        "yard": "giarda",
+        "mile": "miglio",
+        "league": "lega"
+    },
+
+    "nautical": {
+        "fathom": "fathom",
+        "shackle": "galloccia",
+        "cable-uk": "cavo (UK)",
+        "cable-us": "cavo (US)",
+        "nautical-mile": "miglio nautico",
+        "admiralty-mile": "miglio dell'ammiragliato",
+        "nautical-league": "lega nautica",
+        "admiralty-league": "lega dell'ammiragliato"
+    }
+    
+}

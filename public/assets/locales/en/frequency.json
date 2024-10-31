@@ -1,0 +1,57 @@
+
+{
+
+    "SI-units": "SI units",
+    "scientific-units": "scientific units",
+    "angular-units": "angular units",
+    "other-units": "other units",
+
+    "SI": {
+        "quectohertz": "quectohertz",
+        "rontohertz": "rontohertz",
+        "yoctohertz": "yoctohertz",
+        "zeptohertz": "zeptohertz",
+        "attohertz": "attohertz",
+        "femtohertz": "femtohertz",
+        "picohertz": "picohertz",
+        "nanohertz": "nanohertz",
+        "microhertz": "microhertz",
+        "millihertz": "millihertz",
+        "centihertz": "centihertz",
+        "decihertz": "decihertz",
+        "hertz": "hertz",
+        "dekahertz": "dekahertz",
+        "hectohertz": "hectohertz",
+        "kilohertz": "kilohertz",
+        "megahertz": "megahertz",
+        "gigahertz": "gigahertz",
+        "terahertz": "terahertz",
+        "petahertz": "petahertz",
+        "exahertz": "exahertz",
+        "zettahertz": "zettahertz",
+        "yottahertz": "yottahertz",
+        "ronnahertz": "ronnahertz",
+        "quettahertz": "quettahertz"
+    },
+    
+    "scientific": {
+        "becquerel": "becquerel",
+        "curie": "curie"
+    },
+
+    "angular": {
+        "degree-second": "degree per second",
+        "radian-second": "radian per second"
+    },
+
+    "other": {
+        "beat-minute": "beat per minute",
+        "beat-second": "beat per second",
+        "cycle-minute": "cycle per minute",
+        "cycle-second": "cycle per second",
+        "frame-second": "frame per second",
+        "revolution-minute": "revolution per minute",
+        "revolution-second": "revolution per second"
+    }
+    
+}

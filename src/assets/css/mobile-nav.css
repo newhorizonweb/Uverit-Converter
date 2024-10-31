@@ -29,7 +29,7 @@ nav.glass{
         
         opacity:0;
         pointer-events:none;
-        transition:var(--trans1);
+        transition:all var(--trans1), height 0, width 0;
         
         & .nav-group-list{
             width:160px;
@@ -103,11 +103,23 @@ nav.glass{
                     align-items:center;
                     gap:var(--size2);
                     text-transform:capitalize;
+
+                    &:hover svg{
+                        height:calc(100% - var(--size2));
+                    }
+
+                    & .tile-icon{
+                        height:var(--size9);
+                        display:flex;
+                        justify-content:center;
+                        align-items:center;
+                    }
                     
                     & svg{
                         width:var(--size9);
                         height:var(--size9);
                         aspect-ratio:1/1;
+                        transition:var(--trans1);
     
                         & *{
                             fill:none;
@@ -194,12 +206,25 @@ nav.glass{
     nav.glass{
         
         & .nav-popup{
-            height:auto;
+            --list-height:150px;
+            --nav:calc(var(--size7) + (var(--size6) * 2));
+
+            height:min(550px, 
+                calc(100dvh - (
+                    var(--nav) +
+                    (var(--size6) * 2) +
+                    var(--size3)
+                ))
+            );
             flex-direction:column;
 
             & .nav-group-list{
                 width:100%;
                 align-items:center;
+                
+                & .nav-group-list-inner{
+                    overflow-y:auto;
+                }
 
                 & .nav-group-name{
 
@@ -212,33 +237,15 @@ nav.glass{
             }
 
             & .nav-group-display{
+                overflow:auto;
                 
                 & .nav-group-display-inner{
-                    max-height:192px;
+                    max-height:100%;
+                    overflow-y:auto;
                 }
 
                 & .nav-group{
                     grid-template-columns:repeat(3, 1fr);
-                }
-    
-            }
-
-        }
-        
-    }
-
-}
-
-@media screen and (width <= 540px){
-
-    nav.glass{
-        
-        & .nav-popup{
-
-            & .nav-group-display{
-
-                & .nav-group{
-                    grid-template-columns:repeat(2, 1fr);
                 }
     
             }
@@ -254,12 +261,75 @@ nav.glass{
     nav.glass{
         
         & .nav-popup{
+            --list-height:110px;
+
             height:calc(100dvh - (
                 (var(--size6) * 4) + var(--size3) + var(--size7)
             ));
             
         }
     
+    }
+
+}
+
+@media screen and (width <= 600px) and (height <= 600px){
+
+    nav.glass{
+        
+        & .nav-popup{
+            
+            & .nav-group-list{
+                height:var(--list-height);
+            }
+
+            & .nav-group-display{
+                height:calc(100% - var(--size6) - var(--list-height));
+            }
+
+        }
+        
+    }
+
+}
+
+@media screen and (width <= 540px){
+
+    nav.glass{
+        
+        & .nav-popup{
+            --nav:calc(var(--size7) + (var(--size5) * 2));
+
+            height:min(550px, 
+                calc(100dvh - (
+                    var(--nav) +
+                    (var(--size5) * 2) +
+                    var(--size3)
+                ))
+            );
+
+            & .nav-group-display{
+
+                & .nav-group{
+                    grid-template-columns:repeat(2, 1fr);
+                }
+    
+            }
+
+        }
+        
+    }
+
+}
+
+@media screen and (width <= 440px){
+
+    nav.glass{
+        
+        & .nav-popup{
+            --nav:calc(var(--size6) + (var(--size5) * 2));
+        }
+        
     }
 
 }
@@ -278,6 +348,18 @@ nav.glass{
     
             }
 
+        }
+        
+    }
+
+}
+
+@media screen and (width <= 320px){
+
+    nav.glass{
+        
+        & .nav-popup{
+            --nav:100px;
         }
         
     }

@@ -12,6 +12,10 @@
 
     /* No Content */
 
+body:has(.no-content) footer{
+    opacity:0;
+}
+
 .no-content{
     display:flex;
     justify-content:center;

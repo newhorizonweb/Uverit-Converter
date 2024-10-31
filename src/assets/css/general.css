@@ -101,7 +101,7 @@
     --color2a:#A727DA;
 
     /* Main BG */
-    --color3:#111316;;
+    --color3:#111316;
     --color3st1:rgb(17,19,22,0.92);
     --color3b:#212527;
 
@@ -159,6 +159,10 @@ p, a, select, label, button, input, select, textarea, th, td{
     text-wrap:pretty;
     text-decoration:none;
     transition:color var(--trans2);
+}
+
+th, td{
+    text-wrap:balance;
 }
 
 @media screen and (width <= 440px){
@@ -363,6 +367,15 @@ button{
     background-color:transparent;
     border:none;
     outline:none;
+}
+
+.App > div > section.wrapper svg *{
+    fill:none;
+    stroke:var(--txt3);
+    stroke-miterlimit:10;
+    stroke-linejoin:round;
+    stroke-linecap:round;
+    transition:var(--trans1);
 }
 
 

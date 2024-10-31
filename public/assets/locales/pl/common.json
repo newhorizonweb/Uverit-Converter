@@ -4,16 +4,21 @@
     "metric-units": "jednostki metryczne",
     "imperial-units": "jednostki imperialne",
 
-    "metric":{
+    "metric": {
+        "millimeter": "milimetr",
         "centimeter": "centymetr",
         "decimeter": "decymetr",
-        "meter": "metr"
+        "meter": "metr",
+        "dekameter": "dekametr",
+        "hectometer": "hektometr",
+        "kilometer": "kilometr"
     },
 
-    "imperial":{
+    "imperial": {
         "inch": "cal",
         "foot": "stopa",
-        "yard": "jard"
+        "yard": "jard",
+        "mile": "mila"
     }
     
 }

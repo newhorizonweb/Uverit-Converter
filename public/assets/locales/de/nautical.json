@@ -1,0 +1,35 @@
+
+{
+    
+    "metric-units": "metrische Einheiten",
+    "imperial-units": "imperiale Einheiten",
+    "nautical-units": "nautische Einheiten",
+
+    "metric": {
+        "millimeter": "Millimeter",
+        "centimeter": "Zentimeter",
+        "decimeter": "Dezimeter",
+        "meter": "Meter",
+        "kilometer": "Kilometer"
+    },
+
+    "imperial": {
+        "inch": "Zoll",
+        "foot": "Fuß",
+        "yard": "Yard",
+        "mile": "Meile",
+        "league": "Liga"
+    },
+
+    "nautical": {
+        "fathom": "Fathom",
+        "shackle": "Schäkel",
+        "cable-uk": "Seil (UK)",
+        "cable-us": "Seil (US)",
+        "nautical-mile": "Seemeile",
+        "admiralty-mile": "Admiralitätsmeile",
+        "nautical-league": "Seeliga",
+        "admiralty-league": "Admiralitätsliga"
+    }
+
+}

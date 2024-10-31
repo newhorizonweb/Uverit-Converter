@@ -1,0 +1,68 @@
+
+{
+
+    "metric-units": "unità metriche",
+    "metric-microscopic-units": "unità metriche (microscopiche)",
+    "imperial-units": "unità imperiali",
+    "scientific-units": "unità scientifiche",
+    
+    "metric": {
+        "gram-micrometer": "grammo per micrometro cubo",
+        "gram-millimeter": "grammo per millimetro cubo",
+        "gram-centimeter": "grammo per centimetro cubo",
+        "gram-decimeter": "grammo per decimetro cubo",
+        "gram-meter": "grammo per metro cubo",
+        "kilogram-centimeter": "chilogrammo per centimetro cubo",
+        "kilogram-decimeter": "chilogrammo per decimetro cubo",
+        "kilogram-meter": "chilogrammo per metro cubo",
+        "tonne-meter": "tonnellata per metro cubo"
+    },
+
+    "metric-microscopic": {
+        "quectogram-meter": "quectogrammo per metro cubo",
+        "rontogram-meter": "rontogrammo per metro cubo",
+        "yoctogram-meter": "yoctogrammo per metro cubo",
+        "attogram-meter": "attogrammo per metro cubo",
+        "femtogram-micrometer": "femtogrammo per micrometro cubo",
+        "femtogram-meter": "femtogrammo per metro cubo",
+        "picogram-nanometer": "picogrammo per nanometro cubo",
+        "picogram-meter": "picogrammo per metro cubo",
+        "nanogram-micrometer": "nanogrammo per micrometro cubo",
+        "nanogram-meter": "nanogrammo per metro cubo",
+        "microgram-centimeter": "microgrammo per centimetro cubo",
+        "microgram-meter": "microgrammo per metro cubo",
+        "milligram-centimeter": "milligrammo per centimetro cubo",
+        "milligram-meter": "milligrammo per metro cubo"
+    },
+    
+    "imperial": {
+        "grain-gallon": "grano per gallone",
+        "ounce-inch": "oncia per pollice cubo",
+        "ounce-foot": "oncia per piede cubo",
+        "ounce-yard": "oncia per iarda cubica",
+        "pound-inch": "libbra per pollice cubo",
+        "pound-foot": "libbra per piede cubo",
+        "pound-yard": "libbra per iarda cubica",
+        "pound-bushel": "libbra per staio",
+        "pound-gallon": "libbra per gallone",
+        "slug-foot": "slug per piede cubo",
+        "troy-ounce-inch": "oncia troy per pollice cubo",
+        "troy-ounce-foot": "oncia troy per piede cubo",
+        "troy-pound-inch": "libbra troy per pollice cubo",
+        "troy-pound-foot": "libbra troy per piede cubo"
+    },
+
+    "scientific": {
+        "proton-mass-parsec": "massa del protone per parsec cubo",
+        "electronvolt-meter": "elettronvolt per metro cubo",
+        "electron-mass-meter": "massa dell'elettrone per metro cubo",
+        "dalton-centimeter": "dalton per centimetro cubo",
+        "dalton-meter": "dalton per metro cubo",
+        "solar-parsec": "massa solare per parsec cubo",
+        "solar-light-year": "massa solare per anno luce cubo",
+        "planck-mass-meter": "massa di Planck per metro cubo",
+        "earth-kilometer": "massa terrestre per chilometro cubo",
+        "jupiter-kilometer": "massa di Giove per chilometro cubo"
+    }
+
+}

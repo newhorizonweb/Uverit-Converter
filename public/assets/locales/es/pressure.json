@@ -1,0 +1,77 @@
+
+{
+
+    "SI-units": "unidades SI",
+    "barometric-units": "unidades barométricas",
+    "atmospheric-units": "unidades atmosféricas",
+    "water-based-units": "unidades basadas en agua",
+    "mercury-based-units": "unidades basadas en mercurio",
+    "imperial-units": "unidades imperiales",
+    "other-units": "otras unidades",
+
+    "SI": {
+        "nanopascal": "nanopascal",
+        "micropascal": "micropascal",
+        "millipascal": "milipascal",
+        "centipascal": "centipascal",
+        "decipascal": "decipascal",
+        "pascal": "pascal",
+        "decapascal": "decapascal",
+        "hectopascal": "hectopascal",
+        "kilopascal": "kilopascal",
+        "megapascal": "megapascal",
+        "gigapascal": "gigapascal"
+    },
+
+    "barometric": {
+        "nanobar": "nanobar",
+        "microbar": "microbar",
+        "millibar": "milibar",
+        "centibar": "centibar",
+        "decibar": "decibar",
+        "bar": "bar",
+        "decabar": "decabar",
+        "hectobar": "hectobar",
+        "kilobar": "kilobar",
+        "megabar": "megabar",
+        "gigabar": "gigabar"
+    },
+
+    "atmospheric": {
+        "technical-atmosphere": "atmósfera técnica",
+        "standard-atmosphere": "atmósfera estándar"
+    },
+
+    "water-based": {
+        "millimeter-water": "milímetro de agua",
+        "centimeter-water": "centímetro de agua",
+        "inch-water": "pulgada de agua",
+        "foot-water": "pie de agua",
+        "meter-sea-water": "metro de agua de mar",
+        "foot-sea-water": "pie de agua de mar"
+    },
+
+    "mercury-based": {
+        "millimeter-mercury": "milímetro de mercurio",
+        "centimeter-mercury": "centímetro de mercurio",
+        "inch-mercury": "pulgada de mercurio",
+        "foot-mercury": "pie de mercurio"
+    },
+
+    "imperial": {
+        "pound-sq-foot": "libra por pie cuadrado",
+        "pound-sq-inch": "libra por pulgada cuadrada",
+        "kilopound-sq-foot": "kilibra por pie cuadrado",
+        "kilopound-sq-inch": "kilibra por pulgada cuadrada"
+    },
+
+    "other": {
+        "millitorr": "militorr",
+        "barye": "baria",
+        "newton-sq-meter": "newton por metro cuadrado",
+        "torr": "torr",
+        "kilonewton-sq-meter": "kilonewton por metro cuadrado",
+        "pièze": "pieza"
+    }
+
+}

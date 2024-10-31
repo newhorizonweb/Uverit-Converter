@@ -15,8 +15,8 @@
             "common": "common",
             "microscopic": "microscopic",
             "astronomical": "astronomical",
-            "marine": "marine",
-            "archaic": "archaic"
+            "nautical": "nautical",
+            "obsolete": "obsolete"
         },
         "space":{
             "space": "space",
@@ -39,8 +39,8 @@
         },
         "data":{
             "data": "data",
-            "numeral-systems": "numeral systems",
-            "data-storage": "data storage",
+            "numeral_systems": "numeral systems",
+            "data_storage": "data storage",
             "quantity": "quantity"
         }
     }

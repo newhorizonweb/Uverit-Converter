@@ -1,0 +1,118 @@
+
+{
+
+    "metric-units": "unités métriques",
+    "CGS-units": "unités CGS",
+    "watt-hours-units": "wattheures",
+    "electronvolts-units": "électronvolts",
+    "tons-of-tnt-units": "tonnes de TNT",
+    "imperial-units": "unités impériales",
+    "scientific-units": "unités scientifiques",
+    "other-units": "autres unités",
+    
+    "metric": {
+        "quectojoule": "quectojoule",
+        "rontojoule": "rontojoule",
+        "yoctojoule": "yoctojoule",
+        "zeptojoule": "zeptojoule",
+        "attojoule": "attojoule",
+        "femtojoule": "femtojoule",
+        "picojoule": "picojoule",
+        "nanojoule": "nanojoule",
+        "microjoule": "microjoule",
+        "millijoule": "millijoule",
+        "centijoule": "centijoule",
+        "decijoule": "décijoule",
+        "joule": "joule",
+        "dekajoule": "décajoule",
+        "hectojoule": "hectojoule",
+        "kilojoule": "kilojoule",
+        "megajoule": "mégajoule",
+        "gigajoule": "gigajoule",
+        "terajoule": "térajoule",
+        "petajoule": "pétajoule",
+        "exajoule": "exajoule",
+        "zettajoule": "zettajoule",
+        "yottajoule": "yottajoule",
+        "ronnajoule": "ronnajoule",
+        "quettajoule": "quettajoule"
+    },
+
+    "CGS": {
+        "erg": "erg",
+        "calorie": "calorie",
+        "table-calorie": "calorie de la Table Internationale de la Vapeur",
+        "kilocalorie": "kilocalorie"
+    },
+
+    "watt-hours": {
+        "femtowatt-hour": "femtowattheure",
+        "picowatt-hour": "picowattheure",
+        "nanowatt-hour": "nanowattheure",
+        "microwatt-hour": "microwattheure",
+        "milliwatt-hour": "milliwattheure",
+        "centiwatt-hour": "centiwattheure",
+        "deciwatt-hour": "déciwattheure",
+        "watt-hour": "wattheure",
+        "dekawatt-hour": "décawattheure",
+        "hectowatt-hour": "hectowattheure",
+        "kilowatt-hour": "kilowattheure",
+        "megawatt-hour": "mégawattheure",
+        "gigawatt-hour": "gigawattheure",
+        "terawatt-hour": "térwattheure",
+        "petawatt-hour": "pétawattheure"
+    },
+
+    "electronvolts": {
+        "femtoelectronvolt": "femtoélectronvolt",
+        "picoelectronvolt": "picoélectronvolt",
+        "nanoelectronvolt": "nanoélectronvolt",
+        "microelectronvolt": "microélectronvolt",
+        "millielectronvolt": "millielectronvolt",
+        "centielectronvolt": "centiélectronvolt",
+        "decielectronvolt": "déciélectronvolt",
+        "electronvolt": "électronvolt",
+        "dekaelectronvolt": "dékaélectronvolt",
+        "hectoelectronvolt": "hectoélectronvolt",
+        "kiloelectronvolt": "kiloélectronvolt",
+        "megaelectronvolt": "mégaélectronvolt",
+        "gigaelectronvolt": "gigaélectronvolt",
+        "teraelectronvolt": "téraélectronvolt",
+        "petaelectronvolt": "pétaélectronvolt"
+    },
+
+    "tons-of-tnt": {
+        "ton-tnt": "tonne de TNT",
+        "kiloton-tnt": "kilotonne de TNT",
+        "megaton-tnt": "mégatonne de TNT",
+        "gigaton-tnt": "gigatonne de TNT",
+        "teraton-tnt": "tératonne de TNT",
+        "petaton-tnt": "pétatonne de TNT"
+    },
+
+    "imperial": {
+        "foot-pound-force": "pied-livre force",
+        "horsepower-hour": "heure cheval-vapeur",
+        "btu": "unité thermique britannique (BTU)",
+        "kilobtu": "kilobtu",
+        "therm": "therm",
+        "decatherm": "décatherm",
+        "quad": "quad"
+    },
+
+    "scientific": {
+        "rydberg-constant": "constante de Rydberg",
+        "hartree": "hartree",
+        "planck-energy": "énergie de Planck"
+    },
+
+    "other": {
+        "tonne-coal": "tonne équivalent charbon",
+        "kilotonne-coal": "kilotonne équivalent charbon",
+        "megatonne-coal": "mégatonne équivalent charbon",
+        "tonne-oil": "tonne équivalent pétrole",
+        "kilotonne-oil": "kilotonne équivalent pétrole",
+        "megatonne-oil": "mégatonne équivalent pétrole"
+    }
+
+}

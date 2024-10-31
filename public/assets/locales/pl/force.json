@@ -1,0 +1,57 @@
+
+{
+
+    "SI-units": "Jednostki SI",
+    "CGS-units": "Jednostki CGS",
+    "gravitational-units": "Jednostki grawitacyjne",
+    "imperial-units": "Jednostki imperialne",
+    "other-units": "Inne jednostki",
+
+    "SI": {
+        "nanonewton": "nanoniuton",
+        "micronewton": "mikroniuton",
+        "millinewton": "miliniuton",
+        "centinewton": "centyniuton",
+        "decinewton": "decyniuton",
+        "newton": "niuton",
+        "decanewton": "dekaniuton",
+        "hectonewton": "hektoniuton",
+        "kilonewton": "kiloniuton",
+        "meganewton": "meganiuton",
+        "giganewton": "giganiuton"
+    },
+
+    "CGS": {
+        "nanodyne": "nanodyna",
+        "microdyne": "mikrodyna",
+        "millidyne": "milidyna",
+        "centidyne": "centydyna",
+        "decidyne": "decydyna",
+        "dyne": "dyna",
+        "decadyne": "dekadyna",
+        "hectodyne": "hektodyna",
+        "kilodyne": "kilodyna",
+        "megadyne": "megadyna",
+        "gigadyne": "gigadyna"
+    },
+
+    "gravitational": {
+        "gram-force": "gram-siła",
+        "kilogram-force": "kilogram-siła",
+        "ton-force": "tona-siła (metryczna)"
+    },
+
+    "imperial": {
+        "ounce-force": "uncja-siła",
+        "pound-force": "funt-siła",
+        "kip": "kip",
+        "ton-force-us": "tona-siła (US)",
+        "ton-force-uk": "tona-siła (UK)"
+    },
+
+    "other": {
+        "sthène": "sten",
+        "planck-force": "siła Plancka"
+    }
+
+}

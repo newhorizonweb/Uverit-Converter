@@ -1,0 +1,77 @@
+
+{
+
+    "SI-units": "jednostki SI",
+    "barometric-units": "jednostki barometryczne",
+    "atmospheric-units": "jednostki atmosferyczne",
+    "water-based-units": "jednostki oparte na wodzie",
+    "mercury-based-units": "jednostki oparte na rtęci",
+    "imperial-units": "jednostki imperialne",
+    "other-units": "inne jednostki",
+
+    "SI": {
+        "nanopascal": "nanopaskal",
+        "micropascal": "mikropaskal",
+        "millipascal": "milipaskal",
+        "centipascal": "centypaskal",
+        "decipascal": "decypaskal",
+        "pascal": "paskal",
+        "decapascal": "dekapaskal",
+        "hectopascal": "hektopaskal",
+        "kilopascal": "kilopaskal",
+        "megapascal": "megapaskal",
+        "gigapascal": "gigapaskal"
+    },
+
+    "barometric": {
+        "nanobar": "nanobar",
+        "microbar": "mikrobar",
+        "millibar": "milibar",
+        "centibar": "centybar",
+        "decibar": "decybar",
+        "bar": "bar",
+        "decabar": "dekabar",
+        "hectobar": "hektobar",
+        "kilobar": "kilobar",
+        "megabar": "megabar",
+        "gigabar": "gigabar"
+    },
+
+    "atmospheric": {
+        "technical-atmosphere": "atmosfera techniczna",
+        "standard-atmosphere": "atmosfera standardowa"
+    },
+
+    "water-based": {
+        "millimeter-water": "milimetr słupa wody",
+        "centimeter-water": "centymetr słupa wody",
+        "inch-water": "cal słupa wody",
+        "foot-water": "stopa słupa wody",
+        "meter-sea-water": "metr słupa wody morskiej",
+        "foot-sea-water": "stopa słupa wody morskiej"
+    },
+
+    "mercury-based": {
+        "millimeter-mercury": "milimetr słupa rtęci",
+        "centimeter-mercury": "centymetr słupa rtęci",
+        "inch-mercury": "cal słupa rtęci",
+        "foot-mercury": "stopa słupa rtęci"
+    },
+
+    "imperial": {
+        "pound-sq-foot": "funt na stopę kwadratową",
+        "pound-sq-inch": "funt na cal kwadratowy",
+        "kilopound-sq-foot": "kilofunt na stopę kwadratową",
+        "kilopound-sq-inch": "kilofunt na cal kwadratowy"
+    },
+
+    "other": {
+        "millitorr": "militor",
+        "barye": "baria",
+        "newton-sq-meter": "niuton na metr kwadratowy",
+        "torr": "tor",
+        "kilonewton-sq-meter": "kiloniuton na metr kwadratowy",
+        "pièze": "pieza"
+    }
+
+}

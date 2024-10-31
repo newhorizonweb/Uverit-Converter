@@ -1,0 +1,52 @@
+
+{
+
+    "metric-units": "unidades métricas",
+    "imperial-units": "unidades imperiales",
+    "nautical-units": "unidades náuticas",
+    "scientific-units": "unidades científicas",
+
+    "metric": {
+        "centimeter-second": "centímetro por segundo",
+        "centimeter-minute": "centímetro por minuto",
+        "centimeter-hour": "centímetro por hora",
+        "meter-second": "metro por segundo",
+        "meter-minute": "metro por minuto",
+        "meter-hour": "metro por hora",
+        "kilometer-second": "kilómetro por segundo",
+        "kilometer-minute": "kilómetro por minuto",
+        "kilometer-hour": "kilómetro por hora"
+    },
+
+    "imperial": {
+        "inch-second": "pulgada por segundo",
+        "inch-minute": "pulgada por minuto",
+        "inch-hour": "pulgada por hora",
+        "foot-second": "pie por segundo",
+        "foot-minute": "pie por minuto",
+        "foot-hour": "pie por hora",
+        "yard-second": "yarda por segundo",
+        "yard-minute": "yarda por minuto",
+        "yard-hour": "yarda por hora",
+        "mile-second": "milla por segundo",
+        "mile-minute": "milla por minuto",
+        "mile-hour": "milla por hora"
+    },
+
+    "nautical": {
+        "knot": "nudo"
+    },
+
+    "scientific": {
+        "sound-air-0": "velocidad del sonido (aire, 0°C)",
+        "sound-air-20": "velocidad del sonido (aire, 20°C)",
+        "sound-water-0": "velocidad del sonido (agua, 0°C)",
+        "sound-water-20": "velocidad del sonido (agua, 20°C)",
+        "au-day": "unidad astronómica por día",
+        "light-water-20": "velocidad de la luz (agua, 20°C)",
+        "light-air-20": "velocidad de la luz (aire, 20°C)",
+        "light-vacuum": "velocidad de la luz (vacío)",
+        "parsec-year": "parsec por año"
+    }
+
+}
