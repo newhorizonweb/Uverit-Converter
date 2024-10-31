@@ -1,0 +1,355 @@
+
+{
+
+    "settings":{
+        "operation": "true",
+        "choice": "decimal",
+
+        "input-def": "2",
+        "output-def": "1",
+
+        "choice-val-min": "0",
+        "choice-val-max": "16",
+        "choice-val-def": "5"
+    },
+
+    "europe":{
+
+        "table":[
+            "quantity",
+            "common"
+        ],
+
+        "piece":{
+            "val": "1",
+            "quantity": "1",
+            "common": "t('yes')"
+        },
+        "pair":{
+            "val": "2",
+            "quantity": "2",
+            "common": "t('yes')"
+        },
+        "dozen":{
+            "val": "12",
+            "quantity": "12",
+            "common": "t('yes')"
+        },
+        "score":{
+            "val": "20",
+            "quantity": "20",
+            "common": "t('moderately')"
+        },
+        "long-hundred":{
+            "val": "120",
+            "quantity": "120",
+            "common": "t('no')"
+        },
+        "gross":{
+            "val": "144",
+            "quantity": "144",
+            "common": "t('moderately')"
+        },
+        "great-gross":{
+            "val": "1728",
+            "quantity": "1728",
+            "common": "t('no')"
+        }
+        
+    },
+
+    "europe-regional":{
+
+        "table":[
+            "quantity",
+            "region",
+            "common"
+        ],
+
+        "anderhalf":{
+            "val": "1.5",
+            "quantity": "1.5",
+            "region": "t('netherlands')",
+            "common": "t('yes')"
+        },
+        "półtora":{
+            "val": "1.5",
+            "quantity": "1.5",
+            "region": "t('poland')",
+            "common": "t('yes')"
+        },
+        "drittehalb":{
+            "val": "2.5",
+            "quantity": "2.5",
+            "region": "t('germany')",
+            "common": "t('no')"
+        },
+        "viertehalb":{
+            "val": "3.5",
+            "quantity": "3.5",
+            "region": "t('germany')",
+            "common": "t('no')"
+        },
+        "czok":{
+            "val": "4",
+            "quantity": "4",
+            "region": "t('poland')",
+            "common": "t('no')"
+        },
+        "veer":{
+            "val": "4",
+            "quantity": "4",
+            "region": "t('estonia')",
+            "common": "t('moderately')"
+        },
+        "bakers-dozen":{
+            "val": "13",
+            "quantity": "13",
+            "region": "t('england')",
+            "common": "t('moderately')"
+        },
+        "mendel":{
+            "val": "15",
+            "quantity": "15",
+            "region": "t('poland')",
+            "common": "t('no')"
+        },
+        "stiege":{
+            "val": "20",
+            "quantity": "20",
+            "region": "t('germany')",
+            "common": "t('no')"
+        },
+        "sztyga":{
+            "val": "20",
+            "quantity": "20",
+            "region": "t('poland')",
+            "common": "t('no')"
+        },
+        "morgen":{
+            "val": "25",
+            "quantity": "25",
+            "region": "t('netherlands')",
+            "common": "t('no')"
+        },
+        "izba":{
+            "val": "40",
+            "quantity": "40",
+            "region": "t('poland')",
+            "common": "t('no')"
+        },
+        "sórok":{
+            "val": "40",
+            "quantity": "40",
+            "region": "t('russia')",
+            "common": "t('no')"
+        },
+        "zimmer":{
+            "val": "40",
+            "quantity": "40",
+            "region": "t('germany')",
+            "common": "t('no')"
+        },
+        "wall":{
+            "val": "50",
+            "quantity": "50",
+            "region": "t('england')",
+            "common": "t('no')"
+        },
+        "kopa":{
+            "val": "60",
+            "quantity": "60",
+            "region": "t('poland')",
+            "common": "t('moderately')"
+        },
+        "schock":{
+            "val": "60",
+            "quantity": "60",
+            "region": "t('germany')",
+            "common": "t('moderately')"
+        },
+        "wielki-tysiąc":{
+            "val": "1440",
+            "quantity": "1440",
+            "region": "t('poland')",
+            "common": "t('no')"
+        }
+        
+    },
+
+    "fractions":{
+
+        "table":[
+            "quantity",
+            "decimal"
+        ],
+
+        "tenth":{
+            "val": "0.1",
+            "quantity": "1/10",
+            "decimal": "0.1"
+        },
+        "eighth":{
+            "val": "0.125",
+            "quantity": "1/8",
+            "decimal": "0.125"
+        },
+        "sixth":{
+            "val": "1.66666666666666666667e-1",
+            "quantity": "1/6",
+            "decimal": "~0.167"
+        },
+        "fifth":{
+            "val": "0.2",
+            "quantity": "1/5",
+            "decimal": "0.2"
+        },
+        "quarter":{
+            "val": "0.25",
+            "quantity": "1/4",
+            "decimal": "0.25"
+        },
+        "third":{
+            "val": "0.33333333333333333333",
+            "quantity": "1/3",
+            "decimal": "~0.333"
+        },
+        "half":{
+            "val": "0.5",
+            "quantity": "1/2",
+            "decimal": "0.5"
+        }
+        
+    },
+
+    "historical":{
+
+        "table":[
+            "quantity",
+            "region"
+        ],
+
+        "sesqui":{
+            "val": "1.5",
+            "quantity": "1.5",
+            "region": "t('rome')"
+        },
+        "hebdomad":{
+            "val": "7",
+            "quantity": "7",
+            "region": "t('greece')"
+        },
+        "uncia":{
+            "val": "12",
+            "quantity": "12",
+            "region": "t('rome')"
+        },
+        "pentekontad":{
+            "val": "50",
+            "quantity": "50",
+            "region": "t('greece')"
+        },
+        "maniple":{
+            "val": "60",
+            "quantity": "60",
+            "region": "t('rome')"
+        },
+        "chiliad":{
+            "val": "1000",
+            "quantity": "1000",
+            "region": "t('greece')"
+        },
+        "šār":{
+            "val": "3600",
+            "quantity": "3600",
+            "region": "t('babylon')"
+        },
+        "myriad":{
+            "val": "10000",
+            "quantity": "10000",
+            "region": "t('greece')"
+        }
+        
+    },
+
+    "africa":{
+
+        "table":[
+            "quantity",
+            "region"
+        ],
+
+        "kumir":{
+            "val": "5",
+            "quantity": "5",
+            "region": "t('east-africa')"
+        },
+        "timan":{
+            "val": "8",
+            "quantity": "8",
+            "region": "t('east-africa')"
+        },
+        "korja":{
+            "val": "20",
+            "quantity": "20",
+            "region": "t('east-africa')"
+        }
+        
+    },
+
+    "native-america":{
+
+        "table":[
+            "quantity",
+            "civilization"
+        ],
+
+        "chunka":{
+            "val": "10",
+            "quantity": "10",
+            "civilization": "t('quechua')"
+        },
+        "pantli":{
+            "val": "20",
+            "quantity": "20",
+            "civilization": "t('aztec')"
+        },
+        "huna":{
+            "val": "60",
+            "quantity": "60",
+            "civilization": "t('maya')"
+        },
+        "bak":{
+            "val": "400",
+            "quantity": "400",
+            "civilization": "t('maya')"
+        },
+        "zontle":{
+            "val": "400",
+            "quantity": "400",
+            "civilization": "t('aztec')"
+        },
+        "pachak":{
+            "val": "100",
+            "quantity": "100",
+            "civilization": "t('quechua')"
+        },
+        "waranqa":{
+            "val": "1000",
+            "quantity": "1000",
+            "civilization": "t('quechua')"
+        },
+        "pik":{
+            "val": "8000",
+            "quantity": "8000",
+            "civilization": "t('maya')"
+        },
+        "xiquipilli":{
+            "val": "8000",
+            "quantity": "8000",
+            "civilization": "t('aztec')"
+        }
+        
+    }
+
+}

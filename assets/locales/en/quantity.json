@@ -1,0 +1,104 @@
+
+{
+
+    "europe-units": "Europe",
+    "europe-regional-units": "Europe (regional)",
+    "fractions-units": "fractions",
+    "historical-units": "historical units",
+    "africa-units": "Africa",
+    "native-america-units": "Native America",
+
+    "europe": {
+        "piece": "piece",
+        "pair": "pair",
+        "dozen": "dozen",
+        "score": "score",
+        "long-hundred": "long hundred",
+        "gross": "gross",
+        "great-gross": "great gross"
+    },
+
+    "europe-regional": {
+        "anderhalf": "anderhalf",
+        "półtora": "półtora",
+        "drittehalb": "drittehalb",
+        "viertehalb": "viertehalb",
+        "czok": "czok",
+        "veer": "veer",
+        "bakers-dozen": "baker's dozen",
+        "mendel": "mendel",
+        "stiege": "stiege",
+        "sztyga": "sztyga",
+        "morgen": "morgen",
+        "zimmer": "zimmer",
+        "izba": "izba",
+        "sórok": "sórok",
+        "wall": "wall",
+        "schock": "schock",
+        "kopa": "kopa",
+        "wielki-tysiąc": "wielki tysiąc"
+    },
+
+    "fractions": {
+        "tenth": "tenth",
+        "eighth": "eighth",
+        "sixth": "sixth",
+        "fifth": "fifth",
+        "quarter": "quarter",
+        "third": "third",
+        "half": "half"
+    },
+
+    "historical": {
+        "sesqui": "sesqui",
+        "hebdomad": "hebdomad",
+        "uncia": "uncia",
+        "pentekontad": "pentekontad",
+        "maniple": "maniple",
+        "chiliad": "chiliad",
+        "šār": "šār",
+        "myriad": "myriad"
+    },
+
+    "africa": {
+        "kumir": "kumir",
+        "timan": "timan",
+        "korja": "korja"
+    },
+
+    "native-america": {
+        "chunka": "chunka",
+        "pantli": "pantli",
+        "huna": "huna",
+        "zontle": "zontle",
+        "bak": "bak",
+        "pachak": "pachak",
+        "waranqa": "waranqa",
+        "pik": "pik",
+        "xiquipilli": "xiquipilli"
+    },
+
+    "table-content": {
+        "yes": "yes",
+        "no": "no",
+        "moderately": "moderately",
+
+        "germany": "Germany",
+        "poland": "Poland",
+        "netherlands": "Netherlands",
+        "estonia": "Estonia",
+        "england": "England",
+        "russia": "Russia",
+
+        "rome": "Rome",
+        "greece": "Greece",
+        "babylon": "Babylon",
+
+        "east-africa": "East Africa",
+
+        "quechua": "Quechua",
+        "aztec": "Aztec",
+        "maya": "Maya"
+    }
+    
+}
